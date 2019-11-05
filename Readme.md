@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alexey Kornilov](https://up.htmlacademy.ru/adaptive/18/user/644387).
-* Наставник: `Неизвестно`.
+* Наставник: [Прусаков Максим Сергеевич](https://htmlacademy.ru/profile/hikikomori).
 
 ---
 
