@@ -5,8 +5,221 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <head class="page-header">
+      <div class="header-top-wrapper">
+        <a class="logo page-header__logo">
+          <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
+        </a>
+          <nav class="main-nav">
+          <button class="main-nav__button nav-button"></button>
+          <ul class="main-nav__list">
+            <li class="man-nav__item">item</li>
+            <li class="man-nav__item">item2</li>
+            <li class="man-nav__item">item3</li>
+          </ul>
+        </nav>
+      </div>
+      <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
+      <div class="header-bottom-wrapper">
+        <a href="tel:#" class="page-header__call"></a>
+        <a href="mailto:#" class="page-header__email"></a>
+        <a href="login.html" class="page-header__login login"></a>
+      </div>
+    </head>
+    <main class="page-main">
+      <section class="review">
+        <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
+        <cite class="review__author-name">Мурат Эльтазин</cite>
+        <span class="review__author-profession">главный редактор газеты «гаджетлайф»</span>
+      </section>
+      <section class="tips">
+        <ol class="tips__list tips-list">
+          <li class="tips-list__item tips-list--1">Выберите направление</li>
+          <li class="tips-list__item tips-list--2">Изучите идеи путешественников</li>
+          <li class="tips-list__item tips-list--3">Находите тех, кто похож на вас</li>
+          <li class="tips-list__item tips-list--4">Путешествуйте вместе!</li>
+        </ol>
+      </section>
+      <section class="about-service information">
+        <h2 class="information__title">О сервисе</h2>
+        <p class="information__description">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. 
+        </p>
+        <b class="information__description information__description--notice">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        </b>
+      </section>
+      <section class="directions">
+        <h2 class="directions__title">Направления</h2>
+        <p class="directions__description">
+            Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        </p>
+        <ul class="directions__list directions-list">
+          <li class="directions-list__item directions-list__item--tailand">
+            <div class="directions-list__wrapper">
+              <div class="directions-list__country">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
+                <p class="directions-list__title">Таиланд</p>
+                <p class="directions-list__subtitle">Джунгли зовут</p>
+              </div>
+              <div class="directions-list__raiting">
+                <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
+                <span class="directions-list__counter">18321</span>
+              </div>
+            </div>
+          </li>
+          <li class="directions-list__item directions-list__item--tailand">
+              <div class="directions-list__wrapper">
+                <div class="directions-list__country">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
+                  <p class="directions-list__title">Таиланд</p>
+                  <p class="directions-list__subtitle">Джунгли зовут</p>
+                </div>
+                <div class="directions-list__raiting">
+                  <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
+                  <span class="directions-list__counter">18321</span>
+                </div>
+              </div>
+            </li>
+            <li class="directions-list__item directions-list__item--france">
+              <div class="directions-list__wrapper">
+                <div class="directions-list__country">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
+                  <p class="directions-list__title">Франция</p>
+                  <p class="directions-list__subtitle">Трэ бьен, манифик!</p>
+                </div>
+                <div class="directions-list__raiting">
+                  <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
+                  <span class="directions-list__counter">12518</span>
+                </div>
+              </div>
+            </li>
+            <li class="directions-list__item directions-list__item--chezh">
+              <div class="directions-list__wrapper">
+                <div class="directions-list__country">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
+                  <p class="directions-list__title">Чехия</p>
+                  <p class="directions-list__subtitle">Закоулки старой Европы</p>
+                </div>
+                <div class="directions-list__raiting">
+                  <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
+                  <span class="directions-list__counter">5326</span>
+                </div>
+              </div>
+            </li>
+        </ul>
+        <button class="directions__button button-show-more">Показать все</button>
+      </section>
+      <section class="companions information">
+        <h2 class="information__title">Попутчики</h2>
+        <p class="information__description">
+            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. 
+        </p>
+        <b class="information__description information__description--notice">
+          Теперь можно легко найти единомышленников!
+        </b>
+        <ul class="companions__list companions-list">
+          <li class="companions-list__item companion">
+            <div class="companion__photo-wrapper">
+              <img src="https://via.placeholder.com/270x270" width="270" height="270" alt="Фото Таня Фирсова" class="companion-photo">
+              <div class="companion__level-block">
+                <span class="companion__level-counter">99</span>
+                <span class="companion__level-title">level</span>
+              </div>
+            </div>
+            <div class="companion__description">
+              <div class="companion__directions">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Шри-Ланка" class="companion__direction">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Тайланд" class="companion__direction">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшелы" class="companion__direction">
+              </div>
+              <div class="companion__name">Таня Фирсова</div>
+              <ul class="companion__tags">
+                <li class="companion__tag">#ЗОЖ</li>
+                <li class="companion__tag">#ПП</li>
+                <li class="companion__tag">#Фитнес</li>
+                <li class="companion__tag">#пляж</li>
+                <li class="companion__tag">#авокадо</li>
+                <li class="companion__tag">#смузи</li>
+              </ul>
+              <ul class="companion__transports">
+                <li class="companion__transport">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="companion__transport-image companion__transport-image--active">
+                </li>
+                <li class="companion__transport">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="companion__transport-image">
+                </li>
+                <li class="companion__transport">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="companion__transport-image">
+                </li>
+                <li class="companion__transport">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="companion__transport-image">
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="companions-list__item companion">
+            <div class="companion__photo-wrapper">
+              <img src="https://via.placeholder.com/270x270" width="270" height="270" alt="Фото Петя Демин" class="companion-photo">
+              <div class="companion__level-block">
+                <span class="companion__level-counter">80</span>
+                <span class="companion__level-title">level</span>
+              </div>
+            </div>
+            <div class="companion__description">
+              <div class="companion__directions">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Бельгия" class="companion__direction">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия" class="companion__direction">
+              </div>
+              <div class="companion__name">Петя Демин</div>
+              <ul class="companion__tags">
+                <li class="companion__tag">#бургер</li>
+                <li class="companion__tag">#бар</li>
+                <li class="companion__tag">#футбол</li>
+                <li class="companion__tag">#концерт</li>
+                <li class="companion__tag">#крафт</li>
+              </ul>
+              <ul class="companion__transports">
+                <li class="companion__transport">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="companion__transport-image companion__transport-image--active">
+                </li>
+                <li class="companion__transport">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="companion__transport-image companion__transport-image--active">
+                </li>
+                <li class="companion__transport">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="companion__transport-image">
+                </li>
+                <li class="companion__transport">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="companion__transport-image companion__transport-image--active">
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <button class="companions__button button-show-more">Показать всех</button>
+      </section>
+      <section class="tarifs">
+        <div class="tarifs__header">
+          <p class="tarifs__title">Добавьте свой профиль</p>
+        </div>
+        <ol class="tarifs__list">
+          <li class="tarifs__item">
+            <span class="tarifs__name">Базовое размещение</span>
+            <span class="tarifs__price">Бесплатно</span>
+          </li>
+          <li class="tarifs__item">
+            <span class="tarifs__name">Вывод на первых позициях</span>
+            <span class="tarifs__price">99 руб./мес</span>
+          </li>
+          <li class="tarifs__item">
+            <span class="tarifs__name">Кастомный цвет карточки</span>
+            <span class="tarifs__price">59 руб./мес</span>
+          </li>
+        </ol>
+        <a href="#" class="tarifs__show-business">Показать тарифы для бизнеса</a>
+      </section>
+      
+    </main>
 
   </body>
 </html>
