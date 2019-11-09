@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-top-wrapper">
+        <a class="logo page-header__logo">
+          <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
+        </a>
+          <nav class="main-nav">
+          <button class="main-nav__button nav-button"></button>
+          <ul class="main-nav__list">
+            <li class="man-nav__item">item</li>
+            <li class="man-nav__item">item2</li>
+            <li class="man-nav__item">item3</li>
+          </ul>
+        </nav>
+      </div>
+      <p class="page-header__slogan page-header__slogan--inner">Попутчики</p>
+    </header>
+    <main class="page-main">
+      <!-- форма фильтрации по странам -->
+      <section class="travelers-catalog">
+        <h2 class="visually-hidden">Список путешественников</h2>
+        <ul class="travelers travelers-catalog__list">
+          <li class="traveler travelers__item">
+            <div class="traveler__info">
+              <div class="traveler__image-wrapper">
+                <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова" class="traveler__image">
+              </div>
+              <div class="traveler__data">
+                <p class="traveler__name">Таня</p>
+                <p class="traveler__surname">Фирсова</p>
+                <span class="traveler__likes">1,5 M</span>
+              </div>
+              <ul class="traveler__tags traveler-tags">
+                <li class="traveler-tags__item">#ЗОЖ</li>
+                <li class="traveler-tags__item">#ПП</li>
+                <li class="traveler-tags__item">#Фитнес</li>
+                <li class="traveler-tags__item">#пляж</li>
+                <li class="traveler-tags__item">#авокадо</li>
+                <li class="traveler-tags__item">#смузи</li>
+                </ul>
+            </div>
+            <div class="traveler__directions">
+              <p class="traveler__wish-country">хочет посетить:</p>
+              <ul class="traveler-directions">
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
+                  <p class="traveler-directions__title">шри-ланка</p>
+                </li>
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
+                  <p class="traveler-directions__title">таиланд</p>
+                </li>
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
+                  <p class="traveler-directions__title">сейшелы</p>
+                </li>
+              </ul>
+            </div>
+            <div class="traveler-bottom-wrapper">
+              <div class="traveler__transport-wish">
+                <p class="traveler__wish-transport">транспорт:</p>
+                <ul class="traveler-transport">
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler__level">
+                <p class="traveler__level-title">левел:</p>
+                <div class="traveler__level-box">
+                  <p class="traveler__level-counter">99</p>
+                </div>
+              </div>
+            </div>
+            <button class="traveler__button">позвать!</button>
+          </li>
+          <li class="traveler travelers__item">
+            <div class="traveler__info">
+              <div class="traveler__image-wrapper">
+                <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин" class="traveler__image">
+              </div>
+              <div class="traveler__data">
+                <p class="traveler__name">Петя</p>
+                <p class="traveler__surname">Демин</p>
+                <span class="traveler__likes">150</span>
+              </div>
+              <ul class="traveler__tags traveler-tags">
+                <li class="traveler-tags__item">#бургер</li>
+                <li class="traveler-tags__item">#бар</li>
+                <li class="traveler-tags__item">#футбол</li>
+                <li class="traveler-tags__item">#концерт</li>
+                <li class="traveler-tags__item">#крафт</li>
+              </ul>
+            </div>
+            <div class="traveler__directions">
+              <p class="traveler__wish-country">хочет посетить:</p>
+              <ul class="traveler-directions">
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="бельгия" class="traveler-directions__image">
+                  <p class="traveler-directions__title">бельгия</p>
+                </li>
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="чехия" class="traveler-directions__image">
+                  <p class="traveler-directions__title">чехия</p>
+                </li>
+              </ul>
+            </div>
+            <div class="traveler-bottom-wrapper">
+              <div class="traveler__transport-wish">
+                <p class="traveler__wish-transport">транспорт:</p>
+                <ul class="traveler-transport">
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler__level">
+                <p class="traveler__level-title">левел:</p>
+                <div class="traveler__level-box">
+                  <p class="traveler__level-counter">80</p>
+                </div>
+              </div>
+            </div>
+            <button class="traveler__button">позвать!</button>
+          </li>
+          <li class="traveler travelers__item">
+            <div class="traveler__info">
+              <div class="traveler__image-wrapper">
+                <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов" class="traveler__image">
+              </div>
+              <div class="traveler__data">
+                <p class="traveler__name">Марк</p>
+                <p class="traveler__surname">Смолов</p>
+                <span class="traveler__likes">1700</span>
+              </div>
+              <ul class="traveler__tags traveler-tags">
+                <li class="traveler-tags__item">#рэп</li>
+                <li class="traveler-tags__item">#тату</li>
+                <li class="traveler-tags__item">#хайпбист</li>
+                <li class="traveler-tags__item">#кроссовки</li>
+                <li class="traveler-tags__item">#суприм</li>
+              </ul>
+            </div>
+            <div class="traveler__directions">
+              <p class="traveler__wish-country">хочет посетить:</p>
+              <ul class="traveler-directions">
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="сша" class="traveler-directions__image">
+                  <p class="traveler-directions__title">сша</p>
+                </li>
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="австралия" class="traveler-directions__image">
+                  <p class="traveler-directions__title">австралия</p>
+                </li>
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="доминикана" class="traveler-directions__image">
+                  <p class="traveler-directions__title">доминикана</p>
+                </li>
+              </ul>
+            </div>
+            <div class="traveler-bottom-wrapper">
+              <div class="traveler__transport-wish">
+                <p class="traveler__wish-transport">транспорт:</p>
+                <ul class="traveler-transport">
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler__level">
+                <p class="traveler__level-title">левел:</p>
+                <div class="traveler__level-box">
+                  <p class="traveler__level-counter">25</p>
+                </div>
+              </div>
+            </div>
+            <button class="traveler__button">позвать!</button>
+          </li>
+          <li class="traveler travelers__item">
+            <div class="traveler__info">
+              <div class="traveler__image-wrapper">
+                <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Лариса Роговая" class="traveler__image">
+              </div>
+              <div class="traveler__data">
+                <p class="traveler__name">Лариса</p>
+                <p class="traveler__surname">Роговая</p>
+                <span class="traveler__likes">23</span>
+              </div>
+              <ul class="traveler__tags traveler-tags">
+                <li class="traveler-tags__item">#образование</li>
+                <li class="traveler-tags__item">#карьера</li>
+                <li class="traveler-tags__item">#учёба</li>
+                <li class="traveler-tags__item">#линкедин</li>
+              </ul>
+            </div>
+            <div class="traveler__directions">
+              <p class="traveler__wish-country">хочет посетить:</p>
+              <ul class="traveler-directions">
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="великобритания" class="traveler-directions__image">
+                  <p class="traveler-directions__title">великобритания</p>
+                </li>
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="германия" class="traveler-directions__image">
+                  <p class="traveler-directions__title">германия</p>
+                </li>
+              </ul>
+            </div>
+            <div class="traveler-bottom-wrapper">
+              <div class="traveler__transport-wish">
+                <p class="traveler__wish-transport">транспорт:</p>
+                <ul class="traveler-transport">
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler__level">
+                <p class="traveler__level-title">левел:</p>
+                <div class="traveler__level-box">
+                  <p class="traveler__level-counter">50</p>
+                </div>
+              </div>
+            </div>
+            <button class="traveler__button">позвать!</button>
+          </li>
+        </ul>
+        <button class="travelers__show-more">Показать ещё</button>
+        <div class="travelers__bottom-wrapper">
+          <button class="travelers__prev">
+            <img src="https://via.placeholder.com/10x20" alt="Иконка назад" class="travelers__prev-icon">
+          </button>
+          <button class="travelers__next">
+            <img src="https://via.placeholder.com/10x20" alt="Иконка вперёд" class="travelers__next-icon">
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-top-wrapper">
+        <a class="logo">
+          <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
+        </a>
+        <div class="social page-footer__social">
+          <div class="social__item">
+              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Фейсбук" class="social__image">
+          </div>
+          <div class="social__item">
+              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница во Вконтакте" class="social__image">
+          </div>
+          <div class="social__item">
+              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Инстаграм" class="social__image">
+          </div>
+        </div>
+      </div>
+      <div class="site-producer">
+        <div class="site-producer__info">Разработано</div>
+        <div class="site-producer__logo">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип разработчика сайта" class="site-producer__image">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

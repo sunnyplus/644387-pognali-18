@@ -5,7 +5,7 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
-    <head class="page-header">
+    <header class="page-header">
       <div class="header-top-wrapper">
         <a class="logo page-header__logo">
           <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
@@ -25,14 +25,16 @@
         <a href="mailto:#" class="page-header__email"></a>
         <a href="login.html" class="page-header__login login"></a>
       </div>
-    </head>
+    </header>
     <main class="page-main">
       <section class="review">
+        <h2 class="visually-hidden">Отзывы</h2>
         <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
         <cite class="review__author-name">Мурат Эльтазин</cite>
         <span class="review__author-profession">главный редактор газеты «гаджетлайф»</span>
       </section>
       <section class="tips">
+        <h2 class="visually-hidden">Подсказки</h2>
         <ol class="tips__list tips-list">
           <li class="tips-list__item tips-list--1">Выберите направление</li>
           <li class="tips-list__item tips-list--2">Изучите идеи путешественников</li>
@@ -128,32 +130,38 @@
               </div>
             </div>
             <div class="companion__description">
-              <div class="companion__directions">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Шри-Ланка" class="companion__direction">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Тайланд" class="companion__direction">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшелы" class="companion__direction">
-              </div>
-              <div class="companion__name">Таня Фирсова</div>
-              <ul class="companion__tags">
-                <li class="companion__tag">#ЗОЖ</li>
-                <li class="companion__tag">#ПП</li>
-                <li class="companion__tag">#Фитнес</li>
-                <li class="companion__tag">#пляж</li>
-                <li class="companion__tag">#авокадо</li>
-                <li class="companion__tag">#смузи</li>
+              <ul class="companion__directions traveler-directions">
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
+                </li>
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
+                </li>
+                <li class="traveler-directions__item">
+                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
+                </li>
               </ul>
-              <ul class="companion__transports">
-                <li class="companion__transport">
-                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="companion__transport-image companion__transport-image--active">
+              <div class="companion__name">Таня Фирсова</div>
+              <ul class="companion__tags traveler-tags">
+                <li class="traveler-tags__item">#ЗОЖ</li>
+                <li class="traveler-tags__item">#ПП</li>
+                <li class="traveler-tags__item">#Фитнес</li>
+                <li class="traveler-tags__item">#пляж</li>
+                <li class="traveler-tags__item">#авокадо</li>
+                <li class="traveler-tags__item">#смузи</li>
+              </ul>
+              <ul class="companion__transports traveler-transport">
+                <li class="traveler-transport__item traveler-transport__item--ative">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
                 </li>
-                <li class="companion__transport">
-                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="companion__transport-image">
+                <li class="traveler-transport__item">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
                 </li>
-                <li class="companion__transport">
-                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="companion__transport-image">
+                <li class="traveler-transport__item">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
                 </li>
-                <li class="companion__transport">
-                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="companion__transport-image">
+                <li class="traveler-transport__item">
+                  <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
                 </li>
               </ul>
             </div>
@@ -199,6 +207,7 @@
         <button class="companions__button button-show-more">Показать всех</button>
       </section>
       <section class="tarifs">
+        <h2 class="visually-hidden">Тарифы аккаунта</h2>
         <div class="tarifs__header">
           <p class="tarifs__title">Добавьте свой профиль</p>
         </div>
@@ -248,6 +257,7 @@
         </div>
       </section>
       <section class="address">
+        <h2 class="visually-hidden">адрес</h2>
         <div class="contact-item">
           <div class="contact-item__icon">
             <img src="https://via.placeholder.com/18x18" alt="E-mail">
@@ -259,6 +269,7 @@
         <button class="button-show-more button-show-more--route">Проложить маршрут</button>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">карта</h2>
         <img src="https://via.placeholder.com/320x546" width="320" height="546" alt="Адрес на карте ул. Большая Конюшенная, 19/8" class="map__image">
       </section>
     </main>
