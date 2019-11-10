@@ -11,12 +11,33 @@
           <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
         </a>
           <nav class="main-nav">
-          <button class="main-nav__button nav-button"></button>
-          <ul class="main-nav__list">
-            <li class="man-nav__item">item</li>
-            <li class="man-nav__item">item2</li>
-            <li class="man-nav__item">item3</li>
-          </ul>
+          <button class="main-nav__button nav-button" aria-label="Показать главное меню сайта">
+            <img src="https://via.placeholder.com/25x11" width="25" height="11" alt="Показать главное меню сайта">
+          </button>
+          <div class="main-nav__hidden visually-hidden">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">о сервисе</li>
+              <li class="main-nav__item">направления</li>
+              <li class="main-nav__item">попутчики</li>
+            </ul>
+            <a href="login.html" class="main-nav__login login"></a>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <img src="https://via.placeholder.com/18x18" alt="Телефон">
+              </div>
+              <div class="contact-item__value-box">
+                <a href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <img src="https://via.placeholder.com/18x18" alt="E-mail">
+              </div>
+              <div class="contact-item__value-box">
+                <a href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
       <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
@@ -36,10 +57,10 @@
       <section class="tips">
         <h2 class="visually-hidden">Подсказки</h2>
         <ol class="tips__list tips-list">
-          <li class="tips-list__item tips-list--1">Выберите направление</li>
-          <li class="tips-list__item tips-list--2">Изучите идеи путешественников</li>
-          <li class="tips-list__item tips-list--3">Находите тех, кто похож на вас</li>
-          <li class="tips-list__item tips-list--4">Путешествуйте вместе!</li>
+          <li class="tips-list__item tips-list__item--1">Выберите направление</li>
+          <li class="tips-list__item tips-list__item--2">Изучите идеи путешественников</li>
+          <li class="tips-list__item tips-list__item--3">Находите тех, кто похож на вас</li>
+          <li class="tips-list__item tips-list__item--4">Путешествуйте вместе!</li>
         </ol>
       </section>
       <section class="about-service information">
@@ -70,47 +91,34 @@
               </div>
             </div>
           </li>
-          <li class="directions-list__item directions-list__item--tailand">
-              <div class="directions-list__wrapper">
-                <div class="directions-list__country">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
-                  <p class="directions-list__title">Таиланд</p>
-                  <p class="directions-list__subtitle">Джунгли зовут</p>
-                </div>
-                <div class="directions-list__raiting">
-                  <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
-                  <span class="directions-list__counter">18321</span>
-                </div>
+          <li class="directions-list__item directions-list__item--france">
+            <div class="directions-list__wrapper">
+              <div class="directions-list__country">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Франции" class="directions-list__flag">
+                <p class="directions-list__title">Франция</p>
+                <p class="directions-list__subtitle">Трэ бьен, манифик!</p>
               </div>
-            </li>
-            <li class="directions-list__item directions-list__item--france">
-              <div class="directions-list__wrapper">
-                <div class="directions-list__country">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
-                  <p class="directions-list__title">Франция</p>
-                  <p class="directions-list__subtitle">Трэ бьен, манифик!</p>
-                </div>
-                <div class="directions-list__raiting">
-                  <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
-                  <span class="directions-list__counter">12518</span>
-                </div>
+              <div class="directions-list__raiting">
+                <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
+                <span class="directions-list__counter">12518</span>
               </div>
-            </li>
-            <li class="directions-list__item directions-list__item--chezh">
-              <div class="directions-list__wrapper">
-                <div class="directions-list__country">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
-                  <p class="directions-list__title">Чехия</p>
-                  <p class="directions-list__subtitle">Закоулки старой Европы</p>
-                </div>
-                <div class="directions-list__raiting">
-                  <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
-                  <span class="directions-list__counter">5326</span>
-                </div>
+            </div>
+          </li>
+          <li class="directions-list__item directions-list__item--chezh">
+            <div class="directions-list__wrapper">
+              <div class="directions-list__country">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии" class="directions-list__flag">
+                <p class="directions-list__title">Чехия</p>
+                <p class="directions-list__subtitle">Закоулки старой Европы</p>
               </div>
-            </li>
+              <div class="directions-list__raiting">
+                <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
+                <span class="directions-list__counter">5326</span>
+              </div>
+            </div>
+          </li>
         </ul>
-        <button class="directions__button button-show-more">Показать все</button>
+        <a href="#" class="directions__button button-show-more">Показать все</a>
       </section>
       <section class="companions information">
         <h2 class="information__title">Попутчики</h2>
@@ -141,7 +149,7 @@
                   <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
                 </li>
               </ul>
-              <div class="companion__name">Таня Фирсова</div>
+              <p class="companion__name">Таня Фирсова</p>
               <ul class="companion__tags traveler-tags">
                 <li class="traveler-tags__item">#ЗОЖ</li>
                 <li class="traveler-tags__item">#ПП</li>
@@ -179,7 +187,7 @@
                 <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Бельгия" class="companion__direction">
                 <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия" class="companion__direction">
               </div>
-              <div class="companion__name">Петя Демин</div>
+              <p class="companion__name">Петя Демин</p>
               <ul class="companion__tags">
                 <li class="companion__tag">#бургер</li>
                 <li class="companion__tag">#бар</li>
@@ -204,7 +212,7 @@
             </div>
           </li>
         </ul>
-        <button class="companions__button button-show-more">Показать всех</button>
+        <a class="companions__button button-show-more">Показать всех</a>
       </section>
       <section class="tarifs">
         <h2 class="visually-hidden">Тарифы аккаунта</h2>
@@ -227,6 +235,31 @@
         </ol>
         <a href="#" class="tarifs__show-business">Показать тарифы для бизнеса</a>
       </section>
+      <section class="tarifs tarifs--business visually-hidden">
+        <h2 class="visually-hidden">Бизнес Тарифы аккаунта</h2>
+        <div class="tarifs__header">
+          <p class="tarifs__title">бизнес-тарифы</p>
+        </div>
+        <ul class="tarifs__list">
+          <li class="tarifs__item">
+            <span class="tarifs__name">Реклама у блоггера</span>
+            <span class="tarifs__price">300 000 руб./пост</span>
+          </li>
+          <li class="tarifs__item">
+            <span class="tarifs__name">Накрутка подписчиков</span>
+            <span class="tarifs__price">от 1 руб./шт.</span>
+          </li>
+          <li class="tarifs__item">
+            <span class="tarifs__name">Лайки от ботов</span>
+            <span class="tarifs__price">от 20 коп./лайк</span>
+          </li>
+          <li class="tarifs__item">
+            <span class="tarifs__name">Ваш продакт-плейсмент</span>
+            <span class="tarifs__price">Индивидуально</span>
+          </li>
+        </ul>
+        <button class="tarifs__close-business">закрыть окно</button>
+      </section>
       <section class="signup-block">
         <div class="information information--center">
           <h2 class="information__title">Заинтересовались?</h2>
@@ -244,7 +277,7 @@
             <img src="https://via.placeholder.com/18x18" alt="Телефон">
           </div>
           <div class="contact-item__value-box">
-            <a href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
+            <a href="tel:88005558628" class="contact-item__value contact-item__value--yellow">8 800 555-86-28</a>
           </div>
         </div>
         <div class="contact-item">
@@ -252,7 +285,7 @@
             <img src="https://via.placeholder.com/18x18" alt="E-mail">
           </div>
           <div class="contact-item__value-box">
-            <a href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru" class="contact-item__value contact-item__value-yellow">mail@htmlacademy.ru</a>
           </div>
         </div>
       </section>

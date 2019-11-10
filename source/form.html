@@ -11,17 +11,36 @@
           <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
         </a>
           <nav class="main-nav">
-          <button class="main-nav__button nav-button"></button>
-          <ul class="main-nav__list">
-            <li class="man-nav__item">item</li>
-            <li class="man-nav__item">item2</li>
-            <li class="man-nav__item">item3</li>
-          </ul>
+          <button class="main-nav__button nav-button" aria-label="Показать главное меню сайта"></button>
+          <div class="main-nav__hidden visually-hidden">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">о сервисе</li>
+              <li class="main-nav__item">направления</li>
+              <li class="main-nav__item">попутчики</li>
+            </ul>
+            <a href="login.html" class="main-nav__login login"></a>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <img src="https://via.placeholder.com/18x18" alt="Телефон">
+              </div>
+              <div class="contact-item__value-box">
+                <a href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <img src="https://via.placeholder.com/18x18" alt="E-mail">
+              </div>
+              <div class="contact-item__value-box">
+                <a href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
-      <p class="page-header__slogan page-header__slogan--inner">Направления</p>
     </header>
     <main class="page-main">
+      <h1 class="main-heading">Направления</h1>
 
     </main>
     <footer class="page-footer">

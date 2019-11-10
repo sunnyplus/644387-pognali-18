@@ -11,30 +11,51 @@
           <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
         </a>
           <nav class="main-nav">
-          <button class="main-nav__button nav-button"></button>
-          <ul class="main-nav__list">
-            <li class="man-nav__item">item</li>
-            <li class="man-nav__item">item2</li>
-            <li class="man-nav__item">item3</li>
-          </ul>
+          <button class="main-nav__button nav-button" aria-label="Показать главное меню сайта"></button>
+          <div class="main-nav__hidden visually-hidden">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">о сервисе</li>
+              <li class="main-nav__item">направления</li>
+              <li class="main-nav__item">попутчики</li>
+            </ul>
+            <a href="login.html" class="main-nav__login login"></a>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <img src="https://via.placeholder.com/18x18" alt="Телефон">
+              </div>
+              <div class="contact-item__value-box">
+                <a href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <img src="https://via.placeholder.com/18x18" alt="E-mail">
+              </div>
+              <div class="contact-item__value-box">
+                <a href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
-      <p class="page-header__slogan page-header__slogan--inner">Попутчики</p>
     </header>
     <main class="page-main">
+      <h1 class="main-heading">Попутчики</h1>
       <!-- форма фильтрации по странам -->
       <section class="travelers-catalog">
         <h2 class="visually-hidden">Список путешественников</h2>
         <ul class="travelers travelers-catalog__list">
           <li class="traveler travelers__item">
             <div class="traveler__info">
-              <div class="traveler__image-wrapper">
-                <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова" class="traveler__image">
-              </div>
-              <div class="traveler__data">
-                <p class="traveler__name">Таня</p>
-                <p class="traveler__surname">Фирсова</p>
-                <span class="traveler__likes">1,5 M</span>
+              <div class="traveler__top-wrapper">
+                <div class="traveler__image-wrapper">
+                  <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова" class="traveler__image">
+                </div>
+                <div class="traveler__data">
+                  <p class="traveler__name">Таня Фирсова</p>
+                  <span class="traveler__likes">1,5 M</span>
+                </div>
+                <div class="traveler__status"></div>
               </div>
               <ul class="traveler__tags traveler-tags">
                 <li class="traveler-tags__item">#ЗОЖ</li>
@@ -43,7 +64,7 @@
                 <li class="traveler-tags__item">#пляж</li>
                 <li class="traveler-tags__item">#авокадо</li>
                 <li class="traveler-tags__item">#смузи</li>
-                </ul>
+              </ul>
             </div>
             <div class="traveler__directions">
               <p class="traveler__wish-country">хочет посетить:</p>
@@ -95,8 +116,7 @@
                 <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин" class="traveler__image">
               </div>
               <div class="traveler__data">
-                <p class="traveler__name">Петя</p>
-                <p class="traveler__surname">Демин</p>
+                <p class="traveler__name">Петя Демин</p>
                 <span class="traveler__likes">150</span>
               </div>
               <ul class="traveler__tags traveler-tags">
@@ -153,8 +173,7 @@
                 <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов" class="traveler__image">
               </div>
               <div class="traveler__data">
-                <p class="traveler__name">Марк</p>
-                <p class="traveler__surname">Смолов</p>
+                <p class="traveler__name">Марк Смолов</p>
                 <span class="traveler__likes">1700</span>
               </div>
               <ul class="traveler__tags traveler-tags">
@@ -215,8 +234,7 @@
                 <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Лариса Роговая" class="traveler__image">
               </div>
               <div class="traveler__data">
-                <p class="traveler__name">Лариса</p>
-                <p class="traveler__surname">Роговая</p>
+                <p class="traveler__name">Лариса Роговая</p>
                 <span class="traveler__likes">23</span>
               </div>
               <ul class="traveler__tags traveler-tags">
@@ -267,13 +285,13 @@
             <button class="traveler__button">позвать!</button>
           </li>
         </ul>
-        <button class="travelers__show-more">Показать ещё</button>
-        <div class="travelers__bottom-wrapper">
-          <button class="travelers__prev">
-            <img src="https://via.placeholder.com/10x20" alt="Иконка назад" class="travelers__prev-icon">
+        <button class="travelers-catalog__show-more">Показать ещё</button>
+        <div class="travelers-catalog__bottom-wrapper">
+          <button class="travelers-catalog__prev">
+            <img src="https://via.placeholder.com/10x20" alt="Иконка назад" class="travelers-catalog__prev-icon">
           </button>
-          <button class="travelers__next">
-            <img src="https://via.placeholder.com/10x20" alt="Иконка вперёд" class="travelers__next-icon">
+          <button class="travelers-catalog__next">
+            <img src="https://via.placeholder.com/10x20" alt="Иконка вперёд" class="travelers-catalog__next-icon">
           </button>
         </div>
       </section>
