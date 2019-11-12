@@ -12,29 +12,25 @@
         </a>
           <nav class="main-nav">
           <button type="button" class="main-nav__button nav-button" aria-label="Показать главное меню сайта"></button>
-          <div class="main-nav__hidden visually-hidden">
             <ul class="main-nav__list">
-              <li class="main-nav__item">о сервисе</li>
-              <li class="main-nav__item">направления</li>
-              <li class="main-nav__item">попутчики</li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">о сервисе</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">направления</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">попутчики</a>
+              </li>
             </ul>
-            <a href="login.html" class="main-nav__login login">Авторизация</a>
-            <div class="contact-item">
-              <div class="contact-item__icon">
-                <img src="https://via.placeholder.com/18x18" alt="Телефон">
-              </div>
-              <div class="contact-item__value-box">
-                <a href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item__icon">
-                <img src="https://via.placeholder.com/18x18" alt="E-mail">
-              </div>
-              <div class="contact-item__value-box">
-                <a href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
-              </div>
-            </div>
+          <a href="login.html" class="main-nav__login">Авторизация</a>
+          <div class="contacts">
+            <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="Телефон">
+            <a class="contacts__phone" href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
+          </div>
+          <div class="contacts">
+            <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="E-mail">
+            <a class="contacts__phone" href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
           </div>
         </nav>
       </div>
@@ -302,7 +298,7 @@
                   <p class="traveler__name">Таня Фирсова</p>
                   <span class="traveler__likes">1,5 M</span>
                 </div>
-                <div class="traveler__status"></div>
+                <div class="traveler__indicator indicator"></div>
               </div>
               <ul class="traveler__tags traveler-tags">
                 <li class="traveler-tags__item">#ЗОЖ</li>
@@ -359,12 +355,15 @@
           </li>
           <li class="traveler travelers__item">
             <div class="traveler__info">
-              <div class="traveler__image-wrapper">
-                <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин" class="traveler__image">
-              </div>
-              <div class="traveler__data">
-                <p class="traveler__name">Петя Демин</p>
-                <span class="traveler__likes">150</span>
+              <div class="traveler__top-wrapper">
+                <div class="traveler__image-wrapper">
+                  <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин" class="traveler__image">
+                </div>
+                <div class="traveler__data">
+                  <p class="traveler__name">Петя Демин</p>
+                  <span class="traveler__likes">150</span>
+                </div>
+                <div class="traveler__indicator indicator"></div>
               </div>
               <ul class="traveler__tags traveler-tags">
                 <li class="traveler-tags__item">#бургер</li>
@@ -416,12 +415,15 @@
           </li>
           <li class="traveler travelers__item">
             <div class="traveler__info">
-              <div class="traveler__image-wrapper">
-                <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов" class="traveler__image">
-              </div>
-              <div class="traveler__data">
-                <p class="traveler__name">Марк Смолов</p>
-                <span class="traveler__likes">1700</span>
+              <div class="traveler__top-wrapper">
+                <div class="traveler__image-wrapper">
+                  <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов" class="traveler__image">
+                </div>
+                <div class="traveler__data">
+                  <p class="traveler__name">Марк Смолов</p>
+                  <span class="traveler__likes">1700</span>
+                </div>
+                <div class="traveler__indicator indicator"></div>
               </div>
               <ul class="traveler__tags traveler-tags">
                 <li class="traveler-tags__item">#рэп</li>
@@ -477,12 +479,15 @@
           </li>
           <li class="traveler travelers__item">
             <div class="traveler__info">
-              <div class="traveler__image-wrapper">
-                <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Лариса Роговая" class="traveler__image">
-              </div>
-              <div class="traveler__data">
-                <p class="traveler__name">Лариса Роговая</p>
-                <span class="traveler__likes">23</span>
+              <div class="traveler__top-wrapper">
+                <div class="traveler__image-wrapper">
+                  <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Лариса Роговая" class="traveler__image">
+                </div>
+                <div class="traveler__data">
+                  <p class="traveler__name">Лариса Роговая</p>
+                  <span class="traveler__likes">23</span>
+                </div>
+                <div class="traveler__indicator indicator"></div>
               </div>
               <ul class="traveler__tags traveler-tags">
                 <li class="traveler-tags__item">#образование</li>
@@ -544,20 +549,18 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-top-wrapper">
-        <a class="logo">
-          <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
-        </a>
-        <div class="social page-footer__social">
-          <div class="social__item">
-              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Фейсбук" class="social__image">
-          </div>
-          <div class="social__item">
-              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница во Вконтакте" class="social__image">
-          </div>
-          <div class="social__item">
-              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Инстаграм" class="social__image">
-          </div>
+      <a class="logo">
+        <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
+      </a>
+      <div class="social page-footer__social">
+        <div class="social__item">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Фейсбук" class="social__image">
+        </div>
+        <div class="social__item">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница во Вконтакте" class="social__image">
+        </div>
+        <div class="social__item">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Инстаграм" class="social__image">
         </div>
       </div>
       <div class="site-producer">

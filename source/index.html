@@ -10,48 +10,46 @@
         <a class="logo page-header__logo">
           <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
         </a>
-          <nav class="main-nav">
+        <nav class="main-nav">
           <button type="button" class="main-nav__button nav-button" aria-label="Показать главное меню сайта">
             <img src="https://via.placeholder.com/25x11" width="25" height="11" alt="Показать главное меню сайта">
           </button>
-          <div class="main-nav__hidden visually-hidden">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">о сервисе</li>
-              <li class="main-nav__item">направления</li>
-              <li class="main-nav__item">попутчики</li>
-            </ul>
-            <a href="login.html" class="main-nav__login login">Авторизация</a>
-            <div class="contact-item">
-              <div class="contact-item__icon">
-                <img src="https://via.placeholder.com/18x18" alt="Телефон">
-              </div>
-              <div class="contact-item__value-box">
-                <a href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item__icon">
-                <img src="https://via.placeholder.com/18x18" alt="E-mail">
-              </div>
-              <div class="contact-item__value-box">
-                <a href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
-              </div>
-            </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">о сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">попутчики</a>
+            </li>
+          </ul>
+          <a href="login.html" class="main-nav__login login">Авторизация</a>
+          <div class="contacts">
+            <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="Телефон">
+            <a class="contacts__phone" href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
+          </div>
+          <div class="contacts">
+            <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="E-mail">
+            <a class="contacts__phone" href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
           </div>
         </nav>
       </div>
-      <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
-      <div class="header-bottom-wrapper">
-        <a href="tel:#" class="page-header__call" aria-label="Связаться с нами по телефону">
-          <img src="https://via.placeholder.com/18x18" width="18" height="18" alt="Иконка телефона">
-        </a>
-        <a href="mailto:#" class="page-header__email" aria-label="Связаться с нами по e-mail">
-            <img src="https://via.placeholder.com/18x18" width="18" height="18" alt="Иконка e-mail">
-        </a>
-        <a href="login.html" class="page-header__login login">Авторизация</a>
-      </div>
     </header>
     <main class="page-main">
+      <section class="welcome">
+        <p class="welcome__slogan">В путешествие с крутыми попутчиками!</p>
+        <div class="header-bottom-wrapper">
+          <a href="tel:#" class="welcome__call" aria-label="Связаться с нами по телефону">
+            <img src="https://via.placeholder.com/18x18" width="18" height="18" alt="Иконка телефона">
+          </a>
+          <a href="mailto:#" class="welcome__email" aria-label="Связаться с нами по e-mail">
+              <img src="https://via.placeholder.com/18x18" width="18" height="18" alt="Иконка e-mail">
+          </a>
+          <a href="login.html" class="welcome__login">Авторизация</a>
+        </div>
+      </section>
       <section class="review">
         <h2 class="visually-hidden">Отзывы</h2>
         <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
@@ -61,13 +59,13 @@
       <section class="tips">
         <h2 class="visually-hidden">Подсказки</h2>
         <ol class="tips__list tips-list">
-          <li class="tips-list__item tips-list__item--1">Выберите направление</li>
-          <li class="tips-list__item tips-list__item--2">Изучите идеи путешественников</li>
-          <li class="tips-list__item tips-list__item--3">Находите тех, кто похож на вас</li>
-          <li class="tips-list__item tips-list__item--4">Путешествуйте вместе!</li>
+          <li class="tips-list__item">Выберите направление</li>
+          <li class="tips-list__item">Изучите идеи путешественников</li>
+          <li class="tips-list__item">Находите тех, кто похож на вас</li>
+          <li class="tips-list__item">Путешествуйте вместе!</li>
         </ol>
       </section>
-      <section class="about-service information">
+      <section class="information">
         <h2 class="information__title">О сервисе</h2>
         <p class="information__description">
             Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
@@ -82,7 +80,8 @@
             Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
         <ul class="directions__list directions-list">
-          <li class="directions-list__item directions-list__item--tailand">
+          <li class="directions-list__item directions-list__item--thailand">
+            <img src="https://via.placeholder.com/270x110" alt="Фото из Тайланда" class="directions-list__image">
             <div class="directions-list__wrapper">
               <div class="directions-list__country">
                 <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
@@ -96,6 +95,7 @@
             </div>
           </li>
           <li class="directions-list__item directions-list__item--france">
+            <img src="https://via.placeholder.com/270x110" alt="Фото из Франции" class="directions-list__image">
             <div class="directions-list__wrapper">
               <div class="directions-list__country">
                 <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Франции" class="directions-list__flag">
@@ -109,6 +109,7 @@
             </div>
           </li>
           <li class="directions-list__item directions-list__item--chezh">
+            <img src="https://via.placeholder.com/270x110" alt="Фото из Чехии" class="directions-list__image">
             <div class="directions-list__wrapper">
               <div class="directions-list__country">
                 <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии" class="directions-list__flag">
@@ -153,7 +154,10 @@
                   <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
                 </li>
               </ul>
-              <p class="companion__name">Таня Фирсова</p>
+              <div class="companion__data">
+                <div class="companion__indicator indicator"></div>
+                <p class="companion__name">Таня Фирсова</p>
+              </div>
               <ul class="companion__tags traveler-tags">
                 <li class="traveler-tags__item">#ЗОЖ</li>
                 <li class="traveler-tags__item">#ПП</li>
@@ -267,30 +271,20 @@
       <section class="signup-block">
         <div class="information information--center">
           <h2 class="information__title">Заинтересовались?</h2>
-          <p class="information__description">Зарегистрируйтесь, это быстро и бесплатно!</p>
-          <p class="information__description">Уже зарегистрированы? Тогда скорее <a href="signin.html">авторизуйтесь</a>.</p>
+          <p class="information__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="signin.html">авторизуйтесь</a>.</p>
           <form class="signup" action="http://echo.htmlacademy.ru" method="post">
             <input class="signup__input" type="email" name="email" id="email" placeholder="E-mail">
             <button class="signup__button" type="submit"></button>
           </form>
-          <p class="information__description">Остались вопросы?</p>
-          <p class="information__description">Мы с радостью на них ответим!</p>
+          <p class="information__description">Остались вопросы? Мы с радостью на них ответим!</p>
         </div>
-        <div class="contact-item">
-          <div class="contact-item__icon">
-            <img src="https://via.placeholder.com/18x18" alt="Телефон">
-          </div>
-          <div class="contact-item__value-box">
-            <a href="tel:88005558628" class="contact-item__value contact-item__value--yellow">8 800 555-86-28</a>
-          </div>
+        <div class="contacts">
+          <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="Телефон">
+          <a class="contacts__phone" href="tel:88005558628" class="contact-item__value contact-item__value--yellow">8 800 555-86-28</a>
         </div>
-        <div class="contact-item">
-          <div class="contact-item__icon">
-            <img src="https://via.placeholder.com/18x18" alt="E-mail">
-          </div>
-          <div class="contact-item__value-box">
-            <a href="mailto:mail@htmlacademy.ru" class="contact-item__value contact-item__value-yellow">mail@htmlacademy.ru</a>
-          </div>
+        <div class="contacts">
+          <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="E-mail">
+          <a class="contacts__site" href="mailto:mail@htmlacademy.ru" class="contact-item__value contact-item__value-yellow">mail@htmlacademy.ru</a>
         </div>
       </section>
       <section class="address">
@@ -303,7 +297,7 @@
             <p class="contact-item__value">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
-        <button type="button" class="button-show-more button-show-more--route">Проложить маршрут</button>
+        <a type="button" class="button-show-more button-show-more--route">Проложить маршрут</a>
       </section>
       <section class="map">
         <h2 class="visually-hidden">карта</h2>
@@ -311,20 +305,18 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-top-wrapper">
-        <a class="logo">
-          <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
-        </a>
-        <div class="social page-footer__social">
-          <div class="social__item">
-              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Фейсбук" class="social__image">
-          </div>
-          <div class="social__item">
-              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница во Вконтакте" class="social__image">
-          </div>
-          <div class="social__item">
-              <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Инстаграм" class="social__image">
-          </div>
+      <a class="logo">
+        <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
+      </a>
+      <div class="social page-footer__social">
+        <div class="social__item">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Фейсбук" class="social__image">
+        </div>
+        <div class="social__item">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница во Вконтакте" class="social__image">
+        </div>
+        <div class="social__item">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Инстаграм" class="social__image">
         </div>
       </div>
       <div class="site-producer">
