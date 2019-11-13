@@ -6,215 +6,187 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-top-wrapper">
-        <a class="logo page-header__logo">
-          <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
-        </a>
-          <nav class="main-nav">
-          <button type="button" class="main-nav__button nav-button" aria-label="Показать главное меню сайта"></button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">о сервисе</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">направления</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">попутчики</a>
-              </li>
-            </ul>
-          <a href="login.html" class="main-nav__login">Авторизация</a>
-          <div class="contacts">
+      <a class="logo page-header__logo">
+        <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
+      </a>
+        <nav class="main-nav">
+        <button type="button" class="main-nav__button nav-button" aria-label="Показать главное меню сайта"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">о сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">попутчики</a>
+            </li>
+          </ul>
+        <a href="login.html" class="main-nav__login">Авторизация</a>
+        <div class="contacts">
+          <div class="contacts-item">
             <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="Телефон">
-            <a class="contacts__phone" href="tel:88005558628" class="contact-item__value">8 800 555-86-28</a>
+            <a class="contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
           </div>
-          <div class="contacts">
+          <div class="contacts__item">
             <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="E-mail">
-            <a class="contacts__phone" href="mailto:mail@htmlacademy.ru" class="contact-item__value">mail@htmlacademy.ru</a>
+            <a class="contacts__phone" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <main class="page-main">
       <h1 class="main-heading">Попутчики</h1>
       <section class="country-filter">
         <div class="country-filter__heading-wrapper">
-          <img src="https://via.placeholder.com/15x10" width="15" height="10" alt="Иконка меню фильтрации по странам">
+          <button class="country-filter__open-btn" type="button">
+            <img src="https://via.placeholder.com/15x10" width="15" height="10" alt="Иконка меню фильтрации по странам">
+          </button>
           <h2>фильтрация по странам</h2>
-          <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка закрытия фильтрации по странам">
+          <button class="country-filter__close-btn" type="button">
+            <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка закрытия фильтрации по странам">
+          </button>
         </div>
-        <div class="country-body-wrapper">
-          <div class="country-filter__continent-box">
-            <ul class="country-filter__continent-list">
-              <li class="country-filter__continent-item">
-                <a href="#" class="country-filter__continent-link country-filter__continent-link--active">европа</a>
-              </li>
-              <li class="country-filter__continent-item">
-                <a href="#" class="country-filter__continent-link">азия</a>
-              </li>
-              <li class="country-filter__continent-item">
-                <a href="#" class="country-filter__continent-link">америка</a>
-              </li>
-              <li class="country-filter__continent-item">
-                <a href="#" class="country-filter__continent-link">острова</a>
-              </li>
-            </ul>
-          </div>
-          <form class="country-filter__form" action="http://echo.htmlacademy.ru">
-            <ul class="country-filter__country-alphabet-list">
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-1">
-                <label for="letter-1" class="country-filter__label">А</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-2">
-                <label for="letter-2" class="country-filter__label">Б</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-3">
-                <label for="letter-3" class="country-filter__label">В</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-4">
-                <label for="letter-4" class="country-filter__label">Г</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-5">
-                <label for="letter-5" class="country-filter__label">Д</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-6">
-                <label for="letter-6" class="country-filter__label">Е</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-7">
-                <label for="letter-7" class="country-filter__label">Ё</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-8">
-                <label for="letter-8" class="country-filter__label">Ж</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-9">
-                <label for="letter-9" class="country-filter__label">З</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-10">
-                <label for="letter-10" class="country-filter__label">И</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-11">
-                <label for="letter-11" class="country-filter__label">Й</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-12">
-                <label for="letter-12" class="country-filter__label">К</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-13">
-                <label for="letter-13" class="country-filter__label">Л</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-14">
-                <label for="letter-14" class="country-filter__label">М</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-15">
-                <label for="letter-15" class="country-filter__label">Н</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-16">
-                <label for="letter-16" class="country-filter__label">О</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-17">
-                <label for="letter-17" class="country-filter__label">П</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-18">
-                <label for="letter-18" class="country-filter__label">Р</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-19">
-                <label for="letter-19" class="country-filter__label">С</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-20">
-                <label for="letter-20" class="country-filter__label">Т</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-21">
-                <label for="letter-21" class="country-filter__label">У</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-22">
-                <label for="letter-22" class="country-filter__label">Ф</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-23">
-                <label for="letter-23" class="country-filter__label">Х</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-24">
-                <label for="letter-24" class="country-filter__label">Ц</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-25">
-                <label for="letter-25" class="country-filter__label">Ч</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-26">
-                <label for="letter-26" class="country-filter__label">Ш</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-27">
-                <label for="letter-27" class="country-filter__label">Щ</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-28">
-                <label for="letter-28" class="country-filter__label">Э</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-29">
-                <label for="letter-29" class="country-filter__label">Ю</label>
-              </li>
-              <li class="country-filter__country-alphabet-item visually-hidden">
-                <input class="country-filter__radio" type="radio" name="alphabet" id="letter-30">
-                <label for="letter-30" class="country-filter__label">Я</label>
-              </li>
-            </ul>
-          </form>
-          <div class="country-filter__country-box">
-            <ul class="country-filter__country-list">
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Афганистан</a>
-              </li>
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Албания</a>
-              </li>
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Алжир</a>
-              </li>
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Андорра</a>
-              </li>
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Аргентина</a>
-              </li>
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Армения</a>
-              </li>
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Австралия</a>
-              </li>
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Австрия</a>
-              </li>
-              <li class="country-filter__country-item">
-                <a href="#" class="country-filter__country-link">Азербайджан</a>
-              </li>
-            </ul>
-          </div>
+        <div class="country-filter__continent-box">
+          <ul class="country-filter__continent-list">
+            <li class="country-filter__continent-item">
+              <a href="#" class="country-filter__continent-link country-filter__continent-link--active">европа</a>
+            </li>
+            <li class="country-filter__continent-item">
+              <a href="#" class="country-filter__continent-link">азия</a>
+            </li>
+            <li class="country-filter__continent-item">
+              <a href="#" class="country-filter__continent-link">америка</a>
+            </li>
+            <li class="country-filter__continent-item">
+              <a href="#" class="country-filter__continent-link">острова</a>
+            </li>
+          </ul>
+        </div>
+        <form class="country-filter__form" action="http://echo.htmlacademy.ru">
+          <ul class="country-filter__country-alphabet-list">
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">А</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Б</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">В</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Г</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Д</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Е</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Ё</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Ж</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">З</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Ж</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">З</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">И</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Й</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">К</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Л</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">М</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Н</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">О</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">П</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Р</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">С</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Т</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">У</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Ф</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Х</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Ч</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Ш</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Э</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Ю</button>
+            </li>
+            <li class="country-filter__item">
+              <button class="country-filter__letter" type="button">Я</button>
+            </li>
+          </ul>
+        </form>
+        <div class="country-filter__country-box">
+          <ul class="country-filter__country-list">
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Афганистан</a>
+            </li>
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Албания</a>
+            </li>
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Алжир</a>
+            </li>
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Андорра</a>
+            </li>
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Аргентина</a>
+            </li>
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Армения</a>
+            </li>
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Австралия</a>
+            </li>
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Австрия</a>
+            </li>
+            <li class="country-filter__country-item">
+              <a href="#" class="country-filter__country-link">Азербайджан</a>
+            </li>
+          </ul>
         </div>
         <button class="country-filter__button button-hide" type="button">
           <img class="button-hide__icon" src="https://via.placeholder.com/12x12" alt="Иконка кнопки Свернуть">
@@ -226,26 +198,54 @@
         <form action="http://echo.htmlacademy.ru" class="companion-select__form">
           <fieldset class="companion-select__field">
             <legend class="companion-select__legend">Хобби</legend>
+            <ul class="companion-select__list">
+              <li class="companion-select__item">
+                <input type="checkbox" name="hobby" value="gym" id="gym" checked>
+                <label for="hardrock">Спортзал</label>
+              </li>
+              <li class="companion-select__item">
+                <input type="checkbox" name="hobby" value="kalian" id="kalian">
+                <label for="russian-rap">Кальян</label>
+              </li>
+              <li class="companion-select__item">
+                <input type="checkbox" name="hobby" value="sofa" id="sofa">
+                <label for="eurodance">Диван</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="companion-select__field">
             <legend class="companion-select__legend">Музыка</legend>
             <ul class="companion-select__list">
               <li class="companion-select__item">
-                <input type="checkbox" name="hardrock" id="hardrock" checked>
+                <input type="checkbox" name="music" value="hardrock" id="hardrock" checked>
                 <label for="hardrock">Тяжёлый рок</label>
               </li>
               <li class="companion-select__item">
-                <input type="checkbox" name="russian-rap" id="russian-rap">
+                <input type="checkbox" name="music" value="russian-rap" id="russian-rap">
                 <label for="russian-rap">Русский рэп</label>
               </li>
               <li class="companion-select__item">
-                <input type="checkbox" name="eurodance" id="eurodance">
+                <input type="checkbox" name="music" value="eurodance" id="eurodance">
                 <label for="eurodance">Евроденс</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="companion-select__field">
             <legend class="companion-select__legend">Еда</legend>
+            <ul class="companion-select__list">
+              <li class="companion-select__item">
+                <input type="checkbox" name="food" value="meat-eater" id="meat-eater" checked>
+                <label for="hardrock">Мясоед</label>
+              </li>
+              <li class="companion-select__item">
+                <input type="checkbox" name="food" value="pp" id="pp">
+                <label for="russian-rap">Сидит на ПП</label>
+              </li>
+              <li class="companion-select__item">
+                <input type="checkbox" name="food" value="cheese-eater" id="cheese-eater">
+                <label for="eurodance">Веган-сыроед</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="companion-select__field">
             <legend class="companion-select__legend">Транспорт</legend>
@@ -552,17 +552,17 @@
       <a class="logo">
         <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
       </a>
-      <div class="social page-footer__social">
-        <div class="social__item">
-            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Фейсбук" class="social__image">
-        </div>
-        <div class="social__item">
-            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница во Вконтакте" class="social__image">
-        </div>
-        <div class="social__item">
-            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Инстаграм" class="social__image">
-        </div>
-      </div>
+      <ul class="social page-footer__social">
+        <li class="social__item">
+            <a class="social__link"><img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Фейсбук" class="social__image"></a>
+        </li>
+        <li class="social__item">
+            <a class="social__link"><img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница во Вконтакте" class="social__image"></a>
+        </li>
+        <li class="social__item">
+            <a class="social__link"><img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Инстаграм" class="social__image"></a>
+        </li>
+      </ul>
       <div class="site-producer">
         <div class="site-producer__info">Разработано</div>
         <div class="site-producer__logo">
