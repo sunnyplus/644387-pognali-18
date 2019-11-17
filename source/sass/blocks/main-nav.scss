@@ -1,0 +1,26 @@
+.main-nav{
+  font-family: $font;
+}
+.main-nav__list{
+  list-style: none;
+}
+
+.main-nav__link{
+  color: #192144;
+  font-family: "Blogger Sans";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.main-nav__login{
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-nav__wrapper{
+  display: none;
+}
+

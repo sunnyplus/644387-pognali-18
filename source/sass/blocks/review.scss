@@ -1,0 +1,25 @@
+.review{
+  font-family: $font;
+  background-color: $dark-bg;
+  min-height: 285px;
+}
+.review__text{
+  color: $white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.review__author-name{
+  color: $white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.review__author-profession{
+  color: $white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}

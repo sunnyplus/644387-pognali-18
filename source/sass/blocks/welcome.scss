@@ -1,0 +1,33 @@
+.welcome{
+
+}
+.welcome__slogan{
+  color: #ffffff;
+  font-family: "Blogger Sans";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.welcome__login{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+}
+
+.welcome__wrapper{
+  display: flex;
+}
+
+.welcome__call{
+  @include flex-center();
+  @include size(40px,40px);
+  background-color: #ff8d30;
+  border-radius: 50%;
+}
+
+.welcome__email{
+  @include flex-center();
+  @include size(40px,40px);
+  background-color: #ffbd30;
+  border-radius: 50%;
+}

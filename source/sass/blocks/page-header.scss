@@ -1,0 +1,10 @@
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  padding: 25px;
+  box-sizing: border-box;
+  min-height: 568px;
+  background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 50% 100%,
+              url("../img/globe-back-mobile@1x.jpg") no-repeat;
+}
