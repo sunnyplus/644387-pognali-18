@@ -3,40 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="logo page-header__logo">
-        <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
-      </a>
+        <a class="page-header__logo logo">
+          <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+        </a>
         <nav class="main-nav">
-        <button type="button" class="main-nav__button nav-button" aria-label="Показать главное меню сайта"></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">о сервисе</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">направления</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">попутчики</a>
-            </li>
-          </ul>
-        <a href="login.html" class="main-nav__login">Авторизация</a>
-        <div class="contacts">
-          <div class="contacts__item">
-            <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="Телефон">
-            <a class="contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
+          <button type="button" class="main-nav__button nav-button" aria-label="Показать главное меню сайта">
+            <img src="img/menu.svg" width="25" height="11" alt="Показать главное меню сайта">
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">о сервисе</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">направления</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">попутчики</a>
+              </li>
+            </ul>
+            <a href="login.html" class="main-nav__login button">Авторизация</a>
+            <div class="contacts">
+              <div class="contacts__item">
+                <div class="contacts__icon-wrapper">
+                  <img class="contacts__icon" src="img/contacts-phone.svg" width="18" height="13" alt="Телефон">
+                </div>
+                <a class="contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
+              </div>
+              <div class="contacts__item">
+                <div class="contacts__icon-wrapper">
+                  <img class="contacts__icon" src="img/contacts-mail.svg" width="18" height="13" alt="E-mail">
+                </div>
+                <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>
+            </div>
           </div>
-          <div class="contacts__item">
-            <img class="contacts__icon" src="https://via.placeholder.com/18x18" alt="E-mail">
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+
+        </nav>
+      </header>
     <main class="page-main">
-      <h1 class="main-heading">Попутчики</h1>
+      <h1 class="page-main__heading main-heading">Попутчики</h1>
       <section class="country-filter">
         <div class="country-filter__heading-wrapper">
           <button class="country-filter__open-btn" type="button">
@@ -292,7 +302,7 @@
             <div class="traveler__info">
               <div class="traveler__top-wrapper">
                 <div class="traveler__image-wrapper">
-                  <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова" class="traveler__image">
+                  <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова" class="traveler__image">
                 </div>
                 <div class="traveler__data">
                   <p class="traveler__name">Таня Фирсова</p>
@@ -311,36 +321,36 @@
             </div>
             <div class="traveler__directions">
               <p class="traveler__wish-country">хочет посетить:</p>
-              <ul class="traveler-directions">
+              <ul class="traveler-directions traveler-directions--catalog">
                 <li class="traveler-directions__item">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
+                  <img src="img/sri-lanka_flag.png" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
                   <p class="traveler-directions__title">шри-ланка</p>
                 </li>
                 <li class="traveler-directions__item">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
+                  <img src="img/thailand_flag.png" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
                   <p class="traveler-directions__title">таиланд</p>
                 </li>
                 <li class="traveler-directions__item">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
+                  <img src="img/seychelles_flag.png" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
                   <p class="traveler-directions__title">сейшелы</p>
                 </li>
               </ul>
             </div>
-            <div class="traveler-bottom-wrapper">
+            <div class="traveler__bottom-wrapper">
               <div class="traveler__transport-wish">
                 <p class="traveler__wish-transport">транспорт:</p>
                 <ul class="traveler-transport">
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
+                  <li class="traveler-transport__item">
+                    <img src="img/plane.svg" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                    <img src="img/bus.svg" width="19" height="21" alt="Автобус" class="traveler-transport__image">
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                    <img src="img/bike.svg" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                    <img src="img/run.svg" width="19" height="21" alt="Бег" class="traveler-transport__image">
                   </li>
                 </ul>
               </div>
@@ -351,13 +361,13 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="traveler__button">позвать!</button>
+            <button type="button" class="traveler__button button">позвать!</button>
           </li>
           <li class="traveler travelers__item">
             <div class="traveler__info">
               <div class="traveler__top-wrapper">
                 <div class="traveler__image-wrapper">
-                  <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин" class="traveler__image">
+                  <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Петя Демин" class="traveler__image">
                 </div>
                 <div class="traveler__data">
                   <p class="traveler__name">Петя Демин</p>
@@ -375,32 +385,32 @@
             </div>
             <div class="traveler__directions">
               <p class="traveler__wish-country">хочет посетить:</p>
-              <ul class="traveler-directions">
+              <ul class="traveler-directions traveler-directions--catalog">
                 <li class="traveler-directions__item">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="бельгия" class="traveler-directions__image">
+                  <img src="img/belgium_flag.png" width="35" height="24" alt="бельгия" class="traveler-directions__image">
                   <p class="traveler-directions__title">бельгия</p>
                 </li>
                 <li class="traveler-directions__item">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="чехия" class="traveler-directions__image">
+                  <img src="img/сzech_flag.png" width="35" height="24" alt="чехия" class="traveler-directions__image">
                   <p class="traveler-directions__title">чехия</p>
                 </li>
               </ul>
             </div>
-            <div class="traveler-bottom-wrapper">
+            <div class="traveler__bottom-wrapper">
               <div class="traveler__transport-wish">
                 <p class="traveler__wish-transport">транспорт:</p>
                 <ul class="traveler-transport">
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
-                  </li>
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                  <li class="traveler-transport__item">
+                    <img src="img/plane.svg" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                    <img src="img/bus.svg" width="19" height="21" alt="Автобус" class="traveler-transport__image">
                   </li>
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                  <li class="traveler-transport__item">
+                    <img src="img/bike.svg" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="img/run.svg" width="19" height="21" alt="Бег" class="traveler-transport__image">
                   </li>
                 </ul>
               </div>
@@ -411,13 +421,13 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="traveler__button">позвать!</button>
+            <button type="button" class="traveler__button button">позвать!</button>
           </li>
           <li class="traveler travelers__item">
             <div class="traveler__info">
               <div class="traveler__top-wrapper">
                 <div class="traveler__image-wrapper">
-                  <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов" class="traveler__image">
+                  <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Марк Смолов" class="traveler__image">
                 </div>
                 <div class="traveler__data">
                   <p class="traveler__name">Марк Смолов</p>
@@ -435,7 +445,7 @@
             </div>
             <div class="traveler__directions">
               <p class="traveler__wish-country">хочет посетить:</p>
-              <ul class="traveler-directions">
+              <ul class="traveler-directions traveler-directions--catalog">
                 <li class="traveler-directions__item">
                   <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="сша" class="traveler-directions__image">
                   <p class="traveler-directions__title">сша</p>
@@ -450,21 +460,21 @@
                 </li>
               </ul>
             </div>
-            <div class="traveler-bottom-wrapper">
+            <div class="traveler__bottom-wrapper">
               <div class="traveler__transport-wish">
                 <p class="traveler__wish-transport">транспорт:</p>
                 <ul class="traveler-transport">
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
+                  <li class="traveler-transport__item">
+                    <img src="img/plane.svg" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
-                  </li>
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                    <img src="img/bus.svg" width="19" height="21" alt="Автобус" class="traveler-transport__image">
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                    <img src="img/bike.svg" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="img/run.svg" width="19" height="21" alt="Бег" class="traveler-transport__image">
                   </li>
                 </ul>
               </div>
@@ -475,13 +485,13 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="traveler__button">позвать!</button>
+            <button type="button" class="traveler__button button">позвать!</button>
           </li>
           <li class="traveler travelers__item">
             <div class="traveler__info">
               <div class="traveler__top-wrapper">
                 <div class="traveler__image-wrapper">
-                  <img src="https://via.placeholder.com/70x70" width="70" height="70" alt="Лариса Роговая" class="traveler__image">
+                  <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Лариса Роговая" class="traveler__image">
                 </div>
                 <div class="traveler__data">
                   <p class="traveler__name">Лариса Роговая</p>
@@ -498,7 +508,7 @@
             </div>
             <div class="traveler__directions">
               <p class="traveler__wish-country">хочет посетить:</p>
-              <ul class="traveler-directions">
+              <ul class="traveler-directions traveler-directions--catalog">
                 <li class="traveler-directions__item">
                   <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="великобритания" class="traveler-directions__image">
                   <p class="traveler-directions__title">великобритания</p>
@@ -509,21 +519,21 @@
                 </li>
               </ul>
             </div>
-            <div class="traveler-bottom-wrapper">
+            <div class="traveler__bottom-wrapper">
               <div class="traveler__transport-wish">
                 <p class="traveler__wish-transport">транспорт:</p>
                 <ul class="traveler-transport">
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
-                  </li>
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                  <li class="traveler-transport__item">
+                    <img src="img/plane.svg" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                    <img src="img/bus.svg" width="19" height="21" alt="Автобус" class="traveler-transport__image">
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="https://via.placeholder.com/19x21" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                    <img src="img/bike.svg" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
+                  </li>
+                  <li class="traveler-transport__item">
+                    <img src="img/run.svg" width="19" height="21" alt="Бег" class="traveler-transport__image">
                   </li>
                 </ul>
               </div>
@@ -534,40 +544,41 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="traveler__button">позвать!</button>
+            <button type="button" class="traveler__button button">позвать!</button>
           </li>
         </ul>
-        <button type="button" class="travelers-catalog__show-more">Показать ещё</button>
+        <button type="button" class="travelers-catalog__show-more">
+          <img class="travelers-catalog__show-more-image" src="img/qty-plus-mobile.svg" width="18" height="18" alt="Иконка кнопки Показать ещё">
+          <span class="travelers-catalog__show-more-title">Показать ещё</span>
+        </button>
         <div class="travelers-catalog__bottom-wrapper">
           <button type="button" class="travelers-catalog__prev">
-            <img src="https://via.placeholder.com/10x20" alt="Иконка назад" class="travelers-catalog__prev-icon">
+            <img src="img/dropdown.svg" width="10" height="20" alt="Иконка назад" class="travelers-catalog__prev-icon">
           </button>
           <button type="button" class="travelers-catalog__next">
-            <img src="https://via.placeholder.com/10x20" alt="Иконка вперёд" class="travelers-catalog__next-icon">
+            <img src="img/dropdown.svg" width="10" height="20" alt="Иконка вперёд" class="travelers-catalog__next-icon">
           </button>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <a class="logo">
-        <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?" class="logo__image">
+        <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?" class="logo__image">
       </a>
-      <ul class="social page-footer__social">
+      <ul class="page-footer__social social">
         <li class="social__item">
-            <a class="social__link"><img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Фейсбук" class="social__image"></a>
+            <a class="social__link"><img src="img/facebook.svg" width="11" height="21" alt="Страница в Фейсбук" class="social__image"></a>
         </li>
         <li class="social__item">
-            <a class="social__link"><img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница во Вконтакте" class="social__image"></a>
+            <a class="social__link"><img src="img/vk.svg" width="23" height="12" alt="Страница во Вконтакте" class="social__image"></a>
         </li>
         <li class="social__item">
-            <a class="social__link"><img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Страница в Инстаграм" class="social__image"></a>
+            <a class="social__link"><img src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
         </li>
       </ul>
       <div class="site-producer">
-        <div class="site-producer__info">Разработано</div>
-        <div class="site-producer__logo">
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип разработчика сайта" class="site-producer__image">
-        </div>
+        <p class="site-producer__info">Разработано</p>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика сайта" class="site-producer__image">
       </div>
     </footer>
   </body>

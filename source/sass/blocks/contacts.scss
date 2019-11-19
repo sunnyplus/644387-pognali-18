@@ -15,6 +15,9 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+  &--yellow{
+    color: #ffd74b;
+  }
 }
 
 .contacts__phone{
@@ -22,4 +25,16 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+  &--yellow{
+    color: #ffd74b;
+  }
+}
+
+.contacts__address{
+  width: 143px;
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
 }

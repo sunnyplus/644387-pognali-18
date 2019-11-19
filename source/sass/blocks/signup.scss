@@ -1,0 +1,20 @@
+.signup{
+  font-family: $font;
+  display: flex;
+}
+
+.signup__input{
+  width: 240px;
+  padding: 22px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  &::placeholder{
+    opacity: 0.3;
+  }
+}
+
+.signup__button{
+  margin-left: -60px;
+}

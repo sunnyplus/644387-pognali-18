@@ -1,5 +1,10 @@
 .welcome{
-
+  background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 50% 100%,
+              url("../img/globe-back-mobile@1x.jpg") no-repeat;
+  min-height: 420px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .welcome__slogan{
   color: #ffffff;

@@ -1,0 +1,88 @@
+.traveler{
+  background-color: $white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.traveler__name{
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.traveler__image{
+  @include size(70px,70px);
+  border-radius:50%;
+}
+
+.traveler__top-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.traveler__likes{
+  color: #161c35;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.traveler__wish-country{
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.traveler__wish-transport{
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.traveler__level-title{
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.traveler__bottom-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.traveler__button{
+  border-radius: 20px;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.traveler__level-box{
+  @include size(45px,45px);
+  background:url("../img/status_bar.png") no-repeat;
+  background-size: contain;
+  @include flex-center();
+}
+
+.traveler__level-counter{
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.traveler-transport__item{
+  @include size(33px,32px);
+  border-radius:50%;
+  background-color: #edeff6;
+  @include flex-center();
+}
+
+.traveler-transport__image{
+  opacity: 0.15;
+}

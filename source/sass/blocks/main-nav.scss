@@ -2,16 +2,16 @@
   font-family: $font;
 }
 .main-nav__list{
-  list-style: none;
+  @include list-reset();
 }
 
 .main-nav__link{
   color: #192144;
-  font-family: "Blogger Sans";
   font-size: 30px;
   font-weight: 500;
   line-height: 36px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .main-nav__login{
@@ -21,6 +21,7 @@
 }
 
 .main-nav__wrapper{
+  position: absolute;
   display: none;
 }
 

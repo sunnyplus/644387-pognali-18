@@ -1,0 +1,21 @@
+.traveler-directions{
+  @include list-reset();
+  display: flex;
+  &--catalog{
+    flex-direction: column;
+  }
+}
+
+.traveler-directions__title{
+  color: #1d2e5b;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.traveler-directions__item{
+  display: flex;
+  align-items: center;
+}

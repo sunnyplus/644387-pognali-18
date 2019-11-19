@@ -1,0 +1,27 @@
+.level-block{
+  font-family: $font;
+  color: $white;
+  @include flex-center();
+  flex-direction: column;
+  @include size(60px,60px);
+  background:url("../img/status_bar.png") no-repeat;
+}
+
+.level-block__counter{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.level-block__title{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.level-block__line{
+  width: 31px;
+  height: 1px;
+  background-color: $white;
+  opacity: 0.3;
+}

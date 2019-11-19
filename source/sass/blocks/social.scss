@@ -1,0 +1,10 @@
+.social{
+  display: flex;
+}
+
+.social__item{
+  @include size(45px,45px);
+  @include flex-center();
+  background-color: $yellow;
+  border-radius:50%;
+}
