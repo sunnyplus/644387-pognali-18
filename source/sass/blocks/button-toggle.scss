@@ -1,4 +1,4 @@
-.button-hide {
+.button-toggle {
   @include flex-center();
   font-family: $font;
   width: 100%;
@@ -7,9 +7,13 @@
   background-color: #d6daed;
   padding-top: 5px;
   padding-bottom: 5px;
+
+  &--show {
+    background-color: $white;
+  }
 }
 
-.button-hide__title {
+.button-toggle__title {
   color: #161c35;
   font-size: 17px;
   font-weight: 700;

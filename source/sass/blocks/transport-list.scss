@@ -1,0 +1,16 @@
+.transport-list {
+  @include list-reset();
+  font-family: $font;
+  display: flex;
+}
+
+.transport-list__label {
+  @include flex-center();
+  @include size(33px,33px);
+  background-color: $white;
+  border-radius: 50%;
+}
+
+.transport-list__icon {
+  opacity: 0.15;
+}
