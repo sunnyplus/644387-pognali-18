@@ -1,4 +1,4 @@
-.tarifs{
+.tarifs {
   font-family: $font;
   width: 320px;
   min-height: 400px;
@@ -6,19 +6,20 @@
   background-color: #edeff6;
   padding-right: 26px;
   padding-left: 50px;
-  &--business{
+
+  &--business {
     background-color: $white;
   }
 }
 
-.tarifs__title{
+.tarifs__title {
   color: #ff8d30;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.tarifs__name{
+.tarifs__name {
   display: block;
   color: #444444;
   font-size: 16px;
@@ -26,7 +27,7 @@
   line-height: 22px;
 }
 
-.tarifs__price{
+.tarifs__price {
   display: block;
   color: #444444;
   font-size: 16px;
@@ -35,30 +36,31 @@
   margin: 0;
 }
 
-.tarifs__header{
+.tarifs__header {
   @include flex-center();
 }
 
-.tarifs__list{
+.tarifs__list {
   @include list-reset();
   counter-reset: tarifs-counter;
 }
 
-.tarifs__item{
+.tarifs__item {
   display: flex;
   justify-content: space-between;
-  &::after{
+
+  &::after {
     @include flex-center();
-    counter-increment: tarifs-counter;
-    content:counter(tarifs-counter);
     @include size(34px,34px);
+    counter-increment: tarifs-counter;
+    content: counter(tarifs-counter);
     background-color: #ffa530;
     color: $white;
     border-radius: 50%;
   }
 }
 
-.tarifs__show-business{
+.tarifs__show-business {
   color: #192144;
   font-size: 16px;
   font-weight: 700;
@@ -66,7 +68,7 @@
   text-decoration: none;
 }
 
-.tarifs__close-business{
+.tarifs__close-business {
   width: 100%;
   background-color: #f3f4f8;
   color: #1d2e5b;
@@ -75,6 +77,6 @@
   line-height: 24px;
   text-transform: uppercase;
   padding: 18px 0;
-  border:none;
+  border: none;
   cursor: pointer;
 }

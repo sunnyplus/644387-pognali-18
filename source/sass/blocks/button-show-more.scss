@@ -1,4 +1,4 @@
-.button-show-more{
+.button-show-more {
   font-family: $font;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,8 @@
   font-weight: 700;
   line-height: 18px;
   text-decoration: none;
-  &--route{
+
+  &--route {
     border-radius: 10px;
     border: 3px solid #192144;
   }

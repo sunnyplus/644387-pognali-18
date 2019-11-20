@@ -1,40 +1,44 @@
-.information{
+.information {
   font-family: $font;
   min-height: 352px;
   border-radius: 0 0 30px 30px;
   padding: 25px;
-  &--service{
-    background:url("../img/about-mobile@1x.png") no-repeat;
+
+  &--service {
+    background: url("../img/about-mobile@1x.png") no-repeat;
     background-color: #192144;
   }
-  &--companions{
+
+  &--companions {
     background: url("../img/blue_back.png") no-repeat 10% 5%,
-                url("../img/smolov-back-desktop@1x.png") no-repeat 50% 5%;
+      url("../img/smolov-back-desktop@1x.png") no-repeat 50% 5%;
     background-color: #192144;
   }
-  &--center{
+
+  &--center {
     text-align: center;
   }
 }
 
-.information__title{
+.information__title {
   color: #ff8d30;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.information__description{
+.information__description {
   color: $white;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
-  &--notice{
+
+  &--notice {
     font-weight: 700;
   }
 }
 
-.information__link{
+.information__link {
   color: #ffd74b;
   text-decoration: underline;
 }

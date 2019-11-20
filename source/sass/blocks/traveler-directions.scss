@@ -1,12 +1,13 @@
-.traveler-directions{
+.traveler-directions {
   @include list-reset();
   display: flex;
-  &--catalog{
+
+  &--catalog {
     flex-direction: column;
   }
 }
 
-.traveler-directions__title{
+.traveler-directions__title {
   color: #1d2e5b;
   font-size: 15px;
   font-weight: 500;
@@ -15,7 +16,7 @@
   margin: 0;
 }
 
-.traveler-directions__item{
+.traveler-directions__item {
   display: flex;
   align-items: center;
 }

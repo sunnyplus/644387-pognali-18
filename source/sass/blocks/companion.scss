@@ -1,20 +1,17 @@
-.companion{
+.companion {
   font-family: $font;
   background-color: $white;
   width: 270px;
   min-height: 270px;
 }
-.companion__name{
+
+.companion__name {
   color: #1d2e5b;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
 }
 
-.companion__data{
+.companion__data {
   display: flex;
-}
-
-.companion__description{
-  // background-color: $white;
 }

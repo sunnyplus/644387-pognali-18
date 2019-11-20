@@ -1,36 +1,37 @@
-.welcome{
+.welcome {
   background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 50% 100%,
-              url("../img/globe-back-mobile@1x.jpg") no-repeat;
+    url("../img/globe-back-mobile@1x.jpg") no-repeat;
   min-height: 420px;
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
 }
-.welcome__slogan{
+
+.welcome__slogan {
   color: #ffffff;
-  font-family: "Blogger Sans";
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
 }
-.welcome__login{
+
+.welcome__login {
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 20px;
 }
 
-.welcome__wrapper{
+.welcome__wrapper {
   display: flex;
 }
 
-.welcome__call{
+.welcome__call {
   @include flex-center();
   @include size(40px,40px);
   background-color: #ff8d30;
   border-radius: 50%;
 }
 
-.welcome__email{
+.welcome__email {
   @include flex-center();
   @include size(40px,40px);
   background-color: #ffbd30;

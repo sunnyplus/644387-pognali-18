@@ -1,36 +1,38 @@
-.contacts__icon-wrapper{
+.contacts__icon-wrapper {
   @include size(45px,45px);
   @include flex-center();
   background-color: #121936;
   border-radius: 50%;
 }
 
-.contacts__item{
+.contacts__item {
   display: flex;
   align-items: center;
 }
 
-.contacts__email{
+.contacts__email {
   color: #192144;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  &--yellow{
+
+  &--yellow {
     color: #ffd74b;
   }
 }
 
-.contacts__phone{
+.contacts__phone {
   color: #192144;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  &--yellow{
+
+  &--yellow {
     color: #ffd74b;
   }
 }
 
-.contacts__address{
+.contacts__address {
   width: 143px;
   color: #192144;
   font-size: 16px;

@@ -1,16 +1,17 @@
-.directions-list{
+.directions-list {
   font-family: $font;
+
   @include list-reset();
 }
 
-.directions-list__title{
+.directions-list__title {
   color: #161c35;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
 }
 
-.directions-list__subtitle{
+.directions-list__subtitle {
   opacity: 0.3;
   color: #444444;
   font-size: 16px;
@@ -18,7 +19,7 @@
   line-height: 18px;
 }
 
-.directions-list__counter{
+.directions-list__counter {
   opacity: 0.3;
   color: #444444;
   font-size: 16px;
@@ -27,7 +28,7 @@
   text-transform: uppercase;
 }
 
-.directions-list__wrapper{
+.directions-list__wrapper {
   display: flex;
   width: 270px;
   background-color: $white;

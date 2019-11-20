@@ -1,11 +1,12 @@
-.main-nav{
+.main-nav {
   font-family: $font;
 }
-.main-nav__list{
+
+.main-nav__list {
   @include list-reset();
 }
 
-.main-nav__link{
+.main-nav__link {
   color: #192144;
   font-size: 30px;
   font-weight: 500;
@@ -14,19 +15,19 @@
   text-decoration: none;
 }
 
-.main-nav__login{
+.main-nav__login {
   border-radius: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.main-nav__wrapper{
+.main-nav__wrapper {
   background-color: $white;
   // position: absolute;
   // display: none;
 }
 
-.main-nav__button{
+.main-nav__button {
   width: 25px;
   height: 11px;
   background-color: transparent;

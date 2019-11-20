@@ -1,16 +1,16 @@
-.site-producer{
+.site-producer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.site-producer__info{
+.site-producer__info {
   color: #444444;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 }
 
-.site-producer__image{
+.site-producer__image {
   @include size(27px,34px);
 }
