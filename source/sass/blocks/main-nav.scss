@@ -21,7 +21,14 @@
 }
 
 .main-nav__wrapper{
-  position: absolute;
-  display: none;
+  background-color: $white;
+  // position: absolute;
+  // display: none;
 }
 
+.main-nav__button{
+  width: 25px;
+  height: 11px;
+  background-color: transparent;
+  border: none;
+}
