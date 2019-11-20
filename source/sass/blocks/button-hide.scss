@@ -1,0 +1,18 @@
+.button-hide {
+  @include flex-center();
+  font-family: $font;
+  width: 100%;
+  border: 0;
+  border-radius: 20px;
+  background-color: #d6daed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.button-hide__title {
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 29.45px;
+  text-transform: uppercase;
+}
