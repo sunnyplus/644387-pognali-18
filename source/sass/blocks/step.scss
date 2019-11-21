@@ -1,0 +1,32 @@
+.step {
+  font-family: $font;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.step__heading {
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.step__description {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.step__child-permission-label {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.step__submit {
+  border-radius: 20px;
+  width: 100%;
+}

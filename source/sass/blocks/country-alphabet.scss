@@ -1,12 +1,12 @@
 .country-alphabet {
   @include list-reset();
   font-family: $font;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .country-filter__country-alphabet-list {
   @include list-reset();
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .country-alphabet__letter {

@@ -1,0 +1,36 @@
+.plan-add {
+  font-family: $font;
+  background-color: #d4d9eb;
+  padding: 25px;
+  border-radius: 30px;
+}
+
+.plan-add__title {
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.plan-add__indicators {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-add__indicator {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+  opacity: 0.3;
+
+  &--current {
+    opacity: 1;
+  }
+}
+
+.plan-add__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

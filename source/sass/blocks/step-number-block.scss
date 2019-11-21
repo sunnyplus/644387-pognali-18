@@ -1,0 +1,42 @@
+.step-number-block__label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-number-block__span {
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+
+  &--grey {
+    opacity: 0.3;
+  }
+}
+
+.step-number-block__bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+}
+
+.step-number-block__button {
+  @include size(43px,43px);
+  @include flex-center();
+  background-color: $white;
+  border: none;
+}
+
+.step-number-block__input {
+  color: #1d2e5b;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 13.37px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  text-align: center;
+}
