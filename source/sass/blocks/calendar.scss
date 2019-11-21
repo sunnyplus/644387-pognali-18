@@ -17,9 +17,6 @@
 .calendar__button {
   background-color: $white;
   border: none;
-}
-
-.calendar__button {
   opacity: 0.3;
 }
 
@@ -31,20 +28,20 @@
 }
 
 .calendar__day {
-color: #444444;
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-text-transform: uppercase;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
 
-&--weekend {
-  color: #ff5c23;
+  &--weekend {
+    color: #ff5c23;
   }
 }
 
 .calendar__item {
   @include size(31px,30px);
-  border: 1px solid rgba(#444444,0.3);
+  border: 1px solid rgba(#444444, 0.3);
 }
 
 .calendar__label {
