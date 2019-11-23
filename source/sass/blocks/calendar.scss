@@ -40,7 +40,8 @@
 }
 
 .calendar__item {
-  @include size(31px,30px);
+  width: 31px;
+  height: 30px;
   border: 1px solid rgba(#444444, 0.3);
 }
 

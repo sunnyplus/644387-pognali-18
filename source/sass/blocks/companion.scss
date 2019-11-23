@@ -15,3 +15,52 @@
 .companion__data {
   display: flex;
 }
+
+.companion__level-block {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.companion__counter {
+  color: $white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.companion__line {
+  width: 31px;
+  height: 1px;
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.companion__title {
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.companion__photo-wrapper {
+  position: relative;
+}
+
+.companion__svg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  stroke-dashoffset: 40;
+
+  &--firsova {
+    stroke-dasharray: 165 10;
+  }
+
+  &--demin {
+    stroke-dasharray: 140 35;
+  }
+}

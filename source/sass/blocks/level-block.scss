@@ -1,17 +1,33 @@
 .level-block {
+  position: relative;
+  width: 100px;
+  height: 100px;
   font-family: $font;
   color: $white;
 
-  @include size(60px,60px);
-  @include flex-center();
-  flex-direction: column;
-  background: url("../img/status_bar.png") no-repeat;
-}
+  &::before {
+    content: "80";
+    position: absolute;
+    color: #161c35;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-.level-block__counter {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
+  &::after {
+    content: "level";
+    position: absolute;
+    color: #444444;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.17px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .level-block__title {
@@ -21,8 +37,22 @@
 }
 
 .level-block__line {
-  width: 31px;
-  height: 1px;
-  background-color: $white;
-  opacity: 0.3;
+  position: absolute;
+  display: block;
+  width: 49px;
+  height: 2px;
+  background-color: #cbced9;
+  top: 50px;
+  left: 25px;
+}
+
+.level-block__svg {
+  position: relative;
+  stroke-dasharray: 287 73;
+  stroke-dashoffset: 79;
+
+  &::before {
+    @include pseudo(49px,2px);
+    background-color: #cbced9;
+  }
 }

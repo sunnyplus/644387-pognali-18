@@ -6,7 +6,8 @@
 
 .transport-list__label {
   @include flex-center();
-  @include size(33px,33px);
+  width: 33px;
+  height: 33px;
   background-color: $white;
   border-radius: 50%;
 }

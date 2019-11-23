@@ -1,4 +1,5 @@
 .welcome {
+  font-family: $font;
   background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 50% 100%,
     url("../img/globe-back-mobile@1x.jpg") no-repeat;
   min-height: 420px;
@@ -26,14 +27,16 @@
 
 .welcome__call {
   @include flex-center();
-  @include size(40px,40px);
+  width: 40px;
+  height: 40px;
   background-color: #ff8d30;
   border-radius: 50%;
 }
 
 .welcome__email {
   @include flex-center();
-  @include size(40px,40px);
+  width: 40px;
+  height: 40px;
   background-color: #ffbd30;
   border-radius: 50%;
 }

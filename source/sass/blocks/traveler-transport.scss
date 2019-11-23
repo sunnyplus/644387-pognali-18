@@ -1,5 +1,5 @@
 .traveler-transport {
-  display: flex;
-
   @include list-reset();
+  font-family: $font;
+  display: flex;
 }

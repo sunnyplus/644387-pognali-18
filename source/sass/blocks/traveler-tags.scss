@@ -1,9 +1,9 @@
 .traveler-tags {
   @include list-reset();
+  font-family: $font;
   display: flex;
   flex-wrap: wrap;
   width: 177px;
-  font-family: $font;
   color: #444444;
   font-size: 16px;
   font-weight: 400;

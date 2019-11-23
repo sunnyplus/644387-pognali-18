@@ -51,7 +51,8 @@
 
   &::after {
     @include flex-center();
-    @include size(34px,34px);
+    width: 34px;
+    height: 34px;
     counter-increment: tarifs-counter;
     content: counter(tarifs-counter);
     background-color: #ffa530;

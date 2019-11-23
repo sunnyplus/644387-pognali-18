@@ -5,12 +5,9 @@
   flex-wrap: wrap;
 }
 
-.country-filter__country-alphabet-list {
-  @include list-reset();
-}
-
 .country-alphabet__letter {
-  @include size(45px,42px);
+  width: 45px;
+  height: 42px;
   background-color: $white;
   color: #1d2e5b;
   font-size: 14px;

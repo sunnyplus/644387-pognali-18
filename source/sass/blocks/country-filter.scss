@@ -17,6 +17,10 @@
   text-transform: uppercase;
 }
 
+.country-filter__country-alphabet-list {
+  @include list-reset();
+}
+
 .country-filter__heading-wrapper {
   display: flex;
   justify-content: space-between;

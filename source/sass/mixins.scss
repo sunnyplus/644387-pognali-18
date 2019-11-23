@@ -1,8 +1,3 @@
-@mixin size($width,$height) {
-  width: $width;
-  height: $height;
-}
-
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -13,4 +8,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@mixin pseudo($width, $height, $position: absolute, $content: "") {
+  width: $width;
+  height: $height;
+  position: $position;
+  content: $content;
 }

@@ -1,4 +1,5 @@
 .traveler {
+  font-family: $font;
   background-color: $white;
   border-radius: 20px;
   padding: 20px;
@@ -12,7 +13,8 @@
 }
 
 .traveler__image {
-  @include size(70px,70px);
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 
@@ -64,8 +66,9 @@
 }
 
 .traveler__level-box {
-  @include size(45px,45px);
   @include flex-center();
+  width: 45px;
+  height: 45px;
   background: url("../img/status_bar.png") no-repeat;
   background-size: contain;
 }
@@ -78,12 +81,49 @@
 }
 
 .traveler-transport__item {
-  @include size(33px,32px);
   @include flex-center();
+  width: 33px;
+  height: 32px;
   border-radius: 50%;
   background-color: #edeff6;
 }
 
 .traveler-transport__image {
   opacity: 0.15;
+}
+
+.traveler__svg {
+  stroke-dashoffset: 35;
+
+  &--firsova {
+    stroke-dasharray: 138 6.44;
+  }
+
+  &--demin {
+    stroke-dasharray: 124 20.44;
+  }
+
+  &--smolov {
+    stroke-dasharray: 36 108.44;
+  }
+
+  &--rogovaya {
+    stroke-dasharray: 77.22 77.22;
+    stroke-dashoffset: 45;
+  }
+}
+
+.traveler__level {
+  position: relative;
+
+  &::before {
+    content: "99";
+    position: absolute;
+    top: 62px;
+    right: 10px;
+    color: #1d2e5b;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+  }
 }

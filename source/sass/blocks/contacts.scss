@@ -1,6 +1,11 @@
+.contacts {
+  font-family: $font;
+}
+
 .contacts__icon-wrapper {
-  @include size(45px,45px);
   @include flex-center();
+  width: 45px;
+  height: 45px;
   background-color: #121936;
   border-radius: 50%;
 }

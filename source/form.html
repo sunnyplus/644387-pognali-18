@@ -20,10 +20,10 @@
               <a class="main-nav__link" href="#">о сервисе</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">направления</a>
+              <a class="main-nav__link" href="form.html">направления</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">попутчики</a>
+              <a class="main-nav__link" href="catalog.html">попутчики</a>
             </li>
           </ul>
           <a href="login.html" class="main-nav__login button">Авторизация</a>
@@ -50,8 +50,10 @@
         <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
           <div class="profile__form-box">
             <div class="profile__level-block level-block">
-              <span class="level-block__counter">80</span>
-              <span class="level-block__title">level</span>
+              <svg class="level-block__svg" width="100" height="100" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="4"></circle>
+              </svg>
+              <span class="level-block__line"></span>
             </div>
             <div class="profile__photo-wrapper profile-photo">
               <img class="profile__photo" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото личного профайла">
@@ -358,39 +360,31 @@
             <h3 class="step__heading">Шаг 2. Маршрут</h3>
             <p class="step__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
             <div class="step__country-select country-select">
-              <div class="country-select__box">
-                <select class="country-select__select" name="country">
-                  <option class="country-select__option" value="bosnia">Босния и Герцеговина</option>
-                </select>
-              </div>
-              <div class="country-select__flag">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Боснии и Герцеговины">
-              </div>
+              <input class="country-select__input" type="text" id="country-1" value="Босния и Герцеговина">
+              <label for="country-1">
+                <div class="country-select__flag-wrapper">
+                  <img src="img/bosnia_flag.png" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+                </div>
+              </label>
               <button class="country-select__button-delete" type="button">
-                <img src="https://via.placeholder.com/9x9" width="9" height="9" alt="Иконка удаления страны">
+                <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
               </button>
             </div>
             <div class="step__country-select country-select">
-              <div class="country-select__box">
-                <select class="country-select__select" name="country">
-                  <option class="country-select__option" value="czech">Чехия</option>
-                </select>
-              </div>
-              <div class="country-select__flag">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии">
-              </div>
+              <input class="country-select__input" type="text" id="country-1" value="Чехия">
+              <label for="country-1">
+                <div class="country-select__flag-wrapper">
+                  <img src="img/сzech_flag.png" width="35" height="24" alt="Флаг Чехии">
+                </div>
+              </label>
               <button class="country-select__button-delete" type="button">
-                <img src="https://via.placeholder.com/9x9" width="9" height="9" alt="Иконка удаления страны">
+                <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
               </button>
             </div>
             <div class="step__country-select country-select">
-              <div class="country-select__box">
-                <select class="country-select__select" name="country">
-                  <option class="country-select__option" value="select-country">Выберите страну</option>
-                </select>
-              </div>
+              <input class="country-select__input country-select__input--darkblue" type="text" id="country-1" value="Выберите страну">
               <button class="country-select__button-delete" type="button">
-                <img src="https://via.placeholder.com/9x9" width="9" height="9" alt="Иконка удаления страны">
+                <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
               </button>
             </div>
             <div class="step__countries-wrapper">
@@ -516,12 +510,14 @@
                 </li>
               </ul>
             </div>
-            <button class="step__button-add" type="button">
-              <span class="step__button-add-title">Добавить страну</span>
-              <img class="step__button-add-icon" src="https://via.placeholder.com/14x14" width="14" height="14" alt="Иконка добавления страны">
-            </button>
-            <button class="step__submit button-next" type="submit">Следующий шаг</button>
-            <button class="step__back-button button-prev" type="button">На шаг назад</button>
+            <div class="step__country-select country-select">
+              <input class="country-select__input country-select__input--grey" type="text" id="country-1" value="Добавить страну">
+              <button class="country-select__button-delete" type="button">
+                <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
+              </button>
+            </div>
+            <button class="step__submit button" type="submit">Следующий шаг</button>
+            <button class="step__back-button" type="button">На шаг назад</button>
           </div>
           <div class="step">
             <h3 class="step__heading">Шаг 3. Развлечения</h3>
@@ -529,23 +525,22 @@
             <ul class="step__intertament-list">
               <li class="step__intertament-item">
                 <div class="step__intertament-box">
-                  <span class="step__intertament-place">Босния и герцеговина</span>
-                  <img class="step__intertament-flag" src="https://via.placeholder.com/35x24" alt="Флаг Боснии и Герцеговины">
+                  <span class="step__intertament-place">Босния и Герцеговина</span>
+                  <img class="step__intertament-flag" src="img/bosnia_flag.png" width="35" height="24" alt="Флаг Боснии и Герцеговины">
                 </div>
-                <textarea class="step__intertament-text" name="intertainment-bosnia" cols="30" rows="10" placeholder="План действий"></textarea>
+                <textarea class="step__intertament-text" name="intertainment-bosnia" rows="10" placeholder="План действий"></textarea>
               </li>
               <li class="step__intertament-item">
                 <div class="step__intertament-box">
                   <span class="step__intertament-place">Чехия</span>
-                  <img class="step__intertament-flag" src="https://via.placeholder.com/35x24" alt="Флаг Чехии">
+                  <img class="step__intertament-flag" src="img/сzech_flag.png" width="35" height="24" alt="Флаг Чехии">
                 </div>
-                <textarea class="step__intertament-text" name="intertainment-chz" cols="30" rows="10" placeholder="План действий">
-                    Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                <textarea class="step__intertament-text" name="intertainment-chz" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
                 </textarea>
               </li>
             </ul>
-            <button class="step__submit button-next" type="submit">Отправить</button>
-          <button class="step__back-button button-prev" type="button">На шаг назад</button>
+            <button class="step__submit button" type="submit">Отправить</button>
+          <button class="step__back-button" type="button">На шаг назад</button>
           </div>
         </form>
       </section>

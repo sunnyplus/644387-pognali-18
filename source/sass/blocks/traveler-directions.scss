@@ -1,5 +1,6 @@
 .traveler-directions {
   @include list-reset();
+  font-family: $font;
   display: flex;
 
   &--catalog {

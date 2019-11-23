@@ -1,7 +1,6 @@
 .directions-list {
-  font-family: $font;
-
   @include list-reset();
+  font-family: $font;
 }
 
 .directions-list__title {

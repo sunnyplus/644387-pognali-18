@@ -1,3 +1,7 @@
+.step-number-block {
+  font-family: $font;
+}
+
 .step-number-block__label {
   display: flex;
   justify-content: space-between;
@@ -24,8 +28,9 @@
 }
 
 .step-number-block__button {
-  @include size(43px,43px);
   @include flex-center();
+  width: 43px;
+  height: 43px;
   background-color: $white;
   border: none;
 }
