@@ -46,13 +46,6 @@
   line-height: 18px;
 }
 
-.traveler__level-title {
-  color: #444444;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
 .traveler__bottom-wrapper {
   display: flex;
   justify-content: space-between;
@@ -71,13 +64,6 @@
   height: 45px;
   background: url("../img/status_bar.png") no-repeat;
   background-size: contain;
-}
-
-.traveler__level-counter {
-  color: #1d2e5b;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 18px;
 }
 
 .traveler-transport__item {
@@ -115,15 +101,21 @@
 
 .traveler__level {
   position: relative;
+}
 
-  &::before {
-    content: "99";
-    position: absolute;
-    top: 62px;
-    right: 10px;
-    color: #1d2e5b;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 18px;
-  }
+.traveler__level-counter {
+  position: absolute;
+  top: 62px;
+  right: 10px;
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.traveler__level-title {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
 }
