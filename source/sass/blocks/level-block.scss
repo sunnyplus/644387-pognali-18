@@ -1,0 +1,41 @@
+.level-block {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  font-family: $font;
+  color: $white;
+}
+
+.level-block__title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.17px;
+}
+
+.level-block__line {
+  display: block;
+  width: 49px;
+  height: 2px;
+  background-color: #cbced9;
+}
+
+.level-block__counter {
+  color: #161c35;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.level-block__svg {
+  position: relative;
+  stroke-dasharray: 287 73;
+  stroke-dashoffset: 79;
+}
+
+.level-block__wrapper {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

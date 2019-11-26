@@ -1,0 +1,44 @@
+.tips-list {
+  @include list-reset();
+  font-family: $font;
+  margin: 0 auto;
+  counter-reset: counter;
+}
+
+.tips-list__item {
+  @include list-reset();
+  display: flex;
+  justify-content: space-between;
+  color: #161c35;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  padding-left: 25px;
+  padding-right: 20px;
+  border-radius: 10px 10px 0 0;
+
+  &::after {
+    counter-increment: counter;
+    content: counter(counter);
+    color: $white;
+  }
+
+  &:nth-child(1) {
+    background-color: #ff8d30;
+  }
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(4) {
+    background-color: #ffd74b;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,53 @@
+.plans {
+  font-family: $font;
+  background-color: #dfe3f0;
+  border-radius: 30px 30px 0 0;
+  padding: 25px;
+}
+
+.plans__heading {
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.plans__list {
+  @include list-reset();
+}
+
+.plans__item {
+  border-radius: 10px;
+  background-color: $white;
+  padding-left: 10px;
+}
+
+.plans__direction {
+  display: block;
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.plans__companions,
+.plans__date {
+  display: block;
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.plans__change {
+  display: block;
+  opacity: 0.3;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}

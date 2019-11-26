@@ -1,0 +1,18 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin list-reset() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin pseudo($width, $height, $position: absolute, $content: "") {
+  width: $width;
+  height: $height;
+  position: $position;
+  content: $content;
+}

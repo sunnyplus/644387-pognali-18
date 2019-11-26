@@ -1,0 +1,12 @@
+.social {
+  font-family: $font;
+  display: flex;
+}
+
+.social__item {
+  @include flex-center();
+  width: 45px;
+  height: 45px;
+  background-color: $yellow;
+  border-radius: 50%;
+}

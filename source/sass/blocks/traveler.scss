@@ -1,0 +1,121 @@
+.traveler {
+  font-family: $font;
+  background-color: $white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.traveler__name {
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.traveler__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.traveler__top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.traveler__likes {
+  color: #161c35;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.traveler__wish-country {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.traveler__wish-transport {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.traveler__bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.traveler__button {
+  border-radius: 20px;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.traveler__level-box {
+  @include flex-center();
+  width: 45px;
+  height: 45px;
+  background: url("../img/status_bar.png") no-repeat;
+  background-size: contain;
+}
+
+.traveler-transport__item {
+  @include flex-center();
+  width: 33px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #edeff6;
+}
+
+.traveler-transport__image {
+  opacity: 0.15;
+}
+
+.traveler__svg {
+  stroke-dashoffset: 35;
+
+  &--firsova {
+    stroke-dasharray: 138 6.44;
+  }
+
+  &--demin {
+    stroke-dasharray: 124 20.44;
+  }
+
+  &--smolov {
+    stroke-dasharray: 36 108.44;
+  }
+
+  &--rogovaya {
+    stroke-dasharray: 77.22 77.22;
+    stroke-dashoffset: 45;
+  }
+}
+
+.traveler__level {
+  position: relative;
+}
+
+.traveler__level-counter {
+  position: absolute;
+  top: 62px;
+  right: 10px;
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.traveler__level-title {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}

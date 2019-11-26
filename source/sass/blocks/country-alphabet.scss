@@ -1,0 +1,26 @@
+.country-alphabet {
+  @include list-reset();
+  font-family: $font;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country-alphabet__letter {
+  width: 45px;
+  height: 42px;
+  background-color: $white;
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  border: 1px solid #cbced9;
+  cursor: pointer;
+
+  &--active {
+    background-color: #1d2e5b;
+    color: $white;
+    border: none;
+  }
+}

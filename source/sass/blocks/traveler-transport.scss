@@ -1,0 +1,5 @@
+.traveler-transport {
+  @include list-reset();
+  font-family: $font;
+  display: flex;
+}

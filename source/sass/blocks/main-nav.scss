@@ -1,0 +1,43 @@
+.main-nav {
+  font-family: $font;
+}
+
+.main-nav__list {
+  @include list-reset();
+}
+
+.main-nav__link {
+  color: #192144;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav__login {
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-nav__wrapper {
+  background-color: $white;
+  // position: absolute;
+  // display: none;
+}
+
+.main-nav__button {
+  width: 25px;
+  height: 11px;
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__link {
+    font-size: 60px;
+    line-height: 71.01px;
+    text-transform: uppercase;
+  }
+}

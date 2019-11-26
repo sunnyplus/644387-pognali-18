@@ -1,0 +1,15 @@
+.traveler-tags {
+  @include list-reset();
+  font-family: $font;
+  display: flex;
+  flex-wrap: wrap;
+  width: 177px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.traveler-tags__item {
+  font-size: 15px;
+}

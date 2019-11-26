@@ -1,0 +1,55 @@
+.calendar {
+  font-family: $font;
+}
+
+.calendar__month-name {
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.calendar__month {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar__button {
+  background-color: $white;
+  border: none;
+  opacity: 0.3;
+}
+
+.calendar__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.calendar__day {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--weekend {
+    color: #ff5c23;
+  }
+}
+
+.calendar__item {
+  width: 31px;
+  height: 30px;
+  border: 1px solid rgba(#444444, 0.3);
+}
+
+.calendar__label {
+  opacity: 0.3;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
