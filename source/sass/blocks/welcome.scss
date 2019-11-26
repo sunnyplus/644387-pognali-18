@@ -1,4 +1,7 @@
 .welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: $font;
   background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 50% 100%,
     url("../img/globe-back-mobile@1x.jpg") no-repeat;
@@ -39,4 +42,25 @@
   height: 40px;
   background-color: #ffbd30;
   border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .welcome {
+    min-height: 684px;
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 50% 100%,
+      url("../img/globe-back-tablet@1x.jpg") no-repeat 0% 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .welcome__slogan {
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .welcome__wrapper {
+    display: none;
+  }
 }

@@ -4,6 +4,7 @@
 
 .main-nav__list {
   @include list-reset();
+  text-align: center;
 }
 
 .main-nav__link {
@@ -19,10 +20,14 @@
   border-radius: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 270px;
+  margin: 0 auto;
 }
 
 .main-nav__wrapper {
   background-color: $white;
+  padding-left: 25px;
+  padding-right: 25px;
   // position: absolute;
   // display: none;
 }
@@ -39,5 +44,12 @@
     font-size: 60px;
     line-height: 71.01px;
     text-transform: uppercase;
+  }
+
+  .main-nav__wrapper {
+    padding-left: 97px;
+    padding-right: 97px;
+    // position: absolute;
+    // display: none;
   }
 }

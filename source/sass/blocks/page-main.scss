@@ -8,3 +8,10 @@
   background-color: $darkblue;
   border-radius: 0 0 20px 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: $tablet-width;
+    max-width: 100%;
+  }
+}
