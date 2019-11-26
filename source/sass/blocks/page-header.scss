@@ -4,6 +4,12 @@
   width: 320px;
   margin: 0 auto;
   padding: 27px 25px;
-  // min-height: 400px;
   background-color: $darkblue;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+    max-width: 100%;
+  }
 }

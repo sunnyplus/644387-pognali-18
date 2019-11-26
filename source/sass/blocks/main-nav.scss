@@ -33,3 +33,11 @@
   background-color: transparent;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__link {
+    font-size: 60px;
+    line-height: 71.01px;
+    text-transform: uppercase;
+  }
+}
