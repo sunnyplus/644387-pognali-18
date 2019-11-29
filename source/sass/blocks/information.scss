@@ -52,7 +52,6 @@
 
 @media (min-width: $tablet-width) {
   .information {
-    min-height: 684px;
     padding-left: 40px;
     padding-right: 40px;
 
@@ -103,7 +102,7 @@
 @media (min-width: $pc-width) {
   .information {
     position: relative;
-    
+
     &--service {
       background: url("../img/about-desktop@1x.png") no-repeat 100% 50%;
       background-color: #192144;
