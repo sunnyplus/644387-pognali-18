@@ -46,9 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .welcome {
-    min-height: 684px;
-    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 50% 100%,
-      url("../img/globe-back-tablet@1x.jpg") no-repeat 0% 100%;
+    background: none;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -60,6 +58,12 @@
     line-height: 70px;
   }
 
+  .welcome__wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: $pc-width) {
   .welcome__wrapper {
     display: none;
   }

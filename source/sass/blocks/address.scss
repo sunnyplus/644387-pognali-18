@@ -3,3 +3,14 @@
   background-color: $yellow;
   padding: 25px;
 }
+
+.address__button {
+  border: 3px solid #192144;
+  border-radius: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    border-radius: 0 0 60px 60px;
+  }
+}

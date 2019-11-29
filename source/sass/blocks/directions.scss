@@ -1,7 +1,9 @@
 .directions {
+  position: relative;
   font-family: $font;
   background-color: #edeff6;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .directions__title {
@@ -16,4 +18,54 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .directions {
+    background: url("../img/flags-back@1x.png") no-repeat 100% 10%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .directions__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+  }
+
+  .directions__description {
+    width: 340px;
+    margin-bottom: 106px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .directions {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 132px;
+    padding-right: 132px;
+  }
+
+  .directions__list {
+    order: -1;
+  }
+
+  .directions__button {
+    position: absolute;
+    right: 303px;
+    bottom: -10px;
+    width: 274px;
+  }
+
+  .directions__title {
+    margin-bottom: 60px;
+  }
+
+  .directions__wrapper {
+    margin-right: 107px;
+    margin-left: auto;
+  }
 }

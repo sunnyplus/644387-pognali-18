@@ -3,6 +3,7 @@
   background-color: $white;
   width: 270px;
   min-height: 270px;
+  border-radius: 0 0 20px 20px;
 }
 
 .companion__name {
@@ -62,5 +63,12 @@
 
   &--demin {
     stroke-dasharray: 140 35;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .companion__name {
+    font-size: 24px;
+    line-height: 24px;
   }
 }

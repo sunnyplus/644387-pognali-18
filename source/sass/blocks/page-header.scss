@@ -1,14 +1,30 @@
 .page-header {
+  display: flex;
+  justify-content: space-between;
   font-family: $font;
   position: relative;
   width: 320px;
   margin: 0 auto;
-  background-color: $darkblue;
+  background-color: $bg-header;
+  padding-top: 27px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    justify-content: flex-start;
     width: $tablet-width;
-    max-width: 100%;
+    background-color: $bg-header-tablet;
+    // max-width: 100%;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .page-header {
+    width: $pc-width;
+    // max-width: 100%;
+    background-color: $bg-header;
   }
 }

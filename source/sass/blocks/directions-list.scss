@@ -33,3 +33,43 @@
   background-color: $white;
   border-radius: 10px;
 }
+
+.directions-list__item {
+  position: relative;
+}
+
+.directions-list__flag {
+  width: 35px;
+  height: 24px;
+  position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .directions-list {
+    position: relative;
+
+    &::before {
+      @include pseudo(141px,141px);
+      top: -30px;
+      left: -30px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
+  .directions-list__item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .directions-list__wrapper {
+    flex-direction: column;
+  }
+
+  .directions-list__flag {
+    width: 70px;
+    height: 47px;
+    left: 58%;
+  }
+}

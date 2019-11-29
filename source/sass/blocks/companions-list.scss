@@ -2,3 +2,11 @@
   @include list-reset();
   font-family: $font;
 }
+
+@media (min-width: $tablet-width) {
+  .companions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

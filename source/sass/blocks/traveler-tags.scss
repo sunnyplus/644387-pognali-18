@@ -11,5 +11,13 @@
 }
 
 .traveler-tags__item {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .traveler-tags__item {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
