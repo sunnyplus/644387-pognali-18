@@ -24,3 +24,32 @@
     border: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .country-alphabet__letter {
+    width: 50px;
+    height: 55px;
+    background-color: transparent;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 0.2;
+    border: none;
+    padding: 20px;
+  }
+
+  .country-alphabet__item {
+    &:nth-child(7),
+    &:nth-child(8){
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $pc-width) {
+  .country-alphabet__letter {
+    width: 182px;
+    padding-bottom: 590px;
+    text-align: left;
+  }
+}

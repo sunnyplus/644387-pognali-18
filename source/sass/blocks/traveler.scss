@@ -1,4 +1,5 @@
 .traveler {
+  position: relative;
   font-family: $font;
   background-color: $white;
   border-radius: 20px;
@@ -6,10 +7,23 @@
 }
 
 .traveler__name {
+  position: relative;
   color: #1d2e5b;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+
+  &::before {
+    @include pseudo(5px, 5px);
+    border-radius: 3px;
+    background-color: #f97676;
+    right: 0;
+  }
+}
+
+.traveler__data {
+  display: flex;
+  flex-direction: column;
 }
 
 .traveler__image {
@@ -33,13 +47,6 @@
 }
 
 .traveler__wish-country {
-  color: #444444;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-.traveler__wish-transport {
   color: #444444;
   font-size: 15px;
   font-weight: 400;
@@ -103,9 +110,23 @@
   position: relative;
 }
 
+@media (max-width: $tablet-width) {
+  .traveler__level {
+    &::before {
+      position: absolute;
+      content: "Левел";
+      top: 0;
+      color: #444444;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+}
+
 .traveler__level-counter {
   position: absolute;
-  top: 62px;
+  top: 18px;
   right: 10px;
   color: #1d2e5b;
   font-size: 24px;
@@ -118,4 +139,93 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.traveler__data {
+  min-width: 250px;
+}
+
+.traveler__heart {
+  position: absolute;
+  @include flex-center();
+  width: 31px;
+  height: 31px;
+  border-radius: 16px;
+  background-color: #f9eaea;
+  top: 190px;
+  left: 370px;
+}
+
+@media (min-width: $tablet-width) {
+  .traveler {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .traveler__tags {
+    order: 0;
+  }
+
+  .traveler__image {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .traveler__likes {
+    font-size: 20px;
+    line-height: 30px;
+    align-self: flex-end;
+    order: 1;
+  }
+
+  .traveler__heart {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #f9eaea;
+    order: 2;
+  }
+
+  .traveler__name {
+    font-size: 30px;
+    line-height: 30px;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 3px;
+      background-color: #f97676;
+      right: 0;
+    }
+  }
+
+  .traveler__bottom-wrapper {
+    flex-direction: column;
+  }
+
+  .traveler__button {
+    position: absolute;
+    width: 148px;
+    height: 50px;
+    top: 190px;
+    left: 220px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .traveler {
+    min-height: 285px;
+  }
+  .traveler__bottom-wrapper {
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }

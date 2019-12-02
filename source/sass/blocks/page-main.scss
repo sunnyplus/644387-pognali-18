@@ -4,6 +4,12 @@
   margin: 0 auto;
 }
 
+.page-main__tarifs {
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .page-main__heading {
   background-color: $darkblue;
   border-radius: 0 0 20px 20px;
@@ -15,6 +21,10 @@
     // max-width: 100%;
     background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 50% 1%,
       url("../img/globe-back-tablet@1x.jpg") no-repeat 0% 1%;
+  }
+
+  .page-main__tarifs {
+    padding: 100px;
   }
 }
 
@@ -28,5 +38,16 @@
   .page-main__intro-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-main__tarifs {
+    padding: 132px;
+  }
+
+  .page-main__companion-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }

@@ -1,5 +1,13 @@
 .signup-block {
+  position: relative;
   font-family: $font;
   background-color: $darkblue;
   padding: 25px;
+  border-radius: 0 0 30px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .signup-block {
+    border-radius: 0 0 60px 60px;
+  }
 }

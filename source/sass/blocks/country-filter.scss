@@ -24,6 +24,7 @@
 .country-filter__heading-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .country-filter__continent-link {
@@ -37,5 +38,124 @@
 
   &--active {
     opacity: 1;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .country-filter__down-btn {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .country-filter__continent-list {
+    display: flex;
+  }
+
+  .country-filter__continent-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .country-filter__heading {
+    display: none;
+  }
+
+  .country-filter__continent-item {
+    margin-right: 25px;
+  }
+
+  .country-filter__close-btn {
+    order: 12;
+  }
+
+  .country-filter__down-btn {
+    order: 11;
+    border: none;
+    background-color: transparent;
+    color: #192144;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .country-filter__country-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .country-filter__button {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .country-filter {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .country-filter__country-list {
+    position: absolute;
+    top: 77px;
+    left: -1px;
+    width: 185px;
+
+    &:nth-of-type(2) {
+      left: 209px;
+    }
+
+    &:nth-of-type(3) {
+      left: 420px;
+    }
+
+    &:nth-of-type(4) {
+      left: 622px;
+    }
+
+    &:nth-of-type(5) {
+      left: 836px;
+    }
+
+    &:nth-of-type(6) {
+      left: 1049px;
+    }
+
+    &:nth-of-type(7) {
+      top: 727px;
+    }
+
+    &:nth-of-type(8) {
+      left: 209px;
+      top: 727px;
+    }
+
+    &:nth-of-type(9) {
+      left: 420px;
+      top: 727px;
+    }
+
+    &:nth-of-type(10) {
+      left: 622px;
+      top: 727px;
+    }
+
+    &:nth-of-type(11) {
+      left: 836px;
+      top: 727px;
+    }
+
+    &:nth-of-type(12) {
+      left: 1049px;
+      top: 727px;
+    }
+  }
+
+  .country-filter__country-box {
+    position: relative;
+    margin-left: 67px;
+    margin-right: 23px;
   }
 }

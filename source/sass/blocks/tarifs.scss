@@ -4,13 +4,15 @@
   min-height: 400px;
   border-radius: 0 0 30px 30px;
   background-color: #edeff6;
-  padding-right: 26px;
-  padding-left: 50px;
   background-size: 99px;
-  background-color: #edeff6;
 
   &--business {
     background-color: $white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
   }
 
   &--simple .tarifs__title {
@@ -119,9 +121,7 @@
         background-color: #e2e5f2;
         border-radius: 20px;
       }
-    }
 
-    &--simple .tarifs__title {
       &::before {
         width: 100px;
         top: 300px;
@@ -195,11 +195,6 @@
 
 @media (min-width: $pc-width) {
   .tarifs {
-    padding-top: 158px;
-    padding-right: 132px;
-    padding-left: 132px;
-    padding-bottom: 190px;
-
     &--simple .tarifs__title {
       &::after {
         width: 444px;
@@ -207,15 +202,18 @@
         top: 130px;
         right: 114px;
       }
-    }
 
-    &--simple .tarifs__title {
       &::before {
         width: 198px;
         height: 198px;
         top: 183px;
         right: 2px;
       }
+    }
+
+    &--business {
+      width: 750px;
+      min-height: 526px;
     }
   }
 }

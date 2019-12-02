@@ -21,3 +21,9 @@
     border-radius: 60px 60px 0 0;
   }
 }
+
+@media (min-width: $pc-width) {
+  .page-footer {
+    width: $pc-width;
+  }
+}

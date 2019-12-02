@@ -1,5 +1,32 @@
 .traveler-transport {
+  position: relative;
   @include list-reset();
   font-family: $font;
   display: flex;
+}
+
+@media (max-width: $tablet-width) {
+  .traveler-transport {
+    &::before {
+      position: absolute;
+      content: "Транспорт";
+      top: 0;
+      color: #444444;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .traveler-transport {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .traveler-transport {
+    flex-direction: row;
+  }
 }
