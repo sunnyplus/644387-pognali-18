@@ -78,33 +78,33 @@
       </nav>
     </header>
     <main class="page-main">
+      <div class="page-main__head-box">
+        <h1 class="page-main__heading main-heading">Попутчики</h1>
+      </div>
       <section class="profile">
-        <h1 class="page-main__heading main-heading">Направления</h1>
         <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
-          <div class="profile__form-box">
-            <div class="profile__level-block level-block">
-              <svg class="level-block__svg" width="100" height="100" viewBox="0 0 120 120">
-                <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="4"></circle>
-              </svg>
-              <div class="level-block__wrapper">
-                <span class="level-block__counter">80</span>
-                <span class="level-block__line"></span>
-                <span class="level-block__title">level</span>
-              </div>
+          <div class="profile__level-block level-block">
+            <svg class="level-block__svg" width="100" height="100" viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="4"></circle>
+            </svg>
+            <div class="level-block__wrapper">
+              <span class="level-block__counter">80</span>
+              <span class="level-block__line"></span>
+              <span class="level-block__title">level</span>
             </div>
-            <div class="profile__photo-wrapper profile-photo">
-              <img class="profile__photo" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото личного профайла">
-            </div>
+          </div>
+          <div class="profile__photo-wrapper profile-photo">
+            <img class="profile__photo" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото личного профайла">
           </div>
           <label class="profile__button-label">
             <input class="profile__button-file visually-hidden" type="file" name="change-photo">
-            <span class="button-toggle">Сменить фото</span>
+            <span class="profile__change-btn button-toggle">Сменить фото</span>
           </label>
-          <fieldset class="profile__field">
+          <fieldset class="profile__tags-field">
             <legend class="profile__legend">Теги</legend>
             <textarea class="profile__tags-list" name="tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>
           </fieldset>
-          <fieldset class="profile__field">
+          <fieldset class="profile__transport-field">
             <legend class="profile__legend">Транспорт</legend>
             <ul class="companion-select__transport-list transport-list">
               <li class="transport-list__item">
@@ -583,18 +583,18 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo">
+      <a href="index.html" class="logo">
         <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?" class="logo__image">
       </a>
       <ul class="page-footer__social social">
-        <li class="social__item">
-            <a class="social__link"><img src="img/facebook.svg" width="11" height="21" alt="Страница в Фейсбук" class="social__image"></a>
+        <li class="social__item social__item--yellow">
+            <a class="social__link"><img class="social__fb-icon" src="img/facebook.svg" width="11" height="21" alt="Страница в Фейсбук" class="social__image"></a>
         </li>
-        <li class="social__item">
-            <a class="social__link"><img src="img/vk.svg" width="23" height="12" alt="Страница во Вконтакте" class="social__image"></a>
+        <li class="social__item social__item--yellow">
+            <a class="social__link"><img class="social__vk-icon" src="img/vk.svg" width="23" height="12" alt="Страница во Вконтакте" class="social__image"></a>
         </li>
-        <li class="social__item">
-            <a class="social__link"><img src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
+        <li class="social__item social__item--yellow">
+            <a class="social__link"><img class="social__inst-icon" src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
         </li>
       </ul>
       <div class="site-producer">

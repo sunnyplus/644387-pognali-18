@@ -141,10 +141,6 @@
   line-height: 18px;
 }
 
-.traveler__data {
-  min-width: 250px;
-}
-
 .traveler__heart {
   position: absolute;
   @include flex-center();
@@ -152,8 +148,8 @@
   height: 31px;
   border-radius: 16px;
   background-color: #f9eaea;
-  top: 190px;
-  left: 370px;
+  top: 75px;
+  left: 60px;
 }
 
 @media (min-width: $tablet-width) {
@@ -169,6 +165,10 @@
 
   .traveler__tags {
     order: 0;
+  }
+
+  .traveler__data {
+    min-width: 250px;
   }
 
   .traveler__image {
@@ -189,6 +189,8 @@
     height: 50px;
     border-radius: 25px;
     background-color: #f9eaea;
+    top: 190px;
+    left: 370px;
     order: 2;
   }
 

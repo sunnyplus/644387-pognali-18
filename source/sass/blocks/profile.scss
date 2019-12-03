@@ -4,16 +4,34 @@
   padding: 25px;
 }
 
-.profile__form-box {
+.profile__form {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .profile__photo {
   border-radius: 50%;
 }
 
-.profile__field {
+.profile__change-btn {
+  width: 270px;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.profile__tags-field {
+  width: 270px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.profile__transport-field {
+  width: 270px;
   border: 1px solid #cbced9;
   border-radius: 10px;
   padding: 20px;
@@ -37,4 +55,72 @@
   border: none;
   outline: none;
   resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__transport-field {
+    width: 308px;
+    order: 2;
+  }
+
+  .profile__photo-wrapper {
+    order: 3;
+  }
+
+  .profile__button-label {
+    order: 4;
+  }
+
+  .profile__tags-field {
+    width: 618px;
+    order: 5;
+  }
+
+  .profile__change-btn {
+    width: 618px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .profile__tags-field {
+    width: 730px;
+    order: 1;
+  }
+
+  .profile__transport-field {
+    width: 384px;
+    order: 2;
+  }
+
+  .profile__form {
+    position: relative;
+  }
+
+  .profile__button-label {
+    position: absolute;
+    right: 77px;
+    top: -25px;
+  }
+
+  .profile__photo-wrapper {
+    position: absolute;
+    right: 78px;
+    top: -215px;
+  }
+
+  .profile__level-block {
+    position: absolute;
+    right: 255px;
+    top: -161px;
+  }
+
+  .profile__change-btn {
+    width: 190px;
+  }
+
+  .profile__photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px 10px 0 0;
+  }
 }

@@ -25,6 +25,12 @@
   }
 }
 
+@media (min-width: $tablet-width) and (max-width: $pc-width) { //tmp
+  .country-alphabet {
+    width: 390px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .country-alphabet__letter {
     width: 50px;
@@ -40,7 +46,9 @@
 
   .country-alphabet__item {
     &:nth-child(7),
-    &:nth-child(8){
+    &:nth-child(8),
+    &:nth-child(11),
+    &:nth-child(18){
       display: none;
     }
   }
@@ -51,5 +59,8 @@
     width: 182px;
     padding-bottom: 590px;
     text-align: left;
+    color: #192144;
+    opacity: 1;
+    margin-right: 23px;
   }
 }
