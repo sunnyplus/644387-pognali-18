@@ -142,8 +142,8 @@
 }
 
 .traveler__heart {
-  position: absolute;
   @include flex-center();
+  position: absolute;
   width: 31px;
   height: 31px;
   border-radius: 16px;
@@ -224,6 +224,7 @@
   .traveler {
     min-height: 285px;
   }
+
   .traveler__bottom-wrapper {
     flex-direction: row;
     position: absolute;

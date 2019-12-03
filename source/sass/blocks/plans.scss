@@ -25,7 +25,7 @@
 
   &::before {
     counter-increment: plans-counter;
-    content: counter(plans-counter)".";
+    content: counter(plans-counter) ".";
     position: absolute;
     left: 0;
     color: #1d2e5b;

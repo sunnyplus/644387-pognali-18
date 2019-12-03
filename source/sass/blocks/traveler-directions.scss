@@ -1,6 +1,6 @@
 .traveler-directions {
-  position: relative;
   @include list-reset();
+  position: relative;
   font-family: $font;
   display: flex;
   padding-top: 10px;
@@ -22,7 +22,7 @@
       line-height: 18px;
       top: -7px;
       left: 10px;
-      background-color: #fff;
+      background-color: #ffffff;
       z-index: 1;
       padding-right: 10px;
       padding-left: 10px;

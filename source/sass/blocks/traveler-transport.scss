@@ -1,6 +1,6 @@
 .traveler-transport {
-  position: relative;
   @include list-reset();
+  position: relative;
   font-family: $font;
   display: flex;
 }
