@@ -34,3 +34,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: $tablet-width) {
+  .plan-add__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}

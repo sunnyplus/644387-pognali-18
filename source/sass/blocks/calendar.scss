@@ -53,3 +53,38 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.calendar__button-image {
+  width: 9px;
+  height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__month-name {
+    font-size: 36px;
+  }
+
+  .calendar__button-image {
+    width: 19px;
+    height: 34px;
+  }
+
+  .calendar__item {
+    width: 76px;
+    height: 70px;
+  }
+
+  .calendar__label {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__item {
+    width: 143px;
+    height: 72px;
+  }
+}
