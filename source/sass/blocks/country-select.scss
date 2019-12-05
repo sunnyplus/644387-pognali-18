@@ -63,3 +63,15 @@
   border-radius: 50%;
   background-color: #edeff6;
 }
+
+@media (min-width: $tablet-width) {
+  .country-select__input {
+    width: 369px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .country-select__input {
+    width: 730px;
+  }
+}

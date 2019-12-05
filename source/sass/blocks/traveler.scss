@@ -163,6 +163,10 @@
     }
   }
 
+  .traveler__transport-list {
+    flex-direction: column;
+  }
+
   .traveler__tags {
     order: 0;
   }
@@ -230,5 +234,9 @@
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  .traveler__transport-list {
+    flex-direction: row;
   }
 }

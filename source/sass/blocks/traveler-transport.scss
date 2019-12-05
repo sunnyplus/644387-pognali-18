@@ -19,14 +19,14 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .traveler-transport {
-    flex-direction: column;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .traveler-transport {
+//     flex-direction: column;
+//   }
+// }
 
-@media (min-width: $pc-width) {
-  .traveler-transport {
-    flex-direction: row;
-  }
-}
+// @media (min-width: $pc-width) {
+//   .traveler-transport {
+//     flex-direction: row;
+//   }
+// }

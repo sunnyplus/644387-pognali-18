@@ -32,7 +32,16 @@
 }
 
 .step__country-list {
+  @include list-reset();
   border: 1px solid #cbced9;
+}
+
+.step__country-link {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
 }
 
 .step__country-alphabet {
@@ -122,6 +131,34 @@
     flex-direction: column;
     padding-left: 60px;
     padding-right: 60px;
+
+    &--one .step__submit {
+      order: 6;
+    }
+
+    &--two,
+    &--three {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+
+  .step__intertament-list {
+    flex-basis: 100%;
+  }
+
+  .step__description {
+    flex-basis: 100%;
+    font-size: 20;
+    line-height: 24px;
+  }
+
+  .step__country-select {
+    flex-basis: 100%;
+  }
+
+  .step__back-button {
+    width: 200px;
   }
 
   .step__period {
@@ -137,7 +174,6 @@
   }
 
   .step__submit {
-    order: 6;
     width: 285px;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -148,9 +184,30 @@
     line-height: 36px;
   }
 
-  .step__description {
-    font-size: 20;
-    line-height: 24px;
+  .step__country-list {
+    margin-left: auto;
+    margin-right: 59px;
+  }
+
+  .step__country-letter {
+    width: 52px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .step__countries-wrapper {
+    display: flex;
+    box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+    border-radius: 0 0 10px 10px;
+    width: 575px;
+    height: 416px;
+    padding-top: 34px;
+    padding-left: 27px;
+  }
+
+  .step__country-alphabet {
+    width: 260px;
   }
 }
 
