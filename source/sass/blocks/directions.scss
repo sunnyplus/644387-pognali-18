@@ -1,9 +1,10 @@
 .directions {
   position: relative;
   font-family: $font;
-  background-color: #edeff6;
   padding-left: 25px;
   padding-right: 25px;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .directions__title {
@@ -22,6 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .directions {
+    width: $tablet-width;
     background: url("../img/flags-back@1x.png") no-repeat 100% 10%;
     padding-left: 40px;
     padding-right: 40px;
@@ -47,6 +49,7 @@
     flex-wrap: wrap;
     padding-left: 132px;
     padding-right: 132px;
+    width: $pc-width;
   }
 
   .directions__list {

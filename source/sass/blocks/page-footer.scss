@@ -1,14 +1,17 @@
 .page-footer {
   font-family: $font;
   background-color: $white;
-  position: relative;
-  z-index: 2;
-  width: 320px;
-  margin: 0 auto;
   padding: 25px;
   text-align: center;
   border-radius: 30px 30px 0 0;
-  margin-top: -50px;
+  position: relative;
+  top: -50px;
+  z-index: 2;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  width: $mobile-width;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,13 +20,16 @@
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-    width: $tablet-width;
     border-radius: 60px 60px 0 0;
+  }
+
+  .page-footer__wrapper {
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $pc-width) {
-  .page-footer {
+  .page-footer-wrapper {
     width: $pc-width;
   }
 }

@@ -2,6 +2,8 @@
   font-family: $font;
   padding: 25px;
   background-color: #edeff6;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .travelers-catalog__show-more {
@@ -40,6 +42,38 @@
   background-color: $white;
   border: 0;
   border-radius: 0 20px 20px 0;
+}
+
+.travelers-catalog__pages {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .travelers-catalog {
+    width: $tablet-width;
+    order: -1;
+  }
+
+  .travelers-catalog__prev {
+    margin-left: auto;
+  }
+
+  .travelers-catalog__pages {
+    display: flex;
+  }
+
+  .travelers-catalog__page {
+    @include flex-center();
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffd74b;
+    color: #161c35;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: $pc-width) {

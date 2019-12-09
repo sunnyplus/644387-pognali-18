@@ -1,9 +1,10 @@
 .companion-select {
   font-family: $font;
   width: 270px;
-  border-radius: 20px;
+  margin: 0 auto;
   background-color: #ffd74b;
   padding: 25px;
+  border-radius: 20px;
 }
 
 .companion-select__heading {
@@ -65,6 +66,41 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   border: 1px solid #cbced9;
+}
+
+.companion-select__level-range {
+  display: flex;
+  min-height: 20px;//tmp
+}
+
+.companion-select__level-button {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  border: none;
+
+  &:first-of-type {
+    margin-left: 67px;
+
+    &::before {
+      @include pseudo(66px,2px);
+      background-color: #000000;
+      right: 12px;
+      opacity: 0.2;
+    }
+  }
+
+  &:last-of-type {
+    margin-left: 133px;
+
+    &::before {
+      @include pseudo(144px,2px);
+      right: 0;
+      background-color: #1d2e5b;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

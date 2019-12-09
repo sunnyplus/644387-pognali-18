@@ -110,24 +110,10 @@
   position: relative;
 }
 
-@media (max-width: $tablet-width) {
-  .traveler__level {
-    &::before {
-      position: absolute;
-      content: "Левел";
-      top: 0;
-      color: #444444;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 18px;
-    }
-  }
-}
-
 .traveler__level-counter {
   position: absolute;
-  top: 18px;
-  right: 10px;
+  top: 68px;
+  right: 12px;
   color: #1d2e5b;
   font-size: 24px;
   font-weight: 700;
@@ -161,6 +147,14 @@
     &:not(:last-child) {
       margin-bottom: 40px;
     }
+  }
+
+  .traveler__transport-title {
+    display: none;
+  }
+
+  .traveler__level-title {
+    display: none;
   }
 
   .traveler__transport-list {
@@ -213,6 +207,7 @@
 
   .traveler__bottom-wrapper {
     flex-direction: column;
+    order: 2;
   }
 
   .traveler__button {
@@ -221,6 +216,10 @@
     height: 50px;
     top: 190px;
     left: 220px;
+  }
+
+  .traveler__level-counter {
+    top: 18px;
   }
 }
 
@@ -238,5 +237,9 @@
 
   .traveler__transport-list {
     flex-direction: row;
+  }
+
+  .traveler__wish-title {
+    display: none;
   }
 }

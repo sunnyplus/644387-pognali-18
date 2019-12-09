@@ -43,24 +43,18 @@
     border: none;
     padding: 20px;
   }
-
-  .country-alphabet__item {
-    &:nth-child(7),
-    &:nth-child(8),
-    &:nth-child(11),
-    &:nth-child(18) {
-      display: none;
-    }
-  }
 }
 
 @media (min-width: $pc-width) {
-  .country-alphabet__letter {
-    width: 182px;
-    padding-bottom: 590px;
-    text-align: left;
-    color: #192144;
-    opacity: 1;
-    margin-right: 23px;
+  .country-filter__country-alphabet-list {
+    display: none;
   }
+  // .country-alphabet__letter {
+  //   width: 182px;
+  //   padding-bottom: 590px;
+  //   text-align: left;
+  //   color: #192144;
+  //   opacity: 1;
+  //   margin-right: 23px;
+  // }
 }

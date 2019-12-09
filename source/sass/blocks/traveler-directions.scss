@@ -1,33 +1,14 @@
 .traveler-directions {
   @include list-reset();
-  position: relative;
   font-family: $font;
   display: flex;
+  flex-direction: column;
   padding-top: 10px;
   padding-bottom: 10px;
-
-  &--catalog {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: $pc-width) {
   .traveler-directions {
-    &::before {
-      position: absolute;
-      content: "хочет посетить:";
-      color: #444444;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 18px;
-      top: -7px;
-      left: 10px;
-      background-color: #ffffff;
-      z-index: 1;
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-
     &::after {
       @include pseudo(100%, 1px);
       background-color: #edeff6;
@@ -52,10 +33,11 @@
 
 @media (min-width: $tablet-width) {
   .traveler-directions {
-    &--catalog {
-      flex-direction: row;
-      order: 10;
-    }
+    flex-direction: row;
+  }
+
+  .traveler__directions-wrapper {
+    order: 3;
   }
 }
 

@@ -1,7 +1,8 @@
 .address {
   font-family: $font;
-  background-color: $yellow;
   padding: 25px;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .address__button {
@@ -11,13 +12,14 @@
 
 @media (min-width: $tablet-width) {
   .address {
-    border-radius: 0 0 60px 60px;
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $pc-width) {
   .address {
     display: flex;
+    width: $pc-width;
     justify-content: space-between;
   }
 }

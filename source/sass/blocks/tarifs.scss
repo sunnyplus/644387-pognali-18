@@ -4,6 +4,8 @@
   padding-top: 82px;
   padding-bottom: 38px;
   padding-left: 50px;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .tarifs__title {
@@ -12,7 +14,7 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0;
-  width: 101px;
+  margin-right: 150px;
   letter-spacing: 0.25px;
 
   &::before {
@@ -111,15 +113,15 @@
   text-decoration: none;
 }
 
-.tarifs__box {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (min-width: $tablet-width) {
   .tarifs {
     position: relative;
     background-color: #edeff6;
+    width: $tablet-width;
+    min-height: 644px;
+    padding-top: 163px;
+    padding-right: 75px;
+    padding-left: 130px;
 
     &--business {
       border-radius: 30px;
@@ -127,13 +129,27 @@
     }
   }
 
+  .tarifs__list {
+    margin-top: 75px;
+    margin-bottom: 60px;
+
+    &::before {
+      width: 562px;
+      top: -2px;
+    }
+  }
+
   .tarifs__title {
     font-size: 45px;
+    line-height: 45px;
+    margin-left: 15px;
+    margin-right: auto;
+    letter-spacing: 0.05px;
 
     &::after {
       @include pseudo(198px, 285px);
-      top: 80px;
-      right: 0;
+      top: 240px;
+      right: 40px;
       z-index: 1;
       background-color: #e2e5f2;
       border-radius: 20px;
@@ -141,8 +157,8 @@
 
     &::before {
       width: 100px;
-      top: 300px;
-      right: 30px;
+      top: 497px;
+      right: 85px;
       background-size: contain;
     }
   }
@@ -168,24 +184,25 @@
 
     &::before {
       @include pseudo(67px,67px);
-      left: -50px;
+      left: -90px;
+      top: -25px;
+      background: url("../img/business.svg") no-repeat 50% 50%;
+      background-size: 17px 21px;
       background-color: #e2e5f2;
       border-radius: 50%;
-    }
-
-    &::after {
-      @include pseudo(17px,21px);
-      left: -20px;
-      background: url("../img/user.svg") no-repeat;
-      background-size: 17px 21px;
     }
   }
 
   .tarifs__item {
     flex-direction: row;
 
+    &:not(:last-of-type) {
+      padding-bottom: 3px;
+    }
+
     &::after {
-      left: -50px;
+      left: -90px;
+      top: -3px;
       width: 67px;
       height: 67px;
       font-size: 28px;
@@ -202,10 +219,7 @@
 
 @media (min-width: $pc-width) {
   .tarifs {
-    &--business {
-      width: 750px;
-      min-height: 526px;
-    }
+    width: $pc-width;
   }
 
   .tarifs__title {

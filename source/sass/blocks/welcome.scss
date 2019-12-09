@@ -6,6 +6,8 @@
   background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 50% 100%,
     url("../img/globe-back-mobile@1x.jpg") no-repeat;
   min-height: 420px;
+  width: $mobile-width;
+  margin: 0 auto;
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
@@ -46,9 +48,11 @@
 
 @media (min-width: $tablet-width) {
   .welcome {
-    background: none;
     padding-left: 40px;
     padding-right: 40px;
+    width: $tablet-width;
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 50% 100%,
+      url("../img/globe-back-tablet@1x.jpg") no-repeat;
   }
 
   .welcome__slogan {
@@ -64,6 +68,10 @@
 }
 
 @media (min-width: $pc-width) {
+  .welcome {
+    width: $pc-width;
+  }
+
   .welcome__wrapper {
     display: none;
   }

@@ -10,13 +10,13 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 22.17px;
-}
 
-.level-block__line {
-  display: block;
-  width: 49px;
-  height: 2px;
-  background-color: #cbced9;
+  &::before {
+    @include pseudo(49px,2px);
+    top: 25px;
+    left: 0;
+    background-color: #cbced9;
+  }
 }
 
 .level-block__counter {
@@ -38,4 +38,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (min-width: $pc-width) {
+  .level-block__counter {
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .level-block__title {
+    &::before {
+      top: 38px;
+      background-color: #ffffff;
+      opacity: 0.3;
+    }
+  }
 }

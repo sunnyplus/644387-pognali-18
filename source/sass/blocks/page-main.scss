@@ -1,18 +1,12 @@
 .page-main {
   font-family: $font;
-  width: 320px;
   margin: 0 auto;
-}
-
-.page-main__tarifs {
-  position: relative;
-  background-color: #edeff6;
-  border-radius: 0 0 30px 30px;
 }
 
 .page-main__head-box {
   background-color: #161c35;
-  border-radius: 0 0 20px 20px;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .page-main__heading {
@@ -24,18 +18,61 @@
   display: none;
 }
 
+.page-main__form-darkblue-wrapper {
+  position: relative;
+  background-color: #161c35;
+  border-radius: 0 0 30px 30px;
+}
+
+.page-main__intro-wrapper {
+  background-color: #161c35;
+}
+
+.page-main__darkblue-wrapper {
+  position: relative;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+}
+
+.page-main__grey-wrapper {
+  position: relative;
+  background-color: #edeff6;
+  border-radius: 0 0 30px 30px;
+}
+
+.page-main__yellow-wrapper {
+  position: relative;
+  background-color: $yellow;
+  border-radius: 0 0 30px 30px;
+}
+
+.page-main__plans-wrapper {
+  position: relative;
+  background-color: #dfe3f0;
+  border-radius: 0 0 30px 30px;
+}
+
+.page-main__plan-add-wrapper {
+  position: relative;
+  background-color: #d4d9eb;
+}
+
+.page-main__filter-counter-wrapper {
+  background-color: #e2e5f2;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+}
+
+.page-main__companion-wrapper {
+  background-color: #edeff6;
+}
+
 @media (min-width: $tablet-width) {
   .page-main {
-    width: $tablet-width;
-
     &--index {
       background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 50% 1%,
         url("../img/globe-back-tablet@1x.jpg") no-repeat 0% 1%;
     }
-  }
-
-  .page-main__tarifs {
-    padding: 100px;
   }
 
   .page-main__head-box {
@@ -56,11 +93,31 @@
     text-transform: uppercase;
     text-decoration: none;
   }
+
+  .page-main__darkblue-wrapper {
+    border-radius: 0 0 60px 60px;
+  }
+
+  .page-main__form-darkblue-wrapper {
+    border-radius: 0 0 60px 60px;
+  }
+
+  .page-main__grey-wrapper {
+    border-radius: 0 0 60px 60px;
+  }
+
+  .page-main__yellow-wrapper {
+    border-radius: 0 0 60px 60px;
+  }
+
+  .page-main__plans-wrapper {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 @media (min-width: $pc-width) {
   .page-main {
-    width: $pc-width;
+    // width: $pc-width;
 
     &--index {
       background: url("../img/traveller-illustration-desktop@1x.png") no-repeat 50% 1%,

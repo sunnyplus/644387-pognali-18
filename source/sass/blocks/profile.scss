@@ -1,7 +1,8 @@
 .profile {
   font-family: $font;
-  background-color: #edeff6;
   padding: 25px;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .profile__form {
@@ -58,6 +59,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .profile {
+    width: $tablet-width;
+  }
+
   .profile__transport-field {
     width: 308px;
     order: 2;
@@ -82,6 +87,10 @@
 }
 
 @media (min-width: $pc-width) {
+  .profile {
+    width: $pc-width;
+  }
+
   .profile__tags-field {
     width: 730px;
     order: 1;
