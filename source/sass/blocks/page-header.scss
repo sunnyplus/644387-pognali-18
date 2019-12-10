@@ -1,19 +1,16 @@
 .page-header {
-  display: flex;
-  justify-content: space-between;
   font-family: $font;
   position: relative;
   margin: 0 auto;
   background-color: $bg-header;
-  padding-top: 27px;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding-bottom: 27px;
 }
 
 .page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
   width: $mobile-width;
   margin: 0 auto;
+  padding: 27px 25px;
 }
 
 @media (min-width: $tablet-width) {
