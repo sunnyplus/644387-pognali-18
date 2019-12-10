@@ -221,21 +221,34 @@
 @media (min-width: $pc-width) {
   .tarifs {
     width: $pc-width;
+    min-height: 830px;
+    padding-right: 402px;
+    padding-left: 223px;
+    padding-top: 105px;
   }
 
   .tarifs__title {
+    margin-left: 260px;
+    margin-bottom: 137px;
+
     &::after {
       width: 444px;
       height: 300px;
-      top: 130px;
-      right: 114px;
+      top: 233px;
+      right: 242px;
     }
 
     &::before {
       width: 198px;
       height: 198px;
-      top: 183px;
-      right: 2px;
+      top: 285px;
+      right: 130px;
+    }
+  }
+
+  .tarifs__list {
+    &::before {
+      width: 813px;
     }
   }
 }

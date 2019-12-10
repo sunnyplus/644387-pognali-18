@@ -103,6 +103,8 @@
     font-size: 45px;
     line-height: 45px;
     align-self: center;
+    margin-right: 40px;
+    letter-spacing: 0.01px;
   }
 
   .tarifs-business__name {
@@ -136,6 +138,24 @@
         0 110px #000000,
         0 165px #000000,
         0 225px #000000;
+    }
+  }
+}
+
+@media (min-width: $pc-width) {
+  .tarifs-business {
+    width: 750px;
+    min-height: 526px;
+    box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+    bottom: 197px;
+  }
+
+  .tarifs-business__list {
+    margin-right: 59px;
+    margin-left: 59px;
+
+    &::before {
+      width: 630px;
     }
   }
 }
