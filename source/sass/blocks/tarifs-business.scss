@@ -82,3 +82,60 @@
   flex-direction: column;
   margin-bottom: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .tarifs-business {
+    flex-direction: column;
+    width: 688px;
+    bottom: 28px;
+    border-radius: 30px;
+    min-height: 526px;
+    padding-top: 52px;
+  }
+
+  .tarifs-business__box {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .tarifs-business__title {
+    font-size: 45px;
+    line-height: 45px;
+    align-self: center;
+  }
+
+  .tarifs-business__name {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .tarifs-business__price {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .tarifs-business__close {
+    font-size: 24px;
+    padding: 42px 0;
+    border-radius: 0 0 30px 30px;
+    text-transform: none;
+  }
+
+  .tarifs-business__list {
+    margin-top: 60px;
+    margin-left: 92px;
+    margin-right: 91px;
+
+    &::before {
+      width: 506px;
+      top: -15px;
+      box-shadow: 0 55px #000000,
+        0 110px #000000,
+        0 165px #000000,
+        0 225px #000000;
+    }
+  }
+}
