@@ -9,6 +9,16 @@
   @include list-reset();
 }
 
+.country-filter__country-block {
+  @include list-reset();
+}
+
+.country-filter__country-list-box {
+  &:not(:first-of-type) {
+    display: none;
+  }
+}
+
 .country-filter__heading {
   color: #192144;
   font-size: 16px;
@@ -115,6 +125,12 @@
     position: relative;
     margin-left: 67px;
     margin-right: 23px;
+  }
+
+  .country-filter__country-list-box {
+    &:not(:first-of-type) {
+      display: block;
+    }
   }
 
   .country-filter__country-block {

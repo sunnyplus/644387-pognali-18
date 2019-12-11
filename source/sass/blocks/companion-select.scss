@@ -22,8 +22,13 @@
 }
 
 .companion-select__arrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .companion-select__list {
@@ -71,6 +76,7 @@
 .companion-select__level-range {
   display: flex;
   min-height: 20px;//tmp
+  align-items: center;
 }
 
 .companion-select__level-button {
@@ -80,25 +86,20 @@
   background-color: #1d2e5b;
   border-radius: 50%;
   border: none;
+  // font-size: 0px;
 
   &:first-of-type {
     margin-left: 67px;
-
-    &::before {
-      @include pseudo(66px,2px);
-      background-color: #000000;
-      right: 12px;
-      opacity: 0.2;
-    }
   }
 
   &:last-of-type {
     margin-left: 133px;
 
     &::before {
-      @include pseudo(144px,2px);
+      @include pseudo(220px,2px);
       right: 0;
-      background-color: #1d2e5b;
+      background: linear-gradient(to left, #1d2e5b 157px, #cccc66 157px);
+      // background-color: #1d2e5b;
     }
   }
 }
@@ -125,7 +126,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $pc-width) {
+@media (min-width: $tablet-width) and (max-width: 1399px) {
   .companion-select {
     margin: 0 auto;
   }

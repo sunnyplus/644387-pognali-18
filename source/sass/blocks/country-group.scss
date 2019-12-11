@@ -18,10 +18,9 @@
   }
 }
 
-@media (max-width: $pc-width) {
-  .country-group {
-    &:not(:first-of-type) {
-      display: none;
-    }
+@media (min-width: $pc-width) {
+  .country-group__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
