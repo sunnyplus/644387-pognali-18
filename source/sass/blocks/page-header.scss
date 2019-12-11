@@ -1,15 +1,35 @@
 .page-header {
   font-family: $font;
   position: relative;
-  width: 320px;
+  margin: 0 auto;
+  background-color: $bg-header;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 27px 25px;
-  background-color: $darkblue;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    justify-content: flex-start;
+    background-color: $bg-header-tablet;
+  }
+
+  .page-header__wrapper {
     width: $tablet-width;
-    max-width: 100%;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .page-header {
+    background-color: $bg-header;
+  }
+
+  .page-header__wrapper {
+    width: $pc-width;
   }
 }

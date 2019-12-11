@@ -1,6 +1,8 @@
 .review {
   font-family: $font;
   background-color: $dark-bg;
+  width: $mobile-width;
+  margin: 0 auto;
   min-height: 285px;
   padding: 25px;
 }
@@ -24,4 +26,17 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: $tablet-width;
+    background: none;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .review {
+    width: $pc-width;
+  }
 }

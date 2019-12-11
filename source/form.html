@@ -2,572 +2,621 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>HTML Academy: Погнали - Направления</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
-      </a>
-      <nav class="main-nav">
-        <button type="button" class="main-nav__button nav-button" aria-label="Показать главное меню сайта">
-          <img src="img/menu.svg" width="25" height="11" alt="Показать главное меню сайта">
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">о сервисе</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">направления</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">попутчики</a>
-            </li>
-          </ul>
-          <a href="login.html" class="main-nav__login button">Авторизация</a>
-          <div class="contacts">
-            <div class="contacts__item">
-              <div class="contacts__icon-wrapper">
-                <img class="contacts__icon" src="img/contacts-phone.svg" width="18" height="13" alt="Телефон">
+  <body class="page-global">
+  <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+        </a>
+        <nav class="main-nav">
+          <button type="button" class="main-nav__button" aria-label="Показать главное меню сайта">
+            <svg class="main-nav__button-icon" width="25" height="11" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
+              <g>
+                <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
+                <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
+              </g>
+            </svg>
+          </button>
+          <div class="main-nav__content">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">о сервисе</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">направления</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="catalog.html">попутчики</a>
+                </li>
+              </ul>
+              <a href="login.html" class="main-nav__login button">Авторизация</a>
+              <div class="main-nav__contacts contacts">
+                <div class="contacts__item">
+                  <a href="#" class="contacts__icon-wrapper">
+                    <svg class="contacts__icon" width="18" height="18">
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                  </a>
+                  <a class="main-nav__contacts-phone contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
+                </div>
+                <div class="contacts__item">
+                  <a href="#" class="contacts__icon-wrapper">
+                    <svg class="contacts__icon" width="18" height="13">
+                      <use xlink:href="img/sprite.svg#email"></use>
+                    </svg>
+                  </a>
+                  <a class="main-nav__contacts-email contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </div>
               </div>
-              <a class="contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
-            </div>
-            <div class="contacts__item">
-              <div class="contacts__icon-wrapper">
-                <img class="contacts__icon" src="img/contacts-mail.svg" width="18" height="13" alt="E-mail">
-              </div>
-              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <ul class="main-nav__social social">
+                <li class="social__item">
+                    <a class="social__link">
+                      <svg width="11" height="21" class="social__fb-icon">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link">
+                    <svg width="23" height="12" class="social__vk-icon">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link">
+                    <svg width="18" height="18" class="social__inst-icon">
+                      <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
-      <section class="profile">
-        <h1 class="page-main__heading main-heading">Направления</h1>
-        <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
-          <div class="profile__form-box">
+      <div class="page-main__form-darkblue-wrapper">
+        <div class="page-main__head-box">
+          <h1 class="page-main__heading main-heading">Попутчики</h1>
+        </div>
+      </div>
+      <div class="page-main__grey-wrapper">
+        <section class="profile">
+          <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
             <div class="profile__level-block level-block">
               <svg class="level-block__svg" width="100" height="100" viewBox="0 0 120 120">
                 <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="4"></circle>
               </svg>
               <div class="level-block__wrapper">
                 <span class="level-block__counter">80</span>
-                <span class="level-block__line"></span>
                 <span class="level-block__title">level</span>
               </div>
             </div>
             <div class="profile__photo-wrapper profile-photo">
               <img class="profile__photo" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото личного профайла">
             </div>
-          </div>
-          <label class="profile__button-label">
-            <input class="profile__button-file visually-hidden" type="file" name="change-photo">
-            <span class="button-toggle">Сменить фото</span>
-          </label>
-          <fieldset class="profile__field">
-            <legend class="profile__legend">Теги</legend>
-            <textarea class="profile__tags-list" name="tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>
-          </fieldset>
-          <fieldset class="profile__field">
-            <legend class="profile__legend">Транспорт</legend>
-            <ul class="companion-select__transport-list transport-list">
-              <li class="transport-list__item">
-                <input class="transport-list__input visually-hidden" type="checkbox" name="companion-plane" id="companion-plane" checked>
-                <label class="transport-list__label" for="companion-plane">
-                  <img src="img/plane.svg" width="14" height="16" alt="Самолёт" class="transport-list__icon">
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <input class="transport-list__input visually-hidden" type="checkbox" name="companion-plane" id="companion-bus" checked>
-                <label class="transport-list__label" for="companion-bus">
-                  <img src="img/bus.svg" width="13" height="16" alt="Автобус" class="transport-list__icon">
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <input class="transport-list__input visually-hidden" type="checkbox" name="companion-plane" id="companion-bike">
-                <label class="transport-list__label" for="companion-bike">
-                  <img src="img/bike.svg" width="14" height="16" alt="Велосипед" class="transport-list__icon">
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <input class="transport-list__input visually-hidden" type="checkbox" name="companion-plane" id="companion-run" checked>
-                <label class="transport-list__label" for="companion-run">
-                  <img src="img/run.svg" width="15" height="17" alt="Бег" class="transport-list__icon">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </section>
-      <section class="plans">
-        <h2 class="plans__heading">Мои планы:</h2>
-        <ol class="plans__list">
-          <li class="plans__item">
-            <span class="plans__direction">Франция, Италия</span>
-            <span class="plans__companions">3 попутчика</span>
-            <span class="plans__date">26 мар — 29 мар</span>
-            <a href="my-plans.html" class="plans__change">изменить</a>
-          </li>
-          <li class="plans__item">
-            <span class="plans__direction">Таиланд, Индонезия</span>
-            <span class="plans__companions">1 попутчик</span>
-            <span class="plans__date">1 июл — 15 июл</span>
-            <a href="my-plans.html" class="plans__change">изменить</a>
-          </li>
-        </ol>
-      </section>
-      <section class="plan-add">
-        <form class="plan-add__form" action="http://echo.htmlacademy.ru">
-          <div class="plan-add__title-wrapper">
-            <h2 class="plan-add__title">Добавить план:</h2>
-            <div class="plan-add__indicators">
-              <span class="plan-add__indicator plan-add__indicator--current"></span>
-              <span class="plan-add__indicator"></span>
-              <span class="plan-add__indicator"></span>
-            </div>
-          </div>
-          <div class="step">
-            <h3 class="step__heading">Шаг 1. Даты пребывания</h3>
-            <p class="step__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-            <div class="step__companions-quota step-number-block">
-              <label for="companions-quota" class="step-number-block__label">
-                <span class="step-number-block__title">ищу попутчиков:</span>
-                <span class="step-number-block__title step-number-block__title--grey">Чел.</span>
-              </label>
-              <div class="step-number-block__bottom-wrapper">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
-                </button>
-                <input class="step-number-block__input" type="number" name="companions-quota" id="companions-quota" value="2">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
-                </button>
-              </div>
-            </div>
-            <div class="step__period step-number-block">
-              <label for="period" class="step-number-block__label">
-                <span class="step-number-block__title">длительность:</span>
-                <span class="step-number-block__title step-number-block__title--grey">дн.</span>
-              </label>
-              <div class="step-number-block__bottom-wrapper">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
-                </button>
-                <input class="step-number-block__input" type="number" name="period" id="period" value="2">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
-                </button>
-              </div>
-            </div>
-            <div class="step__child-permission">
-              <input class="step__child-permission-input" type="checkbox" name="child-permission" id="child-permission" checked>
-              <label class="step__child-permission-label" for="child-permission">Можно с детьми</label>
-            </div>
-            <div class="step__calendar calendar">
-              <div class="calendar__month">
-                <button class="calendar__button">
-                  <img class="calendar__button-image" src="img/month-arrow-left.svg" width="9" height="18" alt="Кнопка назад">
-                </button>
-                <span class="calendar__month-name">Март 2019</span>
-                <button class="calendar__button">
-                  <img class="calendar__button-image" src="img/month-arrow-right.svg" width="9" height="18" alt="Кнопка вперёд">
-                </button>
-              </div>
-              <div class="calendar__body">
-                <ul class="calendar__list">
-                  <li class="calendar__day">П</li>
-                  <li class="calendar__day">В</li>
-                  <li class="calendar__day">С</li>
-                  <li class="calendar__day">Ч</li>
-                  <li class="calendar__day">П</li>
-                  <li class="calendar__day calendar__day--weekend">С</li>
-                  <li class="calendar__day calendar__day--weekend">В</li>
-                </ul>
-                <ul class="calendar__list">
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2302" class="calendar__input visually-hidden" id="2302">
-                    <label class="calendar__label" for="2302">23</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2402" class="calendar__input visually-hidden" id="2402">
-                    <label class="calendar__label" for="2402">24</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2502" class="calendar__input visually-hidden" id="2502">
-                    <label class="calendar__label" for="2502">25</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2602" class="calendar__input visually-hidden" id="2602">
-                    <label class="calendar__label" for="2602">26</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2702" class="calendar__input visually-hidden" id="2702">
-                    <label class="calendar__label" for="2702">27</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2802" class="calendar__input visually-hidden" id="2802">
-                    <label class="calendar__label" for="2802">28</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0103" class="calendar__input visually-hidden" id="0103">
-                    <label class="calendar__label" for="0103">1</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0203" class="calendar__input visually-hidden" id="0203">
-                    <label class="calendar__label" for="0203">2</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0303" class="calendar__input visually-hidden" id="0303">
-                    <label class="calendar__label" for="0303">3</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0403" class="calendar__input visually-hidden" id="0403">
-                    <label class="calendar__label" for="0403">4</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0503" class="calendar__input visually-hidden" id="0503">
-                    <label class="calendar__label" for="0503">5</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0603" class="calendar__input visually-hidden" id="0603">
-                    <label class="calendar__label" for="0603">6</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0703" class="calendar__input visually-hidden" id="0703">
-                    <label class="calendar__label" for="0703">7</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0803" class="calendar__input visually-hidden" id="0803">
-                    <label class="calendar__label" for="0803">8</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0903" class="calendar__input visually-hidden" id="0903">
-                    <label class="calendar__label" for="0903">9</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1003" class="calendar__input visually-hidden" id="1003">
-                    <label class="calendar__label" for="1003">10</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1103" class="calendar__input visually-hidden" id="1103">
-                    <label class="calendar__label" for="1103">11</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1203" class="calendar__input visually-hidden" id="1203">
-                    <label class="calendar__label" for="1203">12</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1303" class="calendar__input visually-hidden" id="1303">
-                    <label class="calendar__label" for="1303">13</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1403" class="calendar__input visually-hidden" id="1403">
-                    <label class="calendar__label" for="1403">14</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1503" class="calendar__input visually-hidden" id="1503">
-                    <label class="calendar__label" for="1503">15</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1603" class="calendar__input visually-hidden" id="1603">
-                    <label class="calendar__label" for="1603">16</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1703" class="calendar__input visually-hidden" id="1703">
-                    <label class="calendar__label" for="1703">17</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1803" class="calendar__input visually-hidden" id="1803">
-                    <label class="calendar__label" for="1803">18</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="1903" class="calendar__input visually-hidden" id="1903">
-                    <label class="calendar__label" for="1903">19</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2003" class="calendar__input visually-hidden" id="2003">
-                    <label class="calendar__label" for="2003">20</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2103" class="calendar__input visually-hidden" id="2103">
-                    <label class="calendar__label" for="2103">21</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2203" class="calendar__input visually-hidden" id="2203">
-                    <label class="calendar__label" for="2203">22</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2303" class="calendar__input visually-hidden" id="2303">
-                    <label class="calendar__label" for="2303">23</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2403" class="calendar__input visually-hidden" id="2403">
-                    <label class="calendar__label" for="2403">24</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2503" class="calendar__input visually-hidden" id="2503">
-                    <label class="calendar__label" for="2503">25</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2603" class="calendar__input visually-hidden" id="2603" checked>
-                    <label class="calendar__label" for="2603">26</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2703" class="calendar__input visually-hidden" id="2703" checked>
-                    <label class="calendar__label" for="2703">27</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2803" class="calendar__input visually-hidden" id="2803" checked>
-                    <label class="calendar__label" for="2803">28</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="2903" class="calendar__input visually-hidden" id="2903">
-                    <label class="calendar__label" for="2903">29</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="3003" class="calendar__input visually-hidden" id="3003">
-                    <label class="calendar__label" for="3003">30</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="3103" class="calendar__input visually-hidden" id="3103">
-                    <label class="calendar__label" for="3103">31</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0104" class="calendar__input visually-hidden" id="0104">
-                    <label class="calendar__label" for="0104">01</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0204" class="calendar__input visually-hidden" id="0204">
-                    <label class="calendar__label" for="0204">02</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0304" class="calendar__input visually-hidden" id="0304">
-                    <label class="calendar__label" for="0304">03</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0404" class="calendar__input visually-hidden" id="0404">
-                    <label class="calendar__label" for="0404">04</label>
-                  </li>
-                  <li class="calendar__item">
-                    <input type="checkbox" name="0504" class="calendar__input visually-hidden" id="0504">
-                    <label class="calendar__label" for="0504">05</label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <button class="step__submit button" type="submit">Следующий шаг</button>
-          </div>
-          <div class="step">
-            <h3 class="step__heading">Шаг 2. Маршрут</h3>
-            <p class="step__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
-            <div class="step__country-select country-select">
-              <input class="country-select__input" type="text" id="country-1" value="Босния и Герцеговина">
-              <label for="country-1">
-                <div class="country-select__flag-wrapper">
-                  <img src="img/bosnia_flag.png" width="35" height="24" alt="Флаг Боснии и Герцеговины">
-                </div>
-              </label>
-              <button class="country-select__button-delete" type="button">
-                <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
-              </button>
-            </div>
-            <div class="step__country-select country-select">
-              <input class="country-select__input" type="text" id="country-1" value="Чехия">
-              <label for="country-1">
-                <div class="country-select__flag-wrapper">
-                  <img src="img/сzech_flag.png" width="35" height="24" alt="Флаг Чехии">
-                </div>
-              </label>
-              <button class="country-select__button-delete" type="button">
-                <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
-              </button>
-            </div>
-            <div class="step__country-select country-select">
-              <input class="country-select__input country-select__input--darkblue" type="text" id="country-1" value="Выберите страну">
-              <button class="country-select__button-delete" type="button">
-                <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
-              </button>
-            </div>
-            <div class="step__countries-wrapper">
-              <ul class="step__country-alphabet country-alphabet">
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">А</button>
+            <label class="profile__button-label">
+              <input class="profile__button-file visually-hidden" type="file" name="change-photo">
+              <span class="profile__change-btn button-toggle">Сменить фото</span>
+            </label>
+            <fieldset class="profile__tags-field">
+              <legend class="profile__legend">Теги</legend>
+              <textarea class="profile__tags-list" name="tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>
+            </fieldset>
+            <fieldset class="profile__transport-field">
+              <legend class="profile__legend">Транспорт</legend>
+              <ul class="companion-select__transport-list transport-list">
+                <li class="transport-list__item">
+                  <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
+                  <label class="transport-list__label" for="companion-plane">
+                    <img src="img/plane.svg" width="14" height="16" alt="Самолёт" class="transport-list__icon">
+                  </label>
                 </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Б</button>
+                <li class="transport-list__item">
+                  <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
+                  <label class="transport-list__label" for="companion-bus">
+                    <img src="img/bus.svg" width="13" height="16" alt="Автобус" class="transport-list__icon">
+                  </label>
                 </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">В</button>
+                <li class="transport-list__item">
+                  <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
+                  <label class="transport-list__label" for="companion-bike">
+                    <img src="img/bike.svg" width="14" height="16" alt="Велосипед" class="transport-list__icon">
+                  </label>
                 </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Г</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Д</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Е</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Ё</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Ж</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">З</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Ж</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">З</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">И</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Й</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">К</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Л</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">М</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Н</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">О</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">П</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Р</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">С</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Т</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">У</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Ф</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Х</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Ч</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Ш</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Э</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Ю</button>
-                </li>
-                <li class="country-alphabet__item">
-                  <button class="country-alphabet__letter" type="button">Я</button>
+                <li class="transport-list__item">
+                  <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
+                  <label class="transport-list__label" for="companion-run">
+                    <img src="img/run.svg" width="15" height="17" alt="Бег" class="transport-list__icon">
+                  </label>
                 </li>
               </ul>
-              <ul class="step__country-list country-group">
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Афганистан</a>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+      <div class="page-main__plans-wrapper">
+        <section class="plans">
+          <h2 class="plans__heading">Мои планы:</h2>
+          <ol class="plans__list">
+            <li class="plans__item">
+              <span class="plans__direction">Франция, Италия</span>
+              <span class="plans__companions">3 попутчика</span>
+              <span class="plans__date">26 мар — 29 мар</span>
+              <a href="my-plans.html" class="plans__change">изменить</a>
+            </li>
+            <li class="plans__item">
+              <span class="plans__direction">Таиланд, Индонезия</span>
+              <span class="plans__companions">1 попутчик</span>
+              <span class="plans__date">1 июл — 15 июл</span>
+              <a href="my-plans.html" class="plans__change">изменить</a>
+            </li>
+          </ol>
+        </section>
+      </div>
+      <div class="page-main__plan-add-wrapper">
+        <section class="plan-add">
+          <form class="plan-add__form" action="http://echo.htmlacademy.ru">
+            <div class="plan-add__title-wrapper">
+              <h2 class="plan-add__title">Добавить план:</h2>
+              <div class="plan-add__indicators">
+                <span class="plan-add__indicator plan-add__indicator--current"></span>
+                <span class="plan-add__indicator"></span>
+                <span class="plan-add__indicator"></span>
+              </div>
+            </div>
+            <div class="step step--one">
+              <h3 class="step__heading">Шаг 1. Даты пребывания</h3>
+              <p class="step__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <div class="step__companions-quota step-number-block">
+                <label for="companions-quota" class="step-number-block__label">
+                  <span class="step-number-block__title">ищу попутчиков:</span>
+                  <span class="step-number-block__title step-number-block__title--grey">Чел.</span>
+                </label>
+                <div class="step-number-block__bottom-wrapper">
+                  <button class="step-number-block__button" type="button">
+                    <img class="step-number-block__button-icon" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
+                  </button>
+                  <input class="step-number-block__input" type="number" name="companions-quota" id="companions-quota" value="2">
+                  <button class="step-number-block__button" type="button">
+                    <img class="step-number-block__button-icon" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
+                  </button>
+                </div>
+              </div>
+              <div class="step__period step-number-block">
+                <label for="period" class="step-number-block__label">
+                  <span class="step-number-block__title">длительность:</span>
+                  <span class="step-number-block__title step-number-block__title--grey">дн.</span>
+                </label>
+                <div class="step-number-block__bottom-wrapper">
+                  <button class="step-number-block__button" type="button">
+                    <img class="step-number-block__button-icon" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
+                  </button>
+                  <input class="step-number-block__input" type="number" name="period" id="period" value="2">
+                  <button class="step-number-block__button" type="button">
+                    <img class="step-number-block__button-icon" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
+                  </button>
+                </div>
+              </div>
+              <div class="step__child-permission">
+                <input class="step__child-permission-input" type="checkbox" name="child-permission" id="child-permission" checked>
+                <label class="step__child-permission-label" for="child-permission">Можно с детьми</label>
+              </div>
+              <div class="step__calendar calendar">
+                <div class="calendar__month">
+                  <button class="calendar__button">
+                    <img class="calendar__button-image" src="img/month-arrow-left.svg" width="9" height="18" alt="Кнопка назад">
+                  </button>
+                  <span class="calendar__month-name">Март 2019</span>
+                  <button class="calendar__button">
+                    <img class="calendar__button-image" src="img/month-arrow-right.svg" width="9" height="18" alt="Кнопка вперёд">
+                  </button>
+                </div>
+                <div class="calendar__body">
+                  <ul class="calendar__list">
+                    <li class="calendar__day">П</li>
+                    <li class="calendar__day">В</li>
+                    <li class="calendar__day">С</li>
+                    <li class="calendar__day">Ч</li>
+                    <li class="calendar__day">П</li>
+                    <li class="calendar__day calendar__day--weekend">С</li>
+                    <li class="calendar__day calendar__day--weekend">В</li>
+                  </ul>
+                  <ul class="calendar__list">
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2302" class="calendar__input visually-hidden" id="2302">
+                      <label class="calendar__label" for="2302">23</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2402" class="calendar__input visually-hidden" id="2402">
+                      <label class="calendar__label" for="2402">24</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2502" class="calendar__input visually-hidden" id="2502">
+                      <label class="calendar__label" for="2502">25</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2602" class="calendar__input visually-hidden" id="2602">
+                      <label class="calendar__label" for="2602">26</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2702" class="calendar__input visually-hidden" id="2702">
+                      <label class="calendar__label" for="2702">27</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2802" class="calendar__input visually-hidden" id="2802">
+                      <label class="calendar__label" for="2802">28</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0103" class="calendar__input visually-hidden" id="0103">
+                      <label class="calendar__label" for="0103">1</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0203" class="calendar__input visually-hidden" id="0203">
+                      <label class="calendar__label" for="0203">2</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0303" class="calendar__input visually-hidden" id="0303">
+                      <label class="calendar__label" for="0303">3</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0403" class="calendar__input visually-hidden" id="0403">
+                      <label class="calendar__label" for="0403">4</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0503" class="calendar__input visually-hidden" id="0503">
+                      <label class="calendar__label" for="0503">5</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0603" class="calendar__input visually-hidden" id="0603">
+                      <label class="calendar__label" for="0603">6</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0703" class="calendar__input visually-hidden" id="0703">
+                      <label class="calendar__label" for="0703">7</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0803" class="calendar__input visually-hidden" id="0803">
+                      <label class="calendar__label" for="0803">8</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0903" class="calendar__input visually-hidden" id="0903">
+                      <label class="calendar__label" for="0903">9</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1003" class="calendar__input visually-hidden" id="1003">
+                      <label class="calendar__label" for="1003">10</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1103" class="calendar__input visually-hidden" id="1103">
+                      <label class="calendar__label" for="1103">11</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1203" class="calendar__input visually-hidden" id="1203">
+                      <label class="calendar__label" for="1203">12</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1303" class="calendar__input visually-hidden" id="1303">
+                      <label class="calendar__label" for="1303">13</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1403" class="calendar__input visually-hidden" id="1403">
+                      <label class="calendar__label" for="1403">14</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1503" class="calendar__input visually-hidden" id="1503">
+                      <label class="calendar__label" for="1503">15</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1603" class="calendar__input visually-hidden" id="1603">
+                      <label class="calendar__label" for="1603">16</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1703" class="calendar__input visually-hidden" id="1703">
+                      <label class="calendar__label" for="1703">17</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1803" class="calendar__input visually-hidden" id="1803">
+                      <label class="calendar__label" for="1803">18</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="1903" class="calendar__input visually-hidden" id="1903">
+                      <label class="calendar__label" for="1903">19</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2003" class="calendar__input visually-hidden" id="2003">
+                      <label class="calendar__label" for="2003">20</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2103" class="calendar__input visually-hidden" id="2103">
+                      <label class="calendar__label" for="2103">21</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2203" class="calendar__input visually-hidden" id="2203">
+                      <label class="calendar__label" for="2203">22</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2303" class="calendar__input visually-hidden" id="2303">
+                      <label class="calendar__label" for="2303">23</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2403" class="calendar__input visually-hidden" id="2403">
+                      <label class="calendar__label" for="2403">24</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2503" class="calendar__input visually-hidden" id="2503">
+                      <label class="calendar__label" for="2503">25</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2603" class="calendar__input visually-hidden" id="2603" checked>
+                      <label class="calendar__label" for="2603">26</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2703" class="calendar__input visually-hidden" id="2703" checked>
+                      <label class="calendar__label" for="2703">27</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2803" class="calendar__input visually-hidden" id="2803" checked>
+                      <label class="calendar__label" for="2803">28</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="2903" class="calendar__input visually-hidden" id="2903">
+                      <label class="calendar__label" for="2903">29</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="3003" class="calendar__input visually-hidden" id="3003">
+                      <label class="calendar__label" for="3003">30</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="3103" class="calendar__input visually-hidden" id="3103">
+                      <label class="calendar__label" for="3103">31</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0104" class="calendar__input visually-hidden" id="0104">
+                      <label class="calendar__label" for="0104">01</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0204" class="calendar__input visually-hidden" id="0204">
+                      <label class="calendar__label" for="0204">02</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0304" class="calendar__input visually-hidden" id="0304">
+                      <label class="calendar__label" for="0304">03</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0404" class="calendar__input visually-hidden" id="0404">
+                      <label class="calendar__label" for="0404">04</label>
+                    </li>
+                    <li class="calendar__item">
+                      <input type="checkbox" name="0504" class="calendar__input visually-hidden" id="0504">
+                      <label class="calendar__label" for="0504">05</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="step__submit button" type="submit">Следующий шаг</button>
+            </div>
+            <div class="step step--two">
+              <h3 class="step__heading">Шаг 2. Маршрут</h3>
+              <p class="step__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+              <div class="step__country-select country-select">
+                <input class="country-select__input" type="text" id="country-1" value="Босния и Герцеговина">
+                <label for="country-1">
+                  <div class="country-select__flag-wrapper">
+                    <img src="img/bosnia_flag.png" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+                  </div>
+                </label>
+                <button class="country-select__button-delete" type="button">
+                  <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
+                </button>
+              </div>
+              <div class="step__country-select country-select">
+                <input class="country-select__input" type="text" id="country-1" value="Чехия">
+                <label for="country-1">
+                  <div class="country-select__flag-wrapper">
+                    <img src="img/сzech_flag.png" width="35" height="24" alt="Флаг Чехии">
+                  </div>
+                </label>
+                <button class="country-select__button-delete" type="button">
+                  <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
+                </button>
+              </div>
+              <div class="step__country-select country-select">
+                <input class="country-select__input country-select__input--darkblue" type="text" id="country-1" value="Выберите страну">
+                <button class="country-select__button-delete" type="button">
+                  <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
+                </button>
+              </div>
+              <div class="step__countries-wrapper">
+                <ul class="step__country-alphabet">
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">А</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Б</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">В</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Г</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Д</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Е</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Ё</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Ж</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">З</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Ж</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">З</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">И</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Й</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">К</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Л</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">М</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Н</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">О</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">П</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Р</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">С</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Т</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">У</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Ф</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Х</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Ч</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Ш</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Э</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Ю</button>
+                  </li>
+                  <li class="country-alphabet__item">
+                    <button class="step__country-letter" type="button">Я</button>
+                  </li>
+                </ul>
+                <ul class="step__country-list">
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Афганистан</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Албания</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Алжир</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Андорра</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Аргентина</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Армения</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Австралия</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Австрия</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="step__country-link">Азербайджан</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="step__country-select country-select">
+                <input class="country-select__input country-select__input--grey" type="text" id="country-1" value="Добавить страну">
+                <button class="country-select__button-delete" type="button">
+                  <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
+                </button>
+              </div>
+              <button class="step__submit button" type="submit">Следующий шаг</button>
+              <button class="step__back-button" type="button">На шаг назад</button>
+            </div>
+            <div class="step step--three">
+              <h3 class="step__heading">Шаг 3. Развлечения</h3>
+              <p class="step__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <ul class="step__intertament-list">
+                <li class="step__intertament-item">
+                  <div class="step__intertament-box">
+                    <span class="step__intertament-place">Босния и Герцеговина</span>
+                    <img class="step__intertament-flag" src="img/bosnia_flag.png" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+                  </div>
+                  <textarea class="step__intertament-text" name="intertainment-bosnia" rows="10" placeholder="План действий"></textarea>
                 </li>
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Албания</a>
-                </li>
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Алжир</a>
-                </li>
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Андорра</a>
-                </li>
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Аргентина</a>
-                </li>
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Армения</a>
-                </li>
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Австралия</a>
-                </li>
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Австрия</a>
-                </li>
-                <li class="country-group__item">
-                  <a href="#" class="country-group__link">Азербайджан</a>
+                <li class="step__intertament-item">
+                  <div class="step__intertament-box">
+                    <span class="step__intertament-place">Чехия</span>
+                    <img class="step__intertament-flag" src="img/сzech_flag.png" width="35" height="24" alt="Флаг Чехии">
+                  </div>
+                  <textarea class="step__intertament-text" name="intertainment-chz" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                  </textarea>
                 </li>
               </ul>
-            </div>
-            <div class="step__country-select country-select">
-              <input class="country-select__input country-select__input--grey" type="text" id="country-1" value="Добавить страну">
-              <button class="country-select__button-delete" type="button">
-                <img src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
-              </button>
-            </div>
-            <button class="step__submit button" type="submit">Следующий шаг</button>
+              <button class="step__submit button" type="submit">Отправить</button>
             <button class="step__back-button" type="button">На шаг назад</button>
-          </div>
-          <div class="step">
-            <h3 class="step__heading">Шаг 3. Развлечения</h3>
-            <p class="step__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-            <ul class="step__intertament-list">
-              <li class="step__intertament-item">
-                <div class="step__intertament-box">
-                  <span class="step__intertament-place">Босния и Герцеговина</span>
-                  <img class="step__intertament-flag" src="img/bosnia_flag.png" width="35" height="24" alt="Флаг Боснии и Герцеговины">
-                </div>
-                <textarea class="step__intertament-text" name="intertainment-bosnia" rows="10" placeholder="План действий"></textarea>
-              </li>
-              <li class="step__intertament-item">
-                <div class="step__intertament-box">
-                  <span class="step__intertament-place">Чехия</span>
-                  <img class="step__intertament-flag" src="img/сzech_flag.png" width="35" height="24" alt="Флаг Чехии">
-                </div>
-                <textarea class="step__intertament-text" name="intertainment-chz" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                </textarea>
-              </li>
-            </ul>
-            <button class="step__submit button" type="submit">Отправить</button>
-          <button class="step__back-button" type="button">На шаг назад</button>
-          </div>
-        </form>
-      </section>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <a class="logo">
-        <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?" class="logo__image">
-      </a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-            <a class="social__link"><img src="img/facebook.svg" width="11" height="21" alt="Страница в Фейсбук" class="social__image"></a>
-        </li>
-        <li class="social__item">
-            <a class="social__link"><img src="img/vk.svg" width="23" height="12" alt="Страница во Вконтакте" class="social__image"></a>
-        </li>
-        <li class="social__item">
-            <a class="social__link"><img src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
-        </li>
-      </ul>
-      <div class="site-producer">
-        <p class="site-producer__info">Разработано</p>
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика сайта" class="site-producer__image">
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="logo">
+          <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?" class="logo__image">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item social__item--yellow">
+              <a class="social__link"><img class="social__fb-icon" src="img/facebook.svg" width="11" height="21" alt="Страница в Фейсбук" class="social__image"></a>
+          </li>
+          <li class="social__item social__item--yellow">
+              <a class="social__link"><img class="social__vk-icon" src="img/vk.svg" width="23" height="12" alt="Страница во Вконтакте" class="social__image"></a>
+          </li>
+          <li class="social__item social__item--yellow">
+              <a class="social__link"><img class="social__inst-icon" src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
+          </li>
+        </ul>
+        <div class="site-producer">
+          <p class="site-producer__info">Разработано</p>
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика сайта" class="site-producer__image">
+        </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

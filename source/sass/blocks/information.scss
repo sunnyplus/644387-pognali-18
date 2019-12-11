@@ -1,8 +1,11 @@
 .information {
   font-family: $font;
   min-height: 352px;
+  width: $mobile-width;
+  margin: 0 auto;
   border-radius: 0 0 30px 30px;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 
   &--service {
     background: url("../img/about-mobile@1x.png") no-repeat;
@@ -10,8 +13,10 @@
   }
 
   &--companions {
-    background: url("../img/blue_back.png") no-repeat 10% 5%,
-      url("../img/smolov-back-desktop@1x.png") no-repeat 50% 5%;
+    background-image: url("../img/blue_back.svg"), url("../img/smolov-back-desktop@1x.png");
+    background-position: 1% 5%, 75% 5%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 132px 132px, 143px 143px;
     background-color: #192144;
   }
 
@@ -41,4 +46,77 @@
 .information__link {
   color: #ffd74b;
   text-decoration: underline;
+}
+
+.information__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .information {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: $tablet-width;
+
+    &--service {
+      background: url("../img/about-tablet@1x.png") no-repeat 100% 50%;
+      background-color: #192144;
+    }
+
+    &--companions {
+      background-image: url("../img/blue_back.svg"), url("../img/rogovaya-back-desktop@1x.png");
+      background-position: 10% 5%, 85% 5%;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 213px 213px, 285px 285px;
+    }
+  }
+
+  .information__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .information__button {
+    width: 274px;
+    display: flex;
+  }
+
+  .information__description {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--notice {
+      display: block;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+
+    &--service {
+      width: 298px;
+    }
+
+    &--companions {
+      width: 298px;
+    }
+  }
+}
+
+@media (min-width: $pc-width) {
+  .information {
+    position: relative;
+    width: $pc-width;
+
+    &--service {
+      background: url("../img/about-desktop@1x.png") no-repeat 100% 50%;
+      background-color: #192144;
+    }
+
+    &--companions {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 132px;
+      padding-right: 132px;
+    }
+  }
 }

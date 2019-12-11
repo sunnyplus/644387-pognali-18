@@ -10,3 +10,17 @@
   line-height: 22px;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .country-group__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .country-group__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

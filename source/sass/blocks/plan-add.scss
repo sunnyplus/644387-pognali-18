@@ -1,8 +1,9 @@
 .plan-add {
   font-family: $font;
-  background-color: #d4d9eb;
   padding: 25px;
   border-radius: 30px;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .plan-add__title {
@@ -33,4 +34,21 @@
 .plan-add__title-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .plan-add {
+    width: $tablet-width;
+  }
+
+  .plan-add__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .plan-add {
+    width: $pc-width;
+  }
 }

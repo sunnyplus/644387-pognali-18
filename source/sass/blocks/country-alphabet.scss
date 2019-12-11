@@ -24,3 +24,37 @@
     border: none;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $pc-width) { //tmp
+  .country-alphabet {
+    width: 390px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .country-alphabet__letter {
+    width: 50px;
+    height: 55px;
+    background-color: transparent;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 0.2;
+    border: none;
+    padding: 20px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .country-filter__country-alphabet-list {
+    display: none;
+  }
+  // .country-alphabet__letter {
+  //   width: 182px;
+  //   padding-bottom: 590px;
+  //   text-align: left;
+  //   color: #192144;
+  //   opacity: 1;
+  //   margin-right: 23px;
+  // }
+}

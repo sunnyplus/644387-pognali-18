@@ -2,9 +2,18 @@
   @include list-reset();
   font-family: $font;
   display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  &--catalog {
-    flex-direction: column;
+@media (max-width: $pc-width) {
+  .traveler-directions {
+    &::after {
+      @include pseudo(100%, 1px);
+      background-color: #edeff6;
+      top: 0;
+    }
   }
 }
 
@@ -20,4 +29,23 @@
 .traveler-directions__item {
   display: flex;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .traveler-directions {
+    flex-direction: row;
+  }
+
+  .traveler__directions-wrapper {
+    order: 3;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .traveler-directions {
+    &--catalog {
+      flex-direction: column;
+      order: 0;
+    }
+  }
 }

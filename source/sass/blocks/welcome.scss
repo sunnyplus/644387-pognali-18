@@ -1,8 +1,13 @@
 .welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: $font;
   background: url("../img/traveller-illustration-mobile@1x.png") no-repeat 50% 100%,
     url("../img/globe-back-mobile@1x.jpg") no-repeat;
   min-height: 420px;
+  width: $mobile-width;
+  margin: 0 auto;
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
@@ -13,6 +18,7 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
+  margin: 17px 5px 0;
 }
 
 .welcome__login {
@@ -39,4 +45,35 @@
   height: 40px;
   background-color: #ffbd30;
   border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .welcome {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: $tablet-width;
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 50% 100%,
+      url("../img/globe-back-tablet@1x.jpg") no-repeat;
+  }
+
+  .welcome__slogan {
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .welcome__wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .welcome {
+    width: $pc-width;
+  }
+
+  .welcome__wrapper {
+    display: none;
+  }
 }

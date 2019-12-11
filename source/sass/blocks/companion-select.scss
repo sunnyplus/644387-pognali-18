@@ -1,9 +1,10 @@
 .companion-select {
   font-family: $font;
-  width: 100%;
-  border-radius: 20px;
+  width: 270px;
+  margin: 0 auto;
   background-color: #ffd74b;
   padding: 25px;
+  border-radius: 20px;
 }
 
 .companion-select__heading {
@@ -13,8 +14,21 @@
   line-height: 22.49px;
 }
 
-.companion-select__field {
-  border: 0;
+.companion-select__label {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.companion-select__arrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .companion-select__list {
@@ -57,4 +71,81 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   border: 1px solid #cbced9;
+}
+
+.companion-select__level-range {
+  display: flex;
+  min-height: 20px;//tmp
+  align-items: center;
+}
+
+.companion-select__level-button {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  border: none;
+  // font-size: 0px;
+
+  &:first-of-type {
+    margin-left: 67px;
+  }
+
+  &:last-of-type {
+    margin-left: 133px;
+
+    &::before {
+      @include pseudo(220px,2px);
+      right: 0;
+      background: linear-gradient(to left, #1d2e5b 157px, #cccc66 157px);
+      // background-color: #1d2e5b;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .companion-select {
+    width: 688px;
+  }
+
+  .companion-select__heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .companion-select__label {
+    color: #444444;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .companion-select__legend {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1399px) {
+  .companion-select {
+    margin: 0 auto;
+  }
+
+  .companion-select__list {
+    display: flex;
+  }
+
+  .companion-select__arrow {
+    display: none;
+  }
+
+  .companion-select__field {
+    display: flex;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .companion-select {
+    width: 285px;
+  }
 }

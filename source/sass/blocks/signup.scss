@@ -4,7 +4,7 @@
 }
 
 .signup__input {
-  width: 240px;
+  width: 100%;
   padding: 22px;
   border: none;
   border-radius: 10px;
@@ -18,4 +18,23 @@
 
 .signup__button {
   margin-left: -60px;
+}
+
+@media (min-width: $pc-width) {
+  .signup__button {
+    min-width: 320px;
+    position: relative;
+    justify-content: flex-end;
+
+    &::before {
+      position: absolute;
+      content: "Регистрация";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      line-height: 24px;
+      order: -1;
+    }
+  }
 }

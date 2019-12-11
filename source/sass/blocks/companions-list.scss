@@ -2,3 +2,23 @@
   @include list-reset();
   font-family: $font;
 }
+
+.companions-list__item {
+  border-radius: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .companions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .companions-list__item {
+    &:first-child {
+      margin-right: 60px;
+    }
+  }
+}

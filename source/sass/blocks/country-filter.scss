@@ -1,12 +1,22 @@
 .country-filter {
   font-family: $font;
-  background-color: #e2e5f2;
   padding: 25px;
-  border-radius: 0 0 20px 20px;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .country-filter__continent-list {
   @include list-reset();
+}
+
+.country-filter__country-block {
+  @include list-reset();
+}
+
+.country-filter__country-list-box {
+  &:not(:first-of-type) {
+    display: none;
+  }
 }
 
 .country-filter__heading {
@@ -19,11 +29,13 @@
 
 .country-filter__country-alphabet-list {
   @include list-reset();
+  margin: 0 5px;
 }
 
 .country-filter__heading-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .country-filter__continent-link {
@@ -37,5 +49,102 @@
 
   &--active {
     opacity: 1;
+  }
+}
+
+.country-filter__capital {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .country-filter__down-btn {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .country-filter {
+    width: $tablet-width;
+  }
+
+  .country-filter__continent-list {
+    display: flex;
+  }
+
+  .country-filter__continent-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .country-filter__heading {
+    display: none;
+  }
+
+  .country-filter__continent-item {
+    margin-right: 25px;
+  }
+
+  .country-filter__close-btn {
+    order: 12;
+  }
+
+  .country-filter__down-btn {
+    order: 11;
+    border: none;
+    background-color: transparent;
+    color: #192144;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .country-filter__country-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .country-filter__button {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .country-filter {
+    padding-left: 60px;
+    padding-right: 60px;
+    width: $pc-width;
+  }
+
+  .country-filter__country-list {
+    width: 180px;
+  }
+
+  .country-filter__country-box {
+    position: relative;
+    margin-left: 67px;
+    margin-right: 23px;
+  }
+
+  .country-filter__country-list-box {
+    &:not(:first-of-type) {
+      display: block;
+    }
+  }
+
+  .country-filter__country-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .country-filter__capital {
+    display: block;
+    color: #192144;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
   }
 }

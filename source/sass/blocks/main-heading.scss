@@ -5,3 +5,10 @@
   font-weight: 700;
   line-height: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-heading {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}

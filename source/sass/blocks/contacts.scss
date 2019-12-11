@@ -24,6 +24,8 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
 
   &--yellow {
     color: #ffd74b;
@@ -35,6 +37,7 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+  text-decoration: none;
 
   &--yellow {
     color: #ffd74b;
@@ -69,5 +72,18 @@
   .contacts__icon-wrapper {
     width: 68px;
     height: 68px;
+  }
+
+  .contacts__address {
+    width: 440px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .contacts {
+    display: flex;
+    justify-content: center;
   }
 }

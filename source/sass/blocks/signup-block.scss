@@ -1,5 +1,18 @@
 .signup-block {
   font-family: $font;
-  background-color: $darkblue;
   padding: 25px;
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .signup-block {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .signup-block {
+    width: $pc-width;
+  }
 }

@@ -45,3 +45,16 @@
   border: none;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .step-number-block__title {
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .step-number-block {
+    width: 500px;
+  }
+}

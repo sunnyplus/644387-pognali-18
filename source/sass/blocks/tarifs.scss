@@ -1,15 +1,11 @@
 .tarifs {
+  position: relative;
   font-family: $font;
-  width: 320px;
-  min-height: 400px;
-  border-radius: 0 0 30px 30px;
-  background-color: #edeff6;
-  padding-right: 26px;
+  padding-top: 82px;
+  padding-bottom: 38px;
   padding-left: 50px;
-
-  &--business {
-    background-color: $white;
-  }
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .tarifs__title {
@@ -17,6 +13,18 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
+  margin-right: 150px;
+  letter-spacing: 0.25px;
+
+  &::before {
+    @include pseudo(99px, 99px);
+    top: 67px;
+    right: 25px;
+    z-index: 3;
+    background: url("../img/rates@1x.png") no-repeat;
+    background-size: contain;
+  }
 }
 
 .tarifs__name {
@@ -28,6 +36,8 @@
 }
 
 .tarifs__price {
+  position: relative;
+  z-index: 2;
   display: block;
   color: #444444;
   font-size: 16px;
@@ -36,28 +46,63 @@
   margin: 0;
 }
 
-.tarifs__header {
-  @include flex-center();
-}
-
 .tarifs__list {
   @include list-reset();
+  position: relative;
   counter-reset: tarifs-counter;
+  margin-top: 55px;
+  margin-bottom: 40px;
+
+  &::before {
+    @include pseudo(200px, 1px);
+    top: -12px;
+    background-color: #000000;
+    opacity: 0.05;
+    z-index: 1;
+    box-shadow: 0 65px #000000,
+      0 130px #000000,
+      0 195px #000000;
+  }
 }
 
 .tarifs__item {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  &:not(:last-of-type) {
+    padding-bottom: 22px;
+  }
 
   &::after {
     @include flex-center();
+    position: absolute;
+    top: -8px;
+    right: 26px;
     width: 34px;
     height: 34px;
     counter-increment: tarifs-counter;
     content: counter(tarifs-counter);
     background-color: #ffa530;
     color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
     border-radius: 50%;
+    padding-top: 2px;
+  }
+
+  &:nth-child(2) {
+    &::after {
+      background-color: #ffbd30;
+    }
+  }
+
+  &:nth-child(3) {
+    &::after {
+      background-color: #ffd74b;
+    }
   }
 }
 
@@ -69,15 +114,141 @@
   text-decoration: none;
 }
 
-.tarifs__close-business {
-  width: 100%;
-  background-color: #f3f4f8;
-  color: #1d2e5b;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding: 18px 0;
-  border: none;
-  cursor: pointer;
+@media (min-width: $tablet-width) {
+  .tarifs {
+    position: relative;
+    background-color: #edeff6;
+    width: $tablet-width;
+    min-height: 644px;
+    padding-top: 163px;
+    padding-right: 75px;
+    padding-left: 130px;
+
+    &--business {
+      border-radius: 30px;
+      width: 688px;
+    }
+  }
+
+  .tarifs__list {
+    margin-top: 75px;
+    margin-bottom: 60px;
+
+    &::before {
+      width: 562px;
+      top: -2px;
+    }
+  }
+
+  .tarifs__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-left: 15px;
+    margin-right: auto;
+    letter-spacing: 0.05px;
+
+    &::after {
+      @include pseudo(198px, 285px);
+      top: 240px;
+      right: 40px;
+      z-index: 1;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+
+    &::before {
+      width: 100px;
+      top: 497px;
+      right: 85px;
+      background-size: contain;
+    }
+  }
+
+  .tarifs__name {
+    font-size: 28px;
+    line-height: 33px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  .tarifs__price {
+    font-size: 28px;
+    line-height: 33px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .tarifs__show-business {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      @include pseudo(67px,67px);
+      left: -90px;
+      top: -25px;
+      background: url("../img/business.svg") no-repeat 50% 50%;
+      background-size: 17px 21px;
+      background-color: #e2e5f2;
+      border-radius: 50%;
+    }
+  }
+
+  .tarifs__item {
+    flex-direction: row;
+
+    &:not(:last-of-type) {
+      padding-bottom: 3px;
+    }
+
+    &::after {
+      left: -90px;
+      top: -3px;
+      width: 67px;
+      height: 67px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+
+  .tarifs__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .tarifs {
+    width: $pc-width;
+    min-height: 830px;
+    padding-right: 402px;
+    padding-left: 223px;
+    padding-top: 105px;
+  }
+
+  .tarifs__title {
+    margin-left: 260px;
+    margin-bottom: 137px;
+
+    &::after {
+      width: 444px;
+      height: 300px;
+      top: 233px;
+      right: 242px;
+    }
+
+    &::before {
+      width: 198px;
+      height: 198px;
+      top: 285px;
+      right: 130px;
+    }
+  }
+
+  .tarifs__list {
+    &::before {
+      width: 813px;
+    }
+  }
 }
