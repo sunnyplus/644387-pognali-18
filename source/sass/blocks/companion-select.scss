@@ -21,7 +21,7 @@
   line-height: 15px;
 }
 
-.companion-select__arrow {
+.companion-select__field-button {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -135,7 +135,7 @@
     display: flex;
   }
 
-  .companion-select__arrow {
+  .companion-select__field-button {
     display: none;
   }
 

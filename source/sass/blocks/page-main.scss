@@ -1,6 +1,13 @@
 .page-main {
   font-family: $font;
   margin: 0 auto;
+
+  &--index {
+    background-color: #161c36;
+    background-image: url("../img/globe-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
 }
 
 .page-main__head-box {
@@ -22,10 +29,6 @@
   position: relative;
   background-color: #161c35;
   border-radius: 0 0 30px 30px;
-}
-
-.page-main__intro-wrapper {
-  background-color: #161c35;
 }
 
 .page-main__darkblue-wrapper {
@@ -118,8 +121,6 @@
 
 @media (min-width: $pc-width) {
   .page-main {
-    // width: $pc-width;
-
     &--index {
       background: url("../img/traveller-illustration-desktop@1x.png") no-repeat 50% 1%,
         url("../img/globe-back-desktop@1x.jpg") no-repeat 0% 1%;

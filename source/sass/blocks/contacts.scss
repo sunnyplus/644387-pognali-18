@@ -17,6 +17,7 @@
 .contacts__item {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .contacts__email {
@@ -25,7 +26,6 @@
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
-  text-decoration: none;
 
   &--yellow {
     color: #ffd74b;
@@ -37,7 +37,6 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  text-decoration: none;
 
   &--yellow {
     color: #ffd74b;

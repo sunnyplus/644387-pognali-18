@@ -3,8 +3,10 @@
   background-color: $dark-bg;
   width: $mobile-width;
   margin: 0 auto;
-  min-height: 285px;
-  padding: 25px;
+  padding-top: 47px;
+  padding-left: 50px;
+  padding-right: 113px;
+  padding-bottom: 113px;
 }
 
 .review__text {
@@ -12,6 +14,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  margin: 0;
 }
 
 .review__author-name {
@@ -19,6 +22,9 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+  display: block;
+  margin-top: 18px;
+  font-style: normal;
 }
 
 .review__author-profession {

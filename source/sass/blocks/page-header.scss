@@ -21,6 +21,8 @@
 
   .page-header__wrapper {
     width: $tablet-width;
+    justify-content: flex-start;
+    padding: 45px 40px;
   }
 }
 
