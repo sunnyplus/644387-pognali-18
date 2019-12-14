@@ -19,6 +19,9 @@
 
 .button-show-more__image {
   transform: rotate(-90deg);
+  width: 14px;
+  height: 10px;
+  margin-top: 3px;
 }
 
 @media (min-width: $tablet-width) {

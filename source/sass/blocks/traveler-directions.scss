@@ -1,21 +1,27 @@
 .traveler-directions {
   @include list-reset();
+  position: absolute;
+  width: 143px;
+  left: 63px;
+  top: -28px;
+  margin: 0;
   font-family: $font;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  // flex-direction: column;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-@media (max-width: $pc-width) {
-  .traveler-directions {
-    &::after {
-      @include pseudo(100%, 1px);
-      background-color: #edeff6;
-      top: 0;
-    }
-  }
-}
+// @media (max-width: $pc-width) {
+//   .traveler-directions {
+//     &::after {
+//       @include pseudo(100%, 1px);
+//       background-color: #edeff6;
+//       top: 0;
+//     }
+//   }
+// }
 
 .traveler-directions__title {
   color: #1d2e5b;

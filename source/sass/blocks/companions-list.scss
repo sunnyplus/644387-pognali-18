@@ -1,6 +1,7 @@
 .companions-list {
   @include list-reset();
   font-family: $font;
+  margin-top: 57px;
 }
 
 .companions-list__item {

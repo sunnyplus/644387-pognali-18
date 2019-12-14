@@ -1,6 +1,6 @@
 .tips-list {
   @include list-reset();
-  position: relative;
+  position: absolute;
   top: -82px;
   font-family: $font;
   margin: 0 auto;
@@ -8,16 +8,17 @@
 }
 
 .tips-list__item {
+  position: relative;
   @include list-reset();
   width: 270px;
-  min-height: 80px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   color: #161c35;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+  padding-top: 20px;
   padding-left: 25px;
   padding-right: 21px;
   border-radius: 10px 10px 0 0;
@@ -30,20 +31,36 @@
 
   &:nth-child(1) {
     background-color: #ff8d30;
+    min-height: 160px;
+    z-index: 1;
   }
 
   &:nth-child(2) {
     background-color: #ffa530;
+    min-height: 160px;
+    z-index: 2;
+    bottom: 80px;
   }
 
   &:nth-child(3) {
     background-color: #ffbd30;
+    min-height: 146px;
+    z-index: 3;
+    bottom: 160px;
   }
 
   &:nth-child(4) {
     background-color: #ffd74b;
     border-radius: 10px;
+    min-height: 80px;
+    z-index: 4;
+    bottom: 226px;
   }
+}
+
+.tips-list__title {
+  width: 138px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {

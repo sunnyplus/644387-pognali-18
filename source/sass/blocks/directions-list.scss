@@ -1,6 +1,7 @@
 .directions-list {
   @include list-reset();
   font-family: $font;
+  margin-top: 60px;
 }
 
 .directions-list__title {
@@ -8,6 +9,7 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  margin: 0;
 }
 
 .directions-list__subtitle {
@@ -16,6 +18,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  margin-top: 2px;
+  margin-bottom: 0;
 }
 
 .directions-list__counter {
@@ -28,20 +32,46 @@
 }
 
 .directions-list__wrapper {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   width: 270px;
   background-color: $white;
   border-radius: 10px;
+  padding-top: 28px;
+  padding-left: 24px;
+  padding-right: 25px;
+  padding-bottom: 22px;
+  bottom: 17px;
 }
 
 .directions-list__item {
   position: relative;
+  margin-bottom: -7px;
 }
 
 .directions-list__flag {
   width: 35px;
   height: 24px;
   position: absolute;
+  top: -12px;
+  left: 25px;
+}
+
+.directions-list__icon {
+  opacity: 0.1;
+  width: 11px;
+  height: 11px;
+}
+
+.directions-list__image {
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
+}
+
+.directions-list__raiting {
+  margin-top: -5px;
 }
 
 @media (min-width: $tablet-width) {
