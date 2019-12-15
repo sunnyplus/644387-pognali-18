@@ -3,7 +3,8 @@
   font-family: $font;
   display: flex;
   flex-wrap: wrap;
-  width: 177px;
+  justify-content: center;
+  width: 185px;
   color: #444444;
   font-size: 16px;
   font-weight: 400;
@@ -13,6 +14,10 @@
 .traveler-tags__item {
   font-size: 16px;
   line-height: 18px;
+
+  &:not(:last-of-type) {
+    margin-right: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -2,14 +2,25 @@
   font-family: $font;
   background-color: $white;
   width: 270px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 10px;
 }
 
 .companion__name {
+  position: relative;
   color: #1d2e5b;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  &::before {
+    @include pseudo(5px,5px);
+    left: -17px;
+    top: 7px;
+    border-radius: 3px;
+    background-color: #f97676;
+  }
 }
 
 .companion__data {
@@ -79,10 +90,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .companion__directions {
   flex-direction: row;
+}
+
+.companion__tags {
+  margin-bottom: 11px;
 }
 
 @media (min-width: $tablet-width) {

@@ -73,18 +73,6 @@
   background-size: contain;
 }
 
-.traveler-transport__item {
-  @include flex-center();
-  width: 33px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #edeff6;
-}
-
-.traveler-transport__image {
-  opacity: 0.15;
-}
-
 .traveler__svg {
   stroke-dashoffset: 35;
 
