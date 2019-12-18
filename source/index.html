@@ -128,14 +128,14 @@
         <section class="information information--service">
           <h2 class="information__title">О сервисе</h2>
           <p class="information__description information__description--service">
-              Любое путешествие веселее <br>с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+              Любое путешествие веселее <br>с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий<br> и черпайте вдохновение в чужих.
           </p>
           <b class="information__important">
             А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </b>
           <a href="#" class="information__button button-show-more">
             <span class="button-show-more__title">Подробнее</span>
-            <img class="button-show-more__image" width="10" height="14" src="img/dropdown.svg" alt="Иконка кнопки Показать все">
+            <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать все">
           </a>
         </section>
       </div>
@@ -147,43 +147,49 @@
           </div>
           <ul class="directions__list directions-list">
             <li class="directions-list__item directions-list__item--thailand">
-              <img src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Фото из Тайланда" class="directions-list__image">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg">
+                <img src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Фото из Тайланда" class="directions-list__image">
+              </picture>
               <div class="directions-list__wrapper">
                 <div class="directions-list__country">
-                  <img src="img/thailand_flag.png" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
+                  <img src="img/flag-thailand.svg" width="35" height="24" alt="Флаг Тайланда" class="directions-list__flag">
                   <p class="directions-list__title">Таиланд</p>
                   <p class="directions-list__subtitle">Джунгли зовут</p>
                 </div>
                 <div class="directions-list__raiting">
-                  <img src="img/user.svg" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
                   <span class="directions-list__counter">18321</span>
                 </div>
               </div>
             </li>
             <li class="directions-list__item directions-list__item--france">
-              <img src="img/france-mobile@1x.jpg" alt="Фото из Франции" class="directions-list__image">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg">
+                <img src="img/france-mobile@1x.jpg" alt="Фото из Франции" class="directions-list__image">
+              </picture>
               <div class="directions-list__wrapper">
                 <div class="directions-list__country">
-                  <img src="img/france_flag.png" width="35" height="24" alt="Флаг Франции" class="directions-list__flag">
+                  <img src="img/flag-france.svg" width="35" height="24" alt="Флаг Франции" class="directions-list__flag">
                   <p class="directions-list__title">Франция</p>
                   <p class="directions-list__subtitle">Трэ бьен, манифик!</p>
                 </div>
                 <div class="directions-list__raiting">
-                  <img src="img/user.svg" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
                   <span class="directions-list__counter">12518</span>
                 </div>
               </div>
             </li>
             <li class="directions-list__item directions-list__item--chezh">
-              <img src="img/czech-mobile@1x.jpg" alt="Фото из Чехии" class="directions-list__image">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg">
+                <img src="img/czech-mobile@1x.jpg" alt="Фото из Чехии" class="directions-list__image">
+              </picture>
               <div class="directions-list__wrapper">
                 <div class="directions-list__country">
-                  <img src="img/сzech_flag.png" width="35" height="24" alt="Флаг Чехии" class="directions-list__flag">
+                  <img src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии" class="directions-list__flag">
                   <p class="directions-list__title">Чехия</p>
                   <p class="directions-list__subtitle">Закоулки старой Европы</p>
                 </div>
                 <div class="directions-list__raiting">
-                  <img src="img/user.svg" width="11" height="11" alt="Иконка счётчика" class="directions-list__icon">
                   <span class="directions-list__counter">5326</span>
                 </div>
               </div>
@@ -191,7 +197,7 @@
           </ul>
           <a href="#" class="directions__button button-show-more">
             <span class="button-show-more__title">Показать все</span>
-            <img class="button-show-more__image" width="10" height="14" src="img/dropdown.svg" alt="Иконка кнопки Показать все">
+            <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать все">
           </a>
         </section>
       </div>
@@ -199,31 +205,33 @@
         <section class="information information--companions">
           <div class="information__wrapper">
             <h2 class="information__title">Попутчики</h2>
-            <p class="information__description information__description--companions">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <b class="information__important">Теперь можно легко найти единомышленников!</b>
+            <p class="information__description information__description--companions">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,<br> а другому маршрут для хайкинга.</p>
+            <b class="information__important">Теперь можно легко<br> найти единомышленников!</b>
           </div>
-          <ul class="companions__list companions-list">
+          <ul class="information__list companions-list">
             <li class="companions-list__item companion">
               <div class="companion__photo-wrapper">
-                <img src="img/firsova270x270.png" width="270" height="270" alt="Фото Таня Фирсова" class="companion-photo">
+                <picture>
+                  <img src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="Фото Таня Фирсова" class="companion__photo">
+                </picture>
                 <div class="companion__level-block">
                   <span class="companion__counter">99</span>
                   <span class="companion__title">level</span>
                 </div>
-                <svg class="companion__svg companion__svg--firsova" width="60" height="60" viewBox="0 0 70 70">
-                  <circle cx="30" cy="30" r="28" fill="#000" fill-opacity="0.6" stroke="#ff8d30" stroke-width="3"></circle>
+                <svg class="companion__svg companion__svg--firsova" width="60" height="60" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="29" fill="#000" fill-opacity="0.6" stroke="#ff8d30" stroke-width="3"></circle>
                 </svg>
               </div>
               <div class="companion__description">
                 <ul class="companion__directions traveler-directions">
                   <li class="traveler-directions__item">
-                    <img src="img/sri-Lanka_flag.png" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
+                    <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
                   </li>
                   <li class="traveler-directions__item">
-                    <img src="img/thailand_flag.png" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
+                    <img src="img/flag-thailand.svg" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
                   </li>
                   <li class="traveler-directions__item">
-                    <img src="img/seychelles_flag.png" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
+                    <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
                   </li>
                 </ul>
                 <div class="companion__data">
@@ -244,41 +252,49 @@
                     </svg>
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="img/bus.svg" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                    <svg width="17" height="21" class="traveler-transport__image">
+                      <use xlink:href="img/sprite.svg#bus"></use>
+                    </svg>
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="img/bike.svg" width="24" height="21" alt="Велосипед" class="traveler-transport__image">
+                    <svg width="24" height="21" class="traveler-transport__image">
+                      <use xlink:href="img/sprite.svg#bike"></use>
+                    </svg>
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="img/run.svg" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                    <svg width="20" height="21" class="traveler-transport__image">
+                      <use xlink:href="img/sprite.svg#run"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="companions-list__item companion">
               <div class="companion__photo-wrapper">
-                <img src="img/demin270x270.png" width="270" height="270" alt="Фото Петя Демин" class="companion-photo">
+                <picture>
+                  <img src="img/demin-tablet@1x.jpg" width="270" height="270" alt="Фото Петя Демин" class="companion__photo">
+                </picture>
                 <div class="companion__level-block">
                   <span class="companion__counter">80</span>
                   <span class="companion__line"></span>
                   <span class="companion__title">level</span>
                 </div>
-                <svg class="companion__svg companion__svg--demin" width="60" height="60" viewBox="0 0 70 70">
-                  <circle cx="30" cy="30" r="28" fill="#000" fill-opacity="0.6" stroke="#ff8d30" stroke-width="3"></circle>
+                <svg class="companion__svg companion__svg--demin" width="60" height="60" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="29" fill="#000" fill-opacity="0.6" stroke="#ff8d30" stroke-width="3"></circle>
                 </svg>
               </div>
               <div class="companion__description">
                 <ul class="companion__directions traveler-directions">
                   <li class="traveler-directions__item">
-                    <img src="img/belgium_flag.png" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
+                    <img src="img/flag-belgium.svg" width="35" height="24" alt="Флаг Бельгии" class="traveler-directions__image">
                   </li>
                   <li class="traveler-directions__item">
-                    <img src="img/france_flag.png" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
+                    <img src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии" class="traveler-directions__image">
                   </li>
                 </ul>
                 <div class="companion__data">
                   <div class="companion__indicator indicator"></div>
-                  <p class="companion__name">Петя Демин</p>
+                  <p class="companion__name companion__name--active">Петя Демин</p>
                 </div>
                 <ul class="companion__tags traveler-tags">
                   <li class="traveler-tags__item">#бургер</li>
@@ -288,29 +304,37 @@
                   <li class="traveler-tags__item">#крафт</li>
                 </ul>
                 <ul class="companion__transports traveler-transport">
-                  <li class="traveler-transport__item">
-                    <img src="img/plane.svg" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <svg width="19" height="21" class="traveler-transport__image">
+                      <use xlink:href="img/sprite.svg#plane"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <svg width="17" height="21" class="traveler-transport__image">
+                      <use xlink:href="img/sprite.svg#bus"></use>
+                    </svg>
                   </li>
                   <li class="traveler-transport__item">
-                    <img src="img/bus.svg" width="19" height="21" alt="Автобус" class="traveler-transport__image">
+                    <svg width="24" height="21" class="traveler-transport__image">
+                      <use xlink:href="img/sprite.svg#bike"></use>
+                    </svg>
                   </li>
-                  <li class="traveler-transport__item">
-                    <img src="img/bike.svg" width="19" height="21" alt="Велосипед" class="traveler-transport__image">
-                  </li>
-                  <li class="traveler-transport__item">
-                    <img src="img/run.svg" width="19" height="21" alt="Бег" class="traveler-transport__image">
+                  <li class="traveler-transport__item traveler-transport__item--active">
+                    <svg width="20" height="21" class="traveler-transport__image">
+                      <use xlink:href="img/sprite.svg#run"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
-          <a class="companions__button button-show-more">
+          <a class="companion__button button-show-more">
             <span class="button-show-more__title">Показать всех</span>
-            <img class="button-show-more__image" width="10" height="14" src="img/dropdown.svg" alt="Иконка кнопки Показать всех">
+            <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
           </a>
         </section>
       </div>
-      <div class="page-main__grey-wrapper">
+      <div class="page-main__newprofile-wrapper">
         <section class="tarifs">
           <h2 class="visually-hidden">Тарифы аккаунта</h2>
           <p class="tarifs__title">Добавьте свой профиль</p>
@@ -354,23 +378,21 @@
           <button type="button" class="tarifs-business__close">Закрыть окно</button>
         </section>
       </div>
-      <div class="page-main__darkblue-wrapper">
-        <section class="signup-block">
-          <div class="information information--center">
-            <h2 class="information__title">Заинтересовались?</h2>
-            <p class="information__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="information__link" href="signin.html">авторизуйтесь</a>.</p>
-            <form class="signup" action="http://echo.htmlacademy.ru" method="post">
-              <input class="signup__input" type="email" name="email" id="email" placeholder="E-mail">
-              <button class="signup__button button-show-more" type="submit">
-                <img class="button-show-more__image" width="10" height="14" src="img/dropdown.svg" alt="Иконка стрелочки вправо">
-              </button>
-            </form>
-            <p class="information__description">Остались вопросы? Мы с радостью на них ответим!</p>
-          </div>
-          <div class="contacts">
+      <div class="page-main__contacts-wrapper">
+        <section class="information information--center">
+          <h2 class="information__title information__title--sign">Заинтересовались?</h2>
+          <p class="information__description information__description--sign">Зарегистрируйтесь, это&nbsp;быстро&nbsp;и&nbsp;бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a class="information__link" href="signin.html">авторизуйтесь</a>.</p>
+          <form class="signup" action="http://echo.htmlacademy.ru" method="post">
+            <input class="signup__input" type="email" name="email" id="email" placeholder="E-mail">
+            <button class="signup__button button-show-more" type="submit">
+              <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка стрелочки вправо">
+            </button>
+          </form>
+          <p class="information__description information__description--sign">Остались вопросы? Мы&nbsp;с&nbsp;радостью&nbsp;на них ответим!</p>
+          <div class="information__contacts contacts">
             <div class="contacts__item">
               <div class="contacts__icon-wrapper">
-                <svg class="contacts__icon" width="18" height="13" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                <svg class="contacts__icon" width="18" height="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                   <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
                   c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
                   c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
@@ -400,10 +422,10 @@
       <div class="page-main__yellow-wrapper">
         <section class="address">
           <h2 class="visually-hidden">адрес</h2>
-          <div class="contacts">
+          <div class="address__contacts contacts">
             <div class="contacts__item">
               <div class="contacts__icon-wrapper">
-                <svg class="contacts__icon" width="18" height="13" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
+                <svg class="contacts__icon" width="14" height="22" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
                   <path class="st0" d="M11.7,13.9c0-1.2,1-2.2,2.3-2.2s2.3,1,2.3,2.2c0,1.2-1,2.2-2.3,2.2C12.8,16.1,11.7,15.1,11.7,13.9z M14,8.1
                   c-3.2,0-5.9,2.6-5.9,5.8s2.6,5.8,5.9,5.8c3.2,0,5.9-2.6,5.9-5.8C19.9,10.7,17.2,8.1,14,8.1z M0,13.6c0,9.1,10.9,16.2,11.7,26.7v0.4
                   c0,1.2,1,2.2,2.3,2.2s2.3-1,2.3-2.2v-0.4C17.2,29.8,28,22.8,28,13.6C28,6.1,21.7,0,14,0C6.3,0,0,6.1,0,13.6z M14,4.5
@@ -415,7 +437,7 @@
           </div>
           <a class="address__button button-show-more">
             <span class="button-show-more__title">Проложить маршрут</span>
-            <img class="button-show-more__image" width="10" height="14" src="img/dropdown.svg" alt="Иконка кнопки Проложить маршрут">
+            <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Проложить маршрут">
           </a>
         </section>
       </div>
@@ -427,7 +449,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="page-footer__logo logo">
           <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?" class="logo__image">
         </a>
         <ul class="page-footer__social social">
@@ -441,9 +463,11 @@
               <a class="social__link"><img class="social__inst-icon" src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
           </li>
         </ul>
-        <div class="site-producer">
+        <div class="page-footer__production site-producer">
           <p class="site-producer__info">Разработано</p>
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика сайта" class="site-producer__image">
+          <svg class="site-producer__image" width="27" height="34" fill="#192144">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </div>
       </div>
     </footer>

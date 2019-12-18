@@ -26,6 +26,8 @@
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
+  margin-left: 16px;
+  text-decoration: none;
 
   &--yellow {
     color: #ffd74b;
@@ -37,6 +39,8 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+  margin-left: 16px;
+  text-decoration: none;
 
   &--yellow {
     color: #ffd74b;
@@ -50,6 +54,8 @@
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
+  margin: 0;
+  margin-left: 16px;
 }
 
 @media (min-width: $tablet-width) {

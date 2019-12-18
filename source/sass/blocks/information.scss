@@ -15,14 +15,16 @@
 
   &--companions {
     background-image: url("../img/blue_back.svg"), url("../img/smolov-back-desktop@1x.png");
-    background-position: 1% 5%, 75% 5%;
+    background-position: -5px 0px, 100% 0px;
     background-repeat: no-repeat, no-repeat;
     background-size: 132px 132px, 143px 143px;
     background-color: #192144;
+    padding-bottom: 30px;
   }
 
   &--center {
     text-align: center;
+    padding-bottom: 29px;
   }
 }
 
@@ -34,6 +36,10 @@
   margin: 0;
   margin-top: -15px;
   margin-left: 25px;
+
+  &--sign {
+    margin-left: 0;
+  }
 }
 
 .information__description {
@@ -49,9 +55,23 @@
     margin-right: 35px;
   }
 
+  &--service br:last-of-type {
+    display: none;
+  }
+
   &--companions {
     margin-top: 20px;
     margin-right: 30px;
+  }
+
+  &--companions br {
+    display: none;
+  }
+
+  &--sign {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -64,6 +84,10 @@
   margin-top: 20px;
   margin-left: 25px;
   margin-right: 35px;
+
+    br {
+      display: none;
+    }
 }
 
 .information__link {
@@ -75,28 +99,54 @@
   display: none;
 }
 
+.information__list {
+  margin-top: 57px;
+  margin-bottom: 25px;
+}
+
+.information__contacts {
+  margin-top: -12px;
+}
+
 @media (min-width: $tablet-width) {
   .information {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: $tablet-width;
 
     &--service {
-      background: url("../img/about-tablet@1x.png") no-repeat 100% 50%;
+      background: url("../img/about-tablet@1x.png") no-repeat 385px 5px,
+        url("../img/blue_back_tablet.svg") no-repeat 40px 0;
       background-color: #192144;
+      margin-top: 25px;
+      padding-bottom: 88px;
+      border-radius: 0 0 60px 60px;
     }
 
     &--companions {
       background-image: url("../img/blue_back.svg"), url("../img/rogovaya-back-desktop@1x.png");
-      background-position: 10% 5%, 85% 5%;
+      background-position: 40px 40px, 410px 40px;
       background-repeat: no-repeat, no-repeat;
       background-size: 213px 213px, 285px 285px;
+      padding-top: 100px;
+      padding-bottom: 88px;
+      border-radius: 0 0 60px 60px;
+    }
+
+    &--center {
+      padding-top: 22px;
     }
   }
 
   .information__title {
     font-size: 45px;
     line-height: 45px;
+    letter-spacing: -0.3px;
+    margin-left: 23px;
+
+    &--sign {
+      margin-left: 0;
+    }
   }
 
   .information__button {
@@ -107,6 +157,7 @@
   .information__description {
     font-size: 28px;
     line-height: 33px;
+    margin-top: 38px;
 
     &--notice {
       display: block;
@@ -116,12 +167,64 @@
     }
 
     &--service {
-      width: 298px;
+      width: 300px;
+    }
+
+    &--service br:first-of-type {
+      display: none;
+    }
+
+    &--service br:last-of-type {
+      display: block;
     }
 
     &--companions {
-      width: 298px;
+      width: 425px;
+      margin-top: 56px;
+      margin-bottom: 40px;
     }
+
+    &--companions br {
+      display: block;
+    }
+
+    &--sign {
+      margin-top: 56px;
+      margin-bottom: 64px;
+    }
+  }
+
+  .information__important {
+    position: relative;
+    z-index: 1;
+    width: 260px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 32px;
+    margin-bottom: 53px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .information__button {
+    display: flex;
+    padding: 28px 36px 28px 34px;
+    margin-left: 25px;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  .information__list {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 80px;
+  }
+
+  .information__contacts {
+    margin-top: -22px;
+    margin-left: 30px;
   }
 }
 

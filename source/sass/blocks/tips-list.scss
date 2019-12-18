@@ -1,9 +1,11 @@
 .tips-list {
   @include list-reset();
-  position: absolute;
+  // position: absolute;
+  position: relative;
   top: -82px;
   font-family: $font;
   margin: 0 auto;
+  border-radius: 10px;
   counter-reset: counter;
 }
 
@@ -39,14 +41,15 @@
     background-color: #ffa530;
     min-height: 160px;
     z-index: 2;
-    bottom: 80px;
+    margin-top: -80px;
   }
 
   &:nth-child(3) {
     background-color: #ffbd30;
     min-height: 146px;
     z-index: 3;
-    bottom: 160px;
+    border-radius: 10px;
+    margin-top: -80px;
   }
 
   &:nth-child(4) {
@@ -54,7 +57,7 @@
     border-radius: 10px;
     min-height: 80px;
     z-index: 4;
-    bottom: 226px;
+    margin-top: -80px;
   }
 }
 
@@ -67,27 +70,55 @@
   .tips-list {
     display: flex;
     flex-wrap: wrap;
+    top: -97px;
   }
 
   .tips-list__item {
+    flex-direction: column;
+    justify-content: flex-start;
     font-size: 24px;
     line-height: 24px;
     width: 344px;
-    min-height: 140px;
     padding-left: 34px;
     padding-top: 31px;
 
-    &:nth-child(2n) {
-      margin-left: -10px;
+    &::after {
+      font-size: 30px;
+      line-height: 50px;
+    }
+
+    &:nth-child(1) {
+      width: 688px;
+      min-height: 140px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    &:nth-child(2) {
+      margin-top: -140px;
+      margin-left: 344px;
+      width: 344px;
+      min-height: 140px;
+      border-radius: 20px 20px 0 0;
     }
 
     &:nth-child(3) {
-      margin-top: -20px;
+      width: 688px;
+      min-height: 140px;
+      border-radius: 0 0 20px 20px;
+      margin-top: 0;
     }
 
     &:nth-child(4) {
-      margin-top: -20px;
+      margin-top: -140px;
+      margin-left: 344px;
+      width: 344px;
+      min-height: 140px;
+      border-radius: 0 0 20px 20px;
     }
+  }
+
+  .tips-list__title {
+    width: 185px;
   }
 }
 

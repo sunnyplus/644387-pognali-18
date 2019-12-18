@@ -55,6 +55,8 @@
     padding-left: 40px;
     padding-right: 40px;
     width: $tablet-width;
+    min-height: 200px;
+    background: none;
   }
 
   .welcome__slogan {
@@ -62,6 +64,7 @@
     padding-right: 140px;
     font-size: 60px;
     line-height: 70px;
+    margin-top: 53px;
   }
 
   .welcome__wrapper {

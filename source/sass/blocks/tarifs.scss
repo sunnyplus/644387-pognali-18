@@ -120,9 +120,11 @@
     background-color: #edeff6;
     width: $tablet-width;
     min-height: 644px;
-    padding-top: 163px;
+    padding-top: 136px;
     padding-right: 75px;
     padding-left: 130px;
+    padding-bottom: 86px;
+    border-radius: 0 0 60px 60px;
 
     &--business {
       border-radius: 30px;

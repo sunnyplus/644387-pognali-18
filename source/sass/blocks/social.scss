@@ -6,12 +6,7 @@
 }
 
 .social__item {
-  @include flex-center();
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-
-  &--yellow {
+  &--yellow a {
     background-color: $yellow;
   }
 }
@@ -32,6 +27,14 @@
   width: 18px;
   height: 18px;
   fill: #cccccc;
+}
+
+.social__link {
+  // line-height: 1;
+  @include flex-center();
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 @media (min-width: $tablet-width) {

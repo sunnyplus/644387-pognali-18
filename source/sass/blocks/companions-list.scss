@@ -1,11 +1,21 @@
 .companions-list {
   @include list-reset();
+  position: relative;
   font-family: $font;
-  margin-top: 57px;
+
+  &::before {
+    @include pseudo(71px,71px);
+    background: url("../img/rogovaya-back-mobile@1x.png") no-repeat;
+    left: -35px;
+    top: -35px;
+    z-index: 0;
+  }
 }
 
 .companions-list__item {
-  // border-radius: 20px;
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -13,6 +23,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &::before {
+      width: 143px;
+      height: 143px;
+      background-image: url("../img/smolov-back-desktop@1x.png");
+      top: -95px;
+    }
+  }
+
+  .companions-list__item {
+    &:first-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 

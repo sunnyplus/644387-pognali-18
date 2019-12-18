@@ -90,6 +90,11 @@
   .main-nav__content {
     padding-left: 97px;
     padding-right: 97px;
+    top: 110px;
+
+    &--closed {
+      top: -1000px;
+    }
   }
 
   .main-nav__wrapper {
@@ -120,6 +125,10 @@
     position: static;
     display: flex;
     align-items: center;
+
+    &--closed {
+      top: -1000px;
+    }
   }
 
   .main-nav__list {

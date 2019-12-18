@@ -1,13 +1,22 @@
 .address {
   font-family: $font;
   padding: 25px;
+  padding-bottom: 35px;
   width: $mobile-width;
   margin: 0 auto;
 }
 
 .address__button {
   border: 3px solid #192144;
-  border-radius: 20px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 22px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.address__contacts {
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {

@@ -37,7 +37,29 @@
 @media (min-width: $tablet-width) {
   .review {
     width: $tablet-width;
+    min-height: 580px;
     background: none;
+    padding-left: 75px;
+    padding-top: 85px;
+  }
+
+  .review__text {
+    font-size: 28px;
+    line-height: 33px;
+    width: 275px;
+  }
+
+  .review__author-name {
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 45px;
+  }
+
+  .review__author-profession {
+    display: block;
+    font-size: 21px;
+    line-height: 25px;
+    width: 275px;
   }
 }
 

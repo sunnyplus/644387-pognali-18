@@ -1,14 +1,13 @@
 .traveler-directions {
   @include list-reset();
   position: absolute;
-  width: 143px;
-  left: 63px;
+  left: 50%;
+  transform: translateX(-50%);
   top: -28px;
   margin: 0;
   font-family: $font;
   display: flex;
-  justify-content: space-between;
-  // flex-direction: column;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -35,6 +34,10 @@
 .traveler-directions__item {
   display: flex;
   align-items: center;
+
+  &:not(:last-of-type) {
+    margin-right: 19px;
+  }
 }
 
 @media (min-width: $tablet-width) {
