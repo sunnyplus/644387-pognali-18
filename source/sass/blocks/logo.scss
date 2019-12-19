@@ -10,8 +10,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .logo {
+    width: 166px;
+    height: 42px;
+  }
+
   .logo__image {
     width: 166px;
     height: 42px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .logo {
+    width: 200px;
+    height: 52px;
+  }
+
+  .logo__image {
+    width: 200px;
+    height: 52px;
   }
 }

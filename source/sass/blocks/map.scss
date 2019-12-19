@@ -10,3 +10,14 @@
   width: 100%;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    min-height: 630px;
+    margin-top: -60px;
+  }
+
+  .map__iframe {
+    min-height: 500px;
+  }
+}

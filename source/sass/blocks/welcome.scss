@@ -74,10 +74,16 @@
 
 @media (min-width: $pc-width) {
   .welcome {
-    width: $pc-width;
+    width: 50%;
+    text-align: left;
   }
 
   .welcome__wrapper {
     display: none;
+  }
+
+  .welcome__slogan {
+    padding-left: 80px;
+    margin-top: 110px;
   }
 }

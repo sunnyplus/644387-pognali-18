@@ -32,13 +32,32 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 18px;
+    margin-top: -135px;
     border-radius: 60px 60px 0 0;
   }
 
   .page-footer__wrapper {
+    flex-direction: row;
     width: $tablet-width;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .page-footer__logo {
+    align-self: auto;
+    margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    margin-left: 88px;
+    margin-top: -8px;
+  }
+
+  .page-footer__production {
+    margin-left: auto;
+    margin-top: -8px;
   }
 }
 

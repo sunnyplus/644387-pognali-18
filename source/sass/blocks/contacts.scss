@@ -6,7 +6,15 @@
   fill: #ffd74b;
 }
 
-.contacts__icon-wrapper {
+.contacts__phone-wrapper {
+  @include flex-center();
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+}
+
+.contacts__email-wrapper {
   @include flex-center();
   width: 45px;
   height: 45px;
@@ -62,11 +70,13 @@
   .contacts__phone {
     font-size: 28px;
     line-height: 28px;
+    margin-left: 21px;
   }
 
   .contacts__email {
     font-size: 28px;
     line-height: 28px;
+    margin-left: 22px;
   }
 
   .contacts__icon {
@@ -74,7 +84,12 @@
     height: 27px;
   }
 
-  .contacts__icon-wrapper {
+  .contacts__phone-wrapper {
+    width: 68px;
+    height: 68px;
+  }
+
+  .contacts__email-wrapper {
     width: 68px;
     height: 68px;
   }
@@ -83,6 +98,7 @@
     width: 440px;
     font-size: 28px;
     line-height: 28px;
+    margin-left: 27px;
   }
 }
 
@@ -90,5 +106,22 @@
   .contacts {
     display: flex;
     justify-content: center;
+  }
+
+  .contacts__phone-wrapper {
+    background-color: #ff8d30;
+    width: 50px;
+    height: 50px;
+  }
+
+  .contacts__email-wrapper {
+    background-color: #ffbd30;
+    width: 50px;
+    height: 50px;
+  }
+
+  .contacts__icon {
+    width: 18px;
+    height: 18px;
   }
 }
