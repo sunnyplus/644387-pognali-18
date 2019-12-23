@@ -1,6 +1,8 @@
 .address {
   font-family: $font;
-  padding: 25px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 35px;
   width: $mobile-width;
   margin: 0 auto;
@@ -36,6 +38,7 @@
     padding: 26px 35px;
     border-radius: 20px;
     margin-left: 49px;
+    align-items: center;
   }
 }
 
@@ -44,5 +47,23 @@
     display: flex;
     width: $pc-width;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+    padding-left: 284px;
+    padding-right: 134px;
+    padding-bottom: 57px;
+  }
+
+  .address__button {
+    width: 324px;
+    margin-left: 0;
+    padding-top: 26px;
+    padding-bottom: 24px;
+    padding-left: 33px;
+  }
+
+  .address__contacts {
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }

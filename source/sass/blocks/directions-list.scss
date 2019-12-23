@@ -54,9 +54,9 @@
 
   &:last-of-type::after {
     @include pseudo(270px,61px);
-    background: linear-gradient(to bottom, rgba(255,255,255,0), #edeff6);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #edeff6);
     left: 0;
-    bottom: 0px;
+    bottom: 0;
   }
 }
 
@@ -108,7 +108,7 @@
     align-items: flex-start;
 
     &:not(:last-of-type) {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     &:last-of-type::after {
@@ -170,5 +170,41 @@
       top: 3px;
       left: -1px;
     }
+  }
+}
+
+@media (min-width: $pc-width) {
+  .directions-list {
+    margin: 0;
+
+    &::before {
+      top: -70px;
+      left: -71px;
+    }
+  }
+
+  .directions-list__item {
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+
+    &:last-of-type::after {
+      width: 560px;
+      left: 0;
+    }
+  }
+
+  .directions-list__wrapper {
+    padding-top: 25px;
+    width: 372px;
+  }
+
+  .directions-list__country {
+    margin-bottom: 25px;
+  }
+
+  .directions-list__flag {
+    top: 25px;
+    left: 338px;
   }
 }

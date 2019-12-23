@@ -7,7 +7,7 @@
   padding-right: 25px;
 
   &--service {
-    margin-top: 15px;
+    margin-top: 5px;
     background: url("../img/about-mobile@1x.png") no-repeat;
     background-color: #192144;
     min-height: 317px;
@@ -15,7 +15,7 @@
 
   &--companions {
     background-image: url("../img/blue_back.svg"), url("../img/smolov-back-desktop@1x.png");
-    background-position: -5px 0px, 100% 0px;
+    background-position: -5px 0, 100% 0;
     background-repeat: no-repeat, no-repeat;
     background-size: 132px 132px, 143px 143px;
     background-color: #192144;
@@ -85,9 +85,9 @@
   margin-left: 25px;
   margin-right: 35px;
 
-    br {
-      display: none;
-    }
+  br {
+    display: none;
+  }
 }
 
 .information__link {
@@ -104,7 +104,7 @@
   margin-bottom: 25px;
 }
 
-.information__contacts {
+.information_contacts {
   margin-top: -12px;
 }
 
@@ -115,12 +115,13 @@
     width: $tablet-width;
 
     &--service {
-      background: url("../img/about-tablet@1x.png") no-repeat 385px 5px,
+      background: url("../img/about-tablet@1x.png") no-repeat 385px 49px,
         url("../img/blue_back_tablet.svg") no-repeat 40px 0;
-      background-color: #192144;
-      margin-top: 25px;
+      background-color: $bg-header-tablet;
+      padding-top: 58px;
       padding-bottom: 88px;
       border-radius: 0 0 60px 60px;
+      margin-top: 0;
     }
 
     &--companions {
@@ -134,7 +135,7 @@
     }
 
     &--center {
-      padding-top: 22px;
+      padding-top: 48px;
       padding-bottom: 58px;
     }
   }
@@ -153,6 +154,10 @@
   .information__button {
     width: 274px;
     display: flex;
+    padding: 28px 36px 28px 34px;
+    margin-left: 25px;
+    border-radius: 20px;
+    align-items: center;
   }
 
   .information__description {
@@ -209,21 +214,13 @@
     }
   }
 
-  .information__button {
-    display: flex;
-    padding: 28px 36px 28px 34px;
-    margin-left: 25px;
-    border-radius: 20px;
-    align-items: center;
-  }
-
   .information__list {
     margin-left: 25px;
     margin-right: 25px;
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 
-  .information__contacts {
+  .information_contacts {
     margin-top: -22px;
     margin-left: 25px;
   }
@@ -233,17 +230,86 @@
   .information {
     position: relative;
     width: $pc-width;
+    padding-left: 130px;
 
     &--service {
-      background: url("../img/about-desktop@1x.png") no-repeat 100% 50%;
+      background: url("../img/about-desktop@1x.png"),
+        url("../img/blue_back.svg");
+      background-position: 750px 161px, 60px 145px;
+      background-repeat: no-repeat, no-repeat;
       background-color: #192144;
+      padding-top: 222px;
+      padding-bottom: 163px;
     }
 
     &--companions {
       display: flex;
       flex-wrap: wrap;
-      padding-left: 132px;
-      padding-right: 132px;
+      padding-left: 130px;
+      padding-right: 60px;
+      padding-top: 132px;
+      padding-bottom: 135px;
+      background-position: 60px 68px, 190px 385px;
     }
+
+    &--center {
+      padding-top: 80px;
+      padding-left: 50px;
+      padding-bottom: 101px;
+    }
+  }
+
+  .information__title {
+    margin-left: 0;
+  }
+
+  .information__description {
+    margin-top: 58px;
+
+    &--service {
+      margin-left: 0;
+      width: 620px;
+    }
+
+    &--service br:last-of-type {
+      display: none;
+    }
+
+    &--companions {
+      margin-left: 0;
+    }
+
+    &--sign {
+      margin-left: 283px;
+      margin-right: 300px;
+      margin-bottom: 56px;
+    }
+  }
+
+  .information__important {
+    margin-left: 0;
+    margin-top: 39px;
+    width: 410px;
+    margin-bottom: 85px;
+  }
+
+  .information__button {
+    margin-left: 0;
+  }
+
+  .information__list {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .information__wrapper {
+    padding-top: 12px;
+  }
+
+  .information_contacts {
+    margin-top: -13px;
+    margin-left: 235px;
   }
 }

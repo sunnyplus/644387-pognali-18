@@ -37,10 +37,14 @@
 @media (min-width: $tablet-width) {
   .review {
     width: $tablet-width;
-    min-height: 580px;
-    background: none;
+    min-height: 622px;
     padding-left: 75px;
     padding-top: 85px;
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 285px 31px;
+  }
+
+  .review__wrapper {
+    background: url("../img/globe-back-tablet@1x.jpg") no-repeat center bottom;
   }
 
   .review__text {
@@ -65,8 +69,16 @@
 
 @media (min-width: $pc-width) {
   .review {
-    width: 50%;
     padding-left: 375px;
     padding-top: 121px;
+    padding-bottom: 0;
+    min-height: 0;
+    background: none;
+  }
+
+  .review__wrapper {
+    display: flex;
+    width: 50%;
+    background: none;
   }
 }

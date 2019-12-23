@@ -1,12 +1,12 @@
 .tips {
   position: relative;
   font-family: $font;
-  background-color: #192144;
   padding-left: 25px;
   padding-right: 25px;
   width: $mobile-width;
   margin: 0 auto;
   min-height: 310px;
+  background-color: #192144;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,12 +14,20 @@
     width: $tablet-width;
     padding-left: 40px;
     padding-right: 40px;
+    background-color: $bg-header-tablet;
+    min-height: 280px;
   }
 }
 
 @media (min-width: $pc-width) {
   .tips {
     width: $pc-width;
+    min-height: 0;
     background-color: transparent;
+  }
+
+  .tips__list {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

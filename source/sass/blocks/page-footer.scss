@@ -62,7 +62,17 @@
 }
 
 @media (min-width: $pc-width) {
-  .page-footer-wrapper {
+  .page-footer__wrapper {
     width: $pc-width;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .page-footer__social {
+    margin-left: 369px;
+  }
+
+  .page-footer__logo {
+    margin-top: -7px;
   }
 }

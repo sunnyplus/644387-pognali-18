@@ -11,6 +11,7 @@
 
 .tips-list__item {
   position: relative;
+
   @include list-reset();
   width: 270px;
   display: flex;
@@ -57,7 +58,7 @@
     border-radius: 10px;
     min-height: 80px;
     z-index: 4;
-    margin-top: -80px;
+    margin-top: -66px;
   }
 }
 
@@ -70,7 +71,7 @@
   .tips-list {
     display: flex;
     flex-wrap: wrap;
-    top: -97px;
+    top: -140px;
   }
 
   .tips-list__item {
@@ -123,19 +124,73 @@
 }
 
 @media (min-width: $pc-width) {
+  .tips-list {
+    flex-wrap: nowrap;
+    min-height: 109px;
+    top: 0;
+  }
+
   .tips-list__item {
-    min-height: 107px;
-    padding-top: 29px;
-    padding-bottom: 31px;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
     padding-left: 35px;
     border-radius: 20px;
 
+    &::after {
+      position: relative;
+      bottom: 12px;
+      left: 47px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &:nth-child(1) {
+      left: 0;
+      width: 1290px;
+      border-radius: 20px;
+      min-height: 109px;
+    }
+
+    &:nth-child(2) {
+      left: 315px;
+      width: 975px;
+      margin: 0;
+      border-radius: 20px;
+      padding-left: 30px;
+      min-height: 109px;
+
+      &::after {
+        left: 83px;
+        bottom: 13px;
+      }
+    }
+
     &:nth-child(3) {
+      left: 660px;
+      width: 388px;
       margin-top: 0;
+      border-radius: 20px;
+      min-height: 109px;
+      padding-left: 30px;
+
+      &::after {
+        left: 84px;
+      }
     }
 
     &:nth-child(4) {
-      margin-top: 0;
+      left: 1005px;
+      width: 315px;
+      margin: 0;
+      border-radius: 20px;
+      min-height: 109px;
+      padding-left: 30px;
+
+      &::after {
+        left: 55px;
+      }
     }
   }
 }

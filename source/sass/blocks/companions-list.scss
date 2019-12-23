@@ -45,4 +45,11 @@
       margin-right: 60px;
     }
   }
+
+  .companions-list {
+    &::before {
+      left: -203px;
+      top: 1px;
+    }
+  }
 }

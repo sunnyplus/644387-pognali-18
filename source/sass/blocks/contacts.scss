@@ -2,10 +2,6 @@
   font-family: $font;
 }
 
-.contacts__icon {
-  fill: #ffd74b;
-}
-
 .contacts__phone-wrapper {
   @include flex-center();
   width: 45px;
@@ -15,6 +11,14 @@
 }
 
 .contacts__email-wrapper {
+  @include flex-center();
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+}
+
+.contacts__location-wrapper {
   @include flex-center();
   width: 45px;
   height: 45px;
@@ -79,9 +83,19 @@
     margin-left: 22px;
   }
 
-  .contacts__icon {
+  .contacts__phone-icon {
     width: 27px;
     height: 27px;
+  }
+
+  .contacts__email-icon {
+    width: 27px;
+    height: 20px;
+  }
+
+  .contacts__location-icon {
+    width: 21px;
+    height: 32px;
   }
 
   .contacts__phone-wrapper {
@@ -90,6 +104,11 @@
   }
 
   .contacts__email-wrapper {
+    width: 68px;
+    height: 68px;
+  }
+
+  .contacts__location-wrapper {
     width: 68px;
     height: 68px;
   }
@@ -105,23 +124,75 @@
 @media (min-width: $pc-width) {
   .contacts {
     display: flex;
-    justify-content: center;
   }
 
   .contacts__phone-wrapper {
-    background-color: #ff8d30;
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
+
+    &--nav {
+      background-color: #ff8d30;
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .contacts__email-wrapper {
-    background-color: #ffbd30;
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
+
+    &--nav {
+      background-color: #ffbd30;
+      width: 50px;
+      height: 50px;
+    }
   }
 
-  .contacts__icon {
-    width: 18px;
-    height: 18px;
+  .contacts__location-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .contacts__phone {
+    margin-left: 30px;
+  }
+
+  .contacts__email {
+    margin-left: 30px;
+  }
+
+  .contacts__phone-icon {
+    width: 36px;
+    height: 36px;
+
+    &--menu {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .contacts__email-icon {
+    width: 36px;
+    height: 26px;
+
+    &--menu {
+      width: 18px;
+      height: 14px;
+    }
+  }
+
+  .contacts__location-icon {
+    width: 28px;
+    height: 43px;
+  }
+
+  .contacts__item {
+    &--information:first-of-type {
+      margin-right: 111px;
+    }
+  }
+
+  .contacts__address {
+    margin-left: 30px;
   }
 }

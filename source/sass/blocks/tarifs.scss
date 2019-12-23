@@ -119,7 +119,7 @@
     position: relative;
     background-color: #edeff6;
     width: $tablet-width;
-    min-height: 644px;
+    min-height: 617px;
     padding-top: 136px;
     padding-right: 75px;
     padding-left: 130px;
@@ -223,10 +223,10 @@
 @media (min-width: $pc-width) {
   .tarifs {
     width: $pc-width;
-    min-height: 830px;
     padding-right: 402px;
-    padding-left: 223px;
-    padding-top: 105px;
+    padding-left: 221px;
+    padding-top: 166px;
+    padding-bottom: 186px;
   }
 
   .tarifs__title {
@@ -236,15 +236,15 @@
     &::after {
       width: 444px;
       height: 300px;
-      top: 233px;
-      right: 242px;
+      top: 292px;
+      right: 245px;
     }
 
     &::before {
       width: 198px;
       height: 198px;
-      top: 285px;
-      right: 130px;
+      top: 345px;
+      right: 131px;
     }
   }
 

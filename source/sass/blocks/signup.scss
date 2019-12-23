@@ -28,6 +28,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .signup {
+    align-items: center;
+  }
+
   .signup__input {
     width: 536px;
     padding-top: 28px;
@@ -41,7 +45,6 @@
 
   .signup__button {
     margin-left: 0;
-    margin-top: 1px;
     width: 82px;
     height: 81px;
     border-radius: 0 20px 20px 0;
@@ -49,20 +52,30 @@
 }
 
 @media (min-width: $pc-width) {
+  .signup {
+    margin-left: 58px;
+    margin-bottom: 68px;
+  }
+
   .signup__button {
     min-width: 320px;
     position: relative;
     justify-content: flex-end;
+    padding-right: 33px;
 
     &::before {
       position: absolute;
       content: "Регистрация";
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      left: 35px;
+      transform: translateY(-50%);
       font-size: 24px;
       line-height: 24px;
       order: -1;
     }
+  }
+
+  .signup__input {
+    width: 850px;
   }
 }

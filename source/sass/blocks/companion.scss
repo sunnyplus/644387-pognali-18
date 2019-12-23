@@ -107,8 +107,9 @@
   margin-bottom: 11px;
 }
 
-.companions__button {
+.companion__button {
   padding: 22px;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -146,20 +147,18 @@
     margin-left: 25px;
     width: 618px;
     border-radius: 20px;
-    padding: 28px 35px;
+    padding-top: 30px;
+    padding-bottom: 26px;
+    padding-left: 33px;
+    padding-right: 35px;
     align-items: center;
   }
 }
 
 @media (min-width: $pc-width) {
-  .companions__list {
-    margin-left: auto;
-  }
-
-  .companions__button {
-    position: absolute;
-    left: 40px;
-    bottom: 30px;
-    width: 274px;
+  .companion__button {
+    width: 281px;
+    margin-top: -80px;
+    margin-left: 0;
   }
 }

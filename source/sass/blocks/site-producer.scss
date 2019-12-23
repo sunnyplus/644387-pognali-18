@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .site-producer {
     position: relative;
 
@@ -36,9 +36,12 @@
   .site-producer__info {
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .site-producer__info {
     margin-right: 25px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .site-producer__info {
+    margin-top: -5px;
   }
 }
