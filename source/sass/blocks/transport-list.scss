@@ -2,6 +2,16 @@
   @include list-reset();
   font-family: $font;
   display: flex;
+  justify-content: center;
+}
+
+.transport-list__input {
+  &:checked + label {
+    .transport-list__icon {
+      opacity: 1;
+      fill: #1d2e5b;
+    }
+  }
 }
 
 .transport-list__label {
@@ -14,4 +24,39 @@
 
 .transport-list__icon {
   opacity: 0.15;
+}
+
+@media (min-width: $tablet-width) {
+  .transport-list__label {
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list__icon {
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+  .transport-list__item {
+    &:not(:last-of-type) {
+      margin-right: 8px;
+    }
+  }
 }

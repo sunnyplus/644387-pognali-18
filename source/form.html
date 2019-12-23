@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-global">
-  <header class="page-header">
+    <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo logo">
-          <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png" class="logo__image">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png" class="logo__image">
+            <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+          </picture>
         </a>
         <nav class="main-nav">
           <button type="button" class="main-nav__button" aria-label="Показать главное меню сайта">
@@ -23,7 +27,7 @@
               </g>
             </svg>
           </button>
-          <div class="main-nav__content">
+          <div class="main-nav__content main-nav__content--closed">
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
@@ -38,22 +42,24 @@
               </ul>
               <a href="login.html" class="main-nav__login button">Авторизация</a>
               <div class="main-nav__contacts contacts">
-                <div class="contacts__item">
-                  <a href="#" class="contacts__icon-wrapper">
-                    <svg class="contacts__icon" width="18" height="18">
-                      <use xlink:href="img/sprite.svg#phone"></use>
-                    </svg>
-                  </a>
-                  <a class="main-nav__contacts-phone contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
-                </div>
-                <div class="contacts__item">
-                  <a href="#" class="contacts__icon-wrapper">
-                    <svg class="contacts__icon" width="18" height="13">
-                      <use xlink:href="img/sprite.svg#email"></use>
-                    </svg>
-                  </a>
-                  <a class="main-nav__contacts-email contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </div>
+                <a href="tel:88005558628" class="contacts__item">
+                  <div class="contacts__phone-wrapper contacts__phone-wrapper--nav">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/topmenu-phone.svg">
+                      <img src="img/contacts-phone.svg" alt="Иконка телефона" class="contacts__phone-icon contacts__phone-icon--menu" width="18" height="18">
+                    </picture>
+                  </div>
+                  <div class="main-nav__contacts-phone contacts__phone">8 800 555-86-28</div>
+                </a>
+                <a href="mailto:mail@htmlacademy.ru" class="contacts__item">
+                  <div class="contacts__email-wrapper contacts__email-wrapper--nav">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/topmenu-mail.svg">
+                      <img src="img/contacts-mail.svg" alt="Иконка электронной почты" class="contacts__email-icon contacts__email-icon--menu" width="18" height="18">
+                    </picture>
+                  </div>
+                  <div class="main-nav__contacts-email contacts__email">mail@htmlacademy.ru</div>
+                </a>
               </div>
               <ul class="main-nav__social social">
                 <li class="social__item">
@@ -84,66 +90,72 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__form-darkblue-wrapper">
+      <div class="page-main__form-wrapper">
         <div class="page-main__head-box">
-          <h1 class="page-main__heading main-heading">Попутчики</h1>
+          <h1 class="page-main__heading main-heading">Направления</h1>
         </div>
       </div>
-      <div class="page-main__grey-wrapper">
-        <section class="profile">
-          <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
-            <div class="profile__level-block level-block">
-              <svg class="level-block__svg" width="100" height="100" viewBox="0 0 120 120">
-                <circle cx="60" cy="60" r="57" fill="none" stroke="#ff8d30" stroke-width="4"></circle>
-              </svg>
-              <div class="level-block__wrapper">
-                <span class="level-block__counter">80</span>
-                <span class="level-block__title">level</span>
-              </div>
+      <section class="profile">
+        <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
+          <div class="profile__level-block level-block">
+            <svg class="level-block__indicator" width="100" height="100" viewBox="0 0 122 122">
+              <circle cx="61" cy="61" r="59" fill="none" stroke="#ff8d30" stroke-width="4"></circle>
+            </svg>
+            <div class="level-block__wrapper">
+              <span class="level-block__counter level-block__counter--form">80</span>
+              <span class="level-block__title level-block__title--form">level</span>
             </div>
-            <div class="profile__photo-wrapper profile-photo">
-              <img class="profile__photo" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото личного профайла">
-            </div>
-            <label class="profile__button-label">
-              <input class="profile__button-file visually-hidden" type="file" name="change-photo">
-              <span class="profile__change-btn button-toggle">Сменить фото</span>
-            </label>
-            <fieldset class="profile__tags-field">
-              <legend class="profile__legend">Теги</legend>
-              <textarea class="profile__tags-list" name="tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>
-            </fieldset>
-            <fieldset class="profile__transport-field">
-              <legend class="profile__legend">Транспорт</legend>
-              <ul class="companion-select__transport-list transport-list">
-                <li class="transport-list__item">
-                  <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
-                  <label class="transport-list__label" for="companion-plane">
-                    <img src="img/plane.svg" width="14" height="16" alt="Самолёт" class="transport-list__icon">
-                  </label>
-                </li>
-                <li class="transport-list__item">
-                  <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
-                  <label class="transport-list__label" for="companion-bus">
-                    <img src="img/bus.svg" width="13" height="16" alt="Автобус" class="transport-list__icon">
-                  </label>
-                </li>
-                <li class="transport-list__item">
-                  <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
-                  <label class="transport-list__label" for="companion-bike">
-                    <img src="img/bike.svg" width="14" height="16" alt="Велосипед" class="transport-list__icon">
-                  </label>
-                </li>
-                <li class="transport-list__item">
-                  <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
-                  <label class="transport-list__label" for="companion-run">
-                    <img src="img/run.svg" width="15" height="17" alt="Бег" class="transport-list__icon">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </form>
-        </section>
-      </div>
+          </div>
+          <div class="profile__photo-wrapper profile-photo">
+            <img class="profile__photo" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото личного профайла">
+          </div>
+          <label class="profile__button-label">
+            <input class="profile__button-file visually-hidden" type="file" name="change-photo">
+            <span class="profile__change-btn button-toggle">Сменить фото</span>
+          </label>
+          <div class="profile__tags-field">
+            <label for="tags" class="profile__legend profile__legend--tags">тэги</label>
+            <textarea class="profile__tags-list" name="tags" id="tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+          </div>
+          <div class="profile__transport-field">
+            <label class="profile__legend profile__legend--transport">транспорт</label>
+            <ul class="companion-select__transport-list transport-list">
+              <li class="transport-list__item">
+                <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
+                <label class="transport-list__label" for="companion-plane">
+                  <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane">
+                    <use xlink:href="img/sprite.svg#plane"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
+                <label class="transport-list__label" for="companion-bus">
+                  <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus">
+                    <use xlink:href="img/sprite.svg#bus"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
+                <label class="transport-list__label" for="companion-bike">
+                  <svg width="19" height="17" class="transport-list__icon transport-list__icon--bike">
+                    <use xlink:href="img/sprite.svg#bike"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
+                <label class="transport-list__label" for="companion-run">
+                  <svg width="15" height="17" class="transport-list__icon transport-list__icon--run">
+                    <use xlink:href="img/sprite.svg#run"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </section>
       <div class="page-main__plans-wrapper">
         <section class="plans">
           <h2 class="plans__heading">Мои планы:</h2>
@@ -597,8 +609,12 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html" class="logo">
-          <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?" class="logo__image">
+        <a href="index.html" class="page-footer__logo logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png" class="logo__image">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png" class="logo__image">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+          </picture>
         </a>
         <ul class="page-footer__social social">
           <li class="social__item social__item--yellow">
@@ -611,9 +627,11 @@
               <a class="social__link"><img class="social__inst-icon" src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
           </li>
         </ul>
-        <div class="site-producer">
+        <div class="page-footer__production site-producer">
           <p class="site-producer__info">Разработано</p>
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика сайта" class="site-producer__image">
+          <svg class="site-producer__image" width="27" height="34" fill="#192144">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </div>
       </div>
     </footer>
