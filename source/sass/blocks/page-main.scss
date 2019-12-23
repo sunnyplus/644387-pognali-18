@@ -10,6 +10,7 @@
 }
 
 .page-main__head-box {
+  position: relative;
   width: $mobile-width;
   margin: 0 auto;
   padding-bottom: 10px;
@@ -40,6 +41,12 @@
   background-color: #161c35;
   border-radius: 0 0 20px 20px;
   z-index: 10;
+}
+
+.page-main__level-block {
+  position: absolute;
+  top: 91px;
+  left: 45px;
 }
 
 .page-main__darkblue-wrapper {
@@ -115,6 +122,20 @@
 
 .page-main__companion-wrapper {
   background-color: #edeff6;
+}
+
+.page-main__profile-photo-wrapper {
+  position: absolute;
+  left: 178px;
+  top: 92px;
+  width: 100px;
+  line-height: 0;
+}
+
+.page-main__profile-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -201,6 +222,23 @@
     border-radius: 30px 30px 0 0;
     margin-top: -40px;
   }
+
+  .page-main__profile-photo-wrapper {
+    width: 94px;
+    top: 283px;
+    left: 600px;
+  }
+
+  .page-main__profile-photo {
+    border-radius: 5px;
+    width: 94px;
+    height: auto;
+  }
+
+  .page-main__level-block {
+    top: 283px;
+    left: 75px;
+  }
 }
 
 @media (min-width: $pc-width) {
@@ -220,6 +258,20 @@
 
   .page-main__head-box {
     width: $pc-width;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .page-main__heading {
+    padding-right: 0;
+    padding-top: 0;
+    margin-left: 48px;
+    &::after {
+      width: 357px;
+      left: 1px;
+      top: 127px;
+    }
   }
 
   .page-main__tarifs {
@@ -239,7 +291,26 @@
     margin-top: -100px;
   }
 
+  .page-main__level-block {
+    position: static;
+    top: unset;
+    left: unset;
+    margin-left: 475px;
+    margin-top: -7px;
+  }
+
   .page-main__companions-wrapper {
     padding-top: 60px;
+  }
+
+  .page-main__profile-photo-wrapper {
+    position: static;
+    margin-left: 45px;
+  }
+
+  .page-main__profile-photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px 10px 0 0;
   }
 }
