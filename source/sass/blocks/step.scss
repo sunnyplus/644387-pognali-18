@@ -254,6 +254,8 @@
 
 @media (min-width: $pc-width) {
   .step {
+    border-radius: 60px;
+
     &--one {
       flex-direction: row;
       flex-wrap: wrap;

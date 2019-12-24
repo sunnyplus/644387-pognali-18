@@ -154,13 +154,38 @@
 @media (min-width: $pc-width) {
   .plans {
     width: $pc-width;
+    padding-top: 53px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .plans__list {
     width: 1256px;
   }
 
+  .plans__item {
+    min-height: 97px;
+    align-items: center;
+    padding-left: 96px;
+    padding-top: 16px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      left: 42px;
+      top: 42px;
+      font-size: 20px;
+    }
+  }
+
+  .plans__heading {
+    margin-left: 5px;
+  }
+
   .plans__direction {
-    flex-basis: 50%;
+    flex-basis: 430px;
+    margin-bottom: 0;
   }
 }
