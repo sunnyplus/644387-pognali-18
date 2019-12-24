@@ -60,3 +60,11 @@
     }
   }
 }
+
+@media (min-width: $pc-width) {
+  .transport-list__item {
+    &:not(:last-of-type) {
+      margin-right: 0;
+    }
+  }
+}

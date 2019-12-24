@@ -159,21 +159,29 @@
   .profile__form {
     position: relative;
     width: $pc-width;
+    padding-top: 55px;
+    margin-left: 50px;
   }
 
   .profile__tags-field {
     width: 730px;
     order: 1;
+    margin-top: 0;
+  }
+
+  .profile__drop-word {
+    display: none;
   }
 
   .profile__transport-field {
     width: 384px;
     order: 2;
+    margin-left: 141px;
   }
 
   .profile__button-label {
     position: absolute;
-    right: 154px;
+    right: 205px;
     top: -25px;
     width: 190px;
     margin-top: 0;
@@ -183,5 +191,19 @@
     width: 190px;
     padding-bottom: 15px;
     background-color: #dfe3f0;
+  }
+
+  .profile__legend {
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    &--tags {
+      top: 86px;
+      left: 17px;
+    }
+
+    &--transport {
+      top: 140px;
+    }
   }
 }

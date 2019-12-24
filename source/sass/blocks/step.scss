@@ -2,7 +2,10 @@
   font-family: $font;
   background-color: $white;
   border-radius: 10px;
-  padding: 22px;
+  padding-bottom: 22px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
 }
 
 .step__heading {
@@ -10,6 +13,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+  margin: 0;
 }
 
 .step__description {
@@ -17,18 +21,45 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+.step__child-permission {
+  margin-left: 38px;
 }
 
 .step__child-permission-label {
+  position: relative;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+
+  &::before {
+    @include pseudo(26px,26px);
+    border-radius: 4px;
+    border: 1px solid #cbced9;
+    left: -38px;
+    top: -7px;
+  }
+}
+
+.step__child-permission-input:checked + .step__child-permission-label {
+  &::before {
+    background: url("../img/tick.svg") no-repeat 8px 8px;
+    background-size: 9px;
+  }
 }
 
 .step__submit {
   border-radius: 20px;
   width: 100%;
+}
+
+.step__companions-quota {
+  margin-bottom: 19px;
 }
 
 .step__country-list {
@@ -125,12 +156,18 @@
   }
 }
 
+.step__period {
+  margin-bottom: 27px;
+}
+
 @media (min-width: $tablet-width) {
   .step {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 50px;
+    border-radius: 30px;
 
     &--one .step__submit {
       order: 6;
@@ -149,8 +186,11 @@
 
   .step__description {
     flex-basis: 100%;
-    font-size: 20;
+    font-size: 20px;
     line-height: 24px;
+    margin-top: 33px;
+    margin-bottom: 64px;
+    padding-right: 20px;
   }
 
   .step__country-select {
@@ -182,6 +222,7 @@
   .step__heading {
     font-size: 36px;
     line-height: 36px;
+    padding-right: 200px;
   }
 
   .step__country-list {

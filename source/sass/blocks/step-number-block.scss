@@ -5,6 +5,7 @@
 .step-number-block__label {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 9px;
 }
 
 .step-number-block__title {
@@ -13,7 +14,7 @@
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 1.45px;
 
   &--grey {
     opacity: 0.3;
@@ -23,16 +24,20 @@
 .step-number-block__bottom-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 4px;
   border: 1px solid #cbced9;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .step-number-block__button {
   @include flex-center();
   width: 43px;
-  height: 43px;
-  background-color: $white;
+  height: 41px;
+  background-color: rgba(255, 255, 255, 0);
   border: none;
+  padding: 0;
 }
 
 .step-number-block__input {
@@ -44,6 +49,7 @@
   letter-spacing: 2px;
   border: none;
   text-align: center;
+  appearance: textfield;
 }
 
 @media (min-width: $tablet-width) {

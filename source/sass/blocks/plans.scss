@@ -3,6 +3,7 @@
   padding: 25px;
   width: $mobile-width;
   margin: 0 auto;
+  padding-top: 28px;
 }
 
 .plans__heading {
@@ -10,24 +11,35 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
 }
 
 .plans__list {
   @include list-reset();
   counter-reset: plans-counter;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .plans__item {
   position: relative;
   border-radius: 10px;
   background-color: $white;
-  padding-left: 10px;
+  padding-left: 25px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-right: 25px;
+  min-height: 154px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
 
   &::before {
     counter-increment: plans-counter;
     content: counter(plans-counter) ".";
     position: absolute;
-    left: 0;
+    left: 22px;
     color: #1d2e5b;
     font-size: 16px;
     font-weight: 500;
@@ -43,6 +55,8 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
+  text-indent: 15px;
+  margin-bottom: 21px;
 }
 
 .plans__companions,
@@ -56,6 +70,14 @@
   letter-spacing: 1.4px;
 }
 
+.plans__companions {
+  margin-bottom: 5px;
+}
+
+.plans__date {
+  margin-bottom: 21px;
+}
+
 .plans__change {
   display: block;
   opacity: 0.3;
@@ -65,25 +87,38 @@
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
   .plans {
     width: $tablet-width;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 49px;
+  }
+
+  .plans__heading {
+    font-size: 36px;
+    line-height: 50px;
   }
 
   .plans__list {
-    width: 618px;
+    width: 100%;
+    margin-top: 40px;
   }
 
   .plans__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 28px;
+    padding-left: 32px;
+    padding-bottom: 16px;
 
     &::before {
-      left: 500px;
-      top: 20px;
+      left: 570px;
+      top: 45px;
       font-size: 20px;
       line-height: 18px;
       letter-spacing: 2px;
@@ -94,16 +129,20 @@
     flex-basis: 100%;
     font-size: 24px;
     line-height: 50px;
+    margin-bottom: 41px;
+    text-indent: 0;
   }
 
   .plans__companions {
     font-size: 20px;
     line-height: 18px;
+    margin-bottom: 0;
   }
 
   .plans__date {
     font-size: 20px;
     line-height: 18px;
+    margin-bottom: 0;
   }
 
   .plans__change {
