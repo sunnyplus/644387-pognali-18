@@ -157,6 +157,7 @@
 
 @media (min-width: $pc-width) {
   .profile__form {
+    position: relative;
     width: $pc-width;
   }
 
@@ -168,10 +169,6 @@
   .profile__transport-field {
     width: 384px;
     order: 2;
-  }
-
-  .profile__form {
-    position: relative;
   }
 
   .profile__button-label {
