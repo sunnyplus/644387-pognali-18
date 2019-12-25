@@ -1,11 +1,8 @@
 .step-number-block {
   font-family: $font;
-}
-
-.step-number-block__label {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
+  flex-wrap: wrap;
 }
 
 .step-number-block__title {
@@ -25,10 +22,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 220px;
   border-radius: 4px;
   border: 1px solid #cbced9;
   padding-left: 5px;
   padding-right: 5px;
+  margin-top: 10px;
 }
 
 .step-number-block__button {
@@ -53,22 +52,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .step-number-block__bottom-wrapper {
+    width: 531px;
+    margin-top: 24px;
+  }
+
   .step-number-block__title {
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
   }
 
-  .step-number-block__label {
-    margin-bottom: 23px;
-  }
-
   .step-number-block__input {
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 18px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 23px;
+    margin-bottom: 23px;
   }
 
   .step-number-block__button-icon {
@@ -86,6 +86,27 @@
 
 @media (min-width: $pc-width) {
   .step-number-block {
-    width: 500px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .step-number-block__bottom-wrapper {
+    width: 181px;
+    margin-top: 0;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .step-number-block__input {
+    width: 100px;
+  }
+
+  .step-number-block__title {
+    &--grey {
+      order: 3;
+      margin-left: 36px;
+      opacity: 1;
+    }
   }
 }

@@ -179,20 +179,18 @@
         <form class="plan-add__form" action="http://echo.htmlacademy.ru">
           <div class="plan-add__title-wrapper">
             <h2 class="plan-add__title">Добавить план:</h2>
-            <div class="plan-add__indicators">
-              <span class="plan-add__indicator plan-add__indicator--current"></span>
-              <span class="plan-add__indicator"></span>
-              <span class="plan-add__indicator"></span>
-            </div>
+            <ul class="plan-add__indicators">
+              <li class="plan-add__indicator plan-add__indicator--current"><span class="plan-add__indicator-title">даты</span></li>
+              <li class="plan-add__indicator"><span class="plan-add__indicator-title">маршрут</span></li>
+              <li class="plan-add__indicator"><span class="plan-add__indicator-title">развлечения</span></li>
+            </ul>
           </div>
           <div class="step step--one">
             <h3 class="step__heading">Шаг 1. Даты&nbsp;пребывания</h3>
-            <p class="step__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <p class="step__description">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             <div class="step__companions-quota step-number-block">
-              <label for="companions-quota" class="step-number-block__label">
-                <span class="step-number-block__title">ищу попутчиков:</span>
-                <span class="step-number-block__title step-number-block__title--grey">Чел.</span>
-              </label>
+              <label for="companions-quota" class="step-number-block__title">ищу попутчиков:</label>
+              <label for="companions-quota" class="step-number-block__title step-number-block__title--grey">Чел.</label>
               <div class="step-number-block__bottom-wrapper">
                 <button class="step-number-block__button" type="button">
                   <img class="step-number-block__button-icon step-number-block__button-icon--minus" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
@@ -204,10 +202,8 @@
               </div>
             </div>
             <div class="step__period step-number-block">
-              <label for="period" class="step-number-block__label">
-                <span class="step-number-block__title">длительность:</span>
-                <span class="step-number-block__title step-number-block__title--grey">дн.</span>
-              </label>
+              <label for="period" class="step-number-block__title">длительность:</label for="period">
+              <label for="period" class="step-number-block__title step-number-block__title--grey">дн.</label>
               <div class="step-number-block__bottom-wrapper">
                 <button class="step-number-block__button" type="button">
                   <img class="step-number-block__button-icon step-number-block__button-icon--minus" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
@@ -269,7 +265,7 @@
                   </li>
                   <li class="calendar__item">
                     <input type="checkbox" name="0103" class="calendar__input visually-hidden" id="0103">
-                    <label class="calendar__label" for="0103">1</label>
+                    <label class="calendar__label calendar__label--month" for="0103">1<span class="calendar__short-month">мар</span></label>
                   </li>
                   <li class="calendar__item">
                     <input type="checkbox" name="0203" class="calendar__input visually-hidden" id="0203">
@@ -369,7 +365,7 @@
                   </li>
                   <li class="calendar__item calendar__item--current">
                     <input type="checkbox" name="2603" class="calendar__input visually-hidden" id="2603" checked>
-                    <label class="calendar__label" for="2603">26</label>
+                    <label class="calendar__label" for="2603">26<span class="calendar__checkin">Заезд</span></label>
                   </li>
                   <li class="calendar__item">
                     <input type="checkbox" name="2703" class="calendar__input visually-hidden" id="2703" checked>
@@ -377,7 +373,7 @@
                   </li>
                   <li class="calendar__item">
                     <input type="checkbox" name="2803" class="calendar__input visually-hidden" id="2803" checked>
-                    <label class="calendar__label" for="2803">28</label>
+                    <label class="calendar__label" for="2803">28<span class="calendar__checkin">Выезд</span></label>
                   </li>
                   <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="2903" class="calendar__input visually-hidden" id="2903">
@@ -393,7 +389,7 @@
                   </li>
                   <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="0104" class="calendar__input visually-hidden" id="0104">
-                    <label class="calendar__label" for="0104">1</label>
+                    <label class="calendar__label calendar__label--month" for="0104">1<span class="calendar__short-month">апр</span></label>
                   </li>
                   <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="0204" class="calendar__input visually-hidden" id="0204">
@@ -414,9 +410,9 @@
                 </ul>
               </div>
             </div>
-            <button class="step__submit button" type="submit">
+            <button class="step__submit button-show-more" type="submit">
               <span class="button-show-more__title">Следующий шаг</span>
-              <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
+              <img class="step__image-btn button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
             </button>
           </div>
           <div class="step step--two">

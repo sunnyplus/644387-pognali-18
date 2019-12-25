@@ -24,6 +24,8 @@
 }
 
 .plan-add__indicators {
+  @include list-reset();
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,6 +43,10 @@
   &--current {
     opacity: 1;
   }
+}
+
+.plan-add__indicator-title {
+  display: none;
 }
 
 .plan-add__title-wrapper {
@@ -77,8 +83,41 @@
 
 @media (min-width: $pc-width) {
   .plan-add {
+    position: relative;
     border-radius: 60px;
     margin-top: -60px;
+  }
+
+  .plan-add__indicators {
+    position: absolute;
+    top: 262px;
+    right: 321px;
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .plan-add__indicator {
+    &:not(:last-of-type) {
+      margin-bottom: 39px;
+    }
+
+    &--current {
+      .plan-add__indicator-title {
+        opacity: 1;
+      }
+    }
+  }
+
+  .plan-add__indicator-title {
+    display: block;
+    opacity: 0.6;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 13.78px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 43px;
+    margin-top: -5px;
   }
 
   .plan-add__form {
