@@ -10,24 +10,48 @@
 }
 
 .calendar__month {
+  position: relative;
   display: flex;
   justify-content: space-between;
+
+  &::before {
+    @include pseudo(221px,1px);
+    background-color: #000000;
+    opacity: 0.2;
+    top: -12px;
+    box-shadow: 0 43px;
+  }
 }
 
 .calendar__button {
   background-color: $white;
   border: none;
   opacity: 0.3;
+  padding: 0;
 }
 
-.calendar__list {
+.calendar__week-list {
   @include list-reset();
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 31px;
+  margin-bottom: 9px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.calendar__days-list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .calendar__day {
+  &--second-letter {
+    display: none;
+  }
   color: #444444;
   font-size: 14px;
   font-weight: 400;
@@ -40,18 +64,78 @@
 }
 
 .calendar__item {
-  width: 31px;
-  height: 30px;
-  border: 1px solid rgba(#444444, 0.3);
+  position: relative;
+
+  &--active {
+    .calendar__label {
+      opacity: 1;
+      border-color: rgba(#444444, 0.3);
+      background-color: #edeff6;
+    }
+  }
+
+  &--chosen {
+    .calendar__label {
+      color: $white;
+      background-color: #1d2e5b;
+      opacity: 1;
+    }
+  }
+
+  &--current {
+    z-index: 2;
+
+    .calendar__label {
+      border: 2px solid #ff5c23;
+    }
+  }
+
+  &:nth-of-type(7n+2) {
+    margin-left: -1px;
+  }
+
+  &:nth-of-type(7n+3) {
+    margin-left: -1px;
+  }
+
+  &:nth-of-type(7n+4) {
+    margin-left: -1px;
+  }
+
+  &:nth-of-type(7n+5) {
+    margin-left: -1px;
+  }
+
+  &:nth-of-type(7n+6) {
+    margin-left: -1px;
+  }
+
+  &:nth-of-type(7n+7) {
+    margin-left: -1px;
+  }
+
+  &:nth-of-type(n+8) {
+    margin-top: -1px;
+  }
+
+  &:nth-of-type(34) {
+    label {
+      border-left-color: $white;
+    }
+  }
 }
 
 .calendar__label {
+  @include flex-center();
   opacity: 0.3;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  width: 32.25px;
+  height: 31.8px;
+  border: 1px solid #444444;
 }
 
 .calendar__button-image {
@@ -60,6 +144,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .calendar__month {
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &::before {
+      width: 532px;
+      top: -27px;
+      left: 0;
+      box-shadow: 0 86px;
+    }
+  }
+
+  .calendar__week-list {
+    margin-top: 52px;
+    margin-bottom: 3px;
+    padding-right: 29px;
+    padding-left: 29px;
+  }
+
+  .calendar__day {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+
+    &--second-letter {
+      display: inline;
+      text-transform: lowercase;
+    }
+  }
+
   .calendar__month-name {
     font-size: 36px;
   }
@@ -69,16 +184,13 @@
     height: 34px;
   }
 
-  .calendar__item {
-    width: 76px;
-    height: 70px;
-  }
-
   .calendar__label {
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
     font-weight: 500;
+    width: 76.5px;
+    height: 70px;
   }
 }
 

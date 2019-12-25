@@ -195,11 +195,11 @@
               </label>
               <div class="step-number-block__bottom-wrapper">
                 <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
+                  <img class="step-number-block__button-icon step-number-block__button-icon--minus" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
                 </button>
                 <input class="step-number-block__input" type="number" name="companions-quota" id="companions-quota" value="2">
                 <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
+                  <img class="step-number-block__button-icon step-number-block__button-icon--plus" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
                 </button>
               </div>
             </div>
@@ -210,11 +210,11 @@
               </label>
               <div class="step-number-block__bottom-wrapper">
                 <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
+                  <img class="step-number-block__button-icon step-number-block__button-icon--minus" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
                 </button>
                 <input class="step-number-block__input" type="number" name="period" id="period" value="2">
                 <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
+                  <img class="step-number-block__button-icon step-number-block__button-icon--plus" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
                 </button>
               </div>
             </div>
@@ -233,16 +233,16 @@
                 </button>
               </div>
               <div class="calendar__body">
-                <ul class="calendar__list">
-                  <li class="calendar__day">П</li>
-                  <li class="calendar__day">В</li>
-                  <li class="calendar__day">С</li>
-                  <li class="calendar__day">Ч</li>
-                  <li class="calendar__day">П</li>
-                  <li class="calendar__day calendar__day--weekend">С</li>
-                  <li class="calendar__day calendar__day--weekend">В</li>
+                <ul class="calendar__week-list">
+                  <li class="calendar__day">П<span class="calendar__day--second-letter">н</span></li>
+                  <li class="calendar__day">В<span class="calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day">С<span class="calendar__day--second-letter">р</span></li>
+                  <li class="calendar__day">Ч<span class="calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day">П<span class="calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day calendar__day--weekend">С<span class="calendar__day--second-letter">б</span></li>
+                  <li class="calendar__day calendar__day--weekend">В<span class="calendar__day--second-letter">с</span></li>
                 </ul>
-                <ul class="calendar__list">
+                <ul class="calendar__days-list">
                   <li class="calendar__item">
                     <input type="checkbox" name="2302" class="calendar__input visually-hidden" id="2302">
                     <label class="calendar__label" for="2302">23</label>
@@ -367,54 +367,57 @@
                     <input type="checkbox" name="2503" class="calendar__input visually-hidden" id="2503">
                     <label class="calendar__label" for="2503">25</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--chosen calendar__item--current">
                     <input type="checkbox" name="2603" class="calendar__input visually-hidden" id="2603" checked>
                     <label class="calendar__label" for="2603">26</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--chosen">
                     <input type="checkbox" name="2703" class="calendar__input visually-hidden" id="2703" checked>
                     <label class="calendar__label" for="2703">27</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--chosen">
                     <input type="checkbox" name="2803" class="calendar__input visually-hidden" id="2803" checked>
                     <label class="calendar__label" for="2803">28</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="2903" class="calendar__input visually-hidden" id="2903">
                     <label class="calendar__label" for="2903">29</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="3003" class="calendar__input visually-hidden" id="3003">
                     <label class="calendar__label" for="3003">30</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="3103" class="calendar__input visually-hidden" id="3103">
                     <label class="calendar__label" for="3103">31</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="0104" class="calendar__input visually-hidden" id="0104">
-                    <label class="calendar__label" for="0104">01</label>
+                    <label class="calendar__label" for="0104">1</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="0204" class="calendar__input visually-hidden" id="0204">
-                    <label class="calendar__label" for="0204">02</label>
+                    <label class="calendar__label" for="0204">2</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="0304" class="calendar__input visually-hidden" id="0304">
-                    <label class="calendar__label" for="0304">03</label>
+                    <label class="calendar__label" for="0304">3</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="0404" class="calendar__input visually-hidden" id="0404">
-                    <label class="calendar__label" for="0404">04</label>
+                    <label class="calendar__label" for="0404">4</label>
                   </li>
-                  <li class="calendar__item">
+                  <li class="calendar__item calendar__item--active">
                     <input type="checkbox" name="0504" class="calendar__input visually-hidden" id="0504">
-                    <label class="calendar__label" for="0504">05</label>
+                    <label class="calendar__label" for="0504">5</label>
                   </li>
                 </ul>
               </div>
             </div>
-            <button class="step__submit button" type="submit">Следующий шаг</button>
+            <button class="step__submit button" type="submit">
+              <span class="button-show-more__title">Следующий шаг</span>
+              <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
+            </button>
           </div>
           <div class="step step--two">
             <h3 class="step__heading">Шаг 2. Маршрут</h3>
