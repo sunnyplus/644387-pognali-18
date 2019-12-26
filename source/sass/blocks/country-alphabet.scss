@@ -5,6 +5,21 @@
   flex-wrap: wrap;
 }
 
+.country-alphabet__item {
+  position: relative;
+
+  &--current {
+    .step__country-letter {
+      background-color: #edeff6;
+    }
+  }
+
+  &:nth-of-type(n) {
+    margin-left: -1px;
+    margin-top: -1px;
+  }
+}
+
 .country-alphabet__letter {
   width: 45px;
   height: 42px;

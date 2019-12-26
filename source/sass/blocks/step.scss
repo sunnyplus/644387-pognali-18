@@ -10,6 +10,15 @@
   &:not(:last-of-type) {
     margin-bottom: 10px;
   }
+
+  &--two {
+    padding-bottom: 9px;
+  }
+
+  &--three {
+    padding-top: 24px;
+    padding-bottom: 10px;
+  }
 }
 
 .step__heading {
@@ -18,6 +27,7 @@
   font-weight: 700;
   line-height: 20px;
   margin: 0;
+  margin-right: 100px;
 }
 
 .step__description {
@@ -28,6 +38,14 @@
   margin: 0;
   margin-top: 14px;
   margin-bottom: 20px;
+
+  &--step-two {
+    margin-bottom: 21px;
+  }
+
+  &--step-three {
+    margin-bottom: 13px;
+  }
 }
 
 .step__child-permission {
@@ -69,6 +87,14 @@
   padding-left: 0;
   text-transform: uppercase;
 
+  &--step-two {
+    margin-top: 28px;
+  }
+
+  &--step-three {
+    margin-top: 4px;
+  }
+
   @include flex-center();
 }
 
@@ -78,7 +104,19 @@
 
 .step__country-list {
   @include list-reset();
+  margin: 0;
+  padding-top: 54px;
+  padding-left: 18px;
+  padding-bottom: 15px;
   border: 1px solid #cbced9;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+}
+
+.step__country-select {
+  &:not(:last-of-type) {
+    margin-bottom: 22px;
+  }
 }
 
 .step__country-link {
@@ -89,8 +127,22 @@
   text-decoration: none;
 }
 
+.step__countries-wrapper {
+  display: none;
+  position: absolute;
+  z-index: 15;
+  top: 42px;
+  left: 0;
+
+  &--opened {
+    display: block;
+    background: #ffffff;
+  }
+}
+
 .step__country-alphabet {
   @include list-reset();
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -107,6 +159,7 @@
   letter-spacing: 1.4px;
   border: 1px solid #cbced9;
   cursor: pointer;
+  padding: 0;
 
   &--active {
     background-color: #1d2e5b;
@@ -124,15 +177,52 @@
   background-color: $white;
   border: none;
   width: 100%;
+  margin-top: 13px;
 }
 
 .step__intertament-list {
   @include list-reset();
+  margin: 0;
+}
+
+.step__intertament-item {
+  position: relative;
+
+  &:first-of-type {
+    &::before {
+      @include pseudo(2px,281px);
+      background-color: #1d2e5b;
+      top: 20px;
+      left: -14px;
+    }
+  }
 }
 
 .step__intertament-box {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
+
+  &::before {
+    @include pseudo(15px,2px);
+    border-radius: 1px;
+    background-color: #1d2e5b;
+    top: 18px;
+    left: -14px;
+  }
+
+  &::after {
+    @include pseudo(6px,6px);
+    background-color: #1d2e5b;
+    border-radius: 50%;
+    top: 16px;
+    left: -3px;
+  }
+}
+
+.step__intertament-flag {
+  align-self: center;
 }
 
 .step__intertament-place {
@@ -155,8 +245,9 @@
 
 .step__intertament-text {
   width: 100%;
-  padding-top: 13px;
-  padding-left: 15px;
+  padding-top: 9px;
+  padding-left: 13px;
+  padding-right: 7px;
   border: 1px solid #cbced9;
   border-radius: 4px;
   color: #444444;
@@ -164,6 +255,9 @@
   font-weight: 400;
   line-height: 22px;
   resize: none;
+  margin-top: 8px;
+  margin-bottom: 17px;
+  min-height: 220px;
 
   &::placeholder {
     opacity: 0.3;
