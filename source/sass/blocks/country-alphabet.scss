@@ -40,13 +40,11 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $pc-width) { //tmp
+@media (min-width: $tablet-width) {
   .country-alphabet {
     width: 390px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .country-alphabet__letter {
     width: 50px;
     height: 55px;

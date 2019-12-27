@@ -108,7 +108,6 @@
     background-color: #edeff6;
     color: #1d2e5b;
     width: 100%;
-    height: 42px;//tmp
   }
 }
 
@@ -134,6 +133,15 @@
   &--closed {
     display: none;
   }
+
+  &::before {
+    @include pseudo(5px,10px);
+    background: url("../img/small-arrow.svg") no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+    top: 57px;
+    right: 59px;
+  }
 }
 
 .country-select__country-label {
@@ -149,11 +157,119 @@
 
 .country-select_small-cross {
   opacity: 0.3;
+  width: 9px;
+  height: 9px;
 }
 
 @media (min-width: $tablet-width) {
+  .country-select {
+    justify-content: flex-start;
+    align-items: center;
+
+    &::after {
+      width: 15px;
+      height: 15px;
+      top: 25px;
+      left: 388px;
+    }
+
+    &::before {
+      width: 17px;
+      height: 9px;
+      background-image: url("../img/dropdown-form.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.3;
+      top: 30px;
+      left: 325px;
+    }
+
+    &--choose {
+      justify-content: space-between;
+
+      .country-select__input {
+        width: 369px;
+        padding-top: 26px;
+        padding-bottom: 24px;
+      }
+    }
+
+    &--opened {
+      &::before {
+        width: 18px;
+        height: 18px;
+        background: url("../img/small-cross-white.svg") no-repeat;
+        opacity: 1;
+        top: 25px;
+      }
+    }
+
+    &--add {
+      .country-select__input {
+        width: 369px;
+        padding-top: 26px;
+        padding-bottom: 24px;
+        padding-left: 25px;
+      }
+
+      &::before {
+        width: 18px;
+        height: 18px;
+        background: url("../img/qty-plus-mobile.svg") no-repeat;
+        top: 25px;
+        left: 323px;
+        opacity: 0.2;
+      }
+
+      &::after {
+        background-color: #edeff6;
+      }
+    }
+  }
+
+  .country-select__country-label {
+    &::before {
+      background: none;
+    }
+  }
+
+  .country-select__button-delete {
+    background: none;
+    position: static;
+    margin-left: 22px;
+
+    &::before {
+      background: none;
+    }
+  }
+
+  .country-select_small-cross {
+    opacity: 0.2;
+    width: 18px;
+    height: 18px;
+  }
+
   .country-select__input {
     width: 369px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    padding-left: 25px;
+    letter-spacing: 1.8px;
+  }
+
+  .country-select__flag-wrapper {
+    width: 70px;
+    height: 47px;
+    border: none;
+    margin-left: 53px;
+  }
+
+  .country-select__flag {
+    width: 100%;
+    height: auto;
   }
 }
 

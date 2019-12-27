@@ -6,10 +6,7 @@
   padding-left: 25px;
   padding-top: 25px;
   padding-right: 25px;
-
-  &:not(:last-of-type) {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
 
   &--two {
     padding-bottom: 9px;
@@ -18,6 +15,7 @@
   &--three {
     padding-top: 24px;
     padding-bottom: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -130,13 +128,13 @@
 .step__countries-wrapper {
   display: none;
   position: absolute;
+  background: #ffffff;
   z-index: 15;
   top: 42px;
   left: 0;
 
   &--opened {
     display: block;
-    background: #ffffff;
   }
 }
 
@@ -289,10 +287,7 @@
     padding-top: 50px;
     padding-bottom: 56px;
     border-radius: 30px;
-
-    &:not(:last-of-type) {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
 
     &--one .step__submit {
       order: 6;
@@ -303,10 +298,48 @@
       flex-wrap: wrap;
       flex-direction: row;
     }
+
+    &--two {
+      padding-bottom: 53px;
+      margin-bottom: 50px;
+    }
+
+    &--three {
+      padding-bottom: 53px;
+    }
   }
 
   .step__intertament-list {
     flex-basis: 100%;
+  }
+
+  .step__intertament-flag {
+    width: 70px;
+    height: 47px;
+  }
+
+  .step__intertament-place {
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: 700;
+    padding-top: 13px;
+  }
+
+  .step__intertament-box {
+    padding-left: 0;
+    padding-right: 32px;
+  }
+
+  .step__intertament-text {
+    width: 499px;
+    font-size: 20px;
+    line-height: 24px;
+    min-height: 142px;
+    margin-top: 26px;
+    margin-left: 2px;
+    margin-bottom: 47px;
+    padding-top: 17px;
+    padding-left: 16px;
   }
 
   .step__description {
@@ -316,14 +349,46 @@
     margin-top: 33px;
     margin-bottom: 64px;
     padding-right: 20px;
+
+    &--step-two {
+      padding-right: 120px;
+      margin-top: 34px;
+      margin-bottom: 76px;
+    }
+
+    &--step-three {
+      margin-bottom: 62px;
+    }
   }
 
   .step__country-select {
     flex-basis: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
   }
 
   .step__back-button {
-    width: 200px;
+    position: relative;
+    margin-top: 55px;
+    padding: 0;
+    margin-left: 75px;
+    text-transform: unset;
+    width: 170px;
+    font-size: 24px;
+    color: #1d2e5b;
+    line-height: 24px;
+    left: 12px;
+
+    &::before {
+      @include pseudo(10px,14px);
+      background: url("../img/triangle-arrow-right.svg") no-repeat;
+      background-size: contain;
+      left: -20px;
+      top: 28px;
+      transform: rotate(180deg);
+    }
   }
 
   .step__period {
@@ -357,6 +422,14 @@
     margin-top: 45px;
     margin-left: 2px;
     text-transform: unset;
+
+    &--step-two {
+      margin-top: 50px;
+    }
+
+    &--step-three {
+      margin-top: 0;
+    }
   }
 
   .step__companions-quota {
@@ -370,29 +443,44 @@
   }
 
   .step__country-list {
+    padding: 0;
     margin-left: auto;
-    margin-right: 59px;
+    margin-right: 70px;
+    margin-top: -3px;
+    border: none;
+    box-shadow: none;
   }
 
   .step__country-letter {
-    width: 52px;
+    width: 53.5px;
     height: 70px;
     font-size: 20px;
     line-height: 18px;
   }
 
+  .step__country-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .step__countries-wrapper {
-    display: flex;
     box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
     border-radius: 0 0 10px 10px;
     width: 575px;
-    height: 416px;
-    padding-top: 34px;
+    padding-top: 24px;
     padding-left: 27px;
+    padding-bottom: 35px;
+    display: none;
+    top: 80px;
+
+    &--opened {
+      display: flex;
+    }
   }
 
   .step__country-alphabet {
-    width: 260px;
+    width: 270px;
+    align-content: flex-start;
   }
 
   .step__child-permission-label {

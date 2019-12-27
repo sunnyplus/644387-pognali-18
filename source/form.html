@@ -417,12 +417,12 @@
           </div>
           <div class="step step--two">
             <h3 class="step__heading">Шаг 2. Маршрут</h3>
-            <p class="step__description step__description--step-two">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+            <p class="step__description step__description--step-two">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
             <div class="step__country-select country-select">
               <input class="country-select__input" type="text" id="country-4" value="Босния и Герцеговина">
               <label class="country-select__country-label" for="country-4">
                 <div class="country-select__flag-wrapper">
-                  <img src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+                  <img class="country-select__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии и Герцеговины">
                 </div>
               </label>
               <button class="country-select__button-delete" type="button">
@@ -433,7 +433,7 @@
               <input class="country-select__input" type="text" id="country-2" value="Чехия">
               <label class="country-select__country-label" for="country-2">
                 <div class="country-select__flag-wrapper">
-                  <img src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
+                  <img class="country-select__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
                 </div>
               </label class="country-select__country-label">
               <button class="country-select__button-delete" type="button">
@@ -557,7 +557,10 @@
             <div class="step__country-select country-select country-select--add">
               <button class="country-select__input country-select__input--grey" type="button" id="country-1">Добавить страну</button>
             </div>
-            <button class="step__submit step__submit--step-two button-show-more" type="submit">Следующий шаг</button>
+            <button class="step__submit step__submit--step-two button-show-more" type="submit">
+              <span class="button-show-more__title">Следующий шаг</span>
+              <img class="step__image-btn button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
+            </button>
             <button class="step__back-button" type="button">На шаг назад</button>
           </div>
           <div class="step step--three">
@@ -576,12 +579,15 @@
                   <span class="step__intertament-place">Чехия</span>
                   <img class="step__intertament-flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
                 </div>
-                <textarea class="step__intertament-text" name="intertainment-chz" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.
+                <textarea class="step__intertament-text" name="intertainment-chz" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.
                 </textarea>
               </li>
             </ul>
-            <button class="step__submit step__submit--step-three button-show-more" type="submit">Отправить</button>
-          <button class="step__back-button" type="button">На шаг назад</button>
+            <button class="step__submit step__submit--step-three button-show-more" type="submit">
+              <span class="button-show-more__title">Отправить</span>
+              <img class="step__image-btn button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
+            </button>
+            <button class="step__back-button" type="button">На шаг назад</button>
           </div>
         </form>
       </section>
