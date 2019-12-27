@@ -328,6 +328,17 @@
   .step__intertament-box {
     padding-left: 0;
     padding-right: 32px;
+
+    &::before {
+      background: none;
+    }
+
+    &::after {
+      width: 16px;
+      height: 16px;
+      top: 17px;
+      left: 520px;
+    }
   }
 
   .step__intertament-text {
@@ -340,6 +351,28 @@
     margin-bottom: 47px;
     padding-top: 17px;
     padding-left: 16px;
+  }
+
+  .step__intertament-item {
+    &:first-of-type {
+      &::before {
+        height: 265px;
+        width: 4px;
+        top: 25px;
+        left: 526px;
+      }
+    }
+  }
+
+  .step-number-block {
+    position: relative;
+
+    &::before {
+      @include pseudo(530px,1px);
+      background: #000000;
+      opacity: 0.1;
+      top: -25px;
+    }
   }
 
   .step__description {
@@ -388,6 +421,10 @@
       left: -20px;
       top: 28px;
       transform: rotate(180deg);
+    }
+
+    &--step-three {
+      margin-top: 7px;
     }
   }
 
