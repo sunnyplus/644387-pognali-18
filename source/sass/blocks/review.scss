@@ -7,6 +7,7 @@
   padding-left: 50px;
   padding-right: 113px;
   padding-bottom: 113px;
+  max-width: 100%;
 }
 
 .review__text {
@@ -74,11 +75,14 @@
     padding-bottom: 0;
     min-height: 0;
     background: none;
+    max-width: 100%;
   }
 
   .review__wrapper {
     display: flex;
-    width: 50%;
+    justify-content: flex-start;
+    width: 710px;
+    max-width: 100%;
     background: none;
   }
 }

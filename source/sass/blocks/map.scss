@@ -2,7 +2,7 @@
   position: relative;
   margin-top: -30px;
   min-height: 330px;
-  z-index: -4;
+  z-index: 0;
 }
 
 .map__iframe {
@@ -13,17 +13,16 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    min-height: 630px;
     margin-top: -60px;
   }
 
   .map__iframe {
-    min-height: 500px;
+    min-height: 654px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .map {
-    min-height: 590px;
+@media (min-width: $pc-width) {
+  .map__iframe {
+    min-height: 588px;
   }
 }

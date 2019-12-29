@@ -236,7 +236,7 @@
   .country-select__button-delete {
     background: none;
     position: static;
-    margin-left: 22px;
+    margin-left: auto;
 
     &::before {
       background: none;
@@ -274,7 +274,33 @@
 }
 
 @media (min-width: $pc-width) {
+  .country-select {
+    &::before {
+      left: 686px;
+    }
+
+    &::after {
+      left: 767px;
+    }
+
+    &--choose {
+      .country-select__input {
+        width: 730px;
+      }
+    }
+
+    &--add {
+      .country-select__input {
+        width: 730px;
+      }
+    }
+  }
+
   .country-select__input {
     width: 730px;
+  }
+
+  .country-select__flag-wrapper {
+    margin-left: 84px;
   }
 }

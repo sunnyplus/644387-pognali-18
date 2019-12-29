@@ -2,7 +2,7 @@
   font-family: $font;
   background-color: $white;
   width: 270px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .companion__name {
@@ -72,7 +72,12 @@
 .companion__photo {
   width: 100%;
   height: auto;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.companion__transports {
+  margin-left: -4px;
+  margin-top: 1px;
 }
 
 .companion__svg {
@@ -96,7 +101,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 }
 
 .companion__directions {
@@ -104,7 +109,13 @@
 }
 
 .companion__tags {
-  margin-bottom: 11px;
+  margin-top: 2px;
+  margin-bottom: 9px;
+  margin-left: 7px;
+
+  &--demin {
+    margin-left: 20px;
+  }
 }
 
 .companion__button {
@@ -115,6 +126,7 @@
 @media (min-width: $tablet-width) {
   .companion {
     width: 285px;
+    border-radius: 20px;
   }
 
   .companion__name {
@@ -134,13 +146,21 @@
     width: 285px;
   }
 
+  .companion__photo {
+    border-radius: 20px 20px 0 0;
+  }
+
   .companion__description {
     padding-top: 26px;
-    padding-bottom: 22px;
+    padding-bottom: 23px;
   }
 
   .companion__tags {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+
+    &--demin {
+      margin-left: 2px;
+    }
   }
 
   .companion__button {
@@ -148,10 +168,24 @@
     width: 618px;
     border-radius: 20px;
     padding-top: 30px;
-    padding-bottom: 26px;
+    padding-bottom: 27px;
     padding-left: 33px;
     padding-right: 35px;
     align-items: center;
+  }
+
+  .companion__level-block {
+    top: 33px;
+    left: 36px;
+  }
+
+  .companion__svg {
+    top: 20px;
+    left: 20px;
+  }
+
+  .companion__transport {
+    margin-left: 0;
   }
 }
 
@@ -160,5 +194,15 @@
     width: 281px;
     margin-top: -80px;
     margin-left: 0;
+  }
+
+  .companion__level-block {
+    top: 38px;
+    left: 39px;
+  }
+
+  .companion__svg {
+    top: 23px;
+    left: 22px;
   }
 }

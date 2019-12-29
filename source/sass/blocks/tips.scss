@@ -1,12 +1,11 @@
 .tips {
   position: relative;
+  display: flex;
   font-family: $font;
-  padding-left: 25px;
-  padding-right: 25px;
-  width: $mobile-width;
   margin: 0 auto;
   min-height: 310px;
   background-color: #192144;
+  max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {

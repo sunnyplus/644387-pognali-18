@@ -8,23 +8,34 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-global">
-    <header class="page-header">
+    <header class="page-header page-header--closed">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png" class="logo__image">
+        <a href="index.html" class="page-header__logo logo">
+          <picture class="logo__wrapper">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x" class="logo__image">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x" class="logo__image">
             <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+          </picture>
+          <picture class="logo__wrapper logo__wrapper--closed">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x" class="logo__image">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x" class="logo__image">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
           </picture>
         </a>
         <nav class="main-nav">
           <button type="button" class="main-nav__button" aria-label="Показать главное меню сайта">
-            <svg class="main-nav__button-icon" width="25" height="11" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="main-nav__button-icon" width="25" height="11" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
               <g>
                 <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
                 <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
               </g>
+            </svg>
+            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" fill="#cccccc" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
+              L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
+              L10.3,9z"/>
             </svg>
           </button>
           <div class="main-nav__content main-nav__content--closed">
@@ -169,8 +180,8 @@
             <li class="plans__item">
               <span class="plans__direction">Таиланд, Индонезия</span>
               <span class="plans__companions">1 попутчик</span>
-              <span class="plans__date">1 июл — 15 июл</span>
-              <a href="my-plans.html" class="plans__change">изменить</a>
+              <span class="plans__date plans__date--thailand">1 июл — 15 июл</span>
+              <a href="my-plans.html" class="plans__change plans__change--thailand">изменить</a>
             </li>
           </ol>
         </section>
@@ -179,15 +190,17 @@
         <form class="plan-add__form" action="http://echo.htmlacademy.ru">
           <div class="plan-add__title-wrapper">
             <h2 class="plan-add__title">Добавить план:</h2>
+          </div>
+          <div class="step step--one">
+            <div class="step__head-wrapper">
+              <h3 class="step__heading">Шаг 1. Даты&nbsp;пребывания</h3>
+              <p class="step__description">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            </div>
             <ul class="plan-add__indicators">
               <li class="plan-add__indicator plan-add__indicator--current"><span class="plan-add__indicator-title">даты</span></li>
               <li class="plan-add__indicator"><span class="plan-add__indicator-title">маршрут</span></li>
               <li class="plan-add__indicator"><span class="plan-add__indicator-title">развлечения</span></li>
             </ul>
-          </div>
-          <div class="step step--one">
-            <h3 class="step__heading">Шаг 1. Даты&nbsp;пребывания</h3>
-            <p class="step__description">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             <div class="step__companions-quota step-number-block">
               <label for="companions-quota" class="step-number-block__title">ищу попутчиков:</label>
               <label for="companions-quota" class="step-number-block__title step-number-block__title--grey">Чел.</label>
@@ -416,8 +429,15 @@
             </button>
           </div>
           <div class="step step--two">
-            <h3 class="step__heading">Шаг 2. Маршрут</h3>
-            <p class="step__description step__description--step-two">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+            <div class="step__head-wrapper">
+              <h3 class="step__heading">Шаг 2. Маршрут</h3>
+              <p class="step__description step__description--step-two">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+            </div>
+            <ul class="plan-add__indicators plan-add__indicators--step-two">
+              <li class="plan-add__indicator"><span class="plan-add__indicator-title">даты</span></li>
+              <li class="plan-add__indicator plan-add__indicator--current"><span class="plan-add__indicator-title">маршрут</span></li>
+              <li class="plan-add__indicator"><span class="plan-add__indicator-title">развлечения</span></li>
+            </ul>
             <div class="step__country-select country-select">
               <input class="country-select__input" type="text" id="country-4" value="Босния и Герцеговина">
               <label class="country-select__country-label" for="country-4">
@@ -561,11 +581,18 @@
               <span class="button-show-more__title">Следующий шаг</span>
               <img class="step__image-btn button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
             </button>
-            <button class="step__back-button" type="button">На шаг назад</button>
+            <button class="step__back-button step__back-button--step-two" type="button">На шаг назад</button>
           </div>
           <div class="step step--three">
-            <h3 class="step__heading">Шаг 3. Развлечения</h3>
-            <p class="step__description step__description--step-three">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <div class="step__head-wrapper">
+              <h3 class="step__heading">Шаг 3. Развлечения</h3>
+              <p class="step__description step__description--step-three">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            </div>
+            <ul class="plan-add__indicators plan-add__indicators--step-three">
+              <li class="plan-add__indicator"><span class="plan-add__indicator-title">даты</span></li>
+              <li class="plan-add__indicator"><span class="plan-add__indicator-title">маршрут</span></li>
+              <li class="plan-add__indicator plan-add__indicator--current"><span class="plan-add__indicator-title">развлечения</span></li>
+            </ul>
             <ul class="step__intertament-list">
               <li class="step__intertament-item">
                 <div class="step__intertament-box">

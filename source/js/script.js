@@ -6,7 +6,11 @@ var closeBusinessBtn = document.querySelector(".tarifs-business__close"),
     countryChoose = document.querySelector("#country-3"),
     countryCloseBtn = document.querySelector(".country-select--choose .country-select__button-delete"),
     countryBtnWrapper = document.querySelector(".country-select--choose"),
-    countryDropdown = document.querySelector(".step__countries-wrapper");
+    countryDropdown = document.querySelector(".step__countries-wrapper"),
+    mainNavBtn = document.querySelector(".main-nav__button"),
+    logoWrapper = document.querySelectorAll(".logo__wrapper"),
+    mainVavBtnIcon = document.querySelectorAll(".main-nav__button-icon");
+    pageHeader = document.querySelector(".page-header");
 
 if(showBusinessBtn) {
   showBusinessBtn.addEventListener('click', function(evt) {
@@ -27,10 +31,31 @@ mainnavBtn.addEventListener('click', function(evt) {
   mainnavContent.classList.toggle("main-nav__content--closed");
 });
 
-countryChoose.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  countryCloseBtn.classList.toggle("country-select__button-delete--closed");
-  countryChoose.classList.toggle("country-select__input--darkblue");
-  countryBtnWrapper.classList.toggle("country-select--opened");
-  countryDropdown.classList.toggle("step__countries-wrapper--opened");
-});
+if(countryChoose) {
+  countryChoose.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    countryCloseBtn.classList.toggle("country-select__button-delete--closed");
+    countryChoose.classList.toggle("country-select__input--darkblue");
+    countryBtnWrapper.classList.toggle("country-select--opened");
+    countryDropdown.classList.toggle("step__countries-wrapper--opened");
+  });
+}
+
+
+if(mainNavBtn)
+{
+  mainNavBtn.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    if(logoWrapper) {
+      for(var a=0; a<logoWrapper.length; a++) {
+        logoWrapper[a].classList.toggle("logo__wrapper--closed"); //меняем лого синее/белое
+      }
+    }
+    if(mainVavBtnIcon) {
+      for(var b=0; b<mainVavBtnIcon.length; b++) {
+        mainVavBtnIcon[b].classList.toggle("main-nav__button-icon--closed"); //меняем бургер/крестик
+      }
+    }
+    pageHeader.classList.toggle("page-header--closed"); // меняем бг синий/белый
+  });
+}

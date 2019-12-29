@@ -5,6 +5,7 @@
   border-radius: 0 0 30px 30px;
   padding-left: 25px;
   padding-right: 25px;
+  max-width: 100%;
 
   &--service {
     margin-top: 5px;
@@ -24,7 +25,7 @@
 
   &--center {
     text-align: center;
-    padding-bottom: 29px;
+    padding-bottom: 27px;
   }
 }
 
@@ -73,6 +74,12 @@
     margin-right: 25px;
     margin-bottom: 30px;
   }
+
+  &--questions {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+  }
 }
 
 .information__important {
@@ -101,7 +108,7 @@
 
 .information__list {
   margin-top: 57px;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 
 .information_contacts {
@@ -126,7 +133,7 @@
 
     &--companions {
       background-image: url("../img/blue_back.svg"), url("../img/rogovaya-back-desktop@1x.png");
-      background-position: 40px 40px, 410px 40px;
+      background-position: 40px 40px, 408px 25px;
       background-repeat: no-repeat, no-repeat;
       background-size: 213px 213px, 285px 285px;
       padding-top: 100px;
@@ -198,6 +205,11 @@
       margin-top: 56px;
       margin-bottom: 64px;
     }
+
+    &--questions {
+      margin-top: 56px;
+      margin-bottom: 64px;
+    }
   }
 
   .information__important {
@@ -206,8 +218,8 @@
     width: 260px;
     font-size: 21px;
     line-height: 25px;
-    margin-top: 32px;
-    margin-bottom: 53px;
+    margin-top: 31px;
+    margin-bottom: 56px;
 
     br {
       display: block;
@@ -217,7 +229,7 @@
   .information__list {
     margin-left: 25px;
     margin-right: 25px;
-    margin-bottom: 82px;
+    margin-bottom: 80px;
   }
 
   .information_contacts {
@@ -235,10 +247,10 @@
     &--service {
       background: url("../img/about-desktop@1x.png"),
         url("../img/blue_back.svg");
-      background-position: 750px 161px, 60px 145px;
+      background-position: 750px 185px, 60px 172px;
       background-repeat: no-repeat, no-repeat;
       background-color: #192144;
-      padding-top: 222px;
+      padding-top: 247px;
       padding-bottom: 163px;
     }
 
@@ -277,20 +289,33 @@
 
     &--companions {
       margin-left: 0;
+      position: relative;
+      z-index: 1;
     }
 
     &--sign {
-      margin-left: 283px;
+      margin-left: 297px;
       margin-right: 300px;
       margin-bottom: 56px;
     }
+
+    &--questions {
+      margin-left: 300px;
+      margin-right: 300px;
+      margin-bottom: 56px;
+    }
+  }
+
+  .information__answer {
+    font-size: 29px;
+    letter-spacing: 0.25px;
   }
 
   .information__important {
     margin-left: 0;
     margin-top: 39px;
     width: 410px;
-    margin-bottom: 85px;
+    margin-bottom: 84px;
   }
 
   .information__button {

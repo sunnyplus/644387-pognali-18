@@ -45,6 +45,15 @@
     width: 390px;
   }
 
+  .country-alphabet__item {
+    &--current {
+      .step__country-letter {
+        background-color: #1d2e5b;
+        color: #ffffff;
+      }
+    }
+  }
+
   .country-alphabet__letter {
     width: 50px;
     height: 55px;

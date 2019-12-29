@@ -2,7 +2,10 @@
   font-family: $font;
   position: relative;
   margin: 0 auto;
-  background-color: $bg-header;
+
+  &--closed {
+    background-color: $bg-header;
+  }
 }
 
 .page-header__wrapper {
@@ -11,12 +14,17 @@
   width: $mobile-width;
   margin: 0 auto;
   padding: 27px 25px;
+  padding-right: 30px;
+  max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     justify-content: flex-start;
-    background-color: $bg-header-tablet;
+
+    &--closed {
+      background-color: $bg-header;
+    }
   }
 
   .page-header__wrapper {
@@ -39,7 +47,7 @@
   .page-header__wrapper {
     width: $pc-width;
     padding-left: 60px;
-    padding-top: 46px;
+    padding-top: 10px;
     padding-bottom: 0;
   }
 }

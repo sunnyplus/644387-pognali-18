@@ -26,23 +26,42 @@
 
 .plan-add__indicators {
   @include list-reset();
+  position: absolute;
+  top: 35px;
+  right: 7px;
   margin: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 48px;
-  margin-left: 35px;
+  justify-content: flex-start;
+  width: 40px;
+
+  &--step-two {
+    display: none;
+  }
+
+  &--step-three {
+    display: none;
+  }
 }
 
 .plan-add__indicator {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #1d2e5b;
-  opacity: 0.3;
+  position: relative;
+  margin-right: 21px;
+
+  &::before {
+    @include pseudo(5px,5px);
+    border-radius: 50%;
+    background-color: #1d2e5b;
+    opacity: 0.3;
+    left: -43px;
+    top: 4px;
+  }
 
   &--current {
     opacity: 1;
+
+    &::before {
+      opacity: 1;
+    }
   }
 }
 
@@ -69,8 +88,14 @@
   }
 
   .plan-add__indicators {
+    top: 62px;
+    right: 33px;
     margin-left: auto;
     width: 72px;
+  }
+
+  .plan-add__indicator {
+    margin-right: 34px;
   }
 
   .plan-add__title {
@@ -88,38 +113,45 @@
     position: relative;
     border-radius: 60px;
     margin-top: -60px;
+    margin-bottom: 10px;
   }
 
   .plan-add__indicators {
-    position: absolute;
-    top: 262px;
-    right: 321px;
+    position: static;
     flex-direction: column;
-    width: 250px;
+    width: 185px;
+    justify-content: flex-start;
+    padding-top: 10px;
+    margin-left: auto;
+
+    &--step-two {
+      display: flex;
+    }
+
+    &--step-three {
+      display: flex;
+    }
   }
 
   .plan-add__indicator {
-    &:not(:last-of-type) {
-      margin-bottom: 39px;
-    }
-
-    &--current {
-      .plan-add__indicator-title {
-        opacity: 1;
-      }
-    }
-  }
-
-  .plan-add__indicator-title {
-    display: block;
     opacity: 0.6;
     font-size: 20px;
     font-weight: 400;
     line-height: 13.78px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-left: 43px;
-    margin-top: -5px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 31px;
+    }
+
+    &--current {
+      opacity: 1;
+    }
+  }
+
+  .plan-add__indicator-title {
+    display: inline;
   }
 
   .plan-add__form {

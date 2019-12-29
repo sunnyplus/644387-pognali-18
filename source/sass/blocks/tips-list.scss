@@ -1,6 +1,5 @@
 .tips-list {
   @include list-reset();
-  // position: absolute;
   position: relative;
   top: -82px;
   font-family: $font;

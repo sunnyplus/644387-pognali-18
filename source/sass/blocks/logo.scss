@@ -4,6 +4,12 @@
   height: 19px;
 }
 
+.logo__wrapper {
+  &--closed {
+    display: none;
+  }
+}
+
 .logo__image {
   width: 100px;
   height: 19px;

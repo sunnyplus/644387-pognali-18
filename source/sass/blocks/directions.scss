@@ -6,6 +6,7 @@
   padding-bottom: 30px;
   width: $mobile-width;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .directions__title {
@@ -33,6 +34,7 @@
 }
 
 .directions__list {
+  margin-top: 60px;
   margin-bottom: 25px;
 }
 
@@ -43,6 +45,10 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 80px;
+  }
+
+  .directions__list {
+    margin-bottom: 45px;
   }
 
   .directions__title {
@@ -78,12 +84,13 @@
     padding-left: 132px;
     padding-right: 132px;
     padding-top: 107px;
-    padding-bottom: 148px;
+    padding-bottom: 150px;
     width: $pc-width;
     background-position: 1091px 35px;
   }
 
   .directions__list {
+    margin: 0;
     order: -1;
   }
 

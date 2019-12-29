@@ -8,23 +8,34 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--closed">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png" class="logo__image">
+        <a href="index.html" class="page-header__logo logo">
+          <picture class="logo__wrapper">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x" class="logo__image">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x" class="logo__image">
             <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+          </picture>
+          <picture class="logo__wrapper logo__wrapper--closed">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x" class="logo__image">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x" class="logo__image">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
           </picture>
         </a>
         <nav class="main-nav">
           <button type="button" class="main-nav__button" aria-label="Показать главное меню сайта">
-            <svg class="main-nav__button-icon" width="25" height="11" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="main-nav__button-icon" width="25" height="11" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
               <g>
                 <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
                 <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
               </g>
+            </svg>
+            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" fill="#cccccc" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
+              L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
+              L10.3,9z"/>
             </svg>
           </button>
           <div class="main-nav__content main-nav__content--closed">
@@ -301,7 +312,7 @@
                   <div class="companion__indicator indicator"></div>
                   <p class="companion__name companion__name--active">Петя Демин</p>
                 </div>
-                <ul class="companion__tags traveler-tags">
+                <ul class="companion__tags companion__tags--demin traveler-tags">
                   <li class="traveler-tags__item">#бургер</li>
                   <li class="traveler-tags__item">#бар</li>
                   <li class="traveler-tags__item">#футбол</li>
@@ -338,27 +349,6 @@
             <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
           </a>
         </section>
-      </div>
-      <div class="page-main__newprofile-wrapper">
-        <section class="tarifs">
-          <h2 class="visually-hidden">Тарифы аккаунта</h2>
-          <p class="tarifs__title">Добавьте свой профиль</p>
-          <ol class="tarifs__list">
-            <li class="tarifs__item">
-                <span class="tarifs__name">Базовое размещение</span>
-                <span class="tarifs__price">Бесплатно</span>
-            </li>
-            <li class="tarifs__item">
-                <span class="tarifs__name">Вывод на первых позициях</span>
-                <span class="tarifs__price">99 руб./мес</span>
-            </li>
-            <li class="tarifs__item">
-                <span class="tarifs__name">Кастомный цвет карточки</span>
-                <span class="tarifs__price">59 руб./мес</span>
-            </li>
-          </ol>
-          <a href="#" class="tarifs__show-business">Показать тарифы для бизнеса</a>
-        </section>
         <section class="tarifs-business">
           <h2 class="visually-hidden">Бизнес Тарифы аккаунта</h2>
           <p class="tarifs-business__title">Бизнес-тарифы</p>
@@ -383,6 +373,27 @@
           <button type="button" class="tarifs-business__close">Закрыть окно</button>
         </section>
       </div>
+      <div class="page-main__newprofile-wrapper">
+        <section class="tarifs">
+          <h2 class="visually-hidden">Тарифы аккаунта</h2>
+          <p class="tarifs__title">Добавьте свой профиль</p>
+          <ol class="tarifs__list">
+            <li class="tarifs__item">
+                <span class="tarifs__name">Базовое размещение</span>
+                <span class="tarifs__price">Бесплатно</span>
+            </li>
+            <li class="tarifs__item">
+                <span class="tarifs__name">Вывод на первых позициях</span>
+                <span class="tarifs__price">99 руб./мес</span>
+            </li>
+            <li class="tarifs__item">
+                <span class="tarifs__name">Кастомный цвет карточки</span>
+                <span class="tarifs__price">59 руб./мес</span>
+            </li>
+          </ol>
+          <a href="#" class="tarifs__show-business">Показать тарифы для бизнеса</a>
+        </section>
+      </div>
       <div class="page-main__contacts-wrapper">
         <section class="information information--center">
           <h2 class="information__title information__title--sign">Заинтересовались?</h2>
@@ -393,7 +404,7 @@
               <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка стрелочки вправо">
             </button>
           </form>
-          <p class="information__description information__description--sign">Остались вопросы? Мы&nbsp;с&nbsp;радостью&nbsp;на них ответим!</p>
+          <p class="information__description information__description--questions">Остались вопросы? <span class="information__answer">Мы&nbsp;с&nbsp;радостью&nbsp;на них ответим!</span></p>
           <div class="information_contacts contacts">
             <a href="tel:88005558628" class="contacts__item contacts__item--information">
               <div class="contacts__phone-wrapper">

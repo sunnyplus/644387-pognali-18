@@ -6,6 +6,7 @@
   padding-left: 50px;
   width: $mobile-width;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .tarifs__title {
@@ -51,7 +52,7 @@
   position: relative;
   counter-reset: tarifs-counter;
   margin-top: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   &::before {
     @include pseudo(200px, 1px);
@@ -119,11 +120,11 @@
     position: relative;
     background-color: #edeff6;
     width: $tablet-width;
-    min-height: 617px;
+    min-height: 0;
     padding-top: 136px;
     padding-right: 75px;
     padding-left: 130px;
-    padding-bottom: 86px;
+    padding-bottom: 85px;
     border-radius: 0 0 60px 60px;
 
     &--business {
@@ -151,7 +152,7 @@
 
     &::after {
       @include pseudo(198px, 285px);
-      top: 240px;
+      top: 209px;
       right: 40px;
       z-index: 1;
       background-color: #e2e5f2;
@@ -160,7 +161,7 @@
 
     &::before {
       width: 100px;
-      top: 497px;
+      top: 469px;
       right: 85px;
       background-size: contain;
     }
