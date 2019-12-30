@@ -14,12 +14,12 @@
   position: relative;
   width: $mobile-width;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .page-main__heading {
   position: relative;
-  padding-top: 20px;
+  padding-top: 29px;
   padding-left: 25px;
   padding-right: 25px;
   margin: 0;
@@ -28,7 +28,7 @@
     @include pseudo(214px,5px);
     border-radius: 2px;
     background-color: #ff8d30;
-    top: 67px;
+    top: 75px;
     left: 25px;
   }
 }
@@ -46,8 +46,8 @@
 
 .page-main__level-block {
   position: absolute;
-  top: 91px;
-  left: 45px;
+  top: 100px;
+  left: 44px;
 }
 
 .page-main__darkblue-wrapper {
@@ -128,7 +128,7 @@
 .page-main__profile-photo-wrapper {
   position: absolute;
   left: 178px;
-  top: 92px;
+  top: 101px;
   width: 100px;
   line-height: 0;
 }
@@ -156,14 +156,15 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 0 0 20px 20px;
-    padding-left: 77px;
+    padding-left: 74px;
     padding-right: 75px;
     padding-top: 67px;
-    padding-bottom: 62px;
+    padding-bottom: 63px;
   }
 
   .page-main__heading {
     padding-left: 0;
+    padding-top: 19px;
 
     &::after {
       width: 355px;
@@ -265,7 +266,8 @@
     width: $pc-width;
     justify-content: flex-start;
     padding-top: 60px;
-    padding-bottom: 0;
+    padding-bottom: 1px;
+    padding-left: 78px;
   }
 
   .page-main__heading {
@@ -282,7 +284,7 @@
 
   .page-main__plans-wrapper {
     border-radius: 60px 60px 0 0;
-    margin-top: -40px;
+    margin-top: -50px;
     padding-left: 124px;
     padding-right: 60px;
     padding-bottom: 100px;
@@ -308,7 +310,7 @@
     position: static;
     top: unset;
     left: unset;
-    margin-left: 475px;
+    margin-left: 472px;
     margin-top: -7px;
   }
 

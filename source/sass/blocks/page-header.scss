@@ -16,6 +16,10 @@
   padding: 27px 25px;
   padding-right: 30px;
   max-width: 100%;
+
+  &--form {
+    padding-top: 19px;
+  }
 }
 
 @media (min-width: $tablet-width) {

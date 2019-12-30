@@ -182,7 +182,7 @@
 
   &:first-of-type {
     &::before {
-      @include pseudo(2px,285px);
+      @include pseudo(2px,282px);
       background-color: #1d2e5b;
       top: 20px;
       left: -14px;
@@ -249,7 +249,7 @@
   line-height: 22px;
   resize: none;
   margin-top: 8px;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   min-height: 220px;
 
   &::placeholder {
@@ -279,7 +279,7 @@
     flex-direction: column;
     padding-left: 43px;
     padding-right: 43px;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 56px;
     border-radius: 30px;
     margin-bottom: 40px;
@@ -300,6 +300,7 @@
     }
 
     &--three {
+      padding-top: 51px;
       padding-bottom: 53px;
     }
   }
@@ -343,7 +344,7 @@
     min-height: 142px;
     margin-top: 26px;
     margin-left: 2px;
-    margin-bottom: 47px;
+    margin-bottom: 43px;
     padding-top: 17px;
     padding-left: 16px;
   }
@@ -356,17 +357,6 @@
         top: 25px;
         left: 526px;
       }
-    }
-  }
-
-  .step-number-block {
-    position: relative;
-
-    &::before {
-      @include pseudo(530px,1px);
-      background: #000000;
-      opacity: 0.1;
-      top: -25px;
     }
   }
 
@@ -407,7 +397,7 @@
     flex-basis: 100%;
 
     &:not(:last-of-type) {
-      margin-bottom: 15px;
+      margin-bottom: 13px;
     }
   }
 
@@ -496,6 +486,7 @@
   .step__heading {
     font-size: 36px;
     line-height: 36px;
+    margin-right: 275px;
   }
 
   .step__country-list {
@@ -580,6 +571,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      padding-bottom: 105px;
     }
 
     &:not(:last-of-type) {
@@ -627,7 +619,7 @@
   }
 
   .step__description {
-    margin-bottom: 86px;
+    margin-bottom: 84px;
 
     &--step-two {
       margin-right: 200px;
@@ -656,8 +648,12 @@
   .step__submit {
     margin-top: 55px;
 
+    &--step-two {
+      margin-top: 57px;
+    }
+
     &--step-three {
-      margin-top: 17px;
+      margin-top: 11px;
     }
   }
 
@@ -694,6 +690,10 @@
     padding-bottom: 25px;
   }
 
+  .step__heading {
+    margin-right: 100px;
+  }
+
   .step__back-button {
     margin-top: 60px;
     left: 10px;
@@ -711,7 +711,7 @@
     }
 
     &--step-three {
-      margin-top: 21px;
+      margin-top: 16px;
     }
   }
 

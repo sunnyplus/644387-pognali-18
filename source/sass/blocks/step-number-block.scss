@@ -71,6 +71,17 @@
     margin-bottom: 23px;
   }
 
+  .step-number-block {
+    position: relative;
+
+    &::before {
+      @include pseudo(530px,1px);
+      background: #000000;
+      opacity: 0.1;
+      top: -25px;
+    }
+  }
+
   .step-number-block__button-icon {
     &--minus {
       width: 20px;
@@ -88,6 +99,10 @@
   .step-number-block {
     align-items: center;
     justify-content: flex-start;
+
+    &::before {
+      background: none;
+    }
   }
 
   .step-number-block__bottom-wrapper {
