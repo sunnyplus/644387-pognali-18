@@ -439,7 +439,15 @@
   }
 
   .step__period {
+    position: relative;
     order: 4;
+
+    &::before {
+      @include pseudo(530px,1px);
+      background: #000000;
+      opacity: 0.1;
+      top: -25px;
+    }
   }
 
   .step__child-permission {
@@ -480,7 +488,15 @@
   }
 
   .step__companions-quota {
+    position: relative;
     margin-bottom: 34px;
+
+    &::before {
+      @include pseudo(530px,1px);
+      background: #000000;
+      opacity: 0.1;
+      top: -25px;
+    }
   }
 
   .step__heading {
@@ -594,6 +610,11 @@
   .step__companions-quota {
     flex-basis: 485px;
     margin-bottom: 0;
+
+    &::before {
+      width: 1000px;
+      top: -30px;
+    }
   }
 
   .step__intertament-item {
@@ -608,6 +629,10 @@
     margin-bottom: 0;
     margin-top: 14px;
     flex-basis: 474px;
+
+    &::before {
+      background: none;
+    }
   }
 
   .step__intertament-box {
