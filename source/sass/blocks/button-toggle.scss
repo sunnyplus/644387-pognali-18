@@ -1,24 +1,30 @@
 .button-toggle {
-  @include flex-center();
+  position: relative;
   font-family: $font;
   width: 100%;
   border: 0;
   border-radius: 20px;
   background-color: #d6daed;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  &--show {
-    background-color: $white;
-  }
-}
-
-.button-toggle__title {
+  padding-top: 7px;
+  padding-bottom: 4px;
+  padding-left: 31px;
   color: #161c35;
   font-size: 17px;
   font-weight: 700;
   line-height: 29.45px;
   text-transform: uppercase;
+
+  &--show {
+    background-color: $white;
+  }
+
+  &::before {
+    @include pseudo(12px,12px);
+    background: url("../img/small-cross.svg") no-repeat;
+    background-size: contain;
+    top: 14px;
+    left: 85px;
+  }
 }
 
 @media (min-width: $tablet-width) {
