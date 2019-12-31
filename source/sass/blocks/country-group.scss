@@ -11,10 +11,22 @@
   text-decoration: none;
 }
 
+.country-group__item {
+  &--invisible {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .country-group__link {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .country-group__item {
+    &--invisible {
+      display: block;
+    }
   }
 }
 

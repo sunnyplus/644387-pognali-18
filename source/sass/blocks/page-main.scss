@@ -15,6 +15,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding-bottom: 9px;
+  max-width: 100%;
 }
 
 .page-main__heading {
@@ -183,11 +184,17 @@
     padding-top: 19px;
 
     &::after {
-      width: 287px;
+      width: 355px;
       height: 8px;
       border-radius: 4px;
       top: 147px;
       left: 0;
+    }
+
+    &--catalog {
+      &::after {
+        width: 287px;
+      }
     }
   }
 
@@ -210,6 +217,13 @@
       background: url("../img/return.svg") no-repeat;
       background-size: contain;
     }
+  }
+
+  .page-main__filter-counter-wrapper {
+    padding-top: 90px;
+    padding-bottom: 74px;
+    border-radius: 0 0 60px 60px;
+    margin-top: -60px;
   }
 
   .page-main__catalog-wrapper {

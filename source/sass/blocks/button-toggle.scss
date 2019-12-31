@@ -17,17 +17,16 @@
   &--show {
     background-color: $white;
   }
-
-  &::before {
-    @include pseudo(12px,12px);
-    background: url("../img/small-cross.svg") no-repeat;
-    background-size: contain;
-    top: 14px;
-    left: 85px;
-  }
 }
 
 @media (min-width: $tablet-width) {
+  .button-toggle {
+    width: 618px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
   .button-toggle__title {
     font-size: 20px;
     line-height: 30px;
