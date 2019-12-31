@@ -10,7 +10,10 @@ var closeBusinessBtn = document.querySelector(".tarifs-business__close"),
     mainNavBtn = document.querySelector(".main-nav__button"),
     logoWrapper = document.querySelectorAll(".logo__wrapper"),
     mainVavBtnIcon = document.querySelectorAll(".main-nav__button-icon");
-    pageHeader = document.querySelector(".page-header");
+    pageHeader = document.querySelector(".page-header"),
+    countryFilterCloseBtn = document.querySelector(".country-filter__close-btn"),
+    countryFilterOpenBtn = document.querySelector(".country-filter__open-btn"),
+    filterWrapper = document.querySelector(".page-main__filter-counter-wrapper");
 
 if(showBusinessBtn) {
   showBusinessBtn.addEventListener('click', function(evt) {
@@ -41,7 +44,6 @@ if(countryChoose) {
   });
 }
 
-
 if(mainNavBtn)
 {
   mainNavBtn.addEventListener('click', function(evt) {
@@ -57,5 +59,19 @@ if(mainNavBtn)
       }
     }
     pageHeader.classList.toggle("page-header--closed"); // меняем бг синий/белый
+  });
+}
+
+if(countryFilterCloseBtn) { // показываем расширенное меню каталога
+  countryFilterCloseBtn.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    filterWrapper.classList.toggle("page-main__filter-counter-wrapper--closed");
+  });
+}
+
+if(countryFilterOpenBtn) { // показываем расширенное меню каталога
+  countryFilterOpenBtn.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    filterWrapper.classList.toggle("page-main__filter-counter-wrapper--closed");
   });
 }

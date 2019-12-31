@@ -35,4 +35,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .country-group__item {
+    &--desktop-invisible {
+      display: none;
+    }
+  }
 }

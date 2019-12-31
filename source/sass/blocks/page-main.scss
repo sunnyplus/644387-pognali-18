@@ -137,6 +137,23 @@
   position: relative;
   border-radius: 0 0 20px 20px;
   z-index: 9;
+
+  &--closed {
+    .country-filter__country-box,
+    .country-filter__country-box,
+    .country-filter__continent-list,
+    .country-filter__button {
+      display: none;
+    }
+
+    .country-filter__close-btn {
+      &::before {
+        background-image: url("../img/dots.svg");
+        width: 17px;
+        height: 3px;
+      }
+    }
+  }
 }
 
 .page-main__companion-wrapper {
@@ -309,10 +326,20 @@
 
   .page-main__head-box {
     width: $pc-width;
-    justify-content: flex-start;
-    padding-top: 60px;
+    justify-content: space-between;
+    padding-top: 119px;
     padding-bottom: 1px;
     padding-left: 78px;
+    padding-right: 183px;
+  }
+
+  .page-main__index-link {
+    margin-right: 0;
+    padding-top: 25px;
+
+    &::before {
+      top: 25px;
+    }
   }
 
   .page-main__heading {
@@ -320,10 +347,12 @@
     padding-top: 0;
     margin-left: 48px;
 
-    &::after {
-      width: 357px;
-      left: 1px;
-      top: 127px;
+    &--catalog {
+      &::after {
+        width: 287px;
+        left: 1px;
+        top: 127px;
+      }
     }
   }
 
@@ -333,6 +362,14 @@
     padding-left: 124px;
     padding-right: 60px;
     padding-bottom: 100px;
+  }
+
+  .page-main__catalog-wrapper {
+    padding-bottom: 61px;
+  }
+
+  .page-main__filter-counter-wrapper {
+    border-radius: 0;
   }
 
   .page-main__tarifs {

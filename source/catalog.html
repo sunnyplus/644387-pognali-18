@@ -107,19 +107,16 @@
           <a class="page-main__index-link" href="index.html">на главную</a>
         </div>
       </div>
-      <div class="page-main__filter-counter-wrapper">
+      <div class="page-main__filter-counter-wrapper page-main__filter-counter-wrapper--closed">
         <section class="country-filter">
           <div class="country-filter__heading-wrapper">
             <button class="country-filter__open-btn" type="button">
-              <img src="img/filter.svg" width="15" height="10" alt="Иконка меню фильтрации по странам">
+              <!-- <img class="country-filter__open-btn-image" src="img/filter.svg" width="15" height="10" alt="Иконка меню фильтрации по странам"> -->
             </button>
             <h2 class="country-filter__heading">фильтрация по странам</h2>
+            <span class="country-filter__heading-colon">:</span>
             <button class="country-filter__down-btn">Свернуть</button>
             <button class="country-filter__close-btn" type="button">
-              <!-- <img class="country-filter__close-btn-image" src="img/small-cross.svg" width="12" height="12" alt="Иконка закрытия фильтрации по странам"> -->
-              <svg class="country-filter__close-btn-image" width="12" height="12">
-                <use xlink:href="img/sprite.svg#small-cross"></use>
-              </svg>
             </button>
             <ul class="country-filter__continent-list">
               <li class="country-filter__continent-item">
@@ -226,7 +223,10 @@
                   <li class="country-group__item country-group__item--invisible">
                     <a href="#" class="country-group__link">Австрия</a>
                   </li>
-                  <li class="country-group__item">
+                  <li class="country-group__item country-group__item--invisible">
+                    <a href="#" class="country-group__link">Азербайджан</a>
+                  </li>
+                  <li class="country-group__item country-group__item--desktop-invisible">
                     <a href="#" class="country-group__link">Афганистан</a>
                   </li>
                   <li class="country-group__item">
@@ -235,8 +235,14 @@
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Алжир</a>
                   </li>
+                  <li class="country-group__item country-group__item--invisible">
+                    <a href="#" class="country-group__link">Ангола</a>
+                  </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Андорра</a>
+                  </li>
+                  <li class="country-group__item country-group__item--invisible">
+                    <a href="#" class="country-group__link">Антигуа и Барбуда</a>
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Аргентина</a>
@@ -244,14 +250,17 @@
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Армения</a>
                   </li>
-                  <li class="country-group__item">
+                  <li class="country-group__item country-group__item--desktop-invisible">
                     <a href="#" class="country-group__link">Австралия</a>
                   </li>
-                  <li class="country-group__item">
+                  <li class="country-group__item country-group__item--desktop-invisible">
                     <a href="#" class="country-group__link">Австрия</a>
                   </li>
-                  <li class="country-group__item">
+                  <li class="country-group__item country-group__item--desktop-invisible">
                     <a href="#" class="country-group__link">Азербайджан</a>
+                  </li>
+                  <li class="country-group__item country-group__item--invisible">
+                    <a href="#" class="country-group__link">Афганистан</a>
                   </li>
                 </ul>
               </li>
@@ -259,7 +268,7 @@
                 <h3 class="country-filter__capital">Б</h3>
                 <ul class="country-filter__country-list country-group">
                   <li class="country-group__item">
-                    <a href="#" class="country-group__link">Багамские острова</a>
+                    <a href="#" class="country-group__link">Багамские Острова</a>
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Бангладеш</a>
@@ -271,7 +280,7 @@
                     <a href="#" class="country-group__link">Бахрейн</a>
                   </li>
                   <li class="country-group__item">
-                    <a href="#" class="country-group__link">Белоруссий</a>
+                    <a href="#" class="country-group__link">Белоруссия</a>
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Белиз</a>
@@ -488,30 +497,6 @@
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Колумбия</a>
                   </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Коморы</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Конго</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">КНДР</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Республика Корея</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Коста-Рика</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Кот-д’Ивуар</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Куба</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Кувейт</a>
-                  </li>
                 </ul>
               </li>
               <li class="country-filter__country-list-box">
@@ -575,27 +560,6 @@
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Марокко</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Маршалловы Острова</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Мексика</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Мозамбик</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Молдавия</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Монако</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Монголия</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Мьянма</a>
                   </li>
                 </ul>
               </li>
@@ -672,6 +636,20 @@
                 </ul>
               </li>
               <li class="country-filter__country-list-box">
+                <h3 class="country-filter__capital">Р</h3>
+                <ul class="country-filter__country-list country-group">
+                  <li class="country-group__item">
+                    <a href="#" class="country-group__link">Руанда</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="country-group__link">Румыния</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="country-group__link">Россия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="country-filter__country-list-box">
                 <h3 class="country-filter__capital">С</h3>
                 <ul class="country-filter__country-list country-group">
                   <li class="country-group__item">
@@ -684,22 +662,13 @@
                     <a href="#" class="country-group__link">Сан-Марино</a>
                   </li>
                   <li class="country-group__item">
-                    <a href="#" class="country-group__link">Сан Томе и Принсипи</a>
-                  </li>
-                  <li class="country-group__item">
                     <a href="#" class="country-group__link">Саудовская Аравия</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Северная Македония</a>
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Сейшелы</a>
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Сенегал</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Сент-Люсия</a>
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Сербия</a>
@@ -719,18 +688,6 @@
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">США</a>
                   </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Сомали</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Судан</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Суринам</a>
-                  </li>
-                  <li class="country-group__item">
-                    <a href="#" class="country-group__link">Сьерра-Леоне</a>
-                  </li>
                 </ul>
               </li>
               <li class="country-filter__country-list-box">
@@ -747,6 +704,9 @@
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Того</a>
+                  </li>
+                  <li class="country-group__item">
+                    <a href="#" class="country-group__link">Тонга</a>
                   </li>
                   <li class="country-group__item">
                     <a href="#" class="country-group__link">Тринидад и Тобаго</a>
