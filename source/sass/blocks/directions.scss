@@ -3,8 +3,10 @@
   font-family: $font;
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 30px;
   width: $mobile-width;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .directions__title {
@@ -21,18 +23,40 @@
   line-height: 22px;
 }
 
+.directions__wrapper {
+  margin-left: 24px;
+  margin-right: 50px;
+}
+
+.directions__button {
+  padding: 22px;
+  align-items: center;
+}
+
+.directions__list {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .directions {
     width: $tablet-width;
-    background: url("../img/flags-back@1x.png") no-repeat 100% 10%;
-    padding-left: 40px;
-    padding-right: 40px;
+    background: url("../img/flags-back@1x.png") no-repeat 440px 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+  }
+
+  .directions__list {
+    margin-bottom: 45px;
   }
 
   .directions__title {
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
+    margin-top: 20px;
+    margin-bottom: 57px;
   }
 
   .directions__description {
@@ -40,6 +64,16 @@
     margin-bottom: 106px;
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .directions__button {
+    margin-left: 25px;
+    width: 618px;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    padding-left: 33px;
+    padding-right: 35px;
   }
 }
 
@@ -49,25 +83,31 @@
     flex-wrap: wrap;
     padding-left: 132px;
     padding-right: 132px;
+    padding-top: 107px;
+    padding-bottom: 150px;
     width: $pc-width;
+    background-position: 1091px 35px;
   }
 
   .directions__list {
+    margin: 0;
     order: -1;
   }
 
   .directions__button {
     position: absolute;
     right: 303px;
-    bottom: -10px;
+    bottom: 138px;
     width: 274px;
   }
 
   .directions__title {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+    margin-top: 2px;
   }
 
   .directions__wrapper {
+    padding-top: 5px;
     margin-right: 107px;
     margin-left: auto;
   }

@@ -1,3 +1,40 @@
 .logo {
   display: block;
+  width: 100px;
+  height: 19px;
+}
+
+.logo__wrapper {
+  &--closed {
+    display: none;
+  }
+}
+
+.logo__image {
+  width: 100px;
+  height: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 166px;
+    height: 42px;
+  }
+
+  .logo__image {
+    width: 166px;
+    height: 42px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .logo {
+    width: 200px;
+    height: 52px;
+  }
+
+  .logo__image {
+    width: 200px;
+    height: 52px;
+  }
 }

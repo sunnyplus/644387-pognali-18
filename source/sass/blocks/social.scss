@@ -6,12 +6,7 @@
 }
 
 .social__item {
-  @include flex-center();
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-
-  &--yellow {
+  &--yellow a {
     background-color: $yellow;
   }
 }
@@ -34,12 +29,25 @@
   fill: #cccccc;
 }
 
+.social__link {
+  // line-height: 1;
+  @include flex-center();
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     justify-content: left;
   }
 
   .social__item {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social__link {
     width: 60px;
     height: 60px;
   }

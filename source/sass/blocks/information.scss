@@ -1,27 +1,31 @@
 .information {
   font-family: $font;
-  min-height: 352px;
   width: $mobile-width;
   margin: 0 auto;
   border-radius: 0 0 30px 30px;
   padding-left: 25px;
   padding-right: 25px;
+  max-width: 100%;
 
   &--service {
+    margin-top: 5px;
     background: url("../img/about-mobile@1x.png") no-repeat;
     background-color: #192144;
+    min-height: 317px;
   }
 
   &--companions {
     background-image: url("../img/blue_back.svg"), url("../img/smolov-back-desktop@1x.png");
-    background-position: 1% 5%, 75% 5%;
+    background-position: -5px 0, 100% 0;
     background-repeat: no-repeat, no-repeat;
     background-size: 132px 132px, 143px 143px;
     background-color: #192144;
+    padding-bottom: 30px;
   }
 
   &--center {
     text-align: center;
+    padding-bottom: 27px;
   }
 }
 
@@ -30,6 +34,13 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
+  margin-top: -15px;
+  margin-left: 25px;
+
+  &--sign {
+    margin-left: 0;
+  }
 }
 
 .information__description {
@@ -37,9 +48,52 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  margin: 0;
+  margin-top: 17px;
+  margin-left: 25px;
 
-  &--notice {
-    font-weight: 700;
+  &--service {
+    margin-right: 35px;
+  }
+
+  &--service br:last-of-type {
+    display: none;
+  }
+
+  &--companions {
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+
+  &--companions br {
+    display: none;
+  }
+
+  &--sign {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+  }
+
+  &--questions {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+.information__important {
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 35px;
+
+  br {
+    display: none;
   }
 }
 
@@ -52,38 +106,71 @@
   display: none;
 }
 
+.information__list {
+  margin-top: 57px;
+  margin-bottom: 19px;
+}
+
+.information_contacts {
+  margin-top: -12px;
+}
+
 @media (min-width: $tablet-width) {
   .information {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: $tablet-width;
 
     &--service {
-      background: url("../img/about-tablet@1x.png") no-repeat 100% 50%;
-      background-color: #192144;
+      background: url("../img/about-tablet@1x.png") no-repeat 385px 49px,
+        url("../img/blue_back_tablet.svg") no-repeat 40px 0;
+      background-color: $bg-header-tablet;
+      padding-top: 58px;
+      padding-bottom: 88px;
+      border-radius: 0 0 60px 60px;
+      margin-top: 0;
     }
 
     &--companions {
       background-image: url("../img/blue_back.svg"), url("../img/rogovaya-back-desktop@1x.png");
-      background-position: 10% 5%, 85% 5%;
+      background-position: 40px 40px, 408px 25px;
       background-repeat: no-repeat, no-repeat;
       background-size: 213px 213px, 285px 285px;
+      padding-top: 100px;
+      padding-bottom: 88px;
+      border-radius: 0 0 60px 60px;
+    }
+
+    &--center {
+      padding-top: 48px;
+      padding-bottom: 58px;
     }
   }
 
   .information__title {
     font-size: 45px;
     line-height: 45px;
+    letter-spacing: -0.3px;
+    margin-left: 23px;
+
+    &--sign {
+      margin-left: 0;
+    }
   }
 
   .information__button {
     width: 274px;
     display: flex;
+    padding: 28px 36px 28px 34px;
+    margin-left: 25px;
+    border-radius: 20px;
+    align-items: center;
   }
 
   .information__description {
     font-size: 28px;
     line-height: 33px;
+    margin-top: 38px;
 
     &--notice {
       display: block;
@@ -93,12 +180,61 @@
     }
 
     &--service {
-      width: 298px;
+      width: 300px;
+    }
+
+    &--service br:first-of-type {
+      display: none;
+    }
+
+    &--service br:last-of-type {
+      display: block;
     }
 
     &--companions {
-      width: 298px;
+      width: 425px;
+      margin-top: 56px;
+      margin-bottom: 40px;
     }
+
+    &--companions br {
+      display: block;
+    }
+
+    &--sign {
+      margin-top: 56px;
+      margin-bottom: 64px;
+    }
+
+    &--questions {
+      margin-top: 56px;
+      margin-bottom: 64px;
+    }
+  }
+
+  .information__important {
+    position: relative;
+    z-index: 1;
+    width: 260px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 31px;
+    margin-bottom: 56px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .information__list {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 80px;
+  }
+
+  .information_contacts {
+    margin-top: -22px;
+    margin-left: 25px;
   }
 }
 
@@ -106,17 +242,99 @@
   .information {
     position: relative;
     width: $pc-width;
+    padding-left: 130px;
 
     &--service {
-      background: url("../img/about-desktop@1x.png") no-repeat 100% 50%;
+      background: url("../img/about-desktop@1x.png"),
+        url("../img/blue_back.svg");
+      background-position: 750px 185px, 60px 172px;
+      background-repeat: no-repeat, no-repeat;
       background-color: #192144;
+      padding-top: 247px;
+      padding-bottom: 163px;
     }
 
     &--companions {
       display: flex;
       flex-wrap: wrap;
-      padding-left: 132px;
-      padding-right: 132px;
+      padding-left: 130px;
+      padding-right: 60px;
+      padding-top: 132px;
+      padding-bottom: 135px;
+      background-position: 60px 68px, 190px 385px;
     }
+
+    &--center {
+      padding-top: 80px;
+      padding-left: 50px;
+      padding-bottom: 101px;
+    }
+  }
+
+  .information__title {
+    margin-left: 0;
+  }
+
+  .information__description {
+    margin-top: 58px;
+
+    &--service {
+      margin-left: 0;
+      width: 620px;
+    }
+
+    &--service br:last-of-type {
+      display: none;
+    }
+
+    &--companions {
+      margin-left: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    &--sign {
+      margin-left: 297px;
+      margin-right: 300px;
+      margin-bottom: 56px;
+    }
+
+    &--questions {
+      margin-left: 300px;
+      margin-right: 300px;
+      margin-bottom: 56px;
+    }
+  }
+
+  .information__answer {
+    font-size: 29px;
+    letter-spacing: 0.25px;
+  }
+
+  .information__important {
+    margin-left: 0;
+    margin-top: 39px;
+    width: 410px;
+    margin-bottom: 84px;
+  }
+
+  .information__button {
+    margin-left: 0;
+  }
+
+  .information__list {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .information__wrapper {
+    padding-top: 12px;
+  }
+
+  .information_contacts {
+    margin-top: -13px;
+    margin-left: 235px;
   }
 }

@@ -1,91 +1,228 @@
 .page-main {
   font-family: $font;
   margin: 0 auto;
+
+  &--index {
+    background-image: url("../img/globe-back-mobile@1x.jpg");
+    background-color: $bg-header;
+    background-repeat: no-repeat;
+    background-position: center -72px;
+  }
 }
 
 .page-main__head-box {
-  background-color: #161c35;
+  position: relative;
   width: $mobile-width;
   margin: 0 auto;
+  padding-bottom: 9px;
+  max-width: 100%;
 }
 
 .page-main__heading {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  position: relative;
+  padding-top: 29px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0;
+
+  &::after {
+    @include pseudo(214px,5px);
+    border-radius: 2px;
+    background-color: #ff8d30;
+    top: 75px;
+    left: 25px;
+  }
+
+  &--catalog {
+    &::after {
+      width: 173px;
+    }
+  }
 }
 
 .page-main__index-link {
   display: none;
 }
 
-.page-main__form-darkblue-wrapper {
+.page-main__form-wrapper {
   position: relative;
   background-color: #161c35;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
 }
 
-.page-main__intro-wrapper {
+.page-main__catalog-wrapper {
+  position: relative;
   background-color: #161c35;
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
+}
+
+.page-main__level-block {
+  position: absolute;
+  top: 100px;
+  left: 44px;
 }
 
 .page-main__darkblue-wrapper {
   position: relative;
+  z-index: 6;
   background-color: #192144;
   border-radius: 0 0 30px 30px;
 }
 
+.page-main__contacts-wrapper {
+  position: relative;
+  z-index: 2;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  margin-top: -35px;
+  padding-top: 123px;
+}
+
+.page-main__companions-wrapper {
+  position: relative;
+  z-index: 4;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  margin-top: -30px;
+  padding-top: 115px;
+}
+
 .page-main__grey-wrapper {
   position: relative;
+  z-index: 5;
+  margin-top: -60px;
+  padding-top: 113px;
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
+}
+
+.page-main__newprofile-wrapper {
+  position: relative;
+  z-index: 3;
+  margin-top: -145px;
+  padding-top: 113px;
+  background-color: #edeff6;
+  border-radius: 0 0 30px 30px;
+}
+
+.page-main__intro-wrapper {
+  z-index: 5;
 }
 
 .page-main__yellow-wrapper {
   position: relative;
   background-color: $yellow;
   border-radius: 0 0 30px 30px;
+  margin-top: -30px;
+  z-index: 1;
+  padding-top: 50px;
 }
 
 .page-main__plans-wrapper {
   position: relative;
   background-color: #dfe3f0;
-  border-radius: 0 0 30px 30px;
-}
-
-.page-main__plan-add-wrapper {
-  position: relative;
-  background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
+  margin-top: -48px;
+  z-index: 3;
+  padding-bottom: 80px;
 }
 
 .page-main__filter-counter-wrapper {
+  margin-top: -30px;
+  padding-top: 47px;
+  padding-bottom: 28px;
   background-color: #e2e5f2;
   position: relative;
   border-radius: 0 0 20px 20px;
+  z-index: 9;
+
+  &--closed {
+    padding-bottom: 13px;
+
+    .country-filter__country-box,
+    .country-filter__country-box,
+    .country-filter__continent-list,
+    .country-filter__button {
+      display: none;
+    }
+
+    .country-filter__close-btn {
+      &::before {
+        background-image: url("../img/dots.svg");
+        width: 17px;
+        height: 3px;
+      }
+    }
+  }
 }
 
 .page-main__companion-wrapper {
+  position: relative;
   background-color: #edeff6;
+  z-index: 8;
+  margin-top: -30px;
+  padding-top: 54px;
+}
+
+.page-main__profile-photo-wrapper {
+  position: absolute;
+  left: 178px;
+  top: 101px;
+  width: 100px;
+  line-height: 0;
+}
+
+.page-main__profile-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
     &--index {
-      background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 50% 1%,
-        url("../img/globe-back-tablet@1x.jpg") no-repeat 0% 1%;
+      background-image: none;
     }
+  }
+
+  .page-main__intro-wrapper {
+    background-color: $bg-header-tablet;
   }
 
   .page-main__head-box {
     display: flex;
     width: $tablet-width;
     justify-content: space-between;
-    align-items: center;
     border-radius: 0 0 20px 20px;
-    padding-left: 77px;
+    padding-left: 74px;
     padding-right: 75px;
+    padding-top: 67px;
+    padding-bottom: 63px;
+  }
+
+  .page-main__heading {
+    padding-left: 0;
+    padding-top: 19px;
+
+    &::after {
+      width: 355px;
+      height: 8px;
+      border-radius: 4px;
+      top: 147px;
+      left: 0;
+    }
+
+    &--catalog {
+      &::after {
+        width: 287px;
+      }
+    }
   }
 
   .page-main__index-link {
+    position: relative;
     display: block;
     color: #ffffff;
     font-size: 20px;
@@ -93,13 +230,46 @@
     line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
+    padding-top: 44px;
+    margin-right: 61px;
+
+    &::before {
+      @include pseudo(32px,16px);
+      top: 45px;
+      right: -61px;
+      background: url("../img/return.svg") no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .page-main__filter-counter-wrapper {
+    padding-top: 90px;
+    padding-bottom: 74px;
+    border-radius: 0 0 60px 60px;
+    margin-top: -60px;
+  }
+
+  .page-main__catalog-wrapper {
+    border-radius: 0 0 60px 60px;
   }
 
   .page-main__darkblue-wrapper {
     border-radius: 0 0 60px 60px;
+    background-color: $bg-header-tablet;
+    margin-top: -45px;
   }
 
-  .page-main__form-darkblue-wrapper {
+  .page-main__contacts-wrapper {
+    border-radius: 0 0 60px 60px;
+    margin-top: -80px;
+  }
+
+  .page-main__companions-wrapper {
+    border-radius: 0 0 60px 60px;
+    margin-top: -60px;
+  }
+
+  .page-main__form-wrapper {
     border-radius: 0 0 60px 60px;
   }
 
@@ -107,32 +277,105 @@
     border-radius: 0 0 60px 60px;
   }
 
+  .page-main__newprofile-wrapper {
+    border-radius: 0 0 60px 60px;
+    margin-top: -60px;
+    padding-top: 0;
+  }
+
   .page-main__yellow-wrapper {
     border-radius: 0 0 60px 60px;
+    margin-top: -60px;
   }
 
   .page-main__plans-wrapper {
-    border-radius: 0 0 60px 60px;
+    border-radius: 30px 30px 0 0;
+    margin-top: -40px;
+  }
+
+  .page-main__profile-photo-wrapper {
+    width: 94px;
+    top: 283px;
+    left: 600px;
+  }
+
+  .page-main__profile-photo {
+    border-radius: 5px;
+    width: 94px;
+    height: auto;
+  }
+
+  .page-main__level-block {
+    top: 283px;
+    left: 75px;
   }
 }
 
 @media (min-width: $pc-width) {
   .page-main {
-    // width: $pc-width;
+    background-color: $bg-header-pc;
+  }
 
-    &--index {
-      background: url("../img/traveller-illustration-desktop@1x.png") no-repeat 50% 1%,
-        url("../img/globe-back-desktop@1x.jpg") no-repeat 0% 1%;
-    }
+  .page-main__intro-wrapper {
+    background: url("../img/traveller-illustration-desktop@1x.png") no-repeat 605px 10px,
+      url("../img/globe-back-desktop@1x.jpg") no-repeat center bottom;
+    background-color: $bg-header-pc;
+    border-radius: 0 0 60px 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 7;
+    min-height: 650px;
+    padding-bottom: 22px;
   }
 
   .page-main__head-box {
     width: $pc-width;
+    justify-content: space-between;
+    padding-top: 119px;
+    padding-bottom: 1px;
+    padding-left: 78px;
+    padding-right: 183px;
   }
 
-  .page-main__intro-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .page-main__index-link {
+    margin-right: 0;
+    padding-top: 25px;
+
+    &::before {
+      top: 25px;
+    }
+  }
+
+  .page-main__heading {
+    padding-right: 0;
+    padding-top: 0;
+    margin-left: 48px;
+
+    &--catalog {
+      &::after {
+        width: 287px;
+        left: 1px;
+        top: 127px;
+      }
+    }
+  }
+
+  .page-main__plans-wrapper {
+    border-radius: 60px 60px 0 0;
+    margin-top: -50px;
+    padding-left: 124px;
+    padding-right: 60px;
+    padding-bottom: 100px;
+  }
+
+  .page-main__catalog-wrapper {
+    padding-bottom: 61px;
+  }
+
+  .page-main__filter-counter-wrapper {
+    border-radius: 0;
   }
 
   .page-main__tarifs {
@@ -144,5 +387,33 @@
     justify-content: space-between;
     padding-right: 40px;
     padding-left: 40px;
+  }
+
+  .page-main__darkblue-wrapper {
+    border-radius: 0 0 60px 60px;
+    margin-top: -100px;
+  }
+
+  .page-main__level-block {
+    position: static;
+    top: unset;
+    left: unset;
+    margin-left: 472px;
+    margin-top: -7px;
+  }
+
+  .page-main__companions-wrapper {
+    padding-top: 60px;
+  }
+
+  .page-main__profile-photo-wrapper {
+    position: static;
+    margin-left: 45px;
+  }
+
+  .page-main__profile-photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px 10px 0 0;
   }
 }

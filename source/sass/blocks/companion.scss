@@ -2,15 +2,29 @@
   font-family: $font;
   background-color: $white;
   width: 270px;
-  min-height: 270px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 10px;
 }
 
 .companion__name {
+  position: relative;
   color: #1d2e5b;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  &::before {
+    @include pseudo(5px,5px);
+    left: -17px;
+    top: 7px;
+    border-radius: 3px;
+    background-color: #f97676;
+  }
+
+  &--active::before {
+    background-color: #81e31e;
+  }
 }
 
 .companion__data {
@@ -19,8 +33,8 @@
 
 .companion__level-block {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 30px;
+  left: 33px;
   display: flex;
   flex-direction: column;
   z-index: 5;
@@ -33,24 +47,18 @@
   line-height: 24px;
 }
 
-.companion__line {
-  width: 31px;
-  height: 1px;
-  background-color: #000000;
-  opacity: 0.3;
-}
-
 .companion__title {
   position: relative;
   color: $white;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  margin-top: 2px;
 
   &::before {
     @include pseudo(31px,1px);
-    top: 0;
-    left: 0;
+    top: -4px;
+    left: -2px;
     background-color: #ffffff;
     opacity: 0.3;
   }
@@ -58,16 +66,28 @@
 
 .companion__photo-wrapper {
   position: relative;
+  width: 270px;
+}
+
+.companion__photo {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.companion__transports {
+  margin-left: -4px;
+  margin-top: 1px;
 }
 
 .companion__svg {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  stroke-dashoffset: 40;
+  top: 17px;
+  left: 17px;
+  stroke-dashoffset: 37;
 
   &--firsova {
-    stroke-dasharray: 165 10;
+    stroke-dasharray: 169 6;
   }
 
   &--demin {
@@ -76,27 +96,113 @@
 }
 
 .companion__description {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 17px;
+}
+
+.companion__directions {
+  flex-direction: row;
+}
+
+.companion__tags {
+  margin-top: 2px;
+  margin-bottom: 9px;
+  margin-left: 7px;
+
+  &--demin {
+    margin-left: 20px;
+  }
+}
+
+.companion__button {
+  padding: 22px;
   align-items: center;
 }
 
 @media (min-width: $tablet-width) {
+  .companion {
+    width: 285px;
+    border-radius: 20px;
+  }
+
   .companion__name {
     font-size: 24px;
     line-height: 24px;
+    margin-bottom: 21px;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+      left: -22px;
+      top: 8px;
+    }
+  }
+
+  .companion__photo-wrapper {
+    width: 285px;
+  }
+
+  .companion__photo {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .companion__description {
+    padding-top: 26px;
+    padding-bottom: 23px;
+  }
+
+  .companion__tags {
+    margin-bottom: 16px;
+
+    &--demin {
+      margin-left: 2px;
+    }
+  }
+
+  .companion__button {
+    margin-left: 25px;
+    width: 618px;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 27px;
+    padding-left: 33px;
+    padding-right: 35px;
+    align-items: center;
+  }
+
+  .companion__level-block {
+    top: 33px;
+    left: 36px;
+  }
+
+  .companion__svg {
+    top: 20px;
+    left: 20px;
+  }
+
+  .companion__transport {
+    margin-left: 0;
   }
 }
 
 @media (min-width: $pc-width) {
-  .companions__list {
-    margin-left: auto;
+  .companion__button {
+    width: 281px;
+    margin-top: -80px;
+    margin-left: 0;
   }
 
-  .companions__button {
-    position: absolute;
-    left: 40px;
-    bottom: 30px;
-    width: 274px;
+  .companion__level-block {
+    top: 38px;
+    left: 39px;
+  }
+
+  .companion__svg {
+    top: 23px;
+    left: 22px;
   }
 }

@@ -4,3 +4,20 @@
   font-family: $font;
   display: flex;
 }
+
+.traveler-transport__item {
+  @include flex-center();
+  width: 33px;
+  height: 32px;
+  border-radius: 50%;
+  // background-color: #edeff6;
+
+  &--active svg {
+    fill: #1d2e5b;
+    opacity: 1;
+  }
+}
+
+.traveler-transport__image {
+  opacity: 0.15;
+}

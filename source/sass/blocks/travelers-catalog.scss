@@ -1,9 +1,12 @@
 .travelers-catalog {
   font-family: $font;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 28px;
   background-color: #edeff6;
   width: $mobile-width;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .travelers-catalog__show-more {

@@ -6,6 +6,7 @@
   padding-left: 50px;
   width: $mobile-width;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .tarifs__title {
@@ -51,7 +52,7 @@
   position: relative;
   counter-reset: tarifs-counter;
   margin-top: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   &::before {
     @include pseudo(200px, 1px);
@@ -119,10 +120,12 @@
     position: relative;
     background-color: #edeff6;
     width: $tablet-width;
-    min-height: 644px;
-    padding-top: 163px;
+    min-height: 0;
+    padding-top: 136px;
     padding-right: 75px;
     padding-left: 130px;
+    padding-bottom: 85px;
+    border-radius: 0 0 60px 60px;
 
     &--business {
       border-radius: 30px;
@@ -149,7 +152,7 @@
 
     &::after {
       @include pseudo(198px, 285px);
-      top: 240px;
+      top: 209px;
       right: 40px;
       z-index: 1;
       background-color: #e2e5f2;
@@ -158,7 +161,7 @@
 
     &::before {
       width: 100px;
-      top: 497px;
+      top: 469px;
       right: 85px;
       background-size: contain;
     }
@@ -221,10 +224,10 @@
 @media (min-width: $pc-width) {
   .tarifs {
     width: $pc-width;
-    min-height: 830px;
     padding-right: 402px;
-    padding-left: 223px;
-    padding-top: 105px;
+    padding-left: 221px;
+    padding-top: 166px;
+    padding-bottom: 186px;
   }
 
   .tarifs__title {
@@ -234,15 +237,15 @@
     &::after {
       width: 444px;
       height: 300px;
-      top: 233px;
-      right: 242px;
+      top: 292px;
+      right: 245px;
     }
 
     &::before {
       width: 198px;
       height: 198px;
-      top: 285px;
-      right: 130px;
+      top: 345px;
+      right: 131px;
     }
   }
 

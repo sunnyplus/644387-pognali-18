@@ -1,9 +1,20 @@
 .plan-add {
   font-family: $font;
+  position: relative;
+  background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
+  z-index: 4;
+  margin-top: -75px;
+}
+
+.plan-add__form {
   padding: 25px;
+  padding-top: 30px;
+  padding-bottom: 73px;
   border-radius: 30px;
   width: $mobile-width;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .plan-add__title {
@@ -11,44 +22,148 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
 }
 
 .plan-add__indicators {
+  @include list-reset();
+  position: absolute;
+  top: 35px;
+  right: 7px;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+
+  &--step-two {
+    display: none;
+  }
+
+  &--step-three {
+    display: none;
+  }
 }
 
 .plan-add__indicator {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #1d2e5b;
-  opacity: 0.3;
+  position: relative;
+  margin-right: 21px;
+
+  &::before {
+    @include pseudo(5px,5px);
+    border-radius: 50%;
+    background-color: #1d2e5b;
+    opacity: 0.3;
+    left: -43px;
+    top: 4px;
+  }
 
   &--current {
     opacity: 1;
+
+    &::before {
+      opacity: 1;
+    }
   }
+}
+
+.plan-add__indicator-title {
+  display: none;
 }
 
 .plan-add__title-wrapper {
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
   .plan-add {
+    margin-top: -30px;
+  }
+
+  .plan-add__form {
     width: $tablet-width;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 45px;
+    padding-bottom: 156px;
+  }
+
+  .plan-add__indicators {
+    top: 62px;
+    right: 33px;
+    margin-left: auto;
+    width: 72px;
+  }
+
+  .plan-add__indicator {
+    margin-right: 34px;
   }
 
   .plan-add__title {
     font-size: 36px;
     line-height: 50px;
   }
+
+  .plan-add__title-wrapper {
+    margin-bottom: 49px;
+  }
 }
 
 @media (min-width: $pc-width) {
   .plan-add {
+    position: relative;
+    border-radius: 60px;
+    margin-top: -60px;
+    margin-bottom: 10px;
+  }
+
+  .plan-add__indicators {
+    position: static;
+    flex-direction: column;
+    width: 185px;
+    justify-content: flex-start;
+    padding-top: 10px;
+    margin-left: auto;
+
+    &--step-two {
+      display: flex;
+    }
+
+    &--step-three {
+      display: flex;
+    }
+  }
+
+  .plan-add__indicator {
+    opacity: 0.6;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 13.78px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 31px;
+    }
+
+    &--current {
+      opacity: 1;
+    }
+  }
+
+  .plan-add__indicator-title {
+    display: inline;
+  }
+
+  .plan-add__form {
     width: $pc-width;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 48px;
+  }
+
+  .plan-add__title-wrapper {
+    padding-left: 69px;
+    margin-bottom: 47px;
   }
 }

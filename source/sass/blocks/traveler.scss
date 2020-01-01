@@ -3,7 +3,9 @@
   font-family: $font;
   background-color: $white;
   border-radius: 20px;
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 18px;
+  padding-top: 15px;
 }
 
 .traveler__name {
@@ -12,18 +14,44 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+  margin: 0;
+  margin-right: 70px;
 
   &::before {
     @include pseudo(5px, 5px);
     border-radius: 3px;
     background-color: #f97676;
-    right: 0;
+    left: 138px;
+    top: 9px;
+  }
+}
+
+.traveler__image-wrapper {
+  width: 70px;
+  height: 70px;
+
+  &::before {
+    @include pseudo(31px,31px);
+    border-radius: 16px;
+    background: url("../img/heart.svg") no-repeat;
+    background-color: #f9eaea;
+    background-size: 13px 11px;
+    background-position: 50% 50%;
+    top: 54px;
+    left: 67px;
+  }
+
+  &--active {
+    &::before {
+      background-image: url("../img/heart-active.svg");
+    }
   }
 }
 
 .traveler__data {
   display: flex;
   flex-direction: column;
+  margin-left: 16px;
 }
 
 .traveler__image {
@@ -34,8 +62,6 @@
 
 .traveler__top-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .traveler__likes {
@@ -44,6 +70,41 @@
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.traveler__tags {
+  margin-top: 18px;
+  margin-left: -79px;
+  justify-content: flex-start;
+}
+
+.traveler__directions-wrapper {
+  padding-top: 13px;
+}
+
+.traveler__wish-title {
+  position: relative;
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  margin-left: 8px;
+
+  &::before {
+    @include pseudo(14px,1px);
+    background-color: #edeff6;
+    top: 8px;
+    left: -26px;
+  }
+
+  &::after {
+    @include pseudo(138px,1px);
+    background-color: #edeff6;
+    top: 8px;
+    left: 106px;
+  }
 }
 
 .traveler__wish-country {
@@ -71,18 +132,6 @@
   height: 45px;
   background: url("../img/status_bar.png") no-repeat;
   background-size: contain;
-}
-
-.traveler-transport__item {
-  @include flex-center();
-  width: 33px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #edeff6;
-}
-
-.traveler-transport__image {
-  opacity: 0.15;
 }
 
 .traveler__svg {
@@ -125,17 +174,20 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
+  margin: 0;
 }
 
-.traveler__heart {
-  @include flex-center();
-  position: absolute;
-  width: 31px;
-  height: 31px;
-  border-radius: 16px;
-  background-color: #f9eaea;
-  top: 75px;
-  left: 60px;
+.traveler__transport-wish {
+  padding-top: 13px;
+}
+
+.traveler__transport-title {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  margin-left: 8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -180,16 +232,6 @@
     line-height: 30px;
     align-self: flex-end;
     order: 1;
-  }
-
-  .traveler__heart {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: #f9eaea;
-    top: 190px;
-    left: 370px;
-    order: 2;
   }
 
   .traveler__name {

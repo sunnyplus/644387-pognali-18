@@ -5,14 +5,43 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .site-producer {
+    position: relative;
+
+    &::before {
+      @include pseudo(270px,1px);
+      background-color: #000000;
+      opacity: 0.05;
+      top: -15px;
+      left: 0;
+    }
+  }
+}
+
 .site-producer__info {
   color: #444444;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  margin: 0;
 }
 
 .site-producer__image {
   width: 27px;
   height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-producer__info {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .site-producer__info {
+    margin-top: -5px;
+  }
 }

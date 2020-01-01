@@ -1,11 +1,89 @@
 .country-select {
+  position: relative;
   font-family: $font;
   display: flex;
   justify-content: space-between;
+
+  &::after {
+    @include pseudo(8px,8px);
+    background-color: #1d2e5b;
+    border-radius: 50%;
+    top: 18px;
+    left: 163px;
+  }
+
+  &::before {
+    @include pseudo(49px,36px);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, #ffffff 40%);
+    top: 2px;
+    left: 117px;
+  }
+
+  &--choose {
+    position: relative;
+
+    &::after {
+      border: 1px solid #cbced9;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      width: 12px;
+      height: 7px;
+      background: url("../img/dropdown-form.svg") no-repeat;
+      background-size: contain;
+      top: 19px;
+      left: 193px;
+      opacity: 0.3;
+    }
+
+    .country-select__input {
+      width: 220px;
+      text-align: left;
+      cursor: pointer;
+    }
+  }
+
+  &--opened {
+    &::after {
+      border: none;
+      background-color: transparent;
+    }
+
+    &::before {
+      width: 9px;
+      height: 9px;
+      background: url("../img/small-cross-white.svg") no-repeat;
+      opacity: 1;
+    }
+  }
+
+  &--add {
+    .country-select__input {
+      border: none;
+      padding-left: 11px;
+      text-align: left;
+      width: 220px;
+    }
+
+    &::after {
+      border: 1px solid #cbced9;
+      background-color: transparent;
+    }
+
+    &::before {
+      width: 14px;
+      height: 14px;
+      background: url("../img/qty-plus-mobile.svg") no-repeat;
+      background-size: contain;
+      top: 16px;
+      left: 193px;
+      opacity: 0.3;
+    }
+  }
 }
 
 .country-select__input {
-  position: relative;
   border: 1px solid #cbced9;
   border-radius: 4px;
   color: #1d2e5b;
@@ -14,37 +92,22 @@
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
-
-  &::after {
-    content: "";
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    background-color: #1d2e5b;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-  }
-
-  &::before {
-    @include pseudo(49px,36px);
-    background: url("../img/dropdown-form.svg") no-repeat;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, #ffffff 40%);
-  }
+  width: 168px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: #ffffff;
 
   &--darkblue {
     background-color: #1d2e5b;
     color: $white;
-    width: 100%;
-    height: 42px;//tmp
+    border: none;
   }
 
   &--grey {
     background-color: #edeff6;
     color: #1d2e5b;
     width: 100%;
-    height: 42px;//tmp
   }
 }
 
@@ -58,20 +121,186 @@
 
 .country-select__button-delete {
   @include flex-center();
+  position: absolute;
+  top: -9px;
+  right: -9px;
   width: 21px;
   height: 21px;
   border-radius: 50%;
   background-color: #edeff6;
+  border: none;
+
+  &--closed {
+    display: none;
+  }
+
+  &::before {
+    @include pseudo(5px,10px);
+    background: url("../img/small-arrow.svg") no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+    top: 57px;
+    right: 59px;
+  }
+}
+
+.country-select__country-label {
+  &::before {
+    @include pseudo(12px,7px);
+    background: url("../img/dropdown-form.svg") no-repeat;
+    background-size: contain;
+    top: 20px;
+    right: 66px;
+    opacity: 0.3;
+  }
+}
+
+.country-select_small-cross {
+  opacity: 0.3;
+  width: 9px;
+  height: 9px;
 }
 
 @media (min-width: $tablet-width) {
+  .country-select {
+    justify-content: flex-start;
+    align-items: center;
+
+    &::after {
+      width: 15px;
+      height: 15px;
+      top: 25px;
+      left: 388px;
+    }
+
+    &::before {
+      width: 17px;
+      height: 9px;
+      background-image: url("../img/dropdown-form.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.3;
+      top: 30px;
+      left: 325px;
+    }
+
+    &--choose {
+      justify-content: space-between;
+
+      .country-select__input {
+        width: 369px;
+        padding-top: 26px;
+        padding-bottom: 24px;
+      }
+    }
+
+    &--opened {
+      &::before {
+        width: 18px;
+        height: 18px;
+        background: url("../img/small-cross-white.svg") no-repeat;
+        opacity: 1;
+        top: 25px;
+      }
+    }
+
+    &--add {
+      .country-select__input {
+        width: 369px;
+        padding-top: 26px;
+        padding-bottom: 24px;
+        padding-left: 25px;
+      }
+
+      &::before {
+        width: 18px;
+        height: 18px;
+        background: url("../img/qty-plus-mobile.svg") no-repeat;
+        top: 25px;
+        left: 323px;
+        opacity: 0.2;
+      }
+
+      &::after {
+        background-color: #edeff6;
+      }
+    }
+  }
+
+  .country-select__country-label {
+    &::before {
+      background: none;
+    }
+  }
+
+  .country-select__button-delete {
+    background: none;
+    position: static;
+    margin-left: auto;
+
+    &::before {
+      background: none;
+    }
+  }
+
+  .country-select_small-cross {
+    opacity: 0.2;
+    width: 18px;
+    height: 18px;
+  }
+
   .country-select__input {
     width: 369px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    padding-left: 25px;
+    letter-spacing: 1.8px;
+  }
+
+  .country-select__flag-wrapper {
+    width: 70px;
+    height: 47px;
+    border: none;
+    margin-left: 53px;
+  }
+
+  .country-select__flag {
+    width: 100%;
+    height: auto;
   }
 }
 
 @media (min-width: $pc-width) {
+  .country-select {
+    &::before {
+      left: 686px;
+    }
+
+    &::after {
+      left: 767px;
+    }
+
+    &--choose {
+      .country-select__input {
+        width: 730px;
+      }
+    }
+
+    &--add {
+      .country-select__input {
+        width: 730px;
+      }
+    }
+  }
+
   .country-select__input {
     width: 730px;
+  }
+
+  .country-select__flag-wrapper {
+    margin-left: 84px;
   }
 }

@@ -1,5 +1,28 @@
+.map {
+  position: relative;
+  margin-top: -30px;
+  min-height: 330px;
+  z-index: 0;
+}
+
 .map__iframe {
   display: block;
   width: 100%;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    margin-top: -60px;
+  }
+
+  .map__iframe {
+    min-height: 654px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .map__iframe {
+    min-height: 588px;
+  }
 }
