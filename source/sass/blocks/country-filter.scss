@@ -38,7 +38,7 @@
   line-height: 22px;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 12px;
+  margin-left: 10px;
 }
 
 .country-filter__open-btn {
@@ -48,6 +48,7 @@
   padding: 0;
   width: 20px;
   height: 20px;
+  margin-left: -3px;
 
   &::before {
     content: "";

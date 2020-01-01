@@ -1,26 +1,19 @@
 .traveler-directions {
   @include list-reset();
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -28px;
   margin: 0;
   font-family: $font;
   display: flex;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
-}
 
-// @media (max-width: $pc-width) {
-//   .traveler-directions {
-//     &::after {
-//       @include pseudo(100%, 1px);
-//       background-color: #edeff6;
-//       top: 0;
-//     }
-//   }
-// }
+  &--catalog {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 7px;
+  }
+}
 
 .traveler-directions__title {
   color: #1d2e5b;
@@ -29,6 +22,15 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 2px;
+}
+
+.traveler-directions__image {
+  &--catalog {
+    width: 25px;
+    height: 18px;
+    margin-right: 16px;
+  }
 }
 
 .traveler-directions__item {
@@ -37,6 +39,13 @@
 
   &:not(:last-of-type) {
     margin-right: 19px;
+  }
+
+  &--catalog {
+    &:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 7px;
+    }
   }
 }
 
@@ -52,6 +61,11 @@
 
 @media (min-width: $pc-width) {
   .traveler-directions {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -28px;
+
     &--catalog {
       flex-direction: column;
       order: 0;

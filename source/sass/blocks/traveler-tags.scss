@@ -18,6 +18,10 @@
   &:not(:last-of-type) {
     margin-right: 5px;
   }
+
+  &--catalog {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -139,6 +139,8 @@
   z-index: 9;
 
   &--closed {
+    padding-bottom: 13px;
+
     .country-filter__country-box,
     .country-filter__country-box,
     .country-filter__continent-list,
@@ -157,7 +159,11 @@
 }
 
 .page-main__companion-wrapper {
+  position: relative;
   background-color: #edeff6;
+  z-index: 8;
+  margin-top: -30px;
+  padding-top: 54px;
 }
 
 .page-main__profile-photo-wrapper {

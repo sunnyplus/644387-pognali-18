@@ -850,112 +850,97 @@
           <h2 class="companion-select__heading">Подберите идеального попутчика</h2>
           <form action="http://echo.htmlacademy.ru" class="companion-select__form">
             <div class="companion-select__field">
-              <div class="companion-select__legend-wrapper">
-                <button type="button" class="companion-select__field-button">
-                  <span class="companion-select__legend">Хобби</span>
-                  <img class="companion-select__icon" src="img/dropdown.svg" width="8" height="4" alt="Иконка свернуть пункт активности">
-                </button>
-              </div>
+              <!-- <div class="companion-select__legend-wrapper"> -->
+              <span tabindex="1" class="companion-select__field-button">Хобби</span>
+              <!-- </div> -->
               <ul class="companion-select__list">
                 <li class="companion-select__item">
-                  <input type="checkbox" name="hobby" value="gym" id="gym" checked>
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="hobby" value="gym" id="gym" checked>
                   <label class="companion-select__label" for="gym">Спортзал</label>
                 </li>
                 <li class="companion-select__item">
-                  <input type="checkbox" name="hobby" value="kalian" id="kalian">
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="hobby" value="kalian" id="kalian">
                   <label class="companion-select__label" for="kalian">Кальян</label>
                 </li>
                 <li class="companion-select__item">
-                  <input type="checkbox" name="hobby" value="sofa" id="sofa">
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="hobby" value="sofa" id="sofa">
                   <label class="companion-select__label" for="sofa">Диван</label>
                 </li>
               </ul>
             </div>
             <div class="companion-select__field">
-              <div class="companion-select__legend-wrapper">
-                <button type="button" class="companion-select__field-button">
-                  <span class="companion-select__legend">Музыка</span>
-                  <img class="companion-select__icon" src="img/dropdown.svg" width="8" height="4" alt="Иконка свернуть пункт активности">
-                </button>
-              </div>
+              <!-- <div class="companion-select__legend-wrapper"> -->
+              <span tabindex="1" class="companion-select__field-button">Музыка</span>
+              <!-- </div> -->
               <ul class="companion-select__list">
                 <li class="companion-select__item">
-                  <input type="checkbox" name="music" value="hardrock" id="hardrock" checked>
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="music" value="hardrock" id="hardrock" checked>
                   <label class="companion-select__label" for="hardrock">Тяжёлый рок</label>
                 </li>
                 <li class="companion-select__item">
-                  <input type="checkbox" name="music" value="russian-rap" id="russian-rap">
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="music" value="russian-rap" id="russian-rap">
                   <label class="companion-select__label" for="russian-rap">Русский рэп</label>
                 </li>
                 <li class="companion-select__item">
-                  <input type="checkbox" name="music" value="eurodance" id="eurodance">
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="music" value="eurodance" id="eurodance">
                   <label class="companion-select__label" for="eurodance">Евроденс</label>
                 </li>
               </ul>
             </div>
             <div class="companion-select__field">
-              <div class="companion-select__legend-wrapper">
-                <button type="button" class="companion-select__field-button">
-                  <span class="companion-select__legend">Еда</span>
-                  <img class="companion-select__icon" src="img/dropdown.svg" width="8" height="4" alt="Иконка свернуть пункт активности">
-                </button>
-              </div>
+              <!-- <div class="companion-select__legend-wrapper"> -->
+              <span tabindex="1" class="companion-select__field-button">Еда</span>
+              <!-- </div> -->
               <ul class="companion-select__list">
                 <li class="companion-select__item">
-                  <input type="checkbox" name="food" value="meat-eater" id="meat-eater" checked>
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="food" value="meat-eater" id="meat-eater" checked>
                   <label class="companion-select__label" for="meat-eater">Мясоед</label>
                 </li>
                 <li class="companion-select__item">
-                  <input type="checkbox" name="food" value="pp" id="pp">
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="food" value="pp" id="pp">
                   <label class="companion-select__label" for="pp">Сидит на ПП</label>
                 </li>
                 <li class="companion-select__item">
-                  <input type="checkbox" name="food" value="cheese-eater" id="cheese-eater">
+                  <input class="companion-select__list-input visually-hidden" type="checkbox" name="food" value="cheese-eater" id="cheese-eater">
                   <label class="companion-select__label" for="cheese-eater">Веган-сыроед</label>
                 </li>
               </ul>
             </div>
             <div class="companion-select__field">
-              <div class="companion-select__legend-wrapper">
-                <button type="button" class="companion-select__field-button">
-                  <span class="companion-select__legend">Транспорт</span>
-                  <img class="companion-select__icon" src="img/dropdown.svg" width="8" height="4" alt="Иконка свернуть пункт активности">
-                </button>
-              </div>
-              <ul class="companion-select__transport-list transport-list">
+              <!-- <div class="companion-select__legend-wrapper"> -->
+              <span tabindex="1" class="companion-select__field-button">Транспорт</span>
+              <!-- </div> -->
+              <ul class="companion-select__transport-list transport-list transport-list--left">
                 <li class="transport-list__item">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
-                  <label class="transport-list__label" for="companion-plane">
+                  <label class="transport-list__label transport-list__label--catalog" for="companion-plane">
                     <img src="img/plane.svg" width="14" height="16" alt="Самолёт" class="transport-list__icon">
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
-                  <label class="transport-list__label" for="companion-bus">
+                  <label class="transport-list__label transport-list__label--catalog" for="companion-bus">
                     <img src="img/bus.svg" width="13" height="16" alt="Автобус" class="transport-list__icon">
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
-                  <label class="transport-list__label" for="companion-bike">
+                  <label class="transport-list__label transport-list__label--catalog" for="companion-bike">
                     <img src="img/bike.svg" width="14" height="16" alt="Велосипед" class="transport-list__icon">
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
-                  <label class="transport-list__label" for="companion-run">
+                  <label class="transport-list__label transport-list__label--catalog" for="companion-run">
                     <img src="img/run.svg" width="15" height="17" alt="Бег" class="transport-list__icon">
                   </label>
                 </li>
               </ul>
             </div>
             <div class="companion-select__field">
-              <div class="companion-select__legend-wrapper">
-                <button type="button" class="companion-select__field-button">
-                  <span class="companion-select__legend">Левел</span>
-                  <img class="companion-select__icon" src="img/dropdown.svg" width="8" height="4" alt="Иконка свернуть пункт активности">
-                </button>
-              </div>
+              <!-- <div class="companion-select__legend-wrapper"> -->
+                <span tabindex="1" class="companion-select__field-button">Левел</span>
+              <!-- </div> -->
               <div class="companion-select__input-wrapper">
                 <label class="companion-select__level-label">
                   <input class="companion-select__level-input" type="number" name="level-from" value="30">
@@ -969,9 +954,7 @@
                 <button type="button" class="companion-select__level-button"></button>
               </div>
             </div>
-            <button class="companion-select__button button-toggle button-toggle--show" type="submit">
-              <span class="button-toggle__title">Показать</span>
-            </button>
+            <button class="companion-select__button button-toggle button-toggle--show" type="submit">Показать</button>
           </form>
         </section>
         <section class="travelers-catalog">
@@ -980,49 +963,43 @@
             <li class="traveler travelers__item">
               <div class="traveler__info">
                 <div class="traveler__top-wrapper">
-                  <div class="traveler__image-wrapper">
+                  <div class="traveler__image-wrapper traveler__image-wrapper--active">
                     <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова" class="traveler__image">
                   </div>
                   <div class="traveler__data">
                     <p class="traveler__name">Таня Фирсова</p>
                     <span class="traveler__likes">1,5 M</span>
                     <ul class="traveler__tags traveler-tags">
-                      <li class="traveler-tags__item">#ЗОЖ</li>
-                      <li class="traveler-tags__item">#ПП</li>
-                      <li class="traveler-tags__item">#Фитнес</li>
-                      <li class="traveler-tags__item">#пляж</li>
-                      <li class="traveler-tags__item">#авокадо</li>
-                      <li class="traveler-tags__item">#смузи</li>
+                      <li class="traveler-tags__item traveler-tags__item--catalog">#ЗОЖ</li>
+                      <li class="traveler-tags__item traveler-tags__item--catalog">#ПП</li>
+                      <li class="traveler-tags__item traveler-tags__item--catalog">#Фитнес</li>
+                      <li class="traveler-tags__item traveler-tags__item--catalog">#пляж</li>
+                      <li class="traveler-tags__item traveler-tags__item--catalog">#авокадо</li>
+                      <li class="traveler-tags__item traveler-tags__item--catalog">#смузи</li>
                     </ul>
-                    <div class="traveler__heart">
-                      <svg class="traveler__heart-icon" width="13" height="11" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"   y="0px" viewBox="0 0 13 11" style="enable-background:new 0 0 13 11;" xml:space="preserve">
-                        <path d="M12,1c-1.3-1.3-3.4-1.3-4.7,0L6.5,1.7L5.7,1C4.4-0.3,2.3-0.3,1,1c-1.3,1.3-1.3,3.4,0,4.6l0.8,0.8L6.5,11l4.7-4.6L12,5.6
-                        C13.3,4.3,13.3,2.2,12,1z"/>
-                      </svg>
-                    </div>
                   </div>
                 </div>
               </div>
               <div class="traveler__directions-wrapper">
-                <p class="traveler__wish-title">Хочет посетить</p>
+                <p class="traveler__wish-title">хочет посетить:</p>
                 <ul class="traveler-directions traveler-directions--catalog">
-                  <li class="traveler-directions__item">
-                    <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image traveler-directions__image--catalog">
                     <p class="traveler-directions__title">шри-ланка</p>
                   </li>
-                  <li class="traveler-directions__item">
-                    <img src="img/flag-thailand.svg" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <img src="img/flag-thailand.svg" width="35" height="24" alt="Тайланд" class="traveler-directions__image traveler-directions__image--catalog">
                     <p class="traveler-directions__title">таиланд</p>
                   </li>
-                  <li class="traveler-directions__item">
-                    <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшелы" class="traveler-directions__image traveler-directions__image--catalog">
                     <p class="traveler-directions__title">сейшелы</p>
                   </li>
                 </ul>
               </div>
               <div class="traveler__bottom-wrapper">
                 <div class="traveler__transport-wish">
-                  <p class="traveler__transport-title">Транспорт</p>
+                  <p class="traveler__transport-title">транспорт:</p>
                   <ul class="traveler__transport-list traveler-transport">
                     <li class="traveler-transport__item">
                       <img src="img/plane.svg" width="19" height="21" alt="Самолёт" class="traveler-transport__image">
@@ -1039,7 +1016,7 @@
                   </ul>
                 </div>
                 <div class="traveler__level">
-                  <p class="traveler__level-title">Левел</p>
+                  <p class="traveler__level-title">левел:</p>
                   <span class="traveler__level-counter">99</span>
                   <svg class="traveler__svg traveler__svg--firsova" width="45" height="45" viewBox="0 0 50 50">
                     <circle cx="25" cy="25" r="23" fill="none" stroke="#ff8d30" stroke-width="3"></circle>

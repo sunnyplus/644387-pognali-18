@@ -3,6 +3,10 @@
   font-family: $font;
   display: flex;
   justify-content: center;
+
+  &--left {
+    justify-content: flex-start;
+  }
 }
 
 .transport-list__input {
@@ -20,6 +24,11 @@
   height: 33px;
   background-color: $white;
   border-radius: 50%;
+
+  &--catalog {
+    width: 32.5px;
+    height: 32.5px;
+  }
 }
 
 .transport-list__icon {
