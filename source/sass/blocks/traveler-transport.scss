@@ -3,6 +3,12 @@
   position: relative;
   font-family: $font;
   display: flex;
+
+  &--catalog {
+    .traveler-transport__item {
+      background-color: #edeff6;
+    }
+  }
 }
 
 .traveler-transport__item {
@@ -10,9 +16,8 @@
   width: 33px;
   height: 32px;
   border-radius: 50%;
-  // background-color: #edeff6;
 
-  &--active svg {
+  &--active .traveler-transport__image {
     fill: #1d2e5b;
     opacity: 1;
   }

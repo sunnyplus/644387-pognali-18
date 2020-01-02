@@ -44,6 +44,7 @@
   &--active {
     &::before {
       background-image: url("../img/heart-active.svg");
+      background-color: #f9eaea;
     }
   }
 }
@@ -117,13 +118,15 @@
 .traveler__bottom-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 13px;
 }
 
 .traveler__button {
   border-radius: 20px;
-  width: 100%;
+  width: 230px;
   padding-bottom: 5px;
-  padding-top: 5px;
+  padding-top: 6px;
+  margin-left: 2px;
 }
 
 .traveler__level-box {
@@ -136,23 +139,7 @@
 
 .traveler__svg {
   stroke-dashoffset: 35;
-
-  &--firsova {
-    stroke-dasharray: 138 6.44;
-  }
-
-  &--demin {
-    stroke-dasharray: 124 20.44;
-  }
-
-  &--smolov {
-    stroke-dasharray: 36 108.44;
-  }
-
-  &--rogovaya {
-    stroke-dasharray: 77.22 77.22;
-    stroke-dashoffset: 45;
-  }
+  stroke-dasharray: 140 4.44;
 }
 
 .traveler__level {
@@ -161,8 +148,8 @@
 
 .traveler__level-counter {
   position: absolute;
-  top: 68px;
-  right: 12px;
+  top: 41px;
+  right: 10px;
   color: #1d2e5b;
   font-size: 24px;
   font-weight: 700;
@@ -170,24 +157,51 @@
 }
 
 .traveler__level-title {
+  position: relative;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
   margin: 0;
-}
+  margin-left: 3px;
+  margin-bottom: 7px;
 
-.traveler__transport-wish {
-  padding-top: 13px;
+  &::before {
+    @include pseudo(13px,1px);
+    background-color: #edeff6;
+    top: 8px;
+    left: 48px;
+  }
 }
 
 .traveler__transport-title {
+  position: relative;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
   margin: 0;
   margin-left: 8px;
+
+  &::before {
+    @include pseudo(14px,1px);
+    background-color: #edeff6;
+    top: 8px;
+    left: -26px;
+  }
+
+  &::after {
+    @include pseudo(96px,1px);
+    background-color: #edeff6;
+    top: 8px;
+    left: 75px;
+  }
+}
+
+.traveler__transport-list {
+  margin-top: 14px;
+  margin-left: 6px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {

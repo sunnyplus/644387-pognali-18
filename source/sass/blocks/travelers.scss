@@ -1,5 +1,56 @@
 .travelers {
   @include list-reset();
   font-family: $font;
-  margin: 0;
+}
+
+.travelers__item {
+  padding-bottom: 22px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  &--demin {
+    .traveler__bottom-wrapper {
+      padding-top: 18px;
+    }
+
+    .traveler__svg {
+      stroke-dasharray: 124 20.44;
+    }
+
+    .traveler-directions__image {
+      position: relative;
+      margin-top: -2px;
+    }
+  }
+
+  &--smolov {
+    .traveler__bottom-wrapper {
+      padding-top: 17px;
+    }
+
+    .traveler__svg {
+      stroke-dasharray: 36 108.44;
+    }
+  }
+
+  &--rogovaya {
+    .traveler__bottom-wrapper {
+      padding-top: 17px;
+    }
+
+    .traveler__svg {
+      stroke-dasharray: 77.22 77.22;
+      stroke-dashoffset: 45;
+    }
+  }
+
+  &--online {
+    .traveler__name {
+      &::before {
+        background-color: #81e31e;
+      }
+    }
+  }
 }

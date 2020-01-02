@@ -16,6 +16,11 @@
 
   &--show {
     background-color: $white;
+    padding-left: 3px;
+  }
+
+  &--call {
+    background-color: #ffd74b;
     padding-left: 4px;
   }
 }
