@@ -420,4 +420,15 @@
   .traveler__wish-title {
     display: none;
   }
+
+  .traveler__image-wrapper {
+    width: 285px;
+    height: 285px;
+  }
+
+  .traveler__image {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+  }
 }
