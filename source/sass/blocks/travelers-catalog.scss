@@ -90,12 +90,31 @@
     order: -1;
   }
 
+  .travelers-catalog__list {
+    width: 688px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 43px;
+  }
+
   .travelers-catalog__prev {
     margin-left: auto;
   }
 
   .travelers-catalog__pages {
     display: flex;
+  }
+
+  .travelers-catalog__show-more {
+    font-size: 20px;
+    line-height: 30px;
+    justify-content: flex-start;
+    padding-left: 262px;
+
+    &::before {
+      width: 51px;
+      height: 27px;
+    }
   }
 
   .travelers-catalog__page {

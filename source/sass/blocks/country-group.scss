@@ -27,6 +27,10 @@
     &--invisible {
       display: block;
     }
+
+    &--invisible-tablet {
+      display: none;
+    }
   }
 }
 
@@ -39,6 +43,10 @@
   .country-group__item {
     &--desktop-invisible {
       display: none;
+    }
+
+    &--invisible-tablet {
+      display: block;
     }
   }
 }

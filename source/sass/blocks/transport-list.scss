@@ -67,6 +67,12 @@
     &:not(:last-of-type) {
       margin-right: 8px;
     }
+
+    &--catalog {
+      &:not(:last-of-type) {
+        margin-right: 0;
+      }
+    }
   }
 }
 

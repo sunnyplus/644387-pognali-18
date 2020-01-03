@@ -26,3 +26,35 @@
 .traveler-transport__image {
   opacity: 0.15;
 }
+
+@media (min-width: $tablet-width) {
+  .traveler-transport {
+    &--catalog {
+      .traveler-transport__item {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .traveler-transport__image {
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run {
+      width: 20px;
+      height: 21px;
+    }
+  }
+}

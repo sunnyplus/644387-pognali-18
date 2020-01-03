@@ -41,6 +41,10 @@
   margin-left: 10px;
 }
 
+.country-filter__show-all {
+  display: none;
+}
+
 .country-filter__open-btn {
   @include flex-center();
   background: transparent;
@@ -196,6 +200,7 @@
   .country-filter__close-btn {
     order: 12;
     margin-left: 65px;
+    align-self: center;
 
     &::before {
       width: 18px;

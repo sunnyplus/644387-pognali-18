@@ -54,3 +54,32 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .travelers__item {
+    padding-top: 33px;
+    padding-left: 35px;
+    padding-right: 26px;
+    padding-bottom: 23px;
+
+    &--demin,
+    &--smolov,
+    &--rogovaya {
+      .traveler__bottom-wrapper {
+        padding-top: 0;
+      }
+    }
+
+    &--demin {
+      .traveler__name {
+        &::before {
+          right: -8px;
+        }
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+}
