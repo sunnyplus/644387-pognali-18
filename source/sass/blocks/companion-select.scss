@@ -228,7 +228,7 @@
   margin-top: 17px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: 1439px) {
   .companion-select {
     width: 688px;
     margin: 0 auto;
@@ -376,6 +376,7 @@
     padding-top: 12px;
     padding-bottom: 8px;
     border-radius: 25px;
+    width: 618px;
   }
 
   .companion-select__level-input {

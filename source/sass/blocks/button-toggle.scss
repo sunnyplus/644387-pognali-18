@@ -27,7 +27,6 @@
 
 @media (min-width: $tablet-width) {
   .button-toggle {
-    width: 618px;
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
@@ -39,8 +38,6 @@
   }
 }
 
-@media (min-width: $pc-width) {
-  .button-toggle {
-    width: 1320px;
-  }
-}
+// @media (min-width: $pc-width) {
+
+// }

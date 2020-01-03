@@ -289,16 +289,13 @@
   }
 
   .country-filter__open-btn {
-    display: block;
+    display: flex;
     width: 25px;
     height: 20px;
 
     &::before {
-      content: "";
       width: 23px;
       height: 15px;
-      background: url("../img/filter.svg") no-repeat;
-      background-size: contain;
     }
   }
 
@@ -316,6 +313,7 @@
     padding-bottom: 34px;
     margin-left: 0;
     margin-top: 0;
+    width: 1320px;
 
     &::before {
       width: 18px;

@@ -324,6 +324,7 @@
   .page-main__companion-wrapper {
     margin-top: -60px;
     padding-top: 242px;
+    padding-bottom: 122px;
   }
 
   .page-main__newprofile-wrapper {
@@ -425,6 +426,16 @@
 
   .page-main__filter-counter-wrapper {
     border-radius: 0;
+
+    &--closed {
+      .country-filter__heading-wrapper {
+        align-items: flex-start;
+      }
+
+      .country-filter__show-all {
+        margin-left: 340px;
+      }
+    }
   }
 
   .page-main__tarifs {
