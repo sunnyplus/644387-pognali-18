@@ -102,8 +102,8 @@
     </header>
     <main class="page-main">
       <div class="page-main__form-wrapper">
-        <div class="page-main__head-box">
-          <h1 class="page-main__heading main-heading">Направления</h1>
+        <div class="page-main__head-box page-main__head-box--form">
+          <h1 class="page-main__heading page-main__heading--form main-heading">Направления</h1>
           <div class="page-main__level-block level-block">
             <svg class="level-block__indicator" width="100" height="100" viewBox="0 0 122 122">
               <circle cx="61" cy="61" r="59" fill="none" stroke="#ff8d30" stroke-width="4"></circle>
@@ -114,7 +114,14 @@
             </div>
           </div>
           <div class="page-main__profile-photo-wrapper profile-photo">
-            <img class="page-main__profile-photo" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото личного профайла">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.webp 1x, img/photo-account-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-account-mobile@1x.webp 1x, img/photo-account-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg, img/photo-account-tablet@2x.jpg 2x">
+              <img src="img/photo-account-mobile@1x.jpg" srcset="img/photo-account-mobile@2x.jpg 2x" width="100" height="100" alt="Фото личного профайла" class="page-main__profile-photo">
+            </picture>
           </div>
         </div>
       </div>

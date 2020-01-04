@@ -188,10 +188,22 @@
   }
 
   .main-nav__link {
+    position: relative;
     color: #ffffff;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0;
+
+    &:active {
+      color: #ffd74b;
+      opacity: 0.3;
+    }
+
+    // &::before {
+    //   content: attr(data-hover);
+    //   position: absolute;
+    //   top: 100%;
+    // }
   }
 
   .main-nav__login {

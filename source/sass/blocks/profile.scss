@@ -37,18 +37,6 @@
   padding-bottom: 4px;
 }
 
-.profile__tags-field {
-  position: relative;
-  width: 270px;
-  border: 1px solid #cbced9;
-  border-radius: 10px;
-  padding-right: 20px;
-  padding-top: 21px;
-  padding-bottom: 14px;
-  padding-left: 23px;
-  margin-top: 32px;
-}
-
 .profile__transport-field {
   position: relative;
   width: 270px;
@@ -56,7 +44,7 @@
   border-radius: 10px;
   padding: 15px;
   padding-bottom: 14px;
-  margin-top: 25px;
+  margin-top: 19px;
 }
 
 .profile__legend {
@@ -81,16 +69,35 @@
   }
 }
 
+.profile__tags-field {
+  position: relative;
+  width: 270px;
+  margin-top: 32px;
+}
+
 .profile__tags-list {
   width: 100%;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
   color: #444444;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   background-color: inherit;
-  border: none;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 23px;
   outline: none;
   resize: none;
+
+  &:placeholder {
+    opacity: 0.6;
+  }
+
+  &:active {
+    border-color: #161c35;
+  }
 }
 
 .profile__button-label {
@@ -101,7 +108,7 @@
   .profile {
     margin-top: -60px;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
   }
 
   .profile__form {
@@ -128,14 +135,14 @@
     width: 618px;
     order: 5;
     margin-top: 50px;
-    padding-left: 38px;
-    padding-top: 33px;
-    padding-bottom: 3px;
   }
 
   .profile__tags-list {
     font-size: 20px;
     line-height: 24px;
+    padding-left: 38px;
+    padding-top: 33px;
+    padding-bottom: 11px;
   }
 
   .profile__change-btn {
@@ -173,13 +180,17 @@
     position: relative;
     width: $pc-width;
     padding-top: 55px;
-    margin-left: 50px;
+    padding-left: 124px;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .profile__tags-field {
     width: 730px;
     order: 1;
     margin-top: 0;
+    line-height: 0;
   }
 
   .profile__drop-word {
@@ -190,11 +201,19 @@
     width: 384px;
     order: 2;
     margin-left: 141px;
+    padding-top: 22px;
+    padding-left: 18px;
+  }
+
+  .profile__tags-list {
+    &:hover {
+      border-color: #aeb4cb;
+    }
   }
 
   .profile__button-label {
     position: absolute;
-    right: 205px;
+    right: 155px;
     top: -25px;
     width: 190px;
     margin-top: 0;

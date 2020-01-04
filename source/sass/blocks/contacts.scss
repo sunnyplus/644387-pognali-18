@@ -190,6 +190,42 @@
     &--information:first-of-type {
       margin-right: 111px;
     }
+
+    &:hover {
+      .contacts__phone-wrapper {
+        &--nav {
+          background-color: #f26926;
+        }
+      }
+
+      .contacts__email-wrapper {
+        &--nav {
+          background-color: #f26926;
+        }
+      }
+    }
+
+    &:active {
+      .contacts__phone-wrapper {
+        &--nav {
+          background-color: #f26926;
+        }
+      }
+
+      .contacts__email-wrapper {
+        &--nav {
+          background-color: #f26926;
+        }
+      }
+
+      .contacts__phone-icon {
+        opacity: 0.3;
+      }
+
+      .contacts__email-icon {
+        opacity: 0.3;
+      }
+    }
   }
 
   .contacts__address {
