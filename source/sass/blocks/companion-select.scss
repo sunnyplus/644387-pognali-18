@@ -412,13 +412,139 @@
 @media (min-width: $pc-width) {
   .companion-select {
     width: 285px;
+    margin: 0;
+    padding-top: 47px;
+    padding-left: 45px;
+    padding-right: 44px;
+    padding-bottom: 47px;
+  }
+
+  .companion-select__list {
+    margin-top: 18px;
+    margin-left: 39px;
+    margin-bottom: 23px;
+  }
+
+  .companion-select__item {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .companion-select__heading {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-left: 2px;
+    margin-bottom: 26px;
+    letter-spacing: 0;
+  }
+
+  .companion-select__field {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .companion-select__field-button {
     font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    border-top: none;
+    padding-top: 5px;
+    padding-right: 2px;
+    padding-bottom: 5px;
 
     &::after {
-      display: block;
+      width: 10px;
+      height: 5px;
+      margin-bottom: 6px;
     }
+  }
+
+  .companion-select__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      left: -36px;
+    }
+  }
+
+  .companion-select__level-input {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 95.5px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+  }
+
+  .companion-select__level-label {
+    &:last-of-type {
+      &::before {
+        width: 21px;
+        height: 15px;
+        top: 15px;
+      }
+
+      &::after {
+        width: 21px;
+        top: 22px;
+        left: -11px;
+      }
+    }
+  }
+
+  .companion-select__input-wrapper {
+    margin-top: 8px;
+    margin-right: 0;
+    margin-left: 2px;
+    margin-bottom: 28px;
+  }
+
+  .companion-select__level-button {
+    width: 13px;
+    height: 13px;
+
+    &:first-of-type {
+      margin-left: 62px;
+    }
+
+    &:last-of-type {
+      margin-left: 104px;
+
+      &::before {
+        width: 191px;
+        height: 3px;
+        background: linear-gradient(to left, #1d2e5b 128px, #cccc66 128px);
+      }
+    }
+  }
+
+  .companion-select__list-input {
+    &:checked + .companion-select__label {
+      &::after {
+        width: 12px;
+        height: 12px;
+        top: 2px;
+        left: -30px;
+      }
+    }
+  }
+
+  .companion-select__transport-list {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .companion-select__button {
+    margin-top: 34px;
+    padding-left: 1px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin-left: 3px;
+    border-radius: 25px;
   }
 }

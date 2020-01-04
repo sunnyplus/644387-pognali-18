@@ -83,3 +83,13 @@
     }
   }
 }
+
+@media (min-width: $pc-width) {
+  .travelers__item {
+    padding: 0;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+  }
+}

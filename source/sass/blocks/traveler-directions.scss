@@ -74,10 +74,20 @@
 @media (min-width: $pc-width) {
   .traveler-directions {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -28px;
-    flex-direction: column;
-    order: 0;
+  }
+
+  .traveler-directions__item {
+    &--catalog {
+      &:not(:last-of-type) {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .traveler-directions__image {
+    &--catalog {
+      margin-right: 19px;
+    }
   }
 }

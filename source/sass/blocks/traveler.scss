@@ -367,6 +367,7 @@
     height: 50px;
     top: 175px;
     left: 253px;
+    border-radius: 25px;
   }
 
   .traveler__wish-title {
@@ -408,9 +409,9 @@
 
   .traveler__bottom-wrapper {
     flex-direction: row;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    align-items: flex-end;
+    padding-left: 27px;
+    padding-bottom: 42px;
   }
 
   .traveler__transport-list {
@@ -424,11 +425,57 @@
   .traveler__image-wrapper {
     width: 285px;
     height: 285px;
+    margin-top: 0;
   }
 
   .traveler__image {
     width: 285px;
     height: 285px;
     border-radius: 20px 0 0 20px;
+  }
+
+  .traveler__data {
+    position: relative;
+    margin-left: 60px;
+    padding-top: 47px;
+
+    &::before {
+      @include pseudo(1px,207px);
+      background: linear-gradient(to top, #ffffff 10%, #000000 25%, #000000 75%, #ffffff 90%);
+      right: -36px;
+      top: 38px;
+      opacity: 0.1;
+    }
+  }
+
+  .traveler__name {
+    margin-right: 0;
+
+    &::before {
+      right: unset;
+      left: -26px;
+    }
+  }
+
+  .traveler__button {
+    top: 188px;
+    left: 339px;
+  }
+
+  .traveler__directions {
+    flex-direction: column;
+    top: 47px;
+    right: 56px;
+    margin: 0;
+    min-width: 220px;
+  }
+
+  .traveler__level {
+    margin-top: 0;
+  }
+
+  .traveler__transport-wish {
+    margin-right: 48px;
+    margin-bottom: 14px;
   }
 }

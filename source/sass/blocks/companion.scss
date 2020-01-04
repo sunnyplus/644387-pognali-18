@@ -205,4 +205,11 @@
     top: 23px;
     left: 22px;
   }
+
+  .companion__directions {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -28px;
+    // order: 0;
+  }
 }

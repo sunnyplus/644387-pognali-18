@@ -161,11 +161,27 @@
   .travelers-catalog {
     width: 950px;
     order: -1;
-    padding-top: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .travelers-catalog__list {
     margin-top: 0;
     width: 950px;
+    margin-bottom: 65px;
+  }
+
+  .travelers-catalog__show-more {
+    padding-left: 345px;
+
+    &::before {
+      margin-top: -5px;
+    }
+  }
+
+  .travelers-catalog__bottom-wrapper {
+    width: 950px;
+    margin-top: 65px;
+    padding-right: 31px;
   }
 }
