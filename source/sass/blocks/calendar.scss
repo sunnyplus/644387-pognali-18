@@ -36,6 +36,10 @@
   border: none;
   opacity: 0.3;
   padding: 0;
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .calendar__week-list {
@@ -74,22 +78,6 @@
 .calendar__item {
   position: relative;
 
-  &--active {
-    .calendar__label {
-      opacity: 1;
-      border-color: rgba(#444444, 0.3);
-      background-color: #edeff6;
-    }
-  }
-
-  &--current {
-    z-index: 2;
-
-    .calendar__label {
-      border: 2px solid #ff5c23;
-    }
-  }
-
   &:nth-of-type(7n+2) {
     margin-left: -1px;
   }
@@ -127,20 +115,26 @@
 
 .calendar__label {
   @include flex-center();
-  opacity: 0.3;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   width: 32.25px;
   height: 31.8px;
-  border: 1px solid #444444;
+  border: 1px solid #cbced9;
 }
 
-.calendar__input:checked + .calendar__label {
-  color: $white;
-  background-color: #1d2e5b;
-  opacity: 1;
+.calendar__input {
+  &:checked + .calendar__label {
+    color: $white;
+    background-color: #1d2e5b;
+    opacity: 1;
+  }
+
+  &:disabled + .calendar__label {
+    opacity: 0.3;
+    border: 1px solid #cbced9;
+  }
 }
 
 .calendar__button-image {
@@ -200,14 +194,6 @@
 }
 
 @media (min-width: $pc-width) {
-  .calendar__item {
-    &--current {
-      .calendar__label {
-        border: 4px solid #ff5c23;
-      }
-    }
-  }
-
   .calendar__label {
     width: 143.5px;
     height: 72px;
@@ -224,6 +210,15 @@
 
     &--month {
       flex-direction: row;
+    }
+  }
+
+  .calendar__input {
+    &:not(:disabled):hover + .calendar__label {
+      background-color: #1d2e5b;
+      border: 4px solid #ff5c23;
+      color: $white;
+      opacity: 1;
     }
   }
 
@@ -251,5 +246,11 @@
   .calendar__short-month {
     display: block;
     margin-left: 5px;
+  }
+
+  .calendar__button {
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

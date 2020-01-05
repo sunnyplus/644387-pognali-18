@@ -19,24 +19,53 @@
 }
 
 .step-number-block__bottom-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 220px;
-  border-radius: 4px;
-  border: 1px solid #cbced9;
-  padding-left: 5px;
-  padding-right: 5px;
   margin-top: 10px;
 }
 
 .step-number-block__button {
+  position: absolute;
+
   @include flex-center();
   width: 43px;
-  height: 41px;
+  height: 43px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   padding: 0;
+
+  &::before {
+    @include pseudo(14px,2px);
+    opacity: 0.2;
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.1;
+    }
+  }
+
+  &--minus {
+    &::before {
+      background: url("../img/qty-minus-mobile.svg") no-repeat;
+      left: 13px;
+      top: 19px;
+    }
+  }
+
+  &--plus {
+    right: 0;
+
+    &::before {
+      height: 14px;
+      background: url("../img/qty-plus-mobile.svg") no-repeat;
+      top: 12px;
+      right: 13px;
+    }
+  }
 }
 
 .step-number-block__input {
@@ -46,15 +75,22 @@
   line-height: 13.37px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border: none;
   text-align: center;
   appearance: textfield;
+  height: 43px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+
+  &:active {
+    border-color: #161c35;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .step-number-block__bottom-wrapper {
     width: 531px;
-    margin-top: 24px;
+    margin-top: 3px;
   }
 
   .step-number-block__title {
@@ -68,18 +104,31 @@
     letter-spacing: 2px;
     line-height: 18px;
     margin-top: 23px;
-    margin-bottom: 23px;
+    margin-bottom: 1px;
+    height: 70px;
   }
 
-  .step-number-block__button-icon {
-    &--minus {
-      width: 20px;
-      height: 2px;
-    }
+  .step-number-block__button {
+    width: 70px;
+    height: 70px;
 
     &--plus {
-      width: 20px;
-      height: 20px;
+      &::before {
+        background-image: url("../img/qty-plus.svg");
+        width: 20px;
+        height: 20px;
+        top: 35px;
+        right: 18px;
+      }
+    }
+
+    &--minus {
+      &::before {
+        background-image: url("../img/qty-minus.svg");
+        width: 20px;
+        top: 45px;
+        left: 24px;
+      }
     }
   }
 }
@@ -94,12 +143,37 @@
     width: 181px;
     margin-top: 0;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
   }
 
   .step-number-block__input {
-    width: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+  }
+
+  .step-number-block__button {
+    &--plus {
+      &::before {
+        top: 25px;
+        right: 21px;
+      }
+    }
+
+    &--minus {
+      &::before {
+        top: 34px;
+        left: 19px;
+      }
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.4;
+      }
+    }
   }
 
   .step-number-block__title {

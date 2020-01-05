@@ -14,7 +14,8 @@ var closeBusinessBtn = document.querySelector(".tarifs-business__close"),
     countryFilterCloseBtn = document.querySelector(".country-filter__close-btn"),
     countryFilterOpenBtn = document.querySelector(".country-filter__open-btn"),
     filterWrapper = document.querySelector(".page-main__filter-counter-wrapper"),
-    yellowFormBtn = document.querySelectorAll(".companion-select__field-button");
+    yellowFormBtn = document.querySelectorAll(".companion-select__field-button"),
+    stepCountryLetter = document.querySelectorAll(".step__country-letter");
 
 if(showBusinessBtn) {
   showBusinessBtn.addEventListener('click', function(evt) {
@@ -82,7 +83,16 @@ if(yellowFormBtn) { // закрываем/открываем пункты жёл
     yellowFormBtn[a].addEventListener('click', function(evt) {
       evt.preventDefault();
       this.parentElement.classList.toggle("companion-select__field--closed");
-      // console.log(this.parentElement);
     });
+  }
+}
+
+if(stepCountryLetter) { // делаем кнопку выбора букв стран активной при нажатии
+  for(var a=0; a<stepCountryLetter.length; a++) {
+    stepCountryLetter[a].addEventListener("click", function(evt) {
+      evt.preventDefault();
+      document.querySelector(".country-alphabet__item--current").classList.remove("country-alphabet__item--current");
+      this.parentElement.classList.toggle("country-alphabet__item--current");
+    })
   }
 }

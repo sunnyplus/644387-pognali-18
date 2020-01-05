@@ -44,6 +44,13 @@
     &:first-child {
       margin-right: 60px;
     }
+
+    &:hover {
+      .companion__photo {
+        transition: all 1s ease-out;
+        transform: scale(1.5);
+      }
+    }
   }
 
   .companions-list {

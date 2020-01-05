@@ -228,7 +228,8 @@
             <li class="companions-list__item companion">
               <div class="companion__photo-wrapper">
                 <picture>
-                  <img src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="Фото Таня Фирсова" class="companion__photo">
+                  <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                  <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова" class="companion__photo">
                 </picture>
                 <div class="companion__level-block">
                   <span class="companion__counter">99</span>
@@ -240,18 +241,18 @@
               </div>
               <div class="companion__description">
                 <ul class="companion__directions traveler-directions">
-                  <li class="traveler-directions__item">
+                  <li data-flag="Шри-Ланка" class="traveler-directions__item">
                     <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
                   </li>
-                  <li class="traveler-directions__item">
+                  <li data-flag="Тайланд" class="traveler-directions__item">
                     <img src="img/flag-thailand.svg" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
                   </li>
-                  <li class="traveler-directions__item">
+                  <li data-flag="Сейшелы" class="traveler-directions__item">
                     <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
                   </li>
                 </ul>
                 <div class="companion__data">
-                  <p class="companion__name">Таня Фирсова</p>
+                  <a href="#" class="companion__name">Таня Фирсова</a>
                 </div>
                 <ul class="companion__tags traveler-tags">
                   <li class="traveler-tags__item">#ЗОЖ</li>
@@ -262,22 +263,22 @@
                   <li class="traveler-tags__item">#смузи</li>
                 </ul>
                 <ul class="companion__transports traveler-transport">
-                  <li class="traveler-transport__item traveler-transport__item--active">
+                  <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
                     <svg width="19" height="21" class="traveler-transport__image">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item">
+                  <li data-transport="Автотранспорт" class="traveler-transport__item">
                     <svg width="17" height="21" class="traveler-transport__image">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item">
+                  <li data-transport="Велосипед" class="traveler-transport__item">
                     <svg width="24" height="21" class="traveler-transport__image">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item">
+                  <li data-transport="Пешком" class="traveler-transport__item">
                     <svg width="20" height="21" class="traveler-transport__image">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
@@ -288,7 +289,8 @@
             <li class="companions-list__item companion">
               <div class="companion__photo-wrapper">
                 <picture>
-                  <img src="img/demin-tablet@1x.jpg" width="270" height="270" alt="Фото Петя Демин" class="companion__photo">
+                  <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                  <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270" alt="Петя Демин" class="companion__photo">
                 </picture>
                 <div class="companion__level-block">
                   <span class="companion__counter">80</span>
@@ -301,16 +303,16 @@
               </div>
               <div class="companion__description">
                 <ul class="companion__directions traveler-directions">
-                  <li class="traveler-directions__item">
+                  <li data-flag="Бельгия" class="traveler-directions__item">
                     <img src="img/flag-belgium.svg" width="35" height="24" alt="Флаг Бельгии" class="traveler-directions__image">
                   </li>
-                  <li class="traveler-directions__item">
+                  <li data-flag="Чехия" class="traveler-directions__item">
                     <img src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии" class="traveler-directions__image">
                   </li>
                 </ul>
                 <div class="companion__data">
                   <div class="companion__indicator indicator"></div>
-                  <p class="companion__name companion__name--active">Петя Демин</p>
+                  <a href="#" class="companion__name companion__name--active">Петя Демин</a>
                 </div>
                 <ul class="companion__tags companion__tags--demin traveler-tags">
                   <li class="traveler-tags__item">#бургер</li>
@@ -320,22 +322,22 @@
                   <li class="traveler-tags__item">#крафт</li>
                 </ul>
                 <ul class="companion__transports traveler-transport">
-                  <li class="traveler-transport__item traveler-transport__item--active">
+                  <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
                     <svg width="19" height="21" class="traveler-transport__image">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item traveler-transport__item--active">
+                  <li data-transport="Автотранспорт" class="traveler-transport__item traveler-transport__item--active">
                     <svg width="17" height="21" class="traveler-transport__image">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item">
+                  <li data-transport="Велосипед" class="traveler-transport__item">
                     <svg width="24" height="21" class="traveler-transport__image">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item traveler-transport__item--active">
+                  <li data-transport="Пешком" class="traveler-transport__item traveler-transport__item--active">
                     <svg width="20" height="21" class="traveler-transport__image">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
@@ -370,7 +372,7 @@
               <span class="tarifs-business__price">Индивидуально</span>
             </li>
           </ol>
-          <button type="button" class="tarifs-business__close">Закрыть окно</button>
+          <button type="button" class="tarifs-business__close"><span class="tarifs-business__close">Закрыть окно</span></button>
         </section>
       </div>
       <div class="page-main__newprofile-wrapper">

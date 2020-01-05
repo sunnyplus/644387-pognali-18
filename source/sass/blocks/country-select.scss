@@ -64,6 +64,14 @@
       padding-left: 11px;
       text-align: left;
       width: 220px;
+
+      &:active {
+        background-color: #dfe3f0;
+
+        .country-select__input-title {
+          opacity: 0.3;
+        }
+      }
     }
 
     &::after {
@@ -129,6 +137,7 @@
   border-radius: 50%;
   background-color: #edeff6;
   border: none;
+  opacity: 0.1;
 
   &--closed {
     display: none;
@@ -141,6 +150,10 @@
     opacity: 0.2;
     top: 57px;
     right: 59px;
+  }
+
+  &:active {
+    opacity: 0.05;
   }
 }
 
@@ -156,7 +169,6 @@
 }
 
 .country-select_small-cross {
-  opacity: 0.3;
   width: 9px;
   height: 9px;
 }
@@ -244,7 +256,6 @@
   }
 
   .country-select_small-cross {
-    opacity: 0.2;
     width: 18px;
     height: 18px;
   }
@@ -292,15 +303,36 @@
     &--add {
       .country-select__input {
         width: 730px;
+
+        &:hover {
+          background-color: #dfe3f0;
+          border: none;
+        }
       }
     }
   }
 
   .country-select__input {
     width: 730px;
+
+    &:hover {
+      border: 1px solid #959bb2;
+    }
+
+    &--darkblue {
+      &:hover {
+        border: none;
+      }
+    }
   }
 
   .country-select__flag-wrapper {
     margin-left: 84px;
+  }
+
+  .country-select__button-delete {
+    &:hover {
+      opacity: 0.3;
+    }
   }
 }

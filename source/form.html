@@ -127,8 +127,8 @@
       </div>
       <section class="profile">
         <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
-          <label class="profile__button-label">
-            <input class="profile__button-file visually-hidden" type="file" name="change-photo">
+          <input class="profile__button-file visually-hidden" type="file" name="change-photo" id="change-photo">
+          <label for="change-photo" class="profile__button-label">
             <span class="profile__change-btn"><span class="profile__drop-word">сменить&nbsp;</span>фото</span>
           </label>
           <div class="profile__tags-field">
@@ -138,7 +138,7 @@
           <div class="profile__transport-field">
             <label class="profile__legend profile__legend--transport">транспорт</label>
             <ul class="companion-select__transport-list transport-list">
-              <li class="transport-list__item">
+              <li data-transport="Авиаперелёт" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
                 <label class="transport-list__label" for="companion-plane">
                   <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane">
@@ -146,7 +146,7 @@
                   </svg>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li data-transport="Автотранспорт" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
                 <label class="transport-list__label" for="companion-bus">
                   <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus">
@@ -154,7 +154,7 @@
                   </svg>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li data-transport="Велосипед" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
                 <label class="transport-list__label" for="companion-bike">
                   <svg width="19" height="17" class="transport-list__icon transport-list__icon--bike">
@@ -162,7 +162,7 @@
                   </svg>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li data-transport="Пешком" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
                 <label class="transport-list__label" for="companion-run">
                   <svg width="15" height="17" class="transport-list__icon transport-list__icon--run">
@@ -212,12 +212,10 @@
               <label for="companions-quota" class="step-number-block__title">ищу попутчиков:</label>
               <label for="companions-quota" class="step-number-block__title step-number-block__title--grey">Чел.</label>
               <div class="step-number-block__bottom-wrapper">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon step-number-block__button-icon--minus" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
+                <button class="step-number-block__button step-number-block__button--minus" type="button">
                 </button>
                 <input class="step-number-block__input" type="number" name="companions-quota" id="companions-quota" value="2">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon step-number-block__button-icon--plus" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
+                <button class="step-number-block__button step-number-block__button--plus" type="button">
                 </button>
               </div>
             </div>
@@ -225,12 +223,10 @@
               <label for="period" class="step-number-block__title">длительность:</label for="period">
               <label for="period" class="step-number-block__title step-number-block__title--grey">дн.</label>
               <div class="step-number-block__bottom-wrapper">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon step-number-block__button-icon--minus" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
+                <button class="step-number-block__button step-number-block__button--minus" type="button">
                 </button>
                 <input class="step-number-block__input" type="number" name="period" id="period" value="2">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon step-number-block__button-icon--plus" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
+                <button class="step-number-block__button step-number-block__button--plus" type="button">
                 </button>
               </div>
             </div>
@@ -260,130 +256,130 @@
                 </ul>
                 <ul class="calendar__days-list">
                   <li class="calendar__item">
-                    <input type="checkbox" name="2302" class="calendar__input visually-hidden" id="2302">
+                    <input type="checkbox" name="2302" class="calendar__input visually-hidden" id="2302" disabled>
                     <label class="calendar__label" for="2302">23</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2402" class="calendar__input visually-hidden" id="2402">
+                    <input type="checkbox" name="2402" class="calendar__input visually-hidden" id="2402" disabled>
                     <label class="calendar__label" for="2402">24</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2502" class="calendar__input visually-hidden" id="2502">
+                    <input type="checkbox" name="2502" class="calendar__input visually-hidden" id="2502" disabled>
                     <label class="calendar__label" for="2502">25</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2602" class="calendar__input visually-hidden" id="2602">
+                    <input type="checkbox" name="2602" class="calendar__input visually-hidden" id="2602" disabled>
                     <label class="calendar__label" for="2602">26</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2702" class="calendar__input visually-hidden" id="2702">
+                    <input type="checkbox" name="2702" class="calendar__input visually-hidden" id="2702" disabled>
                     <label class="calendar__label" for="2702">27</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2802" class="calendar__input visually-hidden" id="2802">
+                    <input type="checkbox" name="2802" class="calendar__input visually-hidden" id="2802" disabled>
                     <label class="calendar__label" for="2802">28</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0103" class="calendar__input visually-hidden" id="0103">
+                    <input type="checkbox" name="0103" class="calendar__input visually-hidden" id="0103" disabled>
                     <label class="calendar__label calendar__label--month" for="0103">1<span class="calendar__short-month">мар</span></label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0203" class="calendar__input visually-hidden" id="0203">
+                    <input type="checkbox" name="0203" class="calendar__input visually-hidden" id="0203" disabled>
                     <label class="calendar__label" for="0203">2</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0303" class="calendar__input visually-hidden" id="0303">
+                    <input type="checkbox" name="0303" class="calendar__input visually-hidden" id="0303" disabled>
                     <label class="calendar__label" for="0303">3</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0403" class="calendar__input visually-hidden" id="0403">
+                    <input type="checkbox" name="0403" class="calendar__input visually-hidden" id="0403" disabled>
                     <label class="calendar__label" for="0403">4</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0503" class="calendar__input visually-hidden" id="0503">
+                    <input type="checkbox" name="0503" class="calendar__input visually-hidden" id="0503" disabled>
                     <label class="calendar__label" for="0503">5</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0603" class="calendar__input visually-hidden" id="0603">
+                    <input type="checkbox" name="0603" class="calendar__input visually-hidden" id="0603" disabled>
                     <label class="calendar__label" for="0603">6</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0703" class="calendar__input visually-hidden" id="0703">
+                    <input type="checkbox" name="0703" class="calendar__input visually-hidden" id="0703" disabled>
                     <label class="calendar__label" for="0703">7</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0803" class="calendar__input visually-hidden" id="0803">
+                    <input type="checkbox" name="0803" class="calendar__input visually-hidden" id="0803" disabled>
                     <label class="calendar__label" for="0803">8</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0903" class="calendar__input visually-hidden" id="0903">
+                    <input type="checkbox" name="0903" class="calendar__input visually-hidden" id="0903" disabled>
                     <label class="calendar__label" for="0903">9</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1003" class="calendar__input visually-hidden" id="1003">
+                    <input type="checkbox" name="1003" class="calendar__input visually-hidden" id="1003" disabled>
                     <label class="calendar__label" for="1003">10</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1103" class="calendar__input visually-hidden" id="1103">
+                    <input type="checkbox" name="1103" class="calendar__input visually-hidden" id="1103" disabled>
                     <label class="calendar__label" for="1103">11</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1203" class="calendar__input visually-hidden" id="1203">
+                    <input type="checkbox" name="1203" class="calendar__input visually-hidden" id="1203" disabled>
                     <label class="calendar__label" for="1203">12</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1303" class="calendar__input visually-hidden" id="1303">
+                    <input type="checkbox" name="1303" class="calendar__input visually-hidden" id="1303" disabled>
                     <label class="calendar__label" for="1303">13</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1403" class="calendar__input visually-hidden" id="1403">
+                    <input type="checkbox" name="1403" class="calendar__input visually-hidden" id="1403" disabled>
                     <label class="calendar__label" for="1403">14</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1503" class="calendar__input visually-hidden" id="1503">
+                    <input type="checkbox" name="1503" class="calendar__input visually-hidden" id="1503" disabled>
                     <label class="calendar__label" for="1503">15</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1603" class="calendar__input visually-hidden" id="1603">
+                    <input type="checkbox" name="1603" class="calendar__input visually-hidden" id="1603" disabled>
                     <label class="calendar__label" for="1603">16</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1703" class="calendar__input visually-hidden" id="1703">
+                    <input type="checkbox" name="1703" class="calendar__input visually-hidden" id="1703" disabled>
                     <label class="calendar__label" for="1703">17</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1803" class="calendar__input visually-hidden" id="1803">
+                    <input type="checkbox" name="1803" class="calendar__input visually-hidden" id="1803" disabled>
                     <label class="calendar__label" for="1803">18</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1903" class="calendar__input visually-hidden" id="1903">
+                    <input type="checkbox" name="1903" class="calendar__input visually-hidden" id="1903" disabled>
                     <label class="calendar__label" for="1903">19</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2003" class="calendar__input visually-hidden" id="2003">
+                    <input type="checkbox" name="2003" class="calendar__input visually-hidden" id="2003" disabled>
                     <label class="calendar__label" for="2003">20</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2103" class="calendar__input visually-hidden" id="2103">
+                    <input type="checkbox" name="2103" class="calendar__input visually-hidden" id="2103" disabled>
                     <label class="calendar__label" for="2103">21</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2203" class="calendar__input visually-hidden" id="2203">
+                    <input type="checkbox" name="2203" class="calendar__input visually-hidden" id="2203" disabled>
                     <label class="calendar__label" for="2203">22</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2303" class="calendar__input visually-hidden" id="2303">
+                    <input type="checkbox" name="2303" class="calendar__input visually-hidden" id="2303" disabled>
                     <label class="calendar__label" for="2303">23</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2403" class="calendar__input visually-hidden" id="2403">
+                    <input type="checkbox" name="2403" class="calendar__input visually-hidden" id="2403" disabled>
                     <label class="calendar__label" for="2403">24</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2503" class="calendar__input visually-hidden" id="2503">
+                    <input type="checkbox" name="2503" class="calendar__input visually-hidden" id="2503" disabled>
                     <label class="calendar__label" for="2503">25</label>
                   </li>
-                  <li class="calendar__item calendar__item--current">
+                  <li class="calendar__item">
                     <input type="checkbox" name="2603" class="calendar__input visually-hidden" id="2603" checked>
                     <label class="calendar__label" for="2603">26<span class="calendar__checkin">Заезд</span></label>
                   </li>
@@ -395,35 +391,35 @@
                     <input type="checkbox" name="2803" class="calendar__input visually-hidden" id="2803" checked>
                     <label class="calendar__label" for="2803">28<span class="calendar__checkin">Выезд</span></label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="2903" class="calendar__input visually-hidden" id="2903">
                     <label class="calendar__label" for="2903">29</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="3003" class="calendar__input visually-hidden" id="3003">
                     <label class="calendar__label" for="3003">30</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="3103" class="calendar__input visually-hidden" id="3103">
                     <label class="calendar__label" for="3103">31</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0104" class="calendar__input visually-hidden" id="0104">
                     <label class="calendar__label calendar__label--month" for="0104">1<span class="calendar__short-month">апр</span></label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0204" class="calendar__input visually-hidden" id="0204">
                     <label class="calendar__label" for="0204">2</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0304" class="calendar__input visually-hidden" id="0304">
                     <label class="calendar__label" for="0304">3</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0404" class="calendar__input visually-hidden" id="0404">
                     <label class="calendar__label" for="0404">4</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0504" class="calendar__input visually-hidden" id="0504">
                     <label class="calendar__label" for="0504">5</label>
                   </li>
@@ -582,7 +578,9 @@
               </div>
             </div>
             <div class="step__country-select country-select country-select--add">
-              <button class="country-select__input country-select__input--grey" type="button" id="country-1">Добавить страну</button>
+              <button class="country-select__input country-select__input--grey" type="button" id="country-1">
+                <span class="country-select__input-title">Добавить страну</span>
+              </button>
             </div>
             <button class="step__submit step__submit--step-two button-show-more" type="submit">
               <span class="button-show-more__title">Следующий шаг</span>
