@@ -43,6 +43,10 @@
   }
 }
 
+.information__signup {
+  margin-bottom: 28px;
+}
+
 .information__description {
   color: $white;
   font-size: 16px;
@@ -100,6 +104,11 @@
 .information__link {
   color: #ffd74b;
   text-decoration: underline;
+
+  &:active {
+    color: #ff8d30;
+    opacity: 0.3;
+  }
 }
 
 .information__button {
@@ -275,6 +284,17 @@
     margin-left: 0;
   }
 
+  .information__link {
+    &:hover {
+      color: #ff8d30;
+    }
+  }
+
+  .information__signup {
+    margin-left: 58px;
+    margin-bottom: 68px;
+  }
+
   .information__description {
     margin-top: 58px;
 
@@ -296,7 +316,7 @@
     &--sign {
       margin-left: 297px;
       margin-right: 300px;
-      margin-bottom: 56px;
+      margin-bottom: 55px;
     }
 
     &--questions {

@@ -19,7 +19,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // margin: 0 auto;
   width: 100%;
   border: none;
   background-color: transparent;
@@ -37,6 +36,10 @@
     height: 18px;
     background: url("../img/show-more-plus.svg") no-repeat;
     background-size: contain;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -61,6 +64,10 @@
     background: url("../img/triangle-arrow-left.svg") no-repeat;
     background-size: contain;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .travelers-catalog__next {
@@ -77,6 +84,10 @@
     height: 20px;
     background: url("../img/triangle-arrow-right.svg") no-repeat;
     background-size: contain;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -154,6 +165,10 @@
     &:not([href]) {
       background-color: #ffd74b;
     }
+
+    &:active {
+      background-color: #ffd74b;
+    }
   }
 }
 
@@ -176,6 +191,32 @@
 
     &::before {
       margin-top: -5px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .travelers-catalog__prev {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .travelers-catalog__next {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .travelers-catalog__page {
+    &[href] {
+      &:hover {
+        .travelers-catalog__page-title {
+          opacity: 0.6;
+        }
+      }
     }
   }
 

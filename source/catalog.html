@@ -110,16 +110,15 @@
       <div class="page-main__filter-counter-wrapper page-main__filter-counter-wrapper--closed">
         <section class="country-filter">
           <div class="country-filter__heading-wrapper">
-            <button class="country-filter__open-btn" type="button">
-            </button>
             <h2 class="country-filter__heading">фильтрация по странам</h2>
             <span class="country-filter__heading-colon">:</span>
-            <button class="country-filter__down-btn">Свернуть</button>
             <button class="country-filter__close-btn" type="button">
+              <span class="country-filter__down-btn">Свернуть</span>
+              <span class="country-filter__show-all">показать все</span>
             </button>
             <ul class="country-filter__continent-list">
               <li class="country-filter__continent-item">
-                <a class="country-filter__continent-link country-filter__continent-link--active">европа</a>
+                <a class="country-filter__continent-link">европа</a>
               </li>
               <li class="country-filter__continent-item">
                 <a href="#" class="country-filter__continent-link">азия</a>
@@ -131,7 +130,6 @@
                 <a href="#" class="country-filter__continent-link">острова</a>
               </li>
             </ul>
-            <span class="country-filter__show-all">показать все</span>
           </div>
           <div class="country-filter__country-box">
             <div class="country-filter__capitals">
@@ -842,7 +840,7 @@
               </li>
             </ul>
           </div>
-          <button class="country-filter__button button-toggle" type="button">Свернуть</button>
+          <button class="country-filter__button button-toggle" type="button"><span class="country-filter__button-title">Свернуть</span></button>
         </section>
       </div>
       <div class="page-main__companion-wrapper">
@@ -952,7 +950,7 @@
                 <button type="button" class="companion-select__level-button"></button>
               </div>
             </div>
-            <button class="companion-select__button button-toggle button-toggle--show" type="submit">Показать</button>
+            <button class="companion-select__button button-toggle button-toggle--show" type="submit"><span class="button-toggle__title">Показать</span></button>
           </form>
         </section>
         <section class="travelers-catalog">
@@ -972,7 +970,7 @@
                     </picture>
                   </div>
                   <div class="traveler__data">
-                    <p class="traveler__name">Таня Фирсова</p>
+                    <a href="#" class="traveler__name">Таня Фирсова</a>
                     <div class="traveler__social-wrapper">
                       <span class="traveler__heart traveler__heart--active"></span>
                       <span class="traveler__likes">1,5 M</span>
@@ -1040,7 +1038,7 @@
                   </svg>
                 </div>
               </div>
-              <button type="button" class="traveler__button button-toggle button-toggle--call">позвать!</button>
+              <button type="button" class="traveler__button button-toggle button-toggle--call"><span class="button-toggle__title">позвать!</span></button>
             </li>
             <li class="traveler travelers__item travelers__item--demin">
               <div class="traveler__info">
@@ -1056,7 +1054,7 @@
                     </picture>
                   </div>
                   <div class="traveler__data">
-                    <p class="traveler__name">Петя Демин</p>
+                    <a href="#" class="traveler__name">Петя Демин</a>
                     <div class="traveler__social-wrapper">
                       <span class="traveler__heart"></span>
                       <span class="traveler__likes">150</span>
@@ -1119,7 +1117,7 @@
                   </svg>
                 </div>
               </div>
-              <button type="button" class="traveler__button button-toggle button-toggle--call">позвать!</button>
+              <button type="button" class="traveler__button button-toggle button-toggle--call"><span class="button-toggle__title">позвать!</span></button>
             </li>
             <li class="traveler travelers__item travelers__item--smolov">
               <div class="traveler__info">
@@ -1135,7 +1133,7 @@
                     </picture>
                   </div>
                   <div class="traveler__data">
-                    <p class="traveler__name">Марк Смолов</p>
+                    <a href="#" class="traveler__name">Марк Смолов</a>
                     <div class="traveler__social-wrapper">
                       <span class="traveler__heart"></span>
                       <span class="traveler__likes">1700</span>
@@ -1202,7 +1200,7 @@
                   </svg>
                 </div>
               </div>
-              <button type="button" class="traveler__button button-toggle button-toggle--call">позвать!</button>
+              <button type="button" class="traveler__button button-toggle button-toggle--call"><span class="button-toggle__title">позвать!</span></button>
             </li>
             <li class="traveler travelers__item travelers__item--rogovaya travelers__item--online">
               <div class="traveler__info">
@@ -1218,7 +1216,7 @@
                     </picture>
                   </div>
                   <div class="traveler__data">
-                    <p class="traveler__name">Лариса Роговая</p>
+                    <a href="#" class="traveler__name">Лариса Роговая</a>
                     <div class="traveler__social-wrapper">
                       <span class="traveler__heart"></span>
                       <span class="traveler__likes">23</span>
@@ -1280,17 +1278,17 @@
                   </svg>
                 </div>
               </div>
-              <button type="button" class="traveler__button button-toggle button-toggle--call">позвать!</button>
+              <button type="button" class="traveler__button button-toggle button-toggle--call"><span class="button-toggle__title">позвать!</span></button>
             </li>
           </ul>
           <button type="button" class="travelers-catalog__show-more">Показать ещё
           </button>
           <div class="travelers-catalog__bottom-wrapper">
             <div class="travelers-catalog__pages">
-              <a class="travelers-catalog__page">1</a>
-              <a href="#" class="travelers-catalog__page">2</a>
-              <a href="#" class="travelers-catalog__page">3</a>
-              <a href="#" class="travelers-catalog__page">4</a>
+              <a class="travelers-catalog__page"><span class="travelers-catalog__page-title">1</span></a>
+              <a href="#" class="travelers-catalog__page"><span class="travelers-catalog__page-title">2</span></a>
+              <a href="#" class="travelers-catalog__page"><span class="travelers-catalog__page-title">3</span></a>
+              <a href="#" class="travelers-catalog__page"><span class="travelers-catalog__page-title">4</span></a>
             </div>
             <button type="button" class="travelers-catalog__prev">
             </button>

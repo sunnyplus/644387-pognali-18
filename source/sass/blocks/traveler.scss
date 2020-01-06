@@ -23,6 +23,7 @@
   line-height: 20px;
   margin: 0;
   margin-right: 70px;
+  text-decoration: none;
 
   &::before {
     @include pseudo(5px, 5px);
@@ -30,6 +31,10 @@
     background-color: #f97676;
     left: 138px;
     top: 9px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -58,8 +63,24 @@
     opacity: 0.3;
   }
 
+  &:active {
+    background-color: #e2e5f2;
+
+    &::before {
+      opacity: 0.1;
+    }
+  }
+
   &--active {
     background-color: #f9eaea;
+
+    &:active {
+      background-color: #f9d8d8;
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
 
     &::before {
       background: url("../img/heart-active.svg") no-repeat;
@@ -456,6 +477,26 @@
       right: unset;
       left: -26px;
     }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .traveler__heart {
+    &:hover {
+      background-color: #e2e5f2;
+
+      &::before {
+        opacity: 0.5;
+      }
+    }
+
+    &--active {
+      &:hover {
+        background-color: #f9d8d8;
+      }
+    }
   }
 
   .traveler__button {
@@ -464,6 +505,7 @@
   }
 
   .traveler__directions {
+    position: absolute;
     flex-direction: column;
     top: 47px;
     right: 56px;

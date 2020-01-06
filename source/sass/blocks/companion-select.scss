@@ -50,6 +50,10 @@
       left: -22px;
     }
   }
+
+  &:active + .companion-select__label {
+    opacity: 0.3;
+  }
 }
 
 .companion-select__field {
@@ -107,6 +111,10 @@
     background: url("../img/dropdown.svg") no-repeat;
     background-size: contain;
     transform: rotate(180deg);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -182,6 +190,14 @@
   border: 1px solid #cbced9;
   border-radius: 4px 0 0 4px;
   appearance: textfield;
+
+  &:focus {
+    border: 1px solid #161c35;
+  }
+
+  &:active {
+    border: 1px solid #161c35;
+  }
 }
 
 .companion-select__level-range {
@@ -214,6 +230,12 @@
       right: 0;
       background: linear-gradient(to left, #1d2e5b 150px, #cccc66 150px);
     }
+  }
+
+  &:active {
+    width: 19px;
+    height: 19px;
+    box-shadow: 0 3px 7px rgba(29, 46, 91, 0.35);
   }
 }
 
@@ -461,6 +483,10 @@
       height: 5px;
       margin-bottom: 6px;
     }
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   .companion-select__label {
@@ -481,6 +507,10 @@
     width: 95.5px;
     padding-top: 13px;
     padding-bottom: 9px;
+
+    &:hover {
+      border: 1px solid #959bb2;
+    }
   }
 
   .companion-select__level-label {
@@ -523,6 +553,11 @@
         background: linear-gradient(to left, #1d2e5b 128px, #cccc66 128px);
       }
     }
+
+    &:hover {
+      width: 19px;
+      height: 19px;
+    }
   }
 
   .companion-select__list-input {
@@ -533,6 +568,10 @@
         top: 2px;
         left: -30px;
       }
+    }
+
+    &:hover + .companion-select__label {
+      opacity: 0.6;
     }
   }
 
