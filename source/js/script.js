@@ -102,5 +102,14 @@ if(countryFilterBtn) {
   countryFilterBtn.addEventListener("click", function(evt) {
     evt.preventDefault();
     filterWrapper.classList.add("page-main__filter-counter-wrapper--closed");
-  })
+  });
 }
+
+window.addEventListener('scroll', function() { //scroll
+  if(pageYOffset > 0) {
+    pageHeader.classList.add("page-header--fixed");
+  }
+  else {
+    pageHeader.classList.remove("page-header--fixed");
+  }
+});

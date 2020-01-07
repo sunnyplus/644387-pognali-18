@@ -42,6 +42,44 @@
 @media (min-width: $pc-width) {
   .page-header {
     background-color: $bg-header;
+
+    &--fixed {
+      position: fixed;
+      width: 100%;
+      z-index: 20;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $white;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+
+      .page-header__wrapper {
+        padding: 0;
+      }
+
+      .main-nav__content {
+        background-color: $white;
+      }
+
+      .main-nav__link {
+        color: #192144;
+      }
+
+      .main-nav__wrapper {
+        padding-top: 0;
+      }
+
+      .page-header__logo {
+        margin-top: 0;
+      }
+
+      .main-nav__list {
+        &::before {
+          background-color: #192144;
+        }
+      }
+    }
   }
 
   .page-header__logo {

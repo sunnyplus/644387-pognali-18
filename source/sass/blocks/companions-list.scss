@@ -6,6 +6,11 @@
   &::before {
     @include pseudo(71px,71px);
     background: url("../img/rogovaya-back-mobile@1x.png") no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/rogovaya-back-mobile@2x.png");
+    }
     left: -35px;
     top: -35px;
     z-index: 0;

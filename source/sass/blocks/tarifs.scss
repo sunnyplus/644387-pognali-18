@@ -164,10 +164,8 @@
     }
 
     &::before {
-      width: 100px;
       top: 469px;
       right: 85px;
-      background-size: contain;
     }
   }
 
@@ -256,6 +254,10 @@
       height: 198px;
       top: 345px;
       right: 131px;
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/rates@2x.png");
+      }
     }
   }
 

@@ -42,10 +42,20 @@
     padding-left: 75px;
     padding-top: 85px;
     background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 285px 31px;
+    background-size: 372px auto;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/traveller-illustration-tablet@2x.png");
+    }
   }
 
   .review__wrapper {
     background: url("../img/globe-back-tablet@1x.jpg") no-repeat center bottom;
+    background-size: 1479px auto;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/globe-back-tablet@2x.jpg");
+    }
   }
 
   .review__text {

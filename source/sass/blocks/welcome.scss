@@ -11,6 +11,12 @@
   padding-right: 25px;
   background: url("../img/traveller-illustration-mobile@1x.png") no-repeat;
   background-position: 80px 150px;
+  background-size: 192px auto;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/traveller-illustration-mobile@2x.png");
+  }
+
   max-width: 100%;
 }
 

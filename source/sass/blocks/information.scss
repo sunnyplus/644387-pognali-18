@@ -10,6 +10,12 @@
   &--service {
     margin-top: 5px;
     background: url("../img/about-mobile@1x.png") no-repeat;
+    background-size: 292px auto;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/about-mobile@2x.png");
+    }
+
     background-color: #192144;
     min-height: 317px;
   }
@@ -19,6 +25,10 @@
     background-position: -5px 0, 100% 0;
     background-repeat: no-repeat, no-repeat;
     background-size: 132px 132px, 143px 143px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/blue_back.svg"), url("../img/smolov-back-desktop@2x.png");
+    }
     background-color: #192144;
     padding-bottom: 30px;
   }
@@ -133,6 +143,13 @@
     &--service {
       background: url("../img/about-tablet@1x.png") no-repeat 385px 49px,
         url("../img/blue_back_tablet.svg") no-repeat 40px 0;
+      background-size: 376px auto, 688px 213px;
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/about-tablet@2x.png"),
+          url("../img/blue_back_tablet.svg");
+      }
+
       background-color: $bg-header-tablet;
       padding-top: 58px;
       padding-bottom: 88px;
@@ -144,7 +161,11 @@
       background-image: url("../img/blue_back.svg"), url("../img/rogovaya-back-desktop@1x.png");
       background-position: 40px 40px, 408px 25px;
       background-repeat: no-repeat, no-repeat;
-      background-size: 213px 213px, 285px 285px;
+      background-size: 213px 213px, 285px auto;
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/blue_back.svg"), url("../img/rogovaya-back-desktop@2x.png");
+      }
       padding-top: 100px;
       padding-bottom: 88px;
       border-radius: 0 0 60px 60px;
@@ -258,6 +279,13 @@
         url("../img/blue_back.svg");
       background-position: 750px 185px, 60px 172px;
       background-repeat: no-repeat, no-repeat;
+      background-size: 630px auto, 213px 213px;
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/about-desktop@2x.png"),
+          url("../img/blue_back.svg");
+      }
+
       background-color: #192144;
       padding-top: 247px;
       padding-bottom: 163px;
