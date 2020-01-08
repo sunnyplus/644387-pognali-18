@@ -188,6 +188,7 @@
   }
 
   .main-nav__link {
+    display: inline-block;
     position: relative;
     color: #ffffff;
     font-size: 20px;
@@ -199,11 +200,21 @@
       opacity: 0.3;
     }
 
-    // &::before {
-    //   content: attr(data-hover);
-    //   position: absolute;
-    //   top: 100%;
-    // }
+    &:hover {
+      transform: translateY(-100%);
+    }
+  }
+
+  .main-nav__link-title {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    &::before {
+      content: attr(data-hover);
+      position: absolute;
+      top: 100%;
+    }
   }
 
   .main-nav__login {

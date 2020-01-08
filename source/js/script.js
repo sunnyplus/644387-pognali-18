@@ -106,10 +106,16 @@ if(countryFilterBtn) {
 }
 
 window.addEventListener('scroll', function() { //scroll
-  if(pageYOffset > 0) {
-    pageHeader.classList.add("page-header--fixed");
-  }
-  else {
-    pageHeader.classList.remove("page-header--fixed");
+  if(this.window.screen.width > 767) {
+    if(pageYOffset > 90) {
+      pageHeader.classList.add("page-header--fixed");
+      document.querySelector(".logo__wrapper--white").classList.add("logo__wrapper--closed");
+      document.querySelector(".logo__wrapper--blue").classList.remove("logo__wrapper--closed");
+    }
+    else {
+      pageHeader.classList.remove("page-header--fixed");
+      document.querySelector(".logo__wrapper--white").classList.remove("logo__wrapper--closed");
+      document.querySelector(".logo__wrapper--blue").classList.add("logo__wrapper--closed");
+    }
   }
 });

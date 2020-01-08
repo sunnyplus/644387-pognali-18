@@ -24,11 +24,26 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    justify-content: flex-start;
-
     &--closed {
-      background-color: $bg-header;
+      background-color: $bg-header-tablet;
     }
+
+    &--fixed {
+      position: fixed;
+      width: 100%;
+      z-index: 20;
+      background-color: $white;
+
+      .main-nav__button-icon {
+        fill: #cccccc;
+      }
+    }
+
+    &--fixed + .page-main {
+      padding-top: 132px;
+    }
+
+    justify-content: flex-start;
   }
 
   .page-header__wrapper {
@@ -55,7 +70,7 @@
       align-items: center;
 
       .page-header__wrapper {
-        padding: 0;
+        padding-top: 0;
       }
 
       .main-nav__content {
@@ -79,6 +94,10 @@
           background-color: #192144;
         }
       }
+    }
+
+    &--fixed + .page-main {
+      padding-top: 100px;
     }
   }
 
