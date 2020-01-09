@@ -222,10 +222,19 @@
   .companion__directions {
     left: 50%;
     transform: translateX(-50%);
-    top: -28px;
+    top: -25px;
   }
 
   .companion__photo-wrapper {
     overflow: hidden;
+  }
+
+  .companion__description {
+    padding-top: 29px;
+    padding-bottom: 25px;
+  }
+
+  .companion__tags {
+    margin-top: -1px;
   }
 }

@@ -106,8 +106,7 @@ if(countryFilterBtn) {
 }
 
 window.addEventListener('scroll', function() { //scroll
-  if(this.window.screen.width > 767) {
-    if(pageYOffset > 90) {
+  if(window.screen.width > 767 && pageYOffset > 0) {
       pageHeader.classList.add("page-header--fixed");
       document.querySelector(".logo__wrapper--white").classList.add("logo__wrapper--closed");
       document.querySelector(".logo__wrapper--blue").classList.remove("logo__wrapper--closed");
@@ -117,5 +116,4 @@ window.addEventListener('scroll', function() { //scroll
       document.querySelector(".logo__wrapper--white").classList.remove("logo__wrapper--closed");
       document.querySelector(".logo__wrapper--blue").classList.add("logo__wrapper--closed");
     }
-  }
 });

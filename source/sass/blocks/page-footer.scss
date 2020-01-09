@@ -65,6 +65,11 @@
 }
 
 @media (min-width: $pc-width) {
+  .page-footer {
+    margin-top: -76px;
+    padding-top: 18px;
+  }
+
   .page-footer__wrapper {
     width: $pc-width;
     padding-right: 60px;

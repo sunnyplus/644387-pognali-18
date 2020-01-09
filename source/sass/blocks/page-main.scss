@@ -194,6 +194,10 @@
   height: auto;
 }
 
+.page-main__map {
+  margin-top: -30px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main {
     &--index {
@@ -371,6 +375,10 @@
     top: 283px;
     left: 75px;
   }
+
+  .page-main__map {
+    margin-top: -60px;
+  }
 }
 
 @media (min-width: $pc-width) {
@@ -379,6 +387,12 @@
   }
 
   .page-main__intro-wrapper {
+    background: url("../img/globe-back-desktop@1x.jpg") no-repeat center bottom;
+    background-size: 1800px auto;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/globe-back-desktop@2x.jpg");
+    }
     background-color: $bg-header-pc;
     border-radius: 0 0 60px 60px;
     position: relative;
@@ -514,5 +528,10 @@
   .page-main__companion-select {
     margin-left: 85px;
     margin-right: 0;
+  }
+
+  .page-main__map {
+    margin-top: -183px;
+    margin-left: -41px;
   }
 }

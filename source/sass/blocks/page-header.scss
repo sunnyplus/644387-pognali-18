@@ -25,6 +25,10 @@
 @media (min-width: $tablet-width) {
   .page-header {
     &--closed {
+      background-color: #161c35;
+    }
+
+    &--index {
       background-color: $bg-header-tablet;
     }
 
