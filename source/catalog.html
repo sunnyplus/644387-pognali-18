@@ -10,32 +10,31 @@
   <body>
     <header class="page-header page-header--closed">
       <div class="page-header__wrapper page-header__wrapper--inner">
-        <a href="index.html" class="page-header__logo logo">
+        <a href="index.html" class="page-header__logo logo" title="Главная страница">
           <picture class="logo__wrapper">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
           <picture class="logo__wrapper logo__wrapper--closed">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
         </a>
         <nav class="main-nav">
           <button type="button" class="main-nav__button" aria-label="Показать главное меню сайта">
-            <svg class="main-nav__button-icon" width="25" height="11" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
-              <g>
-                <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
-                <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
-              </g>
+            <svg class="main-nav__button-icon" width="25" height="11" viewBox="0 0 25 11" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#menu-closed"></use>
             </svg>
-            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" fill="#cccccc" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
-              L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
-              L10.3,9z"/>
+            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#menu-opened"></use>
             </svg>
           </button>
           <div class="main-nav__content main-nav__content--closed">
@@ -74,21 +73,21 @@
               </div>
               <ul class="main-nav__social social">
                 <li class="social__item">
-                    <a class="social__link">
+                    <a class="social__link" aria-label="Страница в Фейсбук">
                       <svg width="11" height="21" class="social__fb-icon">
                         <use xlink:href="img/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link">
+                  <a class="social__link" aria-label="Страница во Вконтакте">
                     <svg width="23" height="12" class="social__vk-icon">
                       <use xlink:href="img/sprite.svg#vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link">
+                  <a class="social__link" aria-label="Страница в Инстаграм">
                     <svg width="18" height="18" class="social__inst-icon">
                       <use xlink:href="img/sprite.svg#instagram"></use>
                     </svg>
@@ -904,7 +903,7 @@
                 <li data-transport="Авиаперелёт" class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
                   <label class="transport-list__label transport-list__label--catalog" for="companion-plane">
-                    <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane">
+                    <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane" aria-label="Авиаперелёт" focusable="false">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                   </label>
@@ -912,7 +911,7 @@
                 <li data-transport="Автотранспорт" class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
                   <label class="transport-list__label transport-list__label--catalog" for="companion-bus">
-                    <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus">
+                    <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus" aria-label="Автотранспорт" focusable="false">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </label>
@@ -920,7 +919,7 @@
                 <li data-transport="Велосипед" class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
                   <label class="transport-list__label transport-list__label--catalog" for="companion-bike">
-                    <svg width="14" height="16" class="transport-list__icon transport-list__icon--bike">
+                    <svg width="14" height="16" class="transport-list__icon transport-list__icon--bike" aria-label="Велосипед" focusable="false">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </label>
@@ -928,7 +927,7 @@
                 <li data-transport="Пешком" class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
                   <label class="transport-list__label transport-list__label--catalog" for="companion-run">
-                    <svg width="15" height="17" class="transport-list__icon transport-list__icon--run">
+                    <svg width="15" height="17" class="transport-list__icon transport-list__icon--run" aria-label="Велосипед" focusable="false">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
                   </label>
@@ -950,7 +949,7 @@
                 <button type="button" class="companion-select__level-button"></button>
               </div>
             </div>
-            <button class="companion-select__button button-toggle button-toggle--show" type="submit"><span class="button-toggle__title">Показать</span></button>
+            <button class="companion-select__button button-toggle button-toggle--show" type="submit" aria-label="Показать возможных попутчиков"><span class="button-toggle__title">Показать</span></button>
           </form>
         </section>
         <section class="travelers-catalog">
@@ -1008,22 +1007,22 @@
                   <p class="traveler__transport-title">транспорт:</p>
                   <ul class="traveler__transport-list traveler-transport traveler-transport--catalog">
                     <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
-                      <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane">
+                      <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane" aria-label="Авиаперелёт" focusable="false">
                         <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </li>
                     <li data-transport="Автотранспорт" class="traveler-transport__item">
-                      <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus">
+                      <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus" aria-label="Автотранспорт" focusable="false">
                         <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </li>
                     <li data-transport="Велосипед" class="traveler-transport__item">
-                      <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike">
+                      <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike" aria-label="Велосипед" focusable="false">
                         <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </li>
                     <li data-transport="Пешком" class="traveler-transport__item">
-                      <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run">
+                      <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run" aria-label="Пешком" focusable="false">
                         <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </li>
@@ -1033,7 +1032,7 @@
                   <p class="traveler__level-title">левел:</p>
                   <span class="traveler__level-counter">99</span>
                   <span class="traveler__level-name">level</span>
-                  <svg class="traveler__svg" width="46" height="46" viewBox="0 0 50 50">
+                  <svg class="traveler__svg" width="46" height="46" viewBox="0 0 50 50" aria-label="Диаграмма популярности" focusable="false">
                     <circle cx="25" cy="25" r="23" fill="none" stroke="#ff8d30" stroke-width="3"></circle>
                   </svg>
                 </div>
@@ -1087,22 +1086,22 @@
                   <p class="traveler__transport-title">транспорт:</p>
                   <ul class="traveler__transport-list traveler-transport traveler-transport--catalog">
                     <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
-                      <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane">
+                      <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane" aria-label="Авиаперелёт" focusable="false">
                         <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </li>
                     <li data-transport="Автотранспорт" class="traveler-transport__item traveler-transport__item--active">
-                      <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus">
+                      <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus" aria-label="Автотранспорт" focusable="false">
                         <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </li>
                     <li data-transport="Велосипед" class="traveler-transport__item">
-                      <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike">
+                      <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike" aria-label="Велосипед" focusable="false">
                         <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </li>
                     <li data-transport="Пешком" class="traveler-transport__item traveler-transport__item--active">
-                      <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run">
+                      <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run" aria-label="Пешком" focusable="false">
                         <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </li>
@@ -1112,7 +1111,7 @@
                   <p class="traveler__level-title">левел:</p>
                   <span class="traveler__level-counter">80</span>
                   <span class="traveler__level-name">level</span>
-                  <svg class="traveler__svg" width="46" height="46" viewBox="0 0 50 50">
+                  <svg class="traveler__svg" width="46" height="46" viewBox="0 0 50 50" aria-label="Диаграмма популярности" focusable="false">
                     <circle cx="25" cy="25" r="23" fill="none" stroke="#ff8d30" stroke-width="3"></circle>
                   </svg>
                 </div>
@@ -1170,22 +1169,22 @@
                   <p class="traveler__transport-title">транспорт:</p>
                   <ul class="traveler__transport-list traveler-transport traveler-transport--catalog">
                     <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
-                      <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane">
+                      <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane" aria-label="Авиаперелёт" focusable="false">
                         <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </li>
                     <li data-transport="Автотранспорт" class="traveler-transport__item">
-                      <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus">
+                      <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus" aria-label="Автотранспорт" focusable="false">
                         <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </li>
                     <li data-transport="Велосипед" class="traveler-transport__item traveler-transport__item--active">
-                      <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike">
+                      <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike" aria-label="Велосипед" focusable="false">
                         <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </li>
                     <li data-transport="Пешком" class="traveler-transport__item">
-                      <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run">
+                      <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run" aria-label="Пешком" focusable="false">
                         <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </li>
@@ -1195,7 +1194,7 @@
                   <p class="traveler__level-title">левел:</p>
                   <span class="traveler__level-counter">25</span>
                   <span class="traveler__level-name">level</span>
-                  <svg class="traveler__svg" width="46" height="46" viewBox="0 0 50 50">
+                  <svg class="traveler__svg" width="46" height="46" viewBox="0 0 50 50" aria-label="Диаграмма популярности" focusable="false">
                     <circle cx="25" cy="25" r="23" fill="none" stroke="#ff8d30" stroke-width="3"></circle>
                   </svg>
                 </div>
@@ -1248,22 +1247,22 @@
                   <p class="traveler__transport-title">транспорт:</p>
                   <ul class="traveler__transport-list traveler-transport traveler-transport--catalog">
                     <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
-                      <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane">
+                      <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane" aria-label="Авиаперелёт" focusable="false">
                         <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </li>
                     <li data-transport="Автотранспорт" class="traveler-transport__item traveler-transport__item--active">
-                      <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus">
+                      <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus" aria-label="Автотранспорт" focusable="false">
                         <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </li>
                     <li data-transport="Велосипед" class="traveler-transport__item">
-                      <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike">
+                      <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike" aria-label="Велосипед" focusable="false">
                         <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </li>
                     <li data-transport="Пешком" class="traveler-transport__item">
-                      <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run">
+                      <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run" aria-label="Пешком" focusable="false">
                         <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </li>
@@ -1273,7 +1272,7 @@
                   <p class="traveler__level-title">левел:</p>
                   <span class="traveler__level-counter">50</span>
                   <span class="traveler__level-name">level</span>
-                  <svg class="traveler__svg" width="46" height="46" viewBox="0 0 50 50">
+                  <svg class="traveler__svg" width="46" height="46" viewBox="0 0 50 50" aria-label="Диаграмма популярности" focusable="false">
                     <circle cx="25" cy="25" r="23" fill="none" stroke="#ff8d30" stroke-width="3"></circle>
                   </svg>
                 </div>
@@ -1300,30 +1299,45 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html" class="page-footer__logo logo">
+        <a href="index.html" class="page-footer__logo logo" title="Главная страница">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
         </a>
         <ul class="page-footer__social social">
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__fb-icon" src="img/facebook.svg" width="11" height="21" alt="Страница в Фейсбук" class="social__image"></a>
+              <a class="social__link" aria-label="Страница в Фейсбук">
+                <svg class="social__icon social__fb-icon social__fb-icon--footer" width="11" height="21">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
           </li>
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__vk-icon" src="img/vk.svg" width="23" height="12" alt="Страница во Вконтакте" class="social__image"></a>
+              <a class="social__link" aria-label="Страница во Вконтакте">
+                <svg class="social__icon social__vk-icon social__vk-icon--footer" width="23" height="12">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
           </li>
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__inst-icon" src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
+              <a class="social__link" aria-label="Страница в Инстаграм">
+                <svg class="social__icon social__inst-icon social__inst-icon--footer" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
           </li>
         </ul>
-        <div class="page-footer__production site-producer">
+        <a role="img" href="http://htmlacademy.ru" class="page-footer__production site-producer" aria-label="Сайт HTML Academy">
           <p class="site-producer__info">Разработано</p>
           <svg class="site-producer__image" width="27" height="34" fill="#192144">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
-        </div>
+        </a>
       </div>
     </footer>
     <script src="js/script.js"></script>

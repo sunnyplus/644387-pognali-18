@@ -41,12 +41,12 @@
   padding-bottom: 12px;
   z-index: 15;
 
-  &--closed {
-    top: -1000px;
-  }
-
   &--index {
     top: 73px;
+  }
+
+  &--closed {
+    top: -1000px;
   }
 }
 
@@ -65,6 +65,8 @@
 }
 
 .main-nav__button-icon {
+  fill: $white;
+
   &--closed {
     display: none;
   }
