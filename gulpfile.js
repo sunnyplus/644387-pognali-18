@@ -16,9 +16,9 @@ var include = require("posthtml-include");
 // var del = require("del");
 var server = require("browser-sync").create();
 
-gulp.task("clean", function () {
-  return del("build");
-});
+// gulp.task("clean", function () {
+//   return del("build");
+// });
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -52,7 +52,8 @@ gulp.task("svgstore", function() {
 gulp.task("webp", function() {
   gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("source/img"));
+  // .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("images", function() {
@@ -85,6 +86,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
@@ -101,7 +103,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
-  gulp.watch("js/*.js").on("change", server.reload);
+  gulp.watch("source/js/*.js").on("change", server.reload);
 });
 
 gulp.task("start", gulp.series("css", "server"));
