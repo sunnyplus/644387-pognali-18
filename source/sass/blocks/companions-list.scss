@@ -6,6 +6,11 @@
   &::before {
     @include pseudo(71px,71px);
     background: url("../img/rogovaya-back-mobile@1x.png") no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/rogovaya-back-mobile@2x.png");
+    }
     left: -35px;
     top: -35px;
     z-index: 0;
@@ -41,8 +46,16 @@
 
 @media (min-width: $pc-width) {
   .companions-list__item {
+    overflow: hidden;
+
     &:first-child {
       margin-right: 60px;
+    }
+
+    &:hover {
+      .companion__photo {
+        transform: scale(1.2);
+      }
     }
   }
 

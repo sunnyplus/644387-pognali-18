@@ -15,9 +15,27 @@
     border-radius: 10px;
     border: 3px solid #192144;
   }
+
+  &:active {
+    background-color: #ffbd30;
+
+    .button-show-more__title {
+      opacity: 0.3;
+    }
+
+    .button-show-more__image {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .button-show-more {
+    &:hover {
+      background-color: #ffbd30;
+    }
+  }
+
   .button-show-more__title {
     font-size: 24px;
     line-height: 24px;

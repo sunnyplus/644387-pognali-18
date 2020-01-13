@@ -113,6 +113,10 @@
   font-weight: 700;
   line-height: 16px;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -160,10 +164,8 @@
     }
 
     &::before {
-      width: 100px;
       top: 469px;
       right: 85px;
-      background-size: contain;
     }
   }
 
@@ -227,7 +229,13 @@
     padding-right: 402px;
     padding-left: 221px;
     padding-top: 166px;
-    padding-bottom: 186px;
+    padding-bottom: 187px;
+  }
+
+  .tarifs__show-business {
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   .tarifs__title {
@@ -246,6 +254,10 @@
       height: 198px;
       top: 345px;
       right: 131px;
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/rates@2x.png");
+      }
     }
   }
 

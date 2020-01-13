@@ -8,11 +8,23 @@
   text-align: center;
   text-decoration: none;
   border: none;
+
+  &:active {
+    background-color: #ffbd30;
+
+    .button__title {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $pc-width) {
   .button {
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
   }
 }

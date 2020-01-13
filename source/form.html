@@ -8,47 +8,55 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-global">
+    <div class="include">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--closed">
       <div class="page-header__wrapper page-header__wrapper--inner">
-        <a href="index.html" class="page-header__logo logo">
+        <a href="index.html" class="page-header__logo logo" title="Главная страница">
           <picture class="logo__wrapper">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
           <picture class="logo__wrapper logo__wrapper--closed">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
         </a>
         <nav class="main-nav">
           <button type="button" class="main-nav__button" aria-label="Показать главное меню сайта">
-            <svg class="main-nav__button-icon" width="25" height="11" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
-              <g>
-                <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
-                <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
-              </g>
+            <svg class="main-nav__button-icon" width="25" height="11" viewBox="0 0 25 11" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#menu-closed"></use>
             </svg>
-            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" fill="#cccccc" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
-              L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
-              L10.3,9z"/>
+            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#menu-opened"></use>
             </svg>
           </button>
           <div class="main-nav__content main-nav__content--closed">
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">о сервисе</a>
+                  <a class="main-nav__link" data-hover="о сервисе" href="/">
+                    <span data-hover="о сервисе" class="main-nav__link-title">о сервисе</span>
+                  </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">направления</a>
+                  <a class="main-nav__link" data-hover="направления" href="form.html">
+                    <span data-hover="направления" class="main-nav__link-title">направления</span>
+                  </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="catalog.html">попутчики</a>
+                  <a class="main-nav__link" data-hover="попутчики" href="catalog.html">
+                    <span data-hover="попутчики" class="main-nav__link-title">попутчики</span>
+                  </a>
                 </li>
               </ul>
               <a href="login.html" class="main-nav__login button">Авторизация</a>
@@ -74,21 +82,21 @@
               </div>
               <ul class="main-nav__social social">
                 <li class="social__item">
-                    <a class="social__link">
+                    <a class="social__link" aria-label="Страница в Фейсбук">
                       <svg width="11" height="21" class="social__fb-icon">
                         <use xlink:href="img/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link">
+                  <a class="social__link" aria-label="Страница во Вконтакте">
                     <svg width="23" height="12" class="social__vk-icon">
                       <use xlink:href="img/sprite.svg#vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link">
+                  <a class="social__link" aria-label="Страница в Инстаграм">
                     <svg width="18" height="18" class="social__inst-icon">
                       <use xlink:href="img/sprite.svg#instagram"></use>
                     </svg>
@@ -102,10 +110,10 @@
     </header>
     <main class="page-main">
       <div class="page-main__form-wrapper">
-        <div class="page-main__head-box">
-          <h1 class="page-main__heading main-heading">Направления</h1>
+        <div class="page-main__head-box page-main__head-box--form">
+          <h1 class="page-main__heading page-main__heading--form main-heading">Направления</h1>
           <div class="page-main__level-block level-block">
-            <svg class="level-block__indicator" width="100" height="100" viewBox="0 0 122 122">
+            <svg class="level-block__indicator" width="100" height="100" viewBox="0 0 122 122" aria-label="Диаграмма популярности" focusable="false">
               <circle cx="61" cy="61" r="59" fill="none" stroke="#ff8d30" stroke-width="4"></circle>
             </svg>
             <div class="level-block__wrapper">
@@ -114,14 +122,21 @@
             </div>
           </div>
           <div class="page-main__profile-photo-wrapper profile-photo">
-            <img class="page-main__profile-photo" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото личного профайла">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.webp, img/photo-account-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-account-mobile@1x.webp, img/photo-account-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg, img/photo-account-tablet@2x.jpg 2x">
+              <img src="img/photo-account-mobile@1x.jpg" srcset="img/photo-account-mobile@2x.jpg 2x" width="100" height="100" alt="Фото личного профайла" class="page-main__profile-photo">
+            </picture>
           </div>
         </div>
       </div>
       <section class="profile">
         <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
-          <label class="profile__button-label">
-            <input class="profile__button-file visually-hidden" type="file" name="change-photo">
+          <input class="profile__button-file visually-hidden" type="file" name="change-photo" id="change-photo">
+          <label for="change-photo" class="profile__button-label">
             <span class="profile__change-btn"><span class="profile__drop-word">сменить&nbsp;</span>фото</span>
           </label>
           <div class="profile__tags-field">
@@ -131,34 +146,34 @@
           <div class="profile__transport-field">
             <label class="profile__legend profile__legend--transport">транспорт</label>
             <ul class="companion-select__transport-list transport-list">
-              <li class="transport-list__item">
+              <li data-transport="Авиаперелёт" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
                 <label class="transport-list__label" for="companion-plane">
-                  <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane">
+                  <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane" aria-label="Авиаперелёт" focusable="false">
                     <use xlink:href="img/sprite.svg#plane"></use>
                   </svg>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li data-transport="Автотранспорт" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
                 <label class="transport-list__label" for="companion-bus">
-                  <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus">
+                  <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus" aria-label="Автотранспорт" focusable="false">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li data-transport="Велосипед" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
                 <label class="transport-list__label" for="companion-bike">
-                  <svg width="19" height="17" class="transport-list__icon transport-list__icon--bike">
+                  <svg width="19" height="17" class="transport-list__icon transport-list__icon--bike" aria-label="Велосипед" focusable="false">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li data-transport="Пешком" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
                 <label class="transport-list__label" for="companion-run">
-                  <svg width="15" height="17" class="transport-list__icon transport-list__icon--run">
+                  <svg width="15" height="17" class="transport-list__icon transport-list__icon--run" aria-label="Пешком" focusable="false">
                     <use xlink:href="img/sprite.svg#run"></use>
                   </svg>
                 </label>
@@ -187,7 +202,7 @@
         </section>
       </div>
       <section class="plan-add">
-        <form class="plan-add__form" action="http://echo.htmlacademy.ru">
+        <form method="POST" class="plan-add__form" action="http://echo.htmlacademy.ru">
           <div class="plan-add__title-wrapper">
             <h2 class="plan-add__title">Добавить план:</h2>
           </div>
@@ -205,12 +220,10 @@
               <label for="companions-quota" class="step-number-block__title">ищу попутчиков:</label>
               <label for="companions-quota" class="step-number-block__title step-number-block__title--grey">Чел.</label>
               <div class="step-number-block__bottom-wrapper">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon step-number-block__button-icon--minus" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
+                <button class="step-number-block__button step-number-block__button--minus" type="button" aria-label="Уменьшить количество попутчиков">
                 </button>
                 <input class="step-number-block__input" type="number" name="companions-quota" id="companions-quota" value="2">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon step-number-block__button-icon--plus" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
+                <button class="step-number-block__button step-number-block__button--plus" type="button" aria-label="Увеличить количество попутчиков">
                 </button>
               </div>
             </div>
@@ -218,12 +231,10 @@
               <label for="period" class="step-number-block__title">длительность:</label for="period">
               <label for="period" class="step-number-block__title step-number-block__title--grey">дн.</label>
               <div class="step-number-block__bottom-wrapper">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon step-number-block__button-icon--minus" src="img/qty-minus-mobile.svg" width="14" height="2" alt="Иконка кнопки минус">
+                <button class="step-number-block__button step-number-block__button--minus" type="button" aria-label="Уменьшить количество дней">
                 </button>
                 <input class="step-number-block__input" type="number" name="period" id="period" value="2">
-                <button class="step-number-block__button" type="button">
-                  <img class="step-number-block__button-icon step-number-block__button-icon--plus" src="img/qty-plus-mobile.svg" width="14" height="14" alt="Иконка кнопки плюс">
+                <button class="step-number-block__button step-number-block__button--plus" type="button" aria-label="Увеличить количество дней">
                 </button>
               </div>
             </div>
@@ -253,130 +264,130 @@
                 </ul>
                 <ul class="calendar__days-list">
                   <li class="calendar__item">
-                    <input type="checkbox" name="2302" class="calendar__input visually-hidden" id="2302">
+                    <input type="checkbox" name="2302" class="calendar__input visually-hidden" id="2302" disabled>
                     <label class="calendar__label" for="2302">23</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2402" class="calendar__input visually-hidden" id="2402">
+                    <input type="checkbox" name="2402" class="calendar__input visually-hidden" id="2402" disabled>
                     <label class="calendar__label" for="2402">24</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2502" class="calendar__input visually-hidden" id="2502">
+                    <input type="checkbox" name="2502" class="calendar__input visually-hidden" id="2502" disabled>
                     <label class="calendar__label" for="2502">25</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2602" class="calendar__input visually-hidden" id="2602">
+                    <input type="checkbox" name="2602" class="calendar__input visually-hidden" id="2602" disabled>
                     <label class="calendar__label" for="2602">26</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2702" class="calendar__input visually-hidden" id="2702">
+                    <input type="checkbox" name="2702" class="calendar__input visually-hidden" id="2702" disabled>
                     <label class="calendar__label" for="2702">27</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2802" class="calendar__input visually-hidden" id="2802">
+                    <input type="checkbox" name="2802" class="calendar__input visually-hidden" id="2802" disabled>
                     <label class="calendar__label" for="2802">28</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0103" class="calendar__input visually-hidden" id="0103">
+                    <input type="checkbox" name="0103" class="calendar__input visually-hidden" id="0103" disabled>
                     <label class="calendar__label calendar__label--month" for="0103">1<span class="calendar__short-month">мар</span></label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0203" class="calendar__input visually-hidden" id="0203">
+                    <input type="checkbox" name="0203" class="calendar__input visually-hidden" id="0203" disabled>
                     <label class="calendar__label" for="0203">2</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0303" class="calendar__input visually-hidden" id="0303">
+                    <input type="checkbox" name="0303" class="calendar__input visually-hidden" id="0303" disabled>
                     <label class="calendar__label" for="0303">3</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0403" class="calendar__input visually-hidden" id="0403">
+                    <input type="checkbox" name="0403" class="calendar__input visually-hidden" id="0403" disabled>
                     <label class="calendar__label" for="0403">4</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0503" class="calendar__input visually-hidden" id="0503">
+                    <input type="checkbox" name="0503" class="calendar__input visually-hidden" id="0503" disabled>
                     <label class="calendar__label" for="0503">5</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0603" class="calendar__input visually-hidden" id="0603">
+                    <input type="checkbox" name="0603" class="calendar__input visually-hidden" id="0603" disabled>
                     <label class="calendar__label" for="0603">6</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0703" class="calendar__input visually-hidden" id="0703">
+                    <input type="checkbox" name="0703" class="calendar__input visually-hidden" id="0703" disabled>
                     <label class="calendar__label" for="0703">7</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0803" class="calendar__input visually-hidden" id="0803">
+                    <input type="checkbox" name="0803" class="calendar__input visually-hidden" id="0803" disabled>
                     <label class="calendar__label" for="0803">8</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="0903" class="calendar__input visually-hidden" id="0903">
+                    <input type="checkbox" name="0903" class="calendar__input visually-hidden" id="0903" disabled>
                     <label class="calendar__label" for="0903">9</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1003" class="calendar__input visually-hidden" id="1003">
+                    <input type="checkbox" name="1003" class="calendar__input visually-hidden" id="1003" disabled>
                     <label class="calendar__label" for="1003">10</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1103" class="calendar__input visually-hidden" id="1103">
+                    <input type="checkbox" name="1103" class="calendar__input visually-hidden" id="1103" disabled>
                     <label class="calendar__label" for="1103">11</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1203" class="calendar__input visually-hidden" id="1203">
+                    <input type="checkbox" name="1203" class="calendar__input visually-hidden" id="1203" disabled>
                     <label class="calendar__label" for="1203">12</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1303" class="calendar__input visually-hidden" id="1303">
+                    <input type="checkbox" name="1303" class="calendar__input visually-hidden" id="1303" disabled>
                     <label class="calendar__label" for="1303">13</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1403" class="calendar__input visually-hidden" id="1403">
+                    <input type="checkbox" name="1403" class="calendar__input visually-hidden" id="1403" disabled>
                     <label class="calendar__label" for="1403">14</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1503" class="calendar__input visually-hidden" id="1503">
+                    <input type="checkbox" name="1503" class="calendar__input visually-hidden" id="1503" disabled>
                     <label class="calendar__label" for="1503">15</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1603" class="calendar__input visually-hidden" id="1603">
+                    <input type="checkbox" name="1603" class="calendar__input visually-hidden" id="1603" disabled>
                     <label class="calendar__label" for="1603">16</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1703" class="calendar__input visually-hidden" id="1703">
+                    <input type="checkbox" name="1703" class="calendar__input visually-hidden" id="1703" disabled>
                     <label class="calendar__label" for="1703">17</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1803" class="calendar__input visually-hidden" id="1803">
+                    <input type="checkbox" name="1803" class="calendar__input visually-hidden" id="1803" disabled>
                     <label class="calendar__label" for="1803">18</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="1903" class="calendar__input visually-hidden" id="1903">
+                    <input type="checkbox" name="1903" class="calendar__input visually-hidden" id="1903" disabled>
                     <label class="calendar__label" for="1903">19</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2003" class="calendar__input visually-hidden" id="2003">
+                    <input type="checkbox" name="2003" class="calendar__input visually-hidden" id="2003" disabled>
                     <label class="calendar__label" for="2003">20</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2103" class="calendar__input visually-hidden" id="2103">
+                    <input type="checkbox" name="2103" class="calendar__input visually-hidden" id="2103" disabled>
                     <label class="calendar__label" for="2103">21</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2203" class="calendar__input visually-hidden" id="2203">
+                    <input type="checkbox" name="2203" class="calendar__input visually-hidden" id="2203" disabled>
                     <label class="calendar__label" for="2203">22</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2303" class="calendar__input visually-hidden" id="2303">
+                    <input type="checkbox" name="2303" class="calendar__input visually-hidden" id="2303" disabled>
                     <label class="calendar__label" for="2303">23</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2403" class="calendar__input visually-hidden" id="2403">
+                    <input type="checkbox" name="2403" class="calendar__input visually-hidden" id="2403" disabled>
                     <label class="calendar__label" for="2403">24</label>
                   </li>
                   <li class="calendar__item">
-                    <input type="checkbox" name="2503" class="calendar__input visually-hidden" id="2503">
+                    <input type="checkbox" name="2503" class="calendar__input visually-hidden" id="2503" disabled>
                     <label class="calendar__label" for="2503">25</label>
                   </li>
-                  <li class="calendar__item calendar__item--current">
+                  <li class="calendar__item">
                     <input type="checkbox" name="2603" class="calendar__input visually-hidden" id="2603" checked>
                     <label class="calendar__label" for="2603">26<span class="calendar__checkin">Заезд</span></label>
                   </li>
@@ -388,35 +399,35 @@
                     <input type="checkbox" name="2803" class="calendar__input visually-hidden" id="2803" checked>
                     <label class="calendar__label" for="2803">28<span class="calendar__checkin">Выезд</span></label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="2903" class="calendar__input visually-hidden" id="2903">
                     <label class="calendar__label" for="2903">29</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="3003" class="calendar__input visually-hidden" id="3003">
                     <label class="calendar__label" for="3003">30</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="3103" class="calendar__input visually-hidden" id="3103">
                     <label class="calendar__label" for="3103">31</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0104" class="calendar__input visually-hidden" id="0104">
                     <label class="calendar__label calendar__label--month" for="0104">1<span class="calendar__short-month">апр</span></label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0204" class="calendar__input visually-hidden" id="0204">
                     <label class="calendar__label" for="0204">2</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0304" class="calendar__input visually-hidden" id="0304">
                     <label class="calendar__label" for="0304">3</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0404" class="calendar__input visually-hidden" id="0404">
                     <label class="calendar__label" for="0404">4</label>
                   </li>
-                  <li class="calendar__item calendar__item--active">
+                  <li class="calendar__item">
                     <input type="checkbox" name="0504" class="calendar__input visually-hidden" id="0504">
                     <label class="calendar__label" for="0504">5</label>
                   </li>
@@ -575,7 +586,9 @@
               </div>
             </div>
             <div class="step__country-select country-select country-select--add">
-              <button class="country-select__input country-select__input--grey" type="button" id="country-1">Добавить страну</button>
+              <button class="country-select__input country-select__input--grey" type="button" id="country-1">
+                <span class="country-select__input-title">Добавить страну</span>
+              </button>
             </div>
             <button class="step__submit step__submit--step-two button-show-more" type="submit">
               <span class="button-show-more__title">Следующий шаг</span>
@@ -619,32 +632,47 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper">
-        <a href="index.html" class="page-footer__logo logo">
+        <a href="index.html" class="page-footer__logo logo" title="Главная страница">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
         </a>
         <ul class="page-footer__social social">
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__fb-icon" src="img/facebook.svg" width="11" height="21" alt="Страница в Фейсбук" class="social__image"></a>
+              <a class="social__link" aria-label="Страница в Фейсбук">
+                <svg class="social__icon social__fb-icon social__fb-icon--footer" width="11" height="21">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
           </li>
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__vk-icon" src="img/vk.svg" width="23" height="12" alt="Страница во Вконтакте" class="social__image"></a>
+              <a class="social__link" aria-label="Страница во Вконтакте">
+                <svg class="social__icon social__vk-icon social__vk-icon--footer" width="23" height="12">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
           </li>
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__inst-icon" src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
+              <a class="social__link" aria-label="Страница в Инстаграм">
+                <svg class="social__icon social__inst-icon social__inst-icon--footer" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
           </li>
         </ul>
-        <div class="page-footer__production site-producer">
+        <a role="img" href="http://htmlacademy.ru" class="page-footer__production site-producer" aria-label="Сайт HTML Academy">
           <p class="site-producer__info">Разработано</p>
           <svg class="site-producer__image" width="27" height="34" fill="#192144">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
-        </div>
+        </a>
       </div>
     </footer>
     <script src="js/script.js"></script>

@@ -27,6 +27,10 @@
     &--invisible {
       display: block;
     }
+
+    &--invisible-tablet {
+      display: none;
+    }
   }
 }
 

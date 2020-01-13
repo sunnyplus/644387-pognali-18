@@ -9,11 +9,32 @@
   }
 }
 
+.transport-list__icon {
+  fill-opacity: 0.15;
+}
+
 .transport-list__input {
-  &:checked + label {
+  &:checked + .transport-list__label {
     .transport-list__icon {
-      opacity: 1;
+      fill-opacity: 1;
       fill: #1d2e5b;
+    }
+  }
+
+  &:active + .transport-list__label {
+    background-color: #e2e5f1;
+
+    .transport-list__icon {
+      fill-opacity: 0.1;
+    }
+  }
+
+  &:checked:active + .transport-list__label {
+    background-color: #e2e5f1;
+
+    .transport-list__icon {
+      fill: #101e44;
+      fill-opacity: 0.3;
     }
   }
 }
@@ -29,10 +50,6 @@
     width: 32.5px;
     height: 32.5px;
   }
-}
-
-.transport-list__icon {
-  opacity: 0.15;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,13 +84,77 @@
     &:not(:last-of-type) {
       margin-right: 8px;
     }
+
+    &--catalog {
+      &:not(:last-of-type) {
+        margin-right: 0;
+      }
+    }
   }
 }
 
 @media (min-width: $pc-width) {
   .transport-list__item {
+    position: relative;
+
     &:not(:last-of-type) {
       margin-right: 0;
+    }
+
+    &::before {
+      display: none;
+      content: attr(data-transport);
+      position: absolute;
+      background-color: #101d41;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      padding: 16px;
+      top: 55px;
+      left: -10px;
+    }
+
+    &::after {
+      display: none;
+
+      @include pseudo(16px,16px);
+      border: 8px solid #101d41;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      top: 40px;
+      left: 15px;
+    }
+
+    &:hover {
+      &::before {
+        display: block;
+      }
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  .transport-list__input {
+    &:checked:hover + label {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+      .transport-list__icon {
+        fill-opacity: 0.7;
+        fill: #101e44;
+      }
+    }
+
+    &:hover + label {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+      .transport-list__icon {
+        fill-opacity: 0.3;
+      }
     }
   }
 }

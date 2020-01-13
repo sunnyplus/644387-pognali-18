@@ -1,7 +1,6 @@
 .signup {
   font-family: $font;
   display: flex;
-  margin-bottom: 28px;
 }
 
 .signup__input {
@@ -17,14 +16,48 @@
   &::placeholder {
     opacity: 0.3;
   }
+
+  &:active {
+    background-color: transparent;
+  }
+
+  &:focus {
+    border: 4px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+  }
 }
 
 .signup__button {
   @include flex-center();
+  position: relative;
   margin-left: -60px;
   margin-top: 1px;
   width: 60px;
   height: 62px;
+
+  &::before {
+    @include pseudo(10px,14px);
+    background: url("../img/triangle-arrow-right.svg") no-repeat;
+    top: 24px;
+    right: 22px;
+  }
+
+  &:active {
+    background-color: #ffbd30;
+
+    .signup__button-title {
+      opacity: 0.3;
+    }
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.signup__button-title {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,34 +81,52 @@
     width: 82px;
     height: 81px;
     border-radius: 0 20px 20px 0;
+
+    &::before {
+      top: 34px;
+      right: 37px;
+    }
   }
 }
 
 @media (min-width: $pc-width) {
-  .signup {
-    margin-left: 58px;
-    margin-bottom: 68px;
-  }
-
   .signup__button {
-    min-width: 320px;
-    position: relative;
-    justify-content: flex-end;
-    padding-right: 33px;
+    min-width: 325px;
+    justify-content: flex-start;
+    padding-left: 34px;
+    margin-top: 0;
 
     &::before {
-      position: absolute;
-      content: "Регистрация";
-      top: 50%;
-      left: 35px;
-      transform: translateY(-50%);
-      font-size: 24px;
-      line-height: 24px;
-      order: -1;
+      top: 34px;
+      right: 37px;
     }
+  }
+
+  .signup__button-title {
+    display: block;
+    color: #1d2e5b;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
   }
 
   .signup__input {
     width: 850px;
+    min-height: 81px;
+    margin-left: 24px;
+
+    &:hover {
+      background-color: #edeff6;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+
+    &:focus {
+      padding-top: 24px;
+      padding-bottom: 23px;
+      background: transparent;
+    }
   }
 }

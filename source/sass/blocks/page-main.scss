@@ -7,6 +7,11 @@
     background-color: $bg-header;
     background-repeat: no-repeat;
     background-position: center -72px;
+    background-size: 320px auto;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/globe-back-mobile@2x.jpg");
+    }
   }
 }
 
@@ -56,6 +61,10 @@
   background-color: #161c35;
   border-radius: 0 0 20px 20px;
   z-index: 10;
+}
+
+.page-main__companion-select {
+  margin: 0 auto;
 }
 
 .page-main__level-block {
@@ -134,14 +143,17 @@
   padding-top: 47px;
   padding-bottom: 28px;
   background-color: #e2e5f2;
-  position: relative;
+  // position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   border-radius: 0 0 20px 20px;
   z-index: 9;
 
   &--closed {
     padding-bottom: 13px;
 
-    .country-filter__country-box,
     .country-filter__country-box,
     .country-filter__continent-list,
     .country-filter__button {
@@ -153,6 +165,8 @@
         background-image: url("../img/dots.svg");
         width: 17px;
         height: 3px;
+        top: 8px;
+        left: -1px;
       }
     }
   }
@@ -163,7 +177,7 @@
   background-color: #edeff6;
   z-index: 8;
   margin-top: -30px;
-  padding-top: 54px;
+  padding-top: 106px;
 }
 
 .page-main__profile-photo-wrapper {
@@ -178,6 +192,10 @@
   border-radius: 50%;
   width: 100px;
   height: auto;
+}
+
+.page-main__map {
+  margin-top: -30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -247,6 +265,48 @@
     padding-bottom: 74px;
     border-radius: 0 0 60px 60px;
     margin-top: -60px;
+
+    &--closed {
+      padding-bottom: 48px;
+
+      .country-filter__heading-wrapper {
+        margin-top: 29px;
+        margin-bottom: 0;
+      }
+
+      .country-filter__continent-list {
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .country-filter__down-btn {
+        display: none;
+      }
+
+      .country-filter__show-all {
+        display: inline;
+        color: #192144;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      .country-filter__close-btn {
+        width: 135px; //tmp
+        margin-left: 44px;
+        margin-top: -10px;
+
+        &::before {
+          width: 27px;
+          height: 5px;
+          background-size: 27px 5px;
+          top: 7px;
+          left: 153px;
+        }
+      }
+    }
   }
 
   .page-main__catalog-wrapper {
@@ -275,6 +335,12 @@
 
   .page-main__grey-wrapper {
     border-radius: 0 0 60px 60px;
+  }
+
+  .page-main__companion-wrapper {
+    margin-top: -60px;
+    padding-top: 242px;
+    padding-bottom: 122px;
   }
 
   .page-main__newprofile-wrapper {
@@ -309,6 +375,10 @@
     top: 283px;
     left: 75px;
   }
+
+  .page-main__map {
+    margin-top: -60px;
+  }
 }
 
 @media (min-width: $pc-width) {
@@ -317,8 +387,12 @@
   }
 
   .page-main__intro-wrapper {
-    background: url("../img/traveller-illustration-desktop@1x.png") no-repeat 605px 10px,
-      url("../img/globe-back-desktop@1x.jpg") no-repeat center bottom;
+    background: url("../img/globe-back-desktop@1x.jpg") no-repeat center bottom;
+    background-size: 1800px auto;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/globe-back-desktop@2x.jpg");
+    }
     background-color: $bg-header-pc;
     border-radius: 0 0 60px 60px;
     position: relative;
@@ -337,6 +411,10 @@
     padding-bottom: 1px;
     padding-left: 78px;
     padding-right: 183px;
+
+    &--form {
+      padding-top: 60px;
+    }
   }
 
   .page-main__index-link {
@@ -346,12 +424,28 @@
     &::before {
       top: 25px;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   .page-main__heading {
     padding-right: 0;
     padding-top: 0;
     margin-left: 48px;
+
+    &--form {
+      margin-top: 58px;
+
+      &::after {
+        top: 129px;
+      }
+    }
 
     &--catalog {
       &::after {
@@ -365,8 +459,8 @@
   .page-main__plans-wrapper {
     border-radius: 60px 60px 0 0;
     margin-top: -50px;
-    padding-left: 124px;
-    padding-right: 60px;
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
     padding-bottom: 100px;
   }
 
@@ -376,6 +470,17 @@
 
   .page-main__filter-counter-wrapper {
     border-radius: 0;
+    position: relative;
+
+    &--closed {
+      .country-filter__heading-wrapper {
+        align-items: flex-start;
+      }
+
+      .country-filter__close-btn {
+        margin-left: 335px;
+      }
+    }
   }
 
   .page-main__tarifs {
@@ -384,9 +489,10 @@
 
   .page-main__companion-wrapper {
     display: flex;
-    justify-content: space-between;
-    padding-right: 40px;
-    padding-left: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 137px;
+    padding-bottom: 212px;
   }
 
   .page-main__darkblue-wrapper {
@@ -399,7 +505,7 @@
     top: unset;
     left: unset;
     margin-left: 472px;
-    margin-top: -7px;
+    margin-top: 44px;
   }
 
   .page-main__companions-wrapper {
@@ -409,11 +515,23 @@
   .page-main__profile-photo-wrapper {
     position: static;
     margin-left: 45px;
+    width: 190px;
+    height: 190px;
   }
 
   .page-main__profile-photo {
     width: 190px;
     height: 190px;
     border-radius: 10px 10px 0 0;
+  }
+
+  .page-main__companion-select {
+    margin-left: 85px;
+    margin-right: 0;
+  }
+
+  .page-main__map {
+    margin-top: -150px;
+    margin-left: -48px;
   }
 }

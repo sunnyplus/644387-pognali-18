@@ -16,6 +16,20 @@
   padding-right: 22px;
   padding-top: 19px;
   padding-bottom: 19px;
+
+  &:active {
+    background-color: #192144;
+
+    .button-show-more__title {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+
+    .button-show-more__icon {
+      fill: $white;
+      fill-opacity: 0.3;
+    }
+  }
 }
 
 .address__contacts {
@@ -61,6 +75,18 @@
     padding-top: 26px;
     padding-bottom: 24px;
     padding-left: 33px;
+
+    &:hover {
+      background-color: #192144;
+
+      .button-show-more__title {
+        color: #ffffff;
+      }
+
+      .button-show-more__icon {
+        fill: $white;
+      }
+    }
   }
 
   .address__contacts {

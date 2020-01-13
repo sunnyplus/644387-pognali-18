@@ -34,12 +34,16 @@
 .main-nav__content {
   background-color: $white;
   position: absolute;
-  top: 73px;
+  top: 71px;
   left: 0;
   width: 100%;
   padding-top: 6px;
   padding-bottom: 12px;
   z-index: 15;
+
+  &--index {
+    top: 73px;
+  }
 
   &--closed {
     top: -1000px;
@@ -61,6 +65,8 @@
 }
 
 .main-nav__button-icon {
+  fill: $white;
+
   &--closed {
     display: none;
   }
@@ -171,7 +177,7 @@
     position: relative;
     display: flex;
     margin: 0;
-    margin-top: 4px;
+    margin-top: 10px;
 
     &::before {
       @include pseudo(60px,2px);
@@ -188,10 +194,37 @@
   }
 
   .main-nav__link {
+    display: inline-block;
+    position: relative;
     color: #ffffff;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0;
+    overflow: hidden;
+
+    &:active {
+      color: #ffd74b;
+      opacity: 0.3;
+    }
+
+    &:hover {
+      .main-nav__link-title {
+        transform: translateY(-100%);
+        color: #ffd74b;
+      }
+    }
+  }
+
+  .main-nav__link-title {
+    position: relative;
+    display: inline-block;
+    transition: all 0.6s ease;
+
+    &::before {
+      content: attr(data-hover);
+      position: absolute;
+      top: 100%;
+    }
   }
 
   .main-nav__login {

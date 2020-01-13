@@ -1,5 +1,104 @@
 .travelers {
   @include list-reset();
   font-family: $font;
-  margin: 0;
+}
+
+.travelers__item {
+  padding-bottom: 22px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  &--demin {
+    .traveler__bottom-wrapper {
+      padding-top: 18px;
+    }
+
+    .traveler__svg {
+      stroke-dasharray: 124 20.44;
+    }
+
+    .traveler-directions__image {
+      position: relative;
+      margin-top: -2px;
+    }
+  }
+
+  &--smolov {
+    .traveler__bottom-wrapper {
+      padding-top: 17px;
+    }
+
+    .traveler__svg {
+      stroke-dasharray: 36 108.44;
+    }
+  }
+
+  &--rogovaya {
+    .traveler__bottom-wrapper {
+      padding-top: 17px;
+    }
+
+    .traveler__svg {
+      stroke-dasharray: 77.22 77.22;
+      stroke-dashoffset: 45;
+    }
+  }
+
+  &--online {
+    .traveler__name {
+      &::before {
+        background-color: #81e31e;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .travelers__item {
+    padding-top: 33px;
+    padding-left: 35px;
+    padding-right: 26px;
+    padding-bottom: 23px;
+
+    &--demin,
+    &--smolov,
+    &--rogovaya {
+      .traveler__bottom-wrapper {
+        padding-top: 0;
+      }
+    }
+
+    &--demin {
+      .traveler__name {
+        &::before {
+          right: -8px;
+        }
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: $pc-width) {
+  .travelers__item {
+    padding: 0;
+    overflow: hidden;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+
+      .traveler__image {
+        transform: scale(1.2);
+      }
+    }
+  }
 }

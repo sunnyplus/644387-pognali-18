@@ -65,6 +65,19 @@
 }
 
 @media (min-width: $pc-width) {
+  .page-footer {
+    margin-top: -43px;
+    padding-top: 18px;
+
+    &--form {
+      margin-top: -136px;
+    }
+
+    &--catalog {
+      margin-top: -136px;
+    }
+  }
+
   .page-footer__wrapper {
     width: $pc-width;
     padding-right: 60px;

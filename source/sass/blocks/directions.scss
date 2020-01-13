@@ -42,6 +42,12 @@
   .directions {
     width: $tablet-width;
     background: url("../img/flags-back@1x.png") no-repeat 440px 7px;
+    background-size: 289px auto;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/flags-back@2x.png");
+    }
+
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 80px;

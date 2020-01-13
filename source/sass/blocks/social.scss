@@ -11,30 +11,51 @@
   }
 }
 
+.social__icon {
+  fill: #cccccc;
+}
+
 .social__fb-icon {
   width: 11px;
   height: 21px;
-  fill: #cccccc;
+
+  &--footer {
+    fill: #1d2e5b;
+  }
 }
 
 .social__vk-icon {
   width: 23px;
   height: 12px;
-  fill: #cccccc;
+
+  &--footer {
+    fill: #1d2e5b;
+  }
 }
 
 .social__inst-icon {
   width: 18px;
   height: 18px;
-  fill: #cccccc;
+
+  &--footer {
+    fill: #1d2e5b;
+  }
 }
 
 .social__link {
-  // line-height: 1;
   @include flex-center();
   width: 45px;
   height: 45px;
   border-radius: 50%;
+
+  &:active {
+    background-color: #192144;
+
+    .social__icon {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -65,5 +86,17 @@
   .social__inst-icon {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (min-width: $pc-width) {
+  .social__link {
+    &:hover {
+      background-color: #192144;
+
+      .social__icon {
+        fill: $white;
+      }
+    }
   }
 }

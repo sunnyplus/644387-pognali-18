@@ -75,6 +75,13 @@
   border-radius: 0 0 20px 20px;
   cursor: pointer;
   margin-top: auto;
+
+  &:active {
+    .tarifs-business__close {
+      opacity: 0.3;
+    }
+    background-color: #edeff6;
+  }
 }
 
 .tarifs-business__box {
@@ -155,6 +162,12 @@
     bottom: -634px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .tarifs-business__close {
+    &:hover {
+      background-color: #edeff6;
+    }
   }
 
   .tarifs-business__list {

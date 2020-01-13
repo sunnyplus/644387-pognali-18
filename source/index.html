@@ -8,50 +8,58 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--closed">
+    <div class="include">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header page-header--index page-header--closed">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo logo">
+        <a href="index.html" class="page-header__logo logo" title="Главная страница">
           <picture class="logo__wrapper">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
           <picture class="logo__wrapper logo__wrapper--closed">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
         </a>
         <nav class="main-nav">
           <button type="button" class="main-nav__button" aria-label="Показать главное меню сайта">
-            <svg class="main-nav__button-icon" width="25" height="11" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
-              <g>
-                <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
-                <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
-              </g>
+            <svg class="main-nav__button-icon" width="25" height="11" viewBox="0 0 25 11" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#menu-closed"></use>
             </svg>
-            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" fill="#cccccc" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
-              L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
-              L10.3,9z"/>
+            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#menu-opened"></use>
             </svg>
           </button>
-          <div class="main-nav__content main-nav__content--closed">
+          <div class="main-nav__content main-nav__content--index main-nav__content--closed">
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">о сервисе</a>
+                  <a class="main-nav__link" data-hover="о сервисе" href="/">
+                    <span data-hover="о сервисе" class="main-nav__link-title">о сервисе</span>
+                  </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">направления</a>
+                  <a class="main-nav__link" data-hover="направления" href="form.html">
+                    <span data-hover="направления" class="main-nav__link-title">направления</span>
+                  </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="catalog.html">попутчики</a>
+                  <a class="main-nav__link" data-hover="попутчики" href="catalog.html">
+                    <span data-hover="попутчики" class="main-nav__link-title">попутчики</span>
+                  </a>
                 </li>
               </ul>
-              <a href="login.html" class="main-nav__login button">Авторизация</a>
+              <a href="login.html" class="main-nav__login button"><span class="button__title">Авторизация</span></a>
               <div class="main-nav__contacts contacts">
                 <a href="tel:88005558628" class="contacts__item">
                   <div class="contacts__phone-wrapper contacts__phone-wrapper--nav">
@@ -74,21 +82,21 @@
               </div>
               <ul class="main-nav__social social">
                 <li class="social__item">
-                    <a class="social__link">
+                    <a class="social__link" aria-label="Страница в Фейсбук">
                       <svg width="11" height="21" class="social__fb-icon">
                         <use xlink:href="img/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link">
+                  <a class="social__link" aria-label="Страница во Вконтакте">
                     <svg width="23" height="12" class="social__vk-icon">
                       <use xlink:href="img/sprite.svg#vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link">
+                  <a class="social__link" aria-label="Страница в Инстаграм">
                     <svg width="18" height="18" class="social__inst-icon">
                       <use xlink:href="img/sprite.svg#instagram"></use>
                     </svg>
@@ -109,7 +117,7 @@
               <img src="img/topmenu-phone.svg" width="18" height="18" alt="Иконка телефона">
             </a>
             <a href="mailto:#" class="welcome__email" aria-label="Связаться с нами по e-mail">
-                <img src="img/topmenu-mail.svg" width="18" height="18" alt="Иконка e-mail">
+              <img src="img/topmenu-mail.svg" width="18" height="18" alt="Иконка e-mail">
             </a>
             <a href="login.html" class="welcome__login button">Авторизация</a>
           </div>
@@ -164,8 +172,10 @@
           <ul class="directions__list directions-list">
             <li class="directions-list__item directions-list__item--thailand">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg">
-                <img src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Фото из Тайланда" class="directions-list__image">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop@1x.webp, img/thailand-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/thailand-mobile@1x.webp, img/thailand-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg, img/thailand-desktop@2x.jpg 2x">
+                <img src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Фото из Тайланда" class="directions-list__image">
               </picture>
               <div class="directions-list__wrapper">
                 <div class="directions-list__country">
@@ -180,8 +190,10 @@
             </li>
             <li class="directions-list__item directions-list__item--france">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg">
-                <img src="img/france-mobile@1x.jpg" alt="Фото из Франции" class="directions-list__image">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/france-desktop@1x.webp, img/france-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/france-mobile@1x.webp, img/france-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg, img/france-desktop@2x.jpg 2x">
+                <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Фото из Франции" class="directions-list__image">
               </picture>
               <div class="directions-list__wrapper">
                 <div class="directions-list__country">
@@ -196,8 +208,10 @@
             </li>
             <li class="directions-list__item directions-list__item--chezh">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg">
-                <img src="img/czech-mobile@1x.jpg" alt="Фото из Чехии" class="directions-list__image">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.webp, img/czech-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/czech-mobile@1x.webp, img/czech-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg, img/czech-desktop@2x.jpg 2x">
+                <img src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Фото из Чехии" class="directions-list__image">
               </picture>
               <div class="directions-list__wrapper">
                 <div class="directions-list__country">
@@ -228,30 +242,31 @@
             <li class="companions-list__item companion">
               <div class="companion__photo-wrapper">
                 <picture>
-                  <img src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="Фото Таня Фирсова" class="companion__photo">
+                  <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                  <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова" class="companion__photo">
                 </picture>
                 <div class="companion__level-block">
                   <span class="companion__counter">99</span>
                   <span class="companion__title">level</span>
                 </div>
-                <svg class="companion__svg companion__svg--firsova" width="60" height="60" viewBox="0 0 60 60">
+                <svg class="companion__svg companion__svg--firsova" width="60" height="60" viewBox="0 0 60 60" aria-label="Диаграмма популярности" focusable="false">
                   <circle cx="30" cy="30" r="29" fill="#000" fill-opacity="0.6" stroke="#ff8d30" stroke-width="3"></circle>
                 </svg>
               </div>
               <div class="companion__description">
                 <ul class="companion__directions traveler-directions">
-                  <li class="traveler-directions__item">
+                  <li data-flag="Шри-Ланка" class="traveler-directions__item">
                     <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image">
                   </li>
-                  <li class="traveler-directions__item">
+                  <li data-flag="Тайланд" class="traveler-directions__item">
                     <img src="img/flag-thailand.svg" width="35" height="24" alt="Тайланд" class="traveler-directions__image">
                   </li>
-                  <li class="traveler-directions__item">
+                  <li data-flag="Сейшелы" class="traveler-directions__item">
                     <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшелы" class="traveler-directions__image">
                   </li>
                 </ul>
                 <div class="companion__data">
-                  <p class="companion__name">Таня Фирсова</p>
+                  <a href="#" class="companion__name">Таня Фирсова</a>
                 </div>
                 <ul class="companion__tags traveler-tags">
                   <li class="traveler-tags__item">#ЗОЖ</li>
@@ -262,23 +277,23 @@
                   <li class="traveler-tags__item">#смузи</li>
                 </ul>
                 <ul class="companion__transports traveler-transport">
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <svg width="19" height="21" class="traveler-transport__image">
+                  <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
+                    <svg width="19" height="21" class="traveler-transport__image" aria-label="Авиаперелёт" focusable="false">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item">
-                    <svg width="17" height="21" class="traveler-transport__image">
+                  <li data-transport="Автотранспорт" class="traveler-transport__item">
+                    <svg width="17" height="21" class="traveler-transport__image" aria-label="Автотранспорт" focusable="false">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item">
-                    <svg width="24" height="21" class="traveler-transport__image">
+                  <li data-transport="Велосипед" class="traveler-transport__item">
+                    <svg width="24" height="21" class="traveler-transport__image" aria-label="Велосипед" focusable="false">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item">
-                    <svg width="20" height="21" class="traveler-transport__image">
+                  <li data-transport="Пешком" class="traveler-transport__item">
+                    <svg width="20" height="21" class="traveler-transport__image" aria-label="Пешком" focusable="false">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
                   </li>
@@ -288,29 +303,30 @@
             <li class="companions-list__item companion">
               <div class="companion__photo-wrapper">
                 <picture>
-                  <img src="img/demin-tablet@1x.jpg" width="270" height="270" alt="Фото Петя Демин" class="companion__photo">
+                  <source type="image/webp" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+                  <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270" alt="Петя Демин" class="companion__photo">
                 </picture>
                 <div class="companion__level-block">
                   <span class="companion__counter">80</span>
                   <span class="companion__line"></span>
                   <span class="companion__title">level</span>
                 </div>
-                <svg class="companion__svg companion__svg--demin" width="60" height="60" viewBox="0 0 60 60">
+                <svg class="companion__svg companion__svg--demin" width="60" height="60" viewBox="0 0 60 60" aria-label="Диаграмма популярности" focusable="false">
                   <circle cx="30" cy="30" r="29" fill="#000" fill-opacity="0.6" stroke="#ff8d30" stroke-width="3"></circle>
                 </svg>
               </div>
               <div class="companion__description">
                 <ul class="companion__directions traveler-directions">
-                  <li class="traveler-directions__item">
+                  <li data-flag="Бельгия" class="traveler-directions__item">
                     <img src="img/flag-belgium.svg" width="35" height="24" alt="Флаг Бельгии" class="traveler-directions__image">
                   </li>
-                  <li class="traveler-directions__item">
+                  <li data-flag="Чехия" class="traveler-directions__item">
                     <img src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии" class="traveler-directions__image">
                   </li>
                 </ul>
                 <div class="companion__data">
                   <div class="companion__indicator indicator"></div>
-                  <p class="companion__name companion__name--active">Петя Демин</p>
+                  <a href="#" class="companion__name companion__name--active">Петя Демин</a>
                 </div>
                 <ul class="companion__tags companion__tags--demin traveler-tags">
                   <li class="traveler-tags__item">#бургер</li>
@@ -320,23 +336,23 @@
                   <li class="traveler-tags__item">#крафт</li>
                 </ul>
                 <ul class="companion__transports traveler-transport">
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <svg width="19" height="21" class="traveler-transport__image">
+                  <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
+                    <svg width="19" height="21" class="traveler-transport__image" aria-label="Авиаперелёт" focusable="false">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <svg width="17" height="21" class="traveler-transport__image">
+                  <li data-transport="Автотранспорт" class="traveler-transport__item traveler-transport__item--active">
+                    <svg width="17" height="21" class="traveler-transport__image" aria-label="Автотранспорт" focusable="false">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item">
-                    <svg width="24" height="21" class="traveler-transport__image">
+                  <li data-transport="Велосипед" class="traveler-transport__item">
+                    <svg width="24" height="21" class="traveler-transport__image" aria-label="Велосипед" focusable="false">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </li>
-                  <li class="traveler-transport__item traveler-transport__item--active">
-                    <svg width="20" height="21" class="traveler-transport__image">
+                  <li data-transport="Пешком" class="traveler-transport__item traveler-transport__item--active">
+                    <svg width="20" height="21" class="traveler-transport__image" aria-label="Пешком" focusable="false">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
                   </li>
@@ -344,7 +360,7 @@
               </div>
             </li>
           </ul>
-          <a class="companion__button button-show-more">
+          <a href="catalog.html" class="companion__button button-show-more">
             <span class="button-show-more__title">Показать всех</span>
             <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
           </a>
@@ -370,7 +386,7 @@
               <span class="tarifs-business__price">Индивидуально</span>
             </li>
           </ol>
-          <button type="button" class="tarifs-business__close">Закрыть окно</button>
+          <button type="button" class="tarifs-business__close"><span class="tarifs-business__close">Закрыть окно</span></button>
         </section>
       </div>
       <div class="page-main__newprofile-wrapper">
@@ -391,34 +407,34 @@
                 <span class="tarifs__price">59 руб./мес</span>
             </li>
           </ol>
-          <a href="#" class="tarifs__show-business">Показать тарифы для бизнеса</a>
+          <a href="tarifs.html" class="tarifs__show-business">Показать тарифы для бизнеса</a>
         </section>
       </div>
       <div class="page-main__contacts-wrapper">
         <section class="information information--center">
           <h2 class="information__title information__title--sign">Заинтересовались?</h2>
           <p class="information__description information__description--sign">Зарегистрируйтесь, это&nbsp;быстро&nbsp;и&nbsp;бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a class="information__link" href="signin.html">авторизуйтесь</a>.</p>
-          <form class="signup" action="http://echo.htmlacademy.ru" method="post">
-            <input class="signup__input" type="email" name="email" id="email" placeholder="E-mail">
+          <form class="information__signup signup" action="http://echo.htmlacademy.ru" method="post">
+            <input class="signup__input" type="email" name="email" id="email" placeholder="E-mail" required>
             <button class="signup__button button-show-more" type="submit">
-              <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка стрелочки вправо">
+              <span class="signup__button-title">Регистрация</span>
             </button>
           </form>
           <p class="information__description information__description--questions">Остались вопросы? <span class="information__answer">Мы&nbsp;с&nbsp;радостью&nbsp;на них ответим!</span></p>
           <div class="information_contacts contacts">
-            <a href="tel:88005558628" class="contacts__item contacts__item--information">
+            <a href="tel:88005558628" class="contacts__item contacts__item--information" title="Свяжитесь с нами по телефону">
               <div class="contacts__phone-wrapper">
-                <picture>
-                  <img src="img/contacts-phone.svg" alt="Иконка телефона" class="contacts__phone-icon" width="18" height="18">
-                </picture>
+                <svg class="contacts__phone-icon" width="18" height="18" aria-label="Телефон" focusable="false">
+                  <use xlink:href="img/sprite.svg#contacts-phone"></use>
+                </svg>
               </div>
               <div class="contacts__phone contacts__phone--yellow">8 800 555-86-28</div>
             </a>
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__item contacts__item--information">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__item contacts__item--information" title="Свяжитесь с нами по email">
               <div class="contacts__email-wrapper">
-                <picture>
-                  <img src="img/contacts-mail.svg" alt="Иконка электронной почты" class="contacts__email-icon" width="18" height="14">
-                </picture>
+                <svg class="contacts__email-icon" width="18" height="14" aria-label="email" focusable="false">
+                  <use xlink:href="img/sprite.svg#contacts-mail"></use>
+                </svg>
               </div>
               <div class="contacts__email contacts__email--yellow">mail@htmlacademy.ru</div>
             </a>
@@ -431,53 +447,69 @@
           <div class="address__contacts contacts">
             <div class="contacts__item">
               <div class="contacts__location-wrapper">
-                <picture>
-                  <img src="img/contacts-location.svg" alt="Иконка локации" class="contacts__location-icon" width="14" height="22">
-                </picture>
+                <img src="img/contacts-location.svg" alt="Иконка локации" class="contacts__location-icon" width="14" height="22">
               </div>
               <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
-          <a class="address__button button-show-more">
+          <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.329827%2C59.935922&mode=routes&rtext=59.934236%2C30.335068~59.938631%2C30.323055&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&z=14.89" class="address__button button-show-more">
             <span class="button-show-more__title">Проложить маршрут</span>
-            <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Проложить маршрут">
+            <svg class="button-show-more__icon" width="10" height="14" viewBox="0 0 10 14">
+              <polygon points="0,14 0,0.1 10,7.1 "/>
+            </svg>
           </a>
         </section>
       </div>
-      <section class="map">
+      <section class="page-main__map map">
         <h2 class="visually-hidden">карта</h2>
-        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" width="320" height="330">
-        </iframe>
+        <div class="map__iframe" id="map" width="100%" height="330"></div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html" class="page-footer__logo logo">
+        <a href="index.html" class="page-footer__logo logo" title="Главная страница">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png" class="logo__image">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png" class="logo__image">
-            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали?">
           </picture>
         </a>
         <ul class="page-footer__social social">
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__fb-icon" src="img/facebook.svg" width="11" height="21" alt="Страница в Фейсбук" class="social__image"></a>
+              <a class="social__link" aria-label="Страница в Фейсбук">
+                <svg class="social__icon social__fb-icon social__fb-icon--footer" width="11" height="21">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
           </li>
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__vk-icon" src="img/vk.svg" width="23" height="12" alt="Страница во Вконтакте" class="social__image"></a>
+              <a class="social__link" aria-label="Страница во Вконтакте">
+                <svg class="social__icon social__vk-icon social__vk-icon--footer" width="23" height="12">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
           </li>
           <li class="social__item social__item--yellow">
-              <a class="social__link"><img class="social__inst-icon" src="img/instagram.svg" width="18" height="18" alt="Страница в Инстаграм" class="social__image"></a>
+              <a class="social__link" aria-label="Страница в Инстаграм">
+                <svg class="social__icon social__inst-icon social__inst-icon--footer" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
           </li>
         </ul>
-        <div class="page-footer__production site-producer">
+        <a href="http://htmlacademy.ru" class="page-footer__production site-producer" aria-label="Сайт HTML Academy">
           <p class="site-producer__info">Разработано</p>
-          <svg class="site-producer__image" width="27" height="34" fill="#192144">
+          <svg role="img" class="site-producer__image" width="27" height="34" fill="#192144">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
-        </div>
+        </a>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=98144421-0bba-4782-b602-95b96c796d97" type="text/javascript"></script>
+    <script src="js/placemark.js" type="text/javascript"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
