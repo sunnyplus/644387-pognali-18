@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-global">
+    <div class="include">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--closed">
       <div class="page-header__wrapper page-header__wrapper--inner">
         <a href="index.html" class="page-header__logo logo" title="Главная страница">
@@ -41,13 +44,19 @@
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">о сервисе</a>
+                  <a class="main-nav__link" data-hover="о сервисе" href="/">
+                    <span data-hover="о сервисе" class="main-nav__link-title">о сервисе</span>
+                  </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">направления</a>
+                  <a class="main-nav__link" data-hover="направления" href="form.html">
+                    <span data-hover="направления" class="main-nav__link-title">направления</span>
+                  </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="catalog.html">попутчики</a>
+                  <a class="main-nav__link" data-hover="попутчики" href="catalog.html">
+                    <span data-hover="попутчики" class="main-nav__link-title">попутчики</span>
+                  </a>
                 </li>
               </ul>
               <a href="login.html" class="main-nav__login button">Авторизация</a>
@@ -623,7 +632,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper">
         <a href="index.html" class="page-footer__logo logo" title="Главная страница">
           <picture>

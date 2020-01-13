@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="include">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--index page-header--closed">
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo logo" title="Главная страница">
@@ -30,19 +33,6 @@
         </a>
         <nav class="main-nav">
           <button type="button" class="main-nav__button" aria-label="Показать главное меню сайта">
-            <!-- <svg class="main-nav__button-icon" width="25" height="11" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
-              <g>
-                <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
-                <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
-              </g>
-            </svg>
-            <svg class="main-nav__button-icon main-nav__button-icon--closed" width="19" height="19" fill="#cccccc" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
-              L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
-              L10.3,9z"/>
-            </svg> -->
             <svg class="main-nav__button-icon" width="25" height="11" viewBox="0 0 25 11" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#menu-closed"></use>
             </svg>
@@ -54,15 +44,19 @@
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a class="main-nav__link" data-hover="о сервисе" href="#">
+                  <a class="main-nav__link" data-hover="о сервисе" href="/">
                     <span data-hover="о сервисе" class="main-nav__link-title">о сервисе</span>
                   </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" data-hover="направления" href="form.html">направления</a>
+                  <a class="main-nav__link" data-hover="направления" href="form.html">
+                    <span data-hover="направления" class="main-nav__link-title">направления</span>
+                  </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" data-hover="попутчики" href="catalog.html">попутчики</a>
+                  <a class="main-nav__link" data-hover="попутчики" href="catalog.html">
+                    <span data-hover="попутчики" class="main-nav__link-title">попутчики</span>
+                  </a>
                 </li>
               </ul>
               <a href="login.html" class="main-nav__login button"><span class="button__title">Авторизация</span></a>
@@ -366,7 +360,7 @@
               </div>
             </li>
           </ul>
-          <a class="companion__button button-show-more">
+          <a href="catalog.html" class="companion__button button-show-more">
             <span class="button-show-more__title">Показать всех</span>
             <img class="button-show-more__image" width="10" height="14" src="img/triangle-arrow-right.svg" alt="Иконка кнопки Показать всех">
           </a>
@@ -413,7 +407,7 @@
                 <span class="tarifs__price">59 руб./мес</span>
             </li>
           </ol>
-          <a href="#" class="tarifs__show-business">Показать тарифы для бизнеса</a>
+          <a href="tarifs.html" class="tarifs__show-business">Показать тарифы для бизнеса</a>
         </section>
       </div>
       <div class="page-main__contacts-wrapper">
@@ -458,7 +452,7 @@
               <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
-          <a class="address__button button-show-more">
+          <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.329827%2C59.935922&mode=routes&rtext=59.934236%2C30.335068~59.938631%2C30.323055&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&z=14.89" class="address__button button-show-more">
             <span class="button-show-more__title">Проложить маршрут</span>
             <svg class="button-show-more__icon" width="10" height="14" viewBox="0 0 10 14">
               <polygon points="0,14 0,0.1 10,7.1 "/>

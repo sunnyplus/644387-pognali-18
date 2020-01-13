@@ -46,14 +46,15 @@
 
 @media (min-width: $pc-width) {
   .companions-list__item {
+    overflow: hidden;
+
     &:first-child {
       margin-right: 60px;
     }
 
     &:hover {
       .companion__photo {
-        transition: all 1s ease-out;
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
   }

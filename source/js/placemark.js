@@ -7,9 +7,9 @@ ymaps.ready(function () {
       }),
 
       // Создаём макет содержимого.
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
+      // MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      //     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      // ),
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
           hintContent: 'Погнали',

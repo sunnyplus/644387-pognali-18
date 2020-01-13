@@ -200,6 +200,7 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0;
+    overflow: hidden;
 
     &:active {
       color: #ffd74b;
@@ -207,14 +208,17 @@
     }
 
     &:hover {
-      transform: translateY(-100%);
+      .main-nav__link-title {
+        transform: translateY(-100%);
+        color: #ffd74b;
+      }
     }
   }
 
   .main-nav__link-title {
     position: relative;
     display: inline-block;
-    overflow: hidden;
+    transition: all 0.6s ease;
 
     &::before {
       content: attr(data-hover);

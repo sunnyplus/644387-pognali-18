@@ -2,7 +2,7 @@
   font-family: $font;
   background-color: $white;
   border-radius: 10px;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
   padding-left: 25px;
   padding-top: 25px;
   padding-right: 25px;
@@ -13,7 +13,7 @@
   }
 
   &--three {
-    padding-top: 24px;
+    padding-top: 26px;
     padding-bottom: 10px;
     margin-bottom: 0;
   }
@@ -202,6 +202,7 @@
 .step__intertament-list {
   @include list-reset();
   margin: 0;
+  line-height: 0;
 }
 
 .step__intertament-item {
@@ -276,7 +277,7 @@
   line-height: 22px;
   resize: none;
   margin-top: 8px;
-  margin-bottom: 13px;
+  margin-bottom: 18px;
   min-height: 220px;
 
   &::placeholder {
@@ -380,7 +381,7 @@
     min-height: 142px;
     margin-top: 26px;
     margin-left: 2px;
-    margin-bottom: 43px;
+    margin-bottom: 47px;
     padding-top: 17px;
     padding-left: 16px;
   }
@@ -433,7 +434,7 @@
     flex-basis: 100%;
 
     &:not(:last-of-type) {
-      margin-bottom: 13px;
+      margin-bottom: 15px;
     }
   }
 
@@ -724,7 +725,7 @@
     }
 
     &--step-three {
-      margin-top: 11px;
+      margin-top: 16px;
     }
   }
 

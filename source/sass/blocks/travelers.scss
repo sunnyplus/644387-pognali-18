@@ -87,6 +87,7 @@
 @media (min-width: $pc-width) {
   .travelers__item {
     padding: 0;
+    overflow: hidden;
 
     &:not(:last-of-type) {
       margin-bottom: 30px;
@@ -96,8 +97,7 @@
       box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
 
       .traveler__image {
-        transition: all 1s ease;
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
   }

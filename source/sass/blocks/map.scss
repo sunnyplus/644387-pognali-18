@@ -5,17 +5,17 @@
 
 .map__iframe {
   width: 100%;
-  min-height: 330px;
+  height: 330px;
 }
 
 @media (min-width: $tablet-width) {
   .map__iframe {
-    min-height: 654px;
+    height: 654px;
   }
 }
 
 @media (min-width: $pc-width) {
   .map__iframe {
-    min-height: 588px;
+    height: 588px;
   }
 }
