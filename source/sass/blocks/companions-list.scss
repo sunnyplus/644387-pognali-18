@@ -46,8 +46,6 @@
 
 @media (min-width: $pc-width) {
   .companions-list__item {
-    overflow: hidden;
-
     &:first-child {
       margin-right: 60px;
     }

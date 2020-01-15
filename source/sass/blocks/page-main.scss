@@ -410,7 +410,7 @@
     padding-top: 119px;
     padding-bottom: 1px;
     padding-left: 78px;
-    padding-right: 183px;
+    padding-right: 155px;
 
     &--form {
       padding-top: 60px;
@@ -501,11 +501,8 @@
   }
 
   .page-main__level-block {
-    position: static;
-    top: unset;
-    left: unset;
-    margin-left: 472px;
-    margin-top: 44px;
+    top: 43px;
+    left: 214px;
   }
 
   .page-main__companions-wrapper {
@@ -514,7 +511,6 @@
 
   .page-main__profile-photo-wrapper {
     position: static;
-    margin-left: 45px;
     width: 190px;
     height: 190px;
   }
