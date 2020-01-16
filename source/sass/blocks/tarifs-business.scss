@@ -165,6 +165,8 @@
   }
 
   .tarifs-business__close {
+    min-height: 108px;
+
     &:hover {
       background-color: #edeff6;
     }
@@ -173,6 +175,7 @@
   .tarifs-business__list {
     margin-right: 59px;
     margin-left: 59px;
+    margin-bottom: 37px;
 
     &::before {
       width: 630px;
