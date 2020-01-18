@@ -113,5 +113,5 @@ gulp.task("server", function () {
   gulp.watch("source/js/*.js").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "testcss", "images", "webp", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "testcss", "images", "webp", "sprite", "html", "copy"));
 gulp.task("start", gulp.series("css", "server"));
