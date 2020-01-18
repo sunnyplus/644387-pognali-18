@@ -132,14 +132,12 @@
   .tips-list__item {
     position: absolute;
     flex-direction: row;
-    align-items: center;
-    padding: 0;
-    padding-left: 35px;
+    padding-top: 27px;
+    padding-bottom: 10px;
     border-radius: 20px;
 
     &::after {
       position: relative;
-      bottom: 12px;
       left: 47px;
       font-size: 24px;
       line-height: 24px;
@@ -162,7 +160,6 @@
 
       &::after {
         left: 83px;
-        bottom: 13px;
       }
     }
 

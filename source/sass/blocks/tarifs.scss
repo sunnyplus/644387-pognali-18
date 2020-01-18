@@ -10,6 +10,7 @@
 }
 
 .tarifs__title {
+  position: relative;
   color: #ff8d30;
   font-size: 24px;
   font-weight: 700;
@@ -20,8 +21,8 @@
 
   &::before {
     @include pseudo(99px, 99px);
-    top: 67px;
-    right: 25px;
+    top: -11px;
+    right: -124px;
     z-index: 3;
     background: url("../img/rates@1x.png") no-repeat;
     background-size: contain;
@@ -156,16 +157,16 @@
 
     &::after {
       @include pseudo(198px, 285px);
-      top: 209px;
-      right: 40px;
+      top: 75px;
+      right: -35px;
       z-index: 1;
       background-color: #e2e5f2;
       border-radius: 20px;
     }
 
     &::before {
-      top: 469px;
-      right: 85px;
+      top: 335px;
+      right: 11px;
     }
   }
 
@@ -245,15 +246,15 @@
     &::after {
       width: 444px;
       height: 300px;
-      top: 292px;
-      right: 245px;
+      top: 129px;
+      right: -156px;
     }
 
     &::before {
       width: 198px;
       height: 198px;
-      top: 345px;
-      right: 131px;
+      top: 181px;
+      right: -268px;
 
       @media (min-resolution: $retina) {
         background-image: url("../img/rates@2x.png");

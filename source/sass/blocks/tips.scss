@@ -23,10 +23,13 @@
     width: $pc-width;
     min-height: 0;
     background-color: transparent;
+    margin: 0;
+    padding-left: 60px;
   }
 
   .tips__list {
-    margin-left: 20px;
-    margin-right: 20px;
+    // margin-left: 20px;
+    // margin-right: 20px;
+    margin: 0;
   }
 }
