@@ -24,8 +24,8 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
   "source/fonts/**/*.{woff,woff2}",
-  "source/js/**",
-  "source/*.ico"
+  "source/*.ico",
+  "source/*.html"
   ], {
   base: "source"
   })
@@ -58,7 +58,6 @@ gulp.task("sprite", function() {
 gulp.task("webp", function() {
   return gulp.src("build/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  // .pipe(gulp.dest("source/img"));
   .pipe(gulp.dest("build/img"));
 });
 
@@ -67,12 +66,18 @@ gulp.task("images", function() {
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true}),
-    imagemin.svgo()
+    imagemin.svgo({
+      plugins: [
+        { removeViewBox: false },
+        { removeUselessStrokeAndFill: false },
+        { cleanupIDs: false }
+     ]
+    })
   ]))
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("testcss", function() {
+gulp.task("css", function() {
   return gulp.src("source/sass/style.scss")
   .pipe(plumber())
   .pipe(sass())
@@ -84,7 +89,7 @@ gulp.task("testcss", function() {
   .pipe(gulp.dest("build/css"));
 });
 
-gulp.task("css", function () {
+gulp.task("cssold", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -101,17 +106,22 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
     ui: false
-  });
-
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
-  gulp.watch("source/js/*.js").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "testcss", "images", "webp", "sprite", "html", "copy"));
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
+});
+
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("build/*.html", gulp.series("refresh"));
+  gulp.watch("build/js/*.js", gulp.series("refresh"));
+});
+
+gulp.task("build", gulp.series("clean", "css", "images", "webp", "uglify", "copy"));
+gulp.task("start", gulp.series("build", "server"));
