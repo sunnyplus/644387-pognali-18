@@ -69,9 +69,11 @@
       left: 50%;
       transform: translateX(-50%);
       background-color: $white;
-      min-height: 90px;
+      // min-height: 90px;
       display: flex;
-      align-items: center;
+      // align-items: center;
+      padding-top: 18px;
+      padding-bottom: 19px;
 
       .page-header__wrapper {
         padding-top: 0;

@@ -49,6 +49,9 @@
   }
 
   &--minus {
+    top: 0;
+    left: 0;
+
     &::before {
       background: url("../img/qty-minus-mobile.svg") no-repeat;
       left: 13px;
@@ -57,6 +60,7 @@
   }
 
   &--plus {
+    top: 0;
     right: 0;
 
     &::before {
@@ -113,6 +117,9 @@
     height: 70px;
 
     &--plus {
+      top: 10px;
+      right: 0;
+
       &::before {
         background-image: url("../img/qty-plus.svg");
         width: 20px;
@@ -123,6 +130,9 @@
     }
 
     &--minus {
+      top: 10px;
+      left: 0;
+
       &::before {
         background-image: url("../img/qty-minus.svg");
         width: 20px;
@@ -156,6 +166,9 @@
 
   .step-number-block__button {
     &--plus {
+      top: 0;
+      right: 0;
+
       &::before {
         top: 25px;
         right: 21px;
@@ -163,6 +176,9 @@
     }
 
     &--minus {
+      top: 0;
+      left: 0;
+
       &::before {
         top: 34px;
         left: 19px;

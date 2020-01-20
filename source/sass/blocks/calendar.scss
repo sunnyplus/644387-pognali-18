@@ -7,12 +7,13 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+  margin-left: 54px;
+  margin-right: 53px;
 }
 
 .calendar__month {
   position: relative;
   display: flex;
-  justify-content: space-between;
 
   &::before {
     @include pseudo(221px,1px);
@@ -176,6 +177,9 @@
 
   .calendar__month-name {
     font-size: 36px;
+    margin-left: 148px;
+    margin-right: 142px;
+    margin-top: -10px;
   }
 
   .calendar__button-image {
@@ -220,6 +224,13 @@
       color: $white;
       opacity: 1;
     }
+  }
+
+  .calendar__month-name {
+    font-size: 36px;
+    margin-left: 397px;
+    margin-right: 394px;
+    margin-top: 0;
   }
 
   .calendar__month {
