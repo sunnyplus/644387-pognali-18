@@ -149,7 +149,7 @@
           </div>
           <div class="profile__transport-field">
             <label class="profile__legend profile__legend--transport">транспорт</label>
-            <ul class="companion-select__transport-list transport-list">
+            <ul class="profile__transport-list transport-list">
               <li data-transport="Авиаперелёт" class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
                 <label class="transport-list__label" for="companion-plane">
@@ -258,13 +258,13 @@
               </div>
               <div class="calendar__body">
                 <ul class="calendar__week-list">
-                  <li class="calendar__day">П<span class="calendar__day--second-letter">н</span></li>
-                  <li class="calendar__day">В<span class="calendar__day--second-letter">т</span></li>
-                  <li class="calendar__day">С<span class="calendar__day--second-letter">р</span></li>
-                  <li class="calendar__day">Ч<span class="calendar__day--second-letter">т</span></li>
-                  <li class="calendar__day">П<span class="calendar__day--second-letter">т</span></li>
-                  <li class="calendar__day calendar__day--weekend">С<span class="calendar__day--second-letter">б</span></li>
-                  <li class="calendar__day calendar__day--weekend">В<span class="calendar__day--second-letter">с</span></li>
+                  <li class="calendar__day">П<span class="calendar__day calendar__day--second-letter">н</span></li>
+                  <li class="calendar__day">В<span class="calendar__day calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day">С<span class="calendar__day calendar__day--second-letter">р</span></li>
+                  <li class="calendar__day">Ч<span class="calendar__day calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day">П<span class="calendar__day calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day calendar__day--weekend">С<span class="calendar__day calendar__day--weekend calendar__day--second-letter">б</span></li>
+                  <li class="calendar__day calendar__day--weekend">В<span class="calendar__day calendar__day--weekend calendar__day--second-letter">с</span></li>
                 </ul>
                 <ul class="calendar__days-list">
                   <li class="calendar__item">
@@ -481,7 +481,7 @@
                 <img class="country-select_small-cross" src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
               </button>
               <div class="step__countries-wrapper">
-                <ul class="step__country-alphabet">
+                <ul class="step__country-alphabet country-alphabet">
                   <li class="country-alphabet__item country-alphabet__item--current">
                     <button class="step__country-letter" type="button">А</button>
                   </li>
@@ -558,7 +558,7 @@
                     <button class="step__country-letter" type="button">Я</button>
                   </li>
                 </ul>
-                <ul class="step__country-list">
+                <ul class="step__country-list country-group">
                   <li class="country-group__item">
                     <a href="#" class="step__country-link">Афганистан</a>
                   </li>

@@ -114,6 +114,10 @@
   background-color: #dfe3f0;
 }
 
+.profile__transport-list {
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .profile {
     margin-top: -60px;

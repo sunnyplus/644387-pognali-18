@@ -1,9 +1,9 @@
-.country-alphabet {
-  @include list-reset();
-  font-family: $font;
-  display: flex;
-  flex-wrap: wrap;
-}
+// .country-alphabet {
+//   @include list-reset();
+//   font-family: $font;
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 .country-alphabet__item {
   position: relative;
@@ -41,9 +41,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .country-alphabet {
-    width: 390px;
-  }
+  // .country-alphabet {
+  //   width: 390px;
+  // }
 
   .country-alphabet__item {
     &--current {

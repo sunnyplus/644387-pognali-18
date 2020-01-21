@@ -125,6 +125,11 @@
   display: none;
 }
 
+.information__companion-button {
+  padding: 22px;
+  align-items: center;
+}
+
 .information__list {
   margin-top: 57px;
   margin-bottom: 19px;
@@ -195,6 +200,17 @@
     margin-left: 25px;
     margin-top: -1px;
     border-radius: 20px;
+    align-items: center;
+  }
+
+  .information__companion-button {
+    margin-left: 25px;
+    width: 618px;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 27px;
+    padding-left: 33px;
+    padding-right: 35px;
     align-items: center;
   }
 
@@ -368,6 +384,12 @@
   }
 
   .information__button {
+    margin-left: 0;
+  }
+
+  .information__companion-button {
+    width: 281px;
+    margin-top: -80px;
     margin-left: 0;
   }
 

@@ -46,7 +46,6 @@
   font-weight: 300;
   line-height: 22px;
   margin: 0;
-  margin-left: auto;
 }
 
 .tarifs__list {
@@ -261,6 +260,10 @@
         background-image: url("../img/rates@2x.png");
       }
     }
+  }
+
+  .tarifs__price {
+    margin-left: auto;
   }
 
   .tarifs__list {
