@@ -25,16 +25,20 @@
   margin-right: 70px;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.traveler__name-title {
+  position: relative;
+
   &::before {
     @include pseudo(5px, 5px);
     border-radius: 3px;
     background-color: #f97676;
     left: 138px;
     top: 9px;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
@@ -345,6 +349,7 @@
   .traveler__data {
     min-width: 250px;
     margin-left: 33px;
+    width: 300px;
   }
 
   .traveler__image {
@@ -356,7 +361,9 @@
   .traveler__name {
     font-size: 30px;
     line-height: 30px;
+  }
 
+  .traveler__name-title {
     &::before {
       width: 7px;
       height: 7px;
@@ -460,6 +467,7 @@
     position: relative;
     margin-left: 60px;
     padding-top: 47px;
+    width: 251px;
 
     &::before {
       @include pseudo(1px,207px);
