@@ -194,6 +194,7 @@
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
+    align-items: flex-start;
   }
 
   .profile__tags-field {
@@ -216,6 +217,8 @@
   }
 
   .profile__tags-list {
+    overflow: hidden;
+
     &:hover {
       border-color: #aeb4cb;
     }

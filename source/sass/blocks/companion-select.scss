@@ -201,13 +201,20 @@
 }
 
 .companion-select__level-range {
+  position: relative;
   display: flex;
-  min-height: 20px;
+  height: 20px;
   align-items: center;
+
+  &::before {
+    @include pseudo(220px,2px);
+    top: 9px;
+    right: 0;
+    background: linear-gradient(to left, #1d2e5b 150px, #cccc66 150px);
+  }
 }
 
 .companion-select__level-button {
-  position: relative;
   width: 10px;
   height: 10px;
   background-color: #1d2e5b;
@@ -223,18 +230,10 @@
   &:last-of-type {
     margin-left: 133px;
     z-index: 2;
-
-    &::before {
-      @include pseudo(220px,2px);
-      top: 4px;
-      right: 0;
-      background: linear-gradient(to left, #1d2e5b 150px, #cccc66 150px);
-    }
   }
 
   &:active {
-    width: 19px;
-    height: 19px;
+    transform: scale(1.46);
     box-shadow: 0 3px 7px rgba(29, 46, 91, 0.35);
   }
 }
@@ -387,12 +386,6 @@
 
     &:last-of-type {
       margin-left: 187px;
-
-      &::before {
-        width: 282px;
-        height: 3px;
-        background: linear-gradient(to left, #1d2e5b 210px, #cccc66 210px);
-      }
     }
   }
 
@@ -431,6 +424,13 @@
   .companion-select__level-range {
     margin-left: 72px;
     min-height: 0;
+
+    &::before {
+      top: 8px;
+      width: 282px;
+      height: 3px;
+      background: linear-gradient(to left, #1d2e5b 210px, #cccc66 210px);
+    }
   }
 }
 
@@ -546,17 +546,10 @@
 
     &:last-of-type {
       margin-left: 104px;
-
-      &::before {
-        width: 191px;
-        height: 3px;
-        background: linear-gradient(to left, #1d2e5b 128px, #cccc66 128px);
-      }
     }
 
     &:hover {
-      width: 19px;
-      height: 19px;
+      transform: scale(1.46);
     }
   }
 
@@ -589,5 +582,14 @@
     padding-bottom: 8px;
     margin-left: 3px;
     border-radius: 25px;
+  }
+
+  .companion-select__level-range {
+    &::before {
+      right: 5px;
+      width: 191px;
+      height: 3px;
+      background: linear-gradient(to left, #1d2e5b 128px, #cccc66 128px);
+    }
   }
 }
