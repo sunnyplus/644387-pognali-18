@@ -40,6 +40,12 @@
     left: 138px;
     top: 9px;
   }
+
+  &--online {
+    &::before {
+      background-color: #81e31e;
+    }
+  }
 }
 
 .traveler__social-wrapper {
@@ -367,8 +373,6 @@
     &::before {
       width: 7px;
       height: 7px;
-      border-radius: 3px;
-      background-color: #f97676;
       left: unset;
       right: -29px;
       top: 10px;
@@ -481,13 +485,16 @@
   .traveler__name {
     margin-right: 0;
 
-    &::before {
-      right: unset;
-      left: -26px;
-    }
-
     &:hover {
       opacity: 0.6;
+    }
+  }
+
+  .traveler__name-title {
+    &::before {
+      left: -26px;
+      right: unset;
+      top: 12px;
     }
   }
 
