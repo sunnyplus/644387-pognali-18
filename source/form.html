@@ -150,37 +150,53 @@
           <div class="profile__transport-field">
             <label class="profile__legend profile__legend--transport">транспорт</label>
             <ul class="profile__transport-list transport-list">
-              <li data-transport="Авиаперелёт" class="transport-list__item">
+              <li class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
                 <label class="transport-list__label" for="companion-plane">
                   <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane" aria-label="Авиаперелёт" focusable="false">
                     <use xlink:href="img/sprite.svg#plane"></use>
                   </svg>
                 </label>
+                <div class="tooltip transport-list__tooltip transport-list__tooltip--plane">
+                  <div class="tooltip__triangle"></div>
+                  <div class="tooltip__content-box">Авиаперелёт</div>
+                </div>
               </li>
-              <li data-transport="Автотранспорт" class="transport-list__item">
+              <li class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
                 <label class="transport-list__label" for="companion-bus">
                   <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus" aria-label="Автотранспорт" focusable="false">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </label>
+                <div class="tooltip transport-list__tooltip transport-list__tooltip--bus">
+                  <div class="tooltip__triangle"></div>
+                  <div class="tooltip__content-box">Автотранспорт</div>
+                </div>
               </li>
-              <li data-transport="Велосипед" class="transport-list__item">
+              <li class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
                 <label class="transport-list__label" for="companion-bike">
                   <svg width="19" height="17" class="transport-list__icon transport-list__icon--bike" aria-label="Велосипед" focusable="false">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </label>
+                <div class="tooltip transport-list__tooltip transport-list__tooltip--bike">
+                  <div class="tooltip__triangle"></div>
+                  <div class="tooltip__content-box">Велосипед</div>
+                </div>
               </li>
-              <li data-transport="Пешком" class="transport-list__item">
+              <li class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
                 <label class="transport-list__label" for="companion-run">
                   <svg width="15" height="17" class="transport-list__icon transport-list__icon--run" aria-label="Пешком" focusable="false">
                     <use xlink:href="img/sprite.svg#run"></use>
                   </svg>
                 </label>
+                <div class="tooltip transport-list__tooltip transport-list__tooltip--run">
+                  <div class="tooltip__triangle"></div>
+                  <div class="tooltip__content-box">Пешком</div>
+                </div>
               </li>
             </ul>
           </div>

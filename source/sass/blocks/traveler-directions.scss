@@ -73,7 +73,6 @@
 
 @media (min-width: $pc-width) {
   .traveler-directions {
-    // position: absolute;
     z-index: 15;
   }
 
@@ -87,49 +86,55 @@
       }
     }
 
-    &::before {
-      display: none;
-      content: attr(data-flag);
-      position: absolute;
-      background-color: #101d41;
-      border-radius: 4px;
-      color: #ffffff;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 24px;
-      padding: 16px;
-      top: 35px;
-      left: -20px;
-      z-index: 15;
-    }
-
-    &::after {
-      display: none;
-
-      @include pseudo(16px,16px);
-      border: 8px solid #101d41;
-      border-left-color: transparent;
-      border-right-color: transparent;
-      border-top-color: transparent;
-      top: 20px;
-      left: 10px;
-      z-index: 15;
-    }
-
     &:hover {
-      &::before {
-        display: block;
-      }
-
-      &::after {
+      .tooltip {
         display: block;
       }
     }
   }
 
   .traveler-directions__image {
-    &--catalog {
-      margin-right: 19px;
+    margin-right: 19;
+  }
+
+  .traveler-directions__tooltip {
+    top: 22px;
+    left: -45px;
+
+    &--thailand {
+      left: -34px;
+    }
+
+    &--seysheil {
+      left: -34px;
+    }
+
+    &--belgium {
+      left: -32px;
+    }
+
+    &--czech {
+      left: -22px;
+    }
+
+    &--usa {
+      left: -16px;
+    }
+
+    &--australia {
+      left: -41px;
+    }
+
+    &--dominicana {
+      left: -50px;
+    }
+
+    &--germany {
+      left: -38px;
+    }
+
+    &--britain {
+      left: -66px;
     }
   }
 }

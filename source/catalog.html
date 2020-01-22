@@ -913,37 +913,53 @@
             <div class="companion-select__field">
               <span tabindex="1" class="companion-select__field-button">Транспорт<span class="companion-select__field-colon">:</span></span>
               <ul class="companion-select__transport-list companion-select__transport-list--catalog transport-list transport-list--left">
-                <li data-transport="Авиаперелёт" class="transport-list__item transport-list__item--catalog">
+                <li class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
                   <label class="transport-list__label transport-list__label--catalog" for="companion-plane">
                     <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane" aria-label="Авиаперелёт" focusable="false">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                   </label>
+                  <div class="tooltip transport-list__tooltip transport-list__tooltip--plane">
+                    <div class="tooltip__triangle"></div>
+                    <div class="tooltip__content-box">Авиаперелёт</div>
+                  </div>
                 </li>
-                <li data-transport="Автотранспорт" class="transport-list__item transport-list__item--catalog">
+                <li class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
                   <label class="transport-list__label transport-list__label--catalog" for="companion-bus">
                     <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus" aria-label="Автотранспорт" focusable="false">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </label>
+                  <div class="tooltip transport-list__tooltip transport-list__tooltip--bus">
+                    <div class="tooltip__triangle"></div>
+                    <div class="tooltip__content-box">Автотранспорт</div>
+                  </div>
                 </li>
-                <li data-transport="Велосипед" class="transport-list__item transport-list__item--catalog">
+                <li class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
                   <label class="transport-list__label transport-list__label--catalog" for="companion-bike">
                     <svg width="14" height="16" class="transport-list__icon transport-list__icon--bike" aria-label="Велосипед" focusable="false">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </label>
+                  <div class="tooltip transport-list__tooltip transport-list__tooltip--bike">
+                    <div class="tooltip__triangle"></div>
+                    <div class="tooltip__content-box">Велосипед</div>
+                  </div>
                 </li>
-                <li data-transport="Пешком" class="transport-list__item transport-list__item--catalog">
+                <li class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
                   <label class="transport-list__label transport-list__label--catalog" for="companion-run">
-                    <svg width="15" height="17" class="transport-list__icon transport-list__icon--run" aria-label="Велосипед" focusable="false">
+                    <svg width="15" height="17" class="transport-list__icon transport-list__icon--run" aria-label="Пешком" focusable="false">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
                   </label>
+                  <div class="tooltip transport-list__tooltip transport-list__tooltip--run">
+                    <div class="tooltip__triangle"></div>
+                    <div class="tooltip__content-box">Пешком</div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -1001,17 +1017,29 @@
               <div class="traveler__directions-wrapper">
                 <p class="traveler__wish-title">хочет посетить:</p>
                 <ul class="traveler-directions traveler__directions">
-                  <li data-flag="Шри-Ланка" class="traveler-directions__item traveler-directions__item--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
                     <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка" class="traveler-directions__image traveler-directions__image--catalog">
                     <p class="traveler-directions__title">шри-ланка</p>
+                    <div class="tooltip traveler-directions__tooltip">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Шри&#8209;Ланка</div>
+                    </div>
                   </li>
-                  <li data-flag="Тайланд" class="traveler-directions__item traveler-directions__item--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
                     <img src="img/flag-thailand.svg" width="35" height="24" alt="Тайланд" class="traveler-directions__image traveler-directions__image--catalog">
                     <p class="traveler-directions__title">таиланд</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--thailand">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Таиланд</div>
+                    </div>
                   </li>
-                  <li data-flag="Сейшелы" class="traveler-directions__item traveler-directions__item--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
                     <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшелы" class="traveler-directions__image traveler-directions__image--catalog">
                     <p class="traveler-directions__title">сейшелы</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--seysheil">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Сейшелы</div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1019,25 +1047,41 @@
                 <div class="traveler__transport-wish">
                   <p class="traveler__transport-title">транспорт:</p>
                   <ul class="traveler__transport-list traveler-transport traveler-transport--catalog">
-                    <li data-transport="Авиаперелёт" class="traveler-transport__item traveler-transport__item--active">
+                    <li class="traveler-transport__item traveler-transport__item--active">
                       <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane" aria-label="Авиаперелёт" focusable="false">
                         <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--plane">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Авиаперелёт</div>
+                      </div>
                     </li>
-                    <li data-transport="Автотранспорт" class="traveler-transport__item">
+                    <li class="traveler-transport__item">
                       <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus" aria-label="Автотранспорт" focusable="false">
                         <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--bus">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Автотранспорт</div>
+                      </div>
                     </li>
-                    <li data-transport="Велосипед" class="traveler-transport__item">
+                    <li class="traveler-transport__item">
                       <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike" aria-label="Велосипед" focusable="false">
                         <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--bike">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Велосипед</div>
+                      </div>
                     </li>
-                    <li data-transport="Пешком" class="traveler-transport__item">
+                    <li class="traveler-transport__item">
                       <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run" aria-label="Пешком" focusable="false">
                         <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--run">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Пешком</div>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -1084,13 +1128,25 @@
               <div class="traveler__directions-wrapper">
                 <p class="traveler__wish-title">хочет посетить:</p>
                 <ul class="traveler-directions traveler__directions">
-                  <li data-flag="Бельгия" class="traveler-directions__item traveler-directions__item--catalog">
-                    <img src="img/flag-belgium.svg" width="35" height="24" alt="Бельгия" class="traveler-directions__image traveler-directions__image--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <div data-flag="Бельгия" class="traveler-directions__image-wrapper">
+                      <img src="img/flag-belgium.svg" width="35" height="24" alt="Бельгия" class="traveler-directions__image traveler-directions__image--catalog">
+                    </div>
                     <p class="traveler-directions__title">Бельгия</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--belgium">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Бельгия</div>
+                    </div>
                   </li>
-                  <li data-flag="Чехия" class="traveler-directions__item traveler-directions__item--catalog">
-                    <img src="img/flag-czech.svg" width="35" height="24" alt="Чехия" class="traveler-directions__image traveler-directions__image--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <div data-flag="Чехия" class="traveler-directions__image-wrapper">
+                      <img src="img/flag-czech.svg" width="35" height="24" alt="Чехия" class="traveler-directions__image traveler-directions__image--catalog">
+                    </div>
                     <p class="traveler-directions__title">Чехия</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--czech">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Чехия</div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1102,21 +1158,37 @@
                       <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane" aria-label="Авиаперелёт" focusable="false">
                         <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--plane">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Авиаперелёт</div>
+                      </div>
                     </li>
                     <li data-transport="Автотранспорт" class="traveler-transport__item traveler-transport__item--active">
                       <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus" aria-label="Автотранспорт" focusable="false">
                         <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--bus">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Автотранспорт</div>
+                      </div>
                     </li>
                     <li data-transport="Велосипед" class="traveler-transport__item">
                       <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike" aria-label="Велосипед" focusable="false">
                         <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--bike">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Велосипед</div>
+                      </div>
                     </li>
                     <li data-transport="Пешком" class="traveler-transport__item traveler-transport__item--active">
                       <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run" aria-label="Пешком" focusable="false">
                         <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--run">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Пешком</div>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -1163,17 +1235,35 @@
               <div class="traveler__directions-wrapper">
                 <p class="traveler__wish-title">хочет посетить:</p>
                 <ul class="traveler-directions traveler__directions">
-                  <li data-flag="США" class="traveler-directions__item traveler-directions__item--catalog">
-                    <img src="img/flag-usa.svg" width="35" height="24" alt="С" class="traveler-directions__image traveler-directions__image--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <div data-flag="США" class="traveler-directions__image-wrapper">
+                      <img src="img/flag-usa.svg" width="35" height="24" alt="С" class="traveler-directions__image traveler-directions__image--catalog">
+                    </div>
                     <p class="traveler-directions__title">США</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--usa">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">США</div>
+                    </div>
                   </li>
-                  <li data-flag="Австралия" class="traveler-directions__item traveler-directions__item--catalog">
-                    <img src="img/flag-australia.svg" width="35" height="24" alt="Австралия" class="traveler-directions__image traveler-directions__image--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <div data-flag="Австралия" class="traveler-directions__image-wrapper">
+                      <img src="img/flag-australia.svg" width="35" height="24" alt="Австралия" class="traveler-directions__image traveler-directions__image--catalog">
+                    </div>
                     <p class="traveler-directions__title">Австралия</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--australia">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Австралия</div>
+                    </div>
                   </li>
-                  <li data-flag="Доминикана" class="traveler-directions__item traveler-directions__item--catalog">
-                    <img src="img/flag-dominica.svg" width="35" height="24" alt="Доминикана" class="traveler-directions__image traveler-directions__image--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <div data-flag="Доминикана" class="traveler-directions__image-wrapper">
+                      <img src="img/flag-dominica.svg" width="35" height="24" alt="Доминикана" class="traveler-directions__image traveler-directions__image--catalog">
+                    </div>
                     <p class="traveler-directions__title">Доминикана</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--dominicana">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Доминикана</div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1185,21 +1275,37 @@
                       <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane" aria-label="Авиаперелёт" focusable="false">
                         <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--plane">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Авиаперелёт</div>
+                      </div>
                     </li>
                     <li data-transport="Автотранспорт" class="traveler-transport__item">
                       <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus" aria-label="Автотранспорт" focusable="false">
                         <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--bus">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Автотранспорт</div>
+                      </div>
                     </li>
                     <li data-transport="Велосипед" class="traveler-transport__item traveler-transport__item--active">
                       <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike" aria-label="Велосипед" focusable="false">
                         <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--bike">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Велосипед</div>
+                      </div>
                     </li>
                     <li data-transport="Пешком" class="traveler-transport__item">
                       <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run" aria-label="Пешком" focusable="false">
                         <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--run">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Пешком</div>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -1245,13 +1351,23 @@
               <div class="traveler__directions-wrapper">
                 <p class="traveler__wish-title">хочет посетить:</p>
                 <ul class="traveler-directions traveler__directions">
-                  <li data-flag="Великобритания" class="traveler-directions__item traveler-directions__item--catalog">
-                    <img src="img/flag-united-kingdom.svg" width="35" height="24" alt="Великобритания" class="traveler-directions__image traveler-directions__image--catalog">
+                  <li class="traveler-directions__item traveler-directions__item--catalog">
+                    <div data-flag="Великобритания" class="traveler-directions__image-wrapper">
+                      <img src="img/flag-united-kingdom.svg" width="35" height="24" alt="Великобритания" class="traveler-directions__image traveler-directions__image--catalog">
+                    </div>
                     <p class="traveler-directions__title">Великобритания</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--britain">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Великобритания</div>
                   </li>
                   <li data-flag="Германия" class="traveler-directions__item traveler-directions__item--catalog">
-                    <img src="img/flag-germany.svg" width="35" height="24" alt="Германия" class="traveler-directions__image traveler-directions__image--catalog">
+                    <div data-flag="Германия" class="traveler-directions__image-wrapper">
+                      <img src="img/flag-germany.svg" width="35" height="24" alt="Германия" class="traveler-directions__image traveler-directions__image--catalog">
+                    </div>
                     <p class="traveler-directions__title">Германия</p>
+                    <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--germany">
+                      <div class="tooltip__triangle"></div>
+                      <div class="tooltip__content-box">Германия</div>
                   </li>
                 </ul>
               </div>
@@ -1263,21 +1379,37 @@
                       <svg width="14" height="16" class="traveler-transport__image traveler-transport__image--plane" aria-label="Авиаперелёт" focusable="false">
                         <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--plane">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Авиаперелёт</div>
+                      </div>
                     </li>
                     <li data-transport="Автотранспорт" class="traveler-transport__item traveler-transport__item--active">
                       <svg width="13" height="16" class="traveler-transport__image traveler-transport__image--bus" aria-label="Автотранспорт" focusable="false">
                         <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--bus">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Автотранспорт</div>
+                      </div>
                     </li>
                     <li data-transport="Велосипед" class="traveler-transport__item">
                       <svg width="19" height="17" class="traveler-transport__image traveler-transport__image--bike" aria-label="Велосипед" focusable="false">
                         <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--bike">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Велосипед</div>
+                      </div>
                     </li>
                     <li data-transport="Пешком" class="traveler-transport__item">
                       <svg width="15" height="17" class="traveler-transport__image traveler-transport__image--run" aria-label="Пешком" focusable="false">
                         <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
+                      <div class="tooltip traveler-transport__tooltip traveler-transport__tooltip--run">
+                        <div class="tooltip__triangle"></div>
+                        <div class="tooltip__content-box">Пешком</div>
+                      </div>
                     </li>
                   </ul>
                 </div>

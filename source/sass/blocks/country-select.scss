@@ -329,6 +329,8 @@
   }
 
   .country-select__button-delete {
+    padding: 0;
+
     &:hover {
       opacity: 0.3;
     }
