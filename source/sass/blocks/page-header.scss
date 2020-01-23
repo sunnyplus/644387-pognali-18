@@ -28,15 +28,19 @@
       background-color: #161c35;
     }
 
-    &--index {
+    &--index.page-header--closed {
       background-color: $bg-header-tablet;
+    }
+
+    &--index.page-header--fixed {
+      background-color: #ffffff;
     }
 
     &--fixed {
       position: fixed;
       width: 100%;
       z-index: 20;
-      background-color: $white;
+      // background-color: $white;
 
       .main-nav__button-icon {
         fill: #cccccc;
@@ -62,6 +66,14 @@
   .page-header {
     background-color: $bg-header;
 
+    &--index.page-header--closed {
+      background-color: $bg-header;
+    }
+
+    &--index.page-header--fixed {
+      background-color: #ffffff;
+    }
+
     &--fixed {
       position: fixed;
       width: 100%;
@@ -69,9 +81,9 @@
       left: 50%;
       transform: translateX(-50%);
       background-color: $white;
-      min-height: 90px;
       display: flex;
-      align-items: center;
+      padding-top: 18px;
+      padding-bottom: 19px;
 
       .page-header__wrapper {
         padding-top: 0;

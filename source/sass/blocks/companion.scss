@@ -125,11 +125,6 @@
   }
 }
 
-.companion__button {
-  padding: 22px;
-  align-items: center;
-}
-
 @media (min-width: $tablet-width) {
   .companion {
     width: 285px;
@@ -170,17 +165,6 @@
     }
   }
 
-  .companion__button {
-    margin-left: 25px;
-    width: 618px;
-    border-radius: 20px;
-    padding-top: 30px;
-    padding-bottom: 27px;
-    padding-left: 33px;
-    padding-right: 35px;
-    align-items: center;
-  }
-
   .companion__level-block {
     top: 33px;
     left: 36px;
@@ -197,12 +181,6 @@
 }
 
 @media (min-width: $pc-width) {
-  .companion__button {
-    width: 281px;
-    margin-top: -80px;
-    margin-left: 0;
-  }
-
   .companion__name {
     &:hover {
       opacity: 0.7;

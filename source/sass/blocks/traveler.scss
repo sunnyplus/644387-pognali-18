@@ -25,6 +25,14 @@
   margin-right: 70px;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.traveler__name-title {
+  position: relative;
+
   &::before {
     @include pseudo(5px, 5px);
     border-radius: 3px;
@@ -33,19 +41,17 @@
     top: 9px;
   }
 
-  &:active {
-    opacity: 0.3;
+  &--online {
+    &::before {
+      background-color: #81e31e;
+    }
   }
-}
-
-.traveler__image-wrapper {
-  width: 70px;
-  height: 70px;
 }
 
 .traveler__social-wrapper {
   display: flex;
   margin-left: -37px;
+  z-index: 1;
 }
 
 .traveler__heart {
@@ -93,6 +99,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 16px;
+  width: 147px;
 }
 
 .traveler__image {
@@ -348,6 +355,7 @@
   .traveler__data {
     min-width: 250px;
     margin-left: 33px;
+    width: 300px;
   }
 
   .traveler__image {
@@ -359,13 +367,13 @@
   .traveler__name {
     font-size: 30px;
     line-height: 30px;
+  }
 
+  .traveler__name-title {
     &::before {
       width: 7px;
       height: 7px;
-      border-radius: 3px;
-      background-color: #f97676;
-      left: unset;
+      left: auto;
       right: -29px;
       top: 10px;
     }
@@ -463,6 +471,7 @@
     position: relative;
     margin-left: 60px;
     padding-top: 47px;
+    width: 251px;
 
     &::before {
       @include pseudo(1px,207px);
@@ -476,13 +485,16 @@
   .traveler__name {
     margin-right: 0;
 
-    &::before {
-      right: unset;
-      left: -26px;
-    }
-
     &:hover {
       opacity: 0.6;
+    }
+  }
+
+  .traveler__name-title {
+    &::before {
+      left: -26px;
+      right: unset;
+      top: 12px;
     }
   }
 

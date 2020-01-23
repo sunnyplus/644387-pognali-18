@@ -309,6 +309,7 @@
 
     &:hover {
       opacity: 0.6;
+      cursor: pointer;
     }
   }
 
@@ -376,6 +377,7 @@
     flex-wrap: wrap;
     margin-left: 0;
     margin-bottom: 0;
+    width: 1440px;
   }
 
   .country-filter__capital {

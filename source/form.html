@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Погнали - Направления</title>
+    <link rel="preload" href="/fonts/bloggersans.woff2" as="font">
+    <link rel="preload" href="/fonts/bloggersans-bold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
@@ -147,38 +149,54 @@
           </div>
           <div class="profile__transport-field">
             <label class="profile__legend profile__legend--transport">транспорт</label>
-            <ul class="companion-select__transport-list transport-list">
-              <li data-transport="Авиаперелёт" class="transport-list__item">
+            <ul class="profile__transport-list transport-list">
+              <li class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
                 <label class="transport-list__label" for="companion-plane">
                   <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane" aria-label="Авиаперелёт" focusable="false">
                     <use xlink:href="img/sprite.svg#plane"></use>
                   </svg>
                 </label>
+                <div class="tooltip transport-list__tooltip transport-list__tooltip--plane">
+                  <div class="tooltip__triangle"></div>
+                  <div class="tooltip__content-box">Авиаперелёт</div>
+                </div>
               </li>
-              <li data-transport="Автотранспорт" class="transport-list__item">
+              <li class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
                 <label class="transport-list__label" for="companion-bus">
                   <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus" aria-label="Автотранспорт" focusable="false">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </label>
+                <div class="tooltip transport-list__tooltip transport-list__tooltip--bus">
+                  <div class="tooltip__triangle"></div>
+                  <div class="tooltip__content-box">Автотранспорт</div>
+                </div>
               </li>
-              <li data-transport="Велосипед" class="transport-list__item">
+              <li class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
                 <label class="transport-list__label" for="companion-bike">
                   <svg width="19" height="17" class="transport-list__icon transport-list__icon--bike" aria-label="Велосипед" focusable="false">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </label>
+                <div class="tooltip transport-list__tooltip transport-list__tooltip--bike">
+                  <div class="tooltip__triangle"></div>
+                  <div class="tooltip__content-box">Велосипед</div>
+                </div>
               </li>
-              <li data-transport="Пешком" class="transport-list__item">
+              <li class="transport-list__item">
                 <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
                 <label class="transport-list__label" for="companion-run">
                   <svg width="15" height="17" class="transport-list__icon transport-list__icon--run" aria-label="Пешком" focusable="false">
                     <use xlink:href="img/sprite.svg#run"></use>
                   </svg>
                 </label>
+                <div class="tooltip transport-list__tooltip transport-list__tooltip--run">
+                  <div class="tooltip__triangle"></div>
+                  <div class="tooltip__content-box">Пешком</div>
+                </div>
               </li>
             </ul>
           </div>
@@ -256,13 +274,13 @@
               </div>
               <div class="calendar__body">
                 <ul class="calendar__week-list">
-                  <li class="calendar__day">П<span class="calendar__day--second-letter">н</span></li>
-                  <li class="calendar__day">В<span class="calendar__day--second-letter">т</span></li>
-                  <li class="calendar__day">С<span class="calendar__day--second-letter">р</span></li>
-                  <li class="calendar__day">Ч<span class="calendar__day--second-letter">т</span></li>
-                  <li class="calendar__day">П<span class="calendar__day--second-letter">т</span></li>
-                  <li class="calendar__day calendar__day--weekend">С<span class="calendar__day--second-letter">б</span></li>
-                  <li class="calendar__day calendar__day--weekend">В<span class="calendar__day--second-letter">с</span></li>
+                  <li class="calendar__day">П<span class="calendar__day calendar__day--second-letter">н</span></li>
+                  <li class="calendar__day">В<span class="calendar__day calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day">С<span class="calendar__day calendar__day--second-letter">р</span></li>
+                  <li class="calendar__day">Ч<span class="calendar__day calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day">П<span class="calendar__day calendar__day--second-letter">т</span></li>
+                  <li class="calendar__day calendar__day--weekend">С<span class="calendar__day calendar__day--weekend calendar__day--second-letter">б</span></li>
+                  <li class="calendar__day calendar__day--weekend">В<span class="calendar__day calendar__day--weekend calendar__day--second-letter">с</span></li>
                 </ul>
                 <ul class="calendar__days-list">
                   <li class="calendar__item">
@@ -479,7 +497,7 @@
                 <img class="country-select_small-cross" src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
               </button>
               <div class="step__countries-wrapper">
-                <ul class="step__country-alphabet">
+                <ul class="step__country-alphabet country-alphabet">
                   <li class="country-alphabet__item country-alphabet__item--current">
                     <button class="step__country-letter" type="button">А</button>
                   </li>
@@ -556,7 +574,7 @@
                     <button class="step__country-letter" type="button">Я</button>
                   </li>
                 </ul>
-                <ul class="step__country-list">
+                <ul class="step__country-list country-group">
                   <li class="country-group__item">
                     <a href="#" class="step__country-link">Афганистан</a>
                   </li>

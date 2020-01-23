@@ -27,9 +27,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build3": "gulp css",
-    "start": "gulp start",
-    "build": "gulp testcss"
+    "build": "gulp build",
+    "start": "gulp start"
   },
   "browserslist": [
     "last 2 versions",
@@ -48,6 +47,7 @@
     "node": "8.16"
   },
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^5.1.0",
+    "gulp-htmlmin": "^5.0.1"
   }
 }

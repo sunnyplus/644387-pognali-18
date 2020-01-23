@@ -197,8 +197,6 @@
     }
 
     &--choose {
-      justify-content: space-between;
-
       .country-select__input {
         width: 369px;
         padding-top: 26px;
@@ -331,6 +329,8 @@
   }
 
   .country-select__button-delete {
+    padding: 0;
+
     &:hover {
       opacity: 0.3;
     }

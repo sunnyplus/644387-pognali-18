@@ -101,41 +101,32 @@
       margin-right: 0;
     }
 
-    &::before {
-      display: none;
-      content: attr(data-transport);
-      position: absolute;
-      background-color: #101d41;
-      border-radius: 4px;
-      color: #ffffff;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 24px;
-      padding: 16px;
-      top: 55px;
-      left: -10px;
-    }
-
-    &::after {
-      display: none;
-
-      @include pseudo(16px,16px);
-      border: 8px solid #101d41;
-      border-left-color: transparent;
-      border-right-color: transparent;
-      border-top-color: transparent;
-      top: 40px;
-      left: 15px;
-    }
-
     &:hover {
-      &::before {
+      .tooltip {
         display: block;
       }
+    }
+  }
 
-      &::after {
-        display: block;
-      }
+  .transport-list__tooltip {
+    &--plane {
+      top: 38px;
+      left: -48px;
+    }
+
+    &--bus {
+      top: 38px;
+      left: -54px;
+    }
+
+    &--bike {
+      top: 38px;
+      left: -38px;
+    }
+
+    &--run {
+      top: 38px;
+      left: -26px;
     }
   }
 
