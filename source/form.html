@@ -15,7 +15,7 @@
     <script src="js/svgxuse.min.js" defer></script>
   </head>
   <body class="page-global">
-    <header class="page-header page-header--closed">
+    <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--inner">
         <a href="index.html" class="page-header__logo logo" title="Главная страница">
           <picture class="logo__wrapper logo__wrapper--white">
@@ -138,6 +138,7 @@
         </div>
       </div>
       <section class="profile">
+        <h2 class="visually-hidden">Профайл путешественника</h2>
         <form class="profile__form" action="http://echo.htmlacademy.ru" method="POST">
           <input class="profile__button-file visually-hidden" type="file" name="change-photo" id="change-photo">
           <label for="change-photo" class="profile__button-label">
@@ -248,7 +249,7 @@
               </div>
             </div>
             <div class="step__period step-number-block">
-              <label for="period" class="step-number-block__title">длительность:</label for="period">
+              <label for="period" class="step-number-block__title">длительность:</label>
               <label for="period" class="step-number-block__title step-number-block__title--grey">дн.</label>
               <div class="step-number-block__bottom-wrapper">
                 <button class="step-number-block__button step-number-block__button--minus" type="button" aria-label="Уменьшить количество дней">
@@ -472,9 +473,9 @@
             <div class="step__country-select country-select">
               <input class="country-select__input" type="text" id="country-4" value="Босния и Герцеговина">
               <label class="country-select__country-label" for="country-4">
-                <div class="country-select__flag-wrapper">
+                <span class="country-select__flag-wrapper">
                   <img class="country-select__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии и Герцеговины">
-                </div>
+                </span>
               </label>
               <button class="country-select__button-delete" type="button">
                 <img class="country-select_small-cross" src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
@@ -483,10 +484,10 @@
             <div class="step__country-select country-select">
               <input class="country-select__input" type="text" id="country-2" value="Чехия">
               <label class="country-select__country-label" for="country-2">
-                <div class="country-select__flag-wrapper">
+                <span class="country-select__flag-wrapper">
                   <img class="country-select__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
-                </div>
-              </label class="country-select__country-label">
+                </span>
+              </label>
               <button class="country-select__button-delete" type="button">
                 <img class="country-select_small-cross" src="img/small-cross.svg" width="9" height="9" alt="Иконка удаления страны">
               </button>
@@ -687,9 +688,9 @@
               </a>
           </li>
         </ul>
-        <a role="img" href="http://htmlacademy.ru" class="page-footer__production site-producer" aria-label="Сайт HTML Academy">
-          <p class="site-producer__info">Разработано</p>
-          <svg class="site-producer__image" width="27" height="34" fill="#192144">
+        <a href="http://htmlacademy.ru" class="page-footer__production site-producer" aria-label="Сайт HTML Academy">
+          <span class="site-producer__info">Разработано</span>
+          <svg role="img" class="site-producer__image" width="27" height="34" fill="#192144">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>

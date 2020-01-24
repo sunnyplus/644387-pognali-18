@@ -15,7 +15,7 @@
     <script src="js/svgxuse.min.js" defer></script>
   </head>
   <body>
-    <header class="page-header page-header--closed">
+    <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--inner">
         <a href="index.html" class="page-header__logo logo" title="Главная страница">
           <picture class="logo__wrapper logo__wrapper--white">
@@ -864,15 +864,15 @@
               <ul class="companion-select__list">
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="hobby" value="gym" id="gym" checked>
-                  <label class="companion-select__label" for="gym">Спортзал</label>
+                  <label class="companion-select__label" for="gym" tabindex=1>Спортзал</label>
                 </li>
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="hobby" value="kalian" id="kalian">
-                  <label class="companion-select__label" for="kalian">Кальян</label>
+                  <label class="companion-select__label" for="kalian" tabindex=1>Кальян</label>
                 </li>
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="hobby" value="sofa" id="sofa">
-                  <label class="companion-select__label" for="sofa">Диван</label>
+                  <label class="companion-select__label" for="sofa" tabindex=1>Диван</label>
                 </li>
               </ul>
             </div>
@@ -881,15 +881,15 @@
               <ul class="companion-select__list">
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="music" value="hardrock" id="hardrock" checked>
-                  <label class="companion-select__label" for="hardrock">Тяжёлый рок</label>
+                  <label class="companion-select__label" for="hardrock" tabindex=1>Тяжёлый рок</label>
                 </li>
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="music" value="russian-rap" id="russian-rap">
-                  <label class="companion-select__label" for="russian-rap">Русский рэп</label>
+                  <label class="companion-select__label" for="russian-rap" tabindex=1>Русский рэп</label>
                 </li>
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="music" value="eurodance" id="eurodance">
-                  <label class="companion-select__label" for="eurodance">Евроденс</label>
+                  <label class="companion-select__label" for="eurodance" tabindex=1>Евроденс</label>
                 </li>
               </ul>
             </div>
@@ -898,15 +898,15 @@
               <ul class="companion-select__list">
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="food" value="meat-eater" id="meat-eater" checked>
-                  <label class="companion-select__label" for="meat-eater">Мясоед</label>
+                  <label class="companion-select__label" for="meat-eater" tabindex=1>Мясоед</label>
                 </li>
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="food" value="pp" id="pp">
-                  <label class="companion-select__label" for="pp">Сидит на ПП</label>
+                  <label class="companion-select__label" for="pp" tabindex=1>Сидит на ПП</label>
                 </li>
                 <li class="companion-select__item">
                   <input class="companion-select__list-input visually-hidden" type="checkbox" name="food" value="cheese-eater" id="cheese-eater">
-                  <label class="companion-select__label" for="cheese-eater">Веган-сыроед</label>
+                  <label class="companion-select__label" for="cheese-eater" tabindex=1>Веган-сыроед</label>
                 </li>
               </ul>
             </div>
@@ -915,7 +915,7 @@
               <ul class="companion-select__transport-list companion-select__transport-list--catalog transport-list transport-list--left">
                 <li class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="plane" id="companion-plane" checked>
-                  <label class="transport-list__label transport-list__label--catalog" for="companion-plane">
+                  <label class="transport-list__label transport-list__label--catalog" for="companion-plane" tabindex=1>
                     <svg width="14" height="16" class="transport-list__icon transport-list__icon--plane" aria-label="Авиаперелёт" focusable="false">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
@@ -927,7 +927,7 @@
                 </li>
                 <li class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bus" id="companion-bus" checked>
-                  <label class="transport-list__label transport-list__label--catalog" for="companion-bus">
+                  <label class="transport-list__label transport-list__label--catalog" for="companion-bus" tabindex=1>
                     <svg width="13" height="16" class="transport-list__icon transport-list__icon--bus" aria-label="Автотранспорт" focusable="false">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
@@ -939,7 +939,7 @@
                 </li>
                 <li class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="bike" id="companion-bike">
-                  <label class="transport-list__label transport-list__label--catalog" for="companion-bike">
+                  <label class="transport-list__label transport-list__label--catalog" for="companion-bike" tabindex=1>
                     <svg width="14" height="16" class="transport-list__icon transport-list__icon--bike" aria-label="Велосипед" focusable="false">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
@@ -951,7 +951,7 @@
                 </li>
                 <li class="transport-list__item transport-list__item--catalog">
                   <input class="transport-list__input visually-hidden" type="checkbox" name="companion-transport" value="run" id="companion-run" checked>
-                  <label class="transport-list__label transport-list__label--catalog" for="companion-run">
+                  <label class="transport-list__label transport-list__label--catalog" for="companion-run" tabindex=1>
                     <svg width="15" height="17" class="transport-list__icon transport-list__icon--run" aria-label="Пешком" focusable="false">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
@@ -1359,6 +1359,7 @@
                     <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--britain">
                       <div class="tooltip__triangle"></div>
                       <div class="tooltip__content-box">Великобритания</div>
+                    </div>
                   </li>
                   <li data-flag="Германия" class="traveler-directions__item traveler-directions__item--catalog">
                     <div data-flag="Германия" class="traveler-directions__image-wrapper">
@@ -1368,6 +1369,7 @@
                     <div class="tooltip traveler-directions__tooltip traveler-directions__tooltip--germany">
                       <div class="tooltip__triangle"></div>
                       <div class="tooltip__content-box">Германия</div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1477,9 +1479,9 @@
               </a>
           </li>
         </ul>
-        <a role="img" href="http://htmlacademy.ru" class="page-footer__production site-producer" aria-label="Сайт HTML Academy">
-          <p class="site-producer__info">Разработано</p>
-          <svg class="site-producer__image" width="27" height="34" fill="#192144">
+        <a href="http://htmlacademy.ru" class="page-footer__production site-producer" aria-label="Сайт HTML Academy">
+          <span class="site-producer__info">Разработано</span>
+          <svg role="img" class="site-producer__image" width="27" height="34" fill="#192144">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
