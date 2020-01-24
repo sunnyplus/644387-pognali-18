@@ -41,5 +41,13 @@
   .logo__wrapper {
     width: 200px;
     height: 52px;
+
+    &--nojs-white {
+      display: block;
+    }
+
+    &--nojs-blue {
+      display: none;
+    }
   }
 }

@@ -6,16 +6,78 @@
 .map__iframe {
   width: 100%;
   height: 330px;
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.map__image {
+  width: 320px;
+  height: 546px;
+}
+
+.map__nojs {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  height: 330px;
+
+  &--closed {
+    display: none;
+  }
+
+  &::before {
+    @include pseudo(41px,41px);
+    background: url("../img/map-marker.svg") no-repeat;
+    background-size: contain;
+    top: 131px;
+    right: 138px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .map__iframe {
-    height: 654px;
+    height: 677px;
+  }
+
+  .map__nojs {
+    width: 768px;
+    height: 681px;
+
+    &::before {
+      width: 56px;
+      height: 56px;
+      top: 269px;
+      right: 356px;
+    }
+  }
+
+  .map__image {
+    width: 768px;
+    height: auto;
   }
 }
 
 @media (min-width: $pc-width) {
   .map__iframe {
     height: 588px;
+  }
+
+  .map__nojs {
+    width: 1440px;
+    height: 588px;
+
+    &::before {
+      width: 54px;
+      height: 54px;
+      top: 346px;
+      right: 693px;
+    }
+  }
+
+  .map__image {
+    width: 1440px;
+    height: auto;
   }
 }
